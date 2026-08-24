@@ -60,7 +60,7 @@
   {
    "id": "e1",
    "type": "external_page",
-   "url": "https://huggingface.co/datasets/facebook/belebele/raw/7899cdfa4e4e63b06556ba9dceabb58bc3e17b10/README.md",
+   "url": "https://huggingface.co/datasets/facebook/belebele/raw/7899cdfa4e1e0d733fd77c848e2c273cb1d32be2/README.md",
    "retrieved": "2026-08-24",
    "quote": "Belebele is a multiple-choice machine reading comprehension (MRC) dataset spanning 122 language variants.",
    "note": "parent card; Belebele's items are professionally translated (see facebook-belebele__mul record). Applies to the items this dataset's name asserts it derives from"

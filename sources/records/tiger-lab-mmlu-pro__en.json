@@ -59,7 +59,7 @@
    "type": "paper",
    "url": "https://arxiv.org/abs/2406.01574",
    "retrieved": "2026-08-24",
-   "quote": "MMLU-Pro ... integrates more challenging, reasoning-focused questions and expands the choice set from four to ten options.",
+   "quote": "integrating more challenging, reasoning-focused questions and expanding the choice set from four to ten options",
    "note": "English items drawn from MMLU plus newly collected questions; no translation involved"
   },
   {

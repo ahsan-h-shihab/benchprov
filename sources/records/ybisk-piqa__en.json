@@ -67,8 +67,7 @@
    "url": "https://huggingface.co/api/datasets/ybisk/piqa",
    "retrieved": "2026-08-24",
    "hub_revision": "2e8ac2dffd59bac8c3c6714948f4c551a0848bb0",
-   "note": "hub metadata tags",
-   "quote": "source_datasets: original"
+   "note": "source_datasets: original"
   }
  ],
  "completeness": 0.6667,

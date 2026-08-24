@@ -93,7 +93,7 @@ SPECS = [
          parent_url="https://huggingface.co/datasets/cais/mmlu",
          tt="native_original",
          tt_ev=["paper"], paper_url="https://arxiv.org/abs/2406.01574",
-         paper_quote="MMLU-Pro ... integrates more challenging, reasoning-focused questions and expands the choice set from four to ten options.",
+         paper_quote="integrating more challenging, reasoning-focused questions and expanding the choice set from four to ten options",
          paper_note="English items drawn from MMLU plus newly collected questions; no translation involved",
          kind_ev=["paper"], license="mit", license_ev=["meta"],
          notes="Aggregates filtered MMLU items with newly collected English questions (TheoremQA, SciBench, STEM sources per paper)."),

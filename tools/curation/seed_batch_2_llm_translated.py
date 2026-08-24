@@ -14,8 +14,9 @@ def yaml_langs(ds, drop=("en", "code")):
     return [l for l in langs if l not in drop]
 
 
-def fi(lang_name, lang_code):
-    """FreedomIntelligence MMLU_<Language> — identical one-line cards."""
+def fi(lang_name, lang_code, spelling="tranlasted"):
+    """FreedomIntelligence MMLU_<Language> — near-identical one-line cards
+    (most misspell 'translated' as 'tranlasted'; the Arabic card does not)."""
     ds = f"FreedomIntelligence/MMLU_{lang_name}"
     return dict(
         ds=ds, family="MMLU", langs=[lang_code],
@@ -23,8 +24,8 @@ def fi(lang_name, lang_code):
         parent_url="https://huggingface.co/datasets/cais/mmlu",
         tt="machine", engine="gpt-3.5-turbo", engine_ev=["card"],
         tt_ev=["card"],
-        card_quote=f"{lang_name} version of MMLU dataset tranlasted by gpt-3.5-turbo.",
-        card_note="sic — 'tranlasted' as written in the card",
+        card_quote=f"{lang_name} version of MMLU dataset {spelling} by gpt-3.5-turbo.",
+        card_note=("sic — 'tranlasted' as written in the card" if spelling == "tranlasted" else None),
         verif="unknown",
         verif_note="no statement about human review in the card at the pinned revision",
         kind_ev=["card"], license="mit", license_ev=["meta"],
@@ -36,7 +37,7 @@ MLMM_QUOTE = ("These datasets are translated from the original ARC, HellaSwag, a
               "datasets in English using ChatGPT.")
 
 SPECS = [
-    fi("Arabic", "ar"),
+    fi("Arabic", "ar", spelling="translated"),
     fi("Japanese", "ja"),
     fi("Indonesian", "id"),
     fi("Korean", "ko"),
@@ -151,7 +152,7 @@ SPECS = [
          kind="translation_of", parent="cais/mmlu", src="en", src_ev=["card"],
          parent_url="https://huggingface.co/datasets/cais/mmlu",
          tt="machine", engine="GPT-4", tt_ev=["card"], engine_ev=["card"],
-         card_quote="The dataset was curated by Mohamad Alhajar, leveraging GPT-4 for translations to ensure high linguistic quality and fidelity.",
+         card_quote="leveraging GPT-4 for translations to ensure high linguistic quality and fidelity.",
          verif="unknown", verif_note="no human-review statement in the card",
          kind_ev=["card"], license="apache-2.0", license_ev=["meta"],
          notes="Built for the OpenLLMTurkishLeaderboard v0.2."),

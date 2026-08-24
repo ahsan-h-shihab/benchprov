@@ -70,7 +70,7 @@
    "type": "dataset_content",
    "url": "https://datasets-server.huggingface.co/first-rows?dataset=Slim205%2Fmmlu_translated_nllb0&config=default&split=auxiliary_train",
    "retrieved": "2026-08-24",
-   "quote": "\"question\": \"Davis decided to kill Adams. [...]\" / \"translated_question\": \"قرر ديفيس قتل آدامز. [...]\"",
+   "quote": "قرر ديفيس قتل آدامز",
    "note": "first rows show English MMLU items with Arabic translations — target language ar established by content"
   }
  ],

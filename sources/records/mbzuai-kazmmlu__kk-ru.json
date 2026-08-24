@@ -69,8 +69,7 @@
    "url": "https://huggingface.co/api/datasets/MBZUAI/KazMMLU",
    "retrieved": "2026-08-24",
    "hub_revision": "567b9e3fea223afc7d7ea98f7255c4c5b140f91a",
-   "note": "hub metadata tags",
-   "quote": "tags: MMLU, exams, multilingual; configs e.g. 'Biology (High School in kaz)', 'Accounting and Auditing (Professional & University in rus)'"
+   "note": "tags: MMLU, exams, multilingual; configs e.g. 'Biology (High School in kaz)', 'Accounting and Auditing (Professional & University in rus)'"
   },
   {
    "id": "e3",

@@ -66,8 +66,7 @@
    "retrieved": "2026-08-24",
    "sha256": "9319fefa66e4a5debbc75e473eba01235e6975e6fbeaddeb7c6467eec7978928",
    "hub_revision": "b89ff6f7eb689c078f4340779f416f5f79e87cf4",
-   "quote": "Arabic version of MMLU dataset tranlasted by gpt-3.5-turbo.",
-   "note": "sic — 'tranlasted' as written in the card"
+   "quote": "Arabic version of MMLU dataset translated by gpt-3.5-turbo."
   },
   {
    "id": "e2",

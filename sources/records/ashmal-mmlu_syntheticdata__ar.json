@@ -64,7 +64,7 @@
    "retrieved": "2026-08-24",
    "sha256": "4086c571a502780e23c0d03590b25760b2173298ee7b09196063790fc5faaf0e",
    "hub_revision": "479e4e8aae1769291b1ded1154f8e661102490c9",
-   "quote": "MMLU_SyntheticData is generated using GPT-4. ... Please note that this is not the translated version of MMLU, it's an entirely independent dataset.",
+   "quote": "MMLU_SyntheticData is generated using GPT-4. [...] Please note that this is not the translated version of MMLU, it's an entirely independent dataset.",
    "note": "'The subjects (above) are taken from the ArabicMMLU Dataset'"
   },
   {

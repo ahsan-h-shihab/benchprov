@@ -70,7 +70,7 @@
    "type": "dataset_content",
    "url": "https://datasets-server.huggingface.co/first-rows?dataset=Slim205%2Fmmlu_ift_256_translated_nllb0&config=default&split=auxiliary_train",
    "retrieved": "2026-08-24",
-   "quote": "\"translated_instruction\": \"قواعد غرفة القراءة مرحبًا بكم جميعاً. [...]\"",
+   "quote": "قواعد غرفة القراءة",
    "note": "first rows show Arabic translations of MMLU auxiliary_train items with added IFT fields"
   }
  ],

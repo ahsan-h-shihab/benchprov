@@ -59,8 +59,7 @@
    "url": "https://huggingface.co/api/datasets/openai/gsm8k",
    "retrieved": "2026-08-24",
    "hub_revision": "740312add88f781978c0658806c59bc2815b9866",
-   "note": "hub metadata tags",
-   "quote": "source_datasets: original; language: en; annotations_creators: crowdsourced"
+   "note": "source_datasets: original; language: en; annotations_creators: crowdsourced"
   },
   {
    "id": "e2",

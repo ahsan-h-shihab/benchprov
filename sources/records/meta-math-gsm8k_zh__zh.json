@@ -66,7 +66,7 @@
    "retrieved": "2026-08-24",
    "sha256": "05b9c79e671ff000ec0631b41bc4389fbcd379fe344ffa4d6f163b126f42dd18",
    "hub_revision": "4a5009abc37cbb2d3fd1a745f80e5ea1405ba9aa",
-   "quote": "question-answer pairs are translated from GSM8K by `GPT-3.5-Turbo` with few-shot prompting."
+   "quote": "question-answer pairs are translated from GSM8K [...] by `GPT-3.5-Turbo` with few-shot prompting."
   },
   {
    "id": "e2",

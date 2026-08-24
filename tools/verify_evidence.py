@@ -36,14 +36,25 @@ H = {"User-Agent": "benchprov-verify/0.1"}
 
 
 def norm(text: str) -> str:
+    """Normalize to RENDERED text for matching: quotes cite what a reader of
+    the card sees, so standard Markdown mechanics are normalized away on both
+    sides — inline links become their text, backslash-escapes are unescaped,
+    emphasis/code markers are dropped. Content words must still match exactly."""
+    text = re.sub(r"\[([^\]]*)\]\s*\((?:[^)]*)\)", r"\1", text)  # [text](url) -> text
+    text = re.sub(r"\\([_*`#\[\]])", r"\1", text)             # \_ -> _
+    text = text.replace("*", "").replace("`", "")
+    text = text.replace("\u2019", "'").replace("\u2018", "'")
+    text = text.replace("\u201c", '"').replace("\u201d", '"')
     return re.sub(r"\s+", " ", text).strip()
 
 
 def quote_pattern(quote: str) -> re.Pattern:
-    """Verbatim match, whitespace-normalized; [...] and [text] act as wildcards."""
+    """Rendered-verbatim match; [...] / [text] inside a QUOTE act as wildcards
+    (used for elisions), so normalize link syntax before splitting."""
+    quote = re.sub(r"\[([^\]]*)\]\s*\((?:[^)]*)\)", r"\1", quote)
     parts = re.split(r"\[[^\]]*\]", quote)
     rx = r"\s*.*?\s*".join(re.escape(norm(p)) for p in parts if norm(p))
-    rx = rx.replace(r"\ ", r"\s+")
+    rx = rx.replace(r"\ ", r"\s*")
     return re.compile(rx, re.IGNORECASE)
 
 
@@ -100,7 +111,7 @@ def main() -> int:
                     print(f"ERROR {where}: sha256 mismatch at pinned URL {ev['url']}")
                     continue
             if ev.get("quote"):
-                text = norm(re.sub(r"<[^>]+>", " ", body.decode("utf-8", errors="replace")))
+                text = norm(re.sub(r"<[^<>]{0,120}>", " ", body.decode("utf-8", errors="replace")))
                 if not quote_pattern(ev["quote"]).search(text):
                     if pinned or args.strict:
                         errors += 1

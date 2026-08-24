@@ -59,8 +59,7 @@
    "url": "https://huggingface.co/api/datasets/tau/commonsense_qa",
    "retrieved": "2026-08-24",
    "hub_revision": "94630fe30dad47192a8546eb75f094926d47e155",
-   "note": "hub metadata tags",
-   "quote": "source_datasets: original; annotations_creators: crowdsourced"
+   "note": "source_datasets: original; annotations_creators: crowdsourced"
   },
   {
    "id": "e2",

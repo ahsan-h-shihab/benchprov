@@ -67,8 +67,7 @@
    "url": "https://huggingface.co/api/datasets/kz-transformers/kazakh-unified-national-testing-mc",
    "retrieved": "2026-08-24",
    "hub_revision": "017d1f7d1c3d88159660cdd8964c8f9751a0ce3d",
-   "note": "subject structure of Kazakhstan's Unified National Testing (UNT) exam, from the card's YAML",
-   "quote": "splits: kazakh_and_literature (4688), geography (1718), world_history (1228), history_of_kazakhstan (3260), english (2197), biology (1536), ..."
+   "note": "splits: kazakh_and_literature (4688), geography (1718), world_history (1228), history_of_kazakhstan (3260), english (2197), biology (1536), ...; subject structure of Kazakhstan's Unified National Testing (UNT) exam, from the card's YAML"
   },
   {
    "id": "e3",

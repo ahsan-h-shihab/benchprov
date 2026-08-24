@@ -109,17 +109,21 @@ class RecordBuilder:
             }
             return self._add(key, item)
         if key == "meta_tags":
+            # meta_tags evidence summarizes structured hub metadata; the
+            # summary is descriptive, NOT verbatim, so it lives in `note`
+            # (the quote field is reserved for verbatim excerpts).
             if not snap:
                 raise ValueError("meta_tags needs a snapshot")
+            desc = s.get("meta_tags_quote", "")
+            note = s.get("meta_tags_note", "")
+            joined = "; ".join(x for x in (desc, note) if x) or "hub metadata tags"
             item = {
                 "type": "hub_metadata",
                 "url": f"https://huggingface.co/api/datasets/{s['ds']}",
                 "retrieved": retrieved,
                 "hub_revision": snap["revision"],
-                "note": s.get("meta_tags_note", "hub metadata tags"),
+                "note": joined[:500],
             }
-            if s.get("meta_tags_quote"):
-                item["quote"] = s["meta_tags_quote"]
             return self._add(key, item)
         if key == "paper":
             item = {

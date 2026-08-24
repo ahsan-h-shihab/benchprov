@@ -77,8 +77,7 @@
    "url": "https://huggingface.co/api/datasets/google/boolq",
    "retrieved": "2026-08-24",
    "hub_revision": "35b264d03638db9f4ce671b711558bf7ff0f80d5",
-   "note": "hub metadata tags",
-   "quote": "source_datasets: original"
+   "note": "source_datasets: original"
   }
  ],
  "completeness": 1.0,

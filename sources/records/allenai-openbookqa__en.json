@@ -58,8 +58,7 @@
    "url": "https://huggingface.co/api/datasets/allenai/openbookqa",
    "retrieved": "2026-08-24",
    "hub_revision": "388097ea7776314e93a529163e0fea805b8a6454",
-   "note": "hub metadata tags",
-   "quote": "source_datasets: original; annotations_creators: crowdsourced, expert-generated"
+   "note": "source_datasets: original; annotations_creators: crowdsourced, expert-generated"
   }
  ],
  "completeness": 0.6667,

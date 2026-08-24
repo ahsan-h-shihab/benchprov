@@ -59,8 +59,7 @@
    "url": "https://huggingface.co/api/datasets/cais/mmlu",
    "retrieved": "2026-08-24",
    "hub_revision": "c30699e8356da336a370243923dbaf21066bb9fe",
-   "note": "hub metadata declares the dataset original English",
-   "quote": "source_datasets: original; language: en; annotations_creators: no-annotation"
+   "note": "source_datasets: original; language: en; annotations_creators: no-annotation; hub metadata declares the dataset original English"
   },
   {
    "id": "e2",

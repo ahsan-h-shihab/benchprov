@@ -75,8 +75,7 @@
    "url": "https://huggingface.co/api/datasets/alvarobartt/mmlu-okapi-eval-es",
    "retrieved": "2026-08-24",
    "hub_revision": "9460670cf3562b522f5206545f7fcdb67627c883",
-   "note": "hub metadata tags",
-   "quote": "tags: chatgpt-translated"
+   "note": "tags: chatgpt-translated"
   },
   {
    "id": "e3",
