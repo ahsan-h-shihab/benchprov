@@ -1,0 +1,246 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ahsan-h-shihab/benchprov/schema/provenance.schema.json",
+  "title": "benchprov provenance record",
+  "description": "One provenance record for one dataset (or one dataset config / language group with uniform provenance) in the Benchmark Translation Provenance registry. A record describes ONE derivation step: how THIS dataset's target-language items came to be, on the evidence cited. Upstream steps belong to the parent dataset's record.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id",
+    "schema_version",
+    "dataset",
+    "root_benchmark",
+    "target_languages",
+    "source_language",
+    "derived_from",
+    "translation_type",
+    "engine_or_translator",
+    "human_verification",
+    "license",
+    "claims",
+    "evidence",
+    "completeness",
+    "provenance_state",
+    "curated"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "description": "Stable unique id: <dataset-slug>__<language-part>[__<config-slug>]. dataset-slug = dataset.id lowercased, '/' and non [a-z0-9._-] replaced with '-'. language-part = '-'-joined language tags (lowercased, hyphens between subtags kept) or 'multi' when the record covers 4+ languages.",
+      "pattern": "^[a-z0-9][a-z0-9._-]*__[a-z0-9.-]+(__[a-z0-9._-]+)?$",
+      "maxLength": 160
+    },
+    "schema_version": {
+      "type": "string",
+      "const": "0.1.0"
+    },
+    "dataset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "hub", "url", "revision"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Canonical dataset identifier. For Hugging Face: 'org/name'. For other hubs: the repository identifier.",
+          "minLength": 1
+        },
+        "hub": {
+          "type": "string",
+          "enum": ["huggingface", "github", "zenodo", "other"]
+        },
+        "url": {
+          "type": "string",
+          "description": "Landing URL of the dataset.",
+          "minLength": 8
+        },
+        "revision": {
+          "type": "string",
+          "description": "The dataset revision (git commit sha for HF/GitHub) that the evidence in this record was checked against, or 'unknown' when no revision could be pinned.",
+          "minLength": 4
+        },
+        "config": {
+          "type": "string",
+          "description": "Optional dataset config/subset name when the record applies to one config only.",
+          "minLength": 1
+        }
+      }
+    },
+    "root_benchmark": {
+      "type": "string",
+      "description": "Benchmark family name. MUST be a key of registry/families.json (validator-enforced; not a schema enum so families can grow without a schema bump).",
+      "minLength": 1
+    },
+    "target_languages": {
+      "type": "array",
+      "description": "Languages whose items this record's provenance facts describe. All listed languages must share the same provenance facts; split records when facts differ per language.",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/languageTag" }
+    },
+    "source_language": {
+      "description": "Language the items were translated/converted FROM (this derivation step only). 'not_applicable' when derived_from.kind is not translation_of/script_conversion_of; 'unknown' when the step is a translation but the source language is unevidenced.",
+      "oneOf": [
+        { "$ref": "#/$defs/languageTag" },
+        { "type": "string", "enum": ["unknown", "not_applicable"] }
+      ]
+    },
+    "derived_from": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "parent_id"],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "description": "This dataset's own derivation step. translation_of: items translated from the parent's items. script_conversion_of: deterministic script/orthography conversion of the parent's items. subset_or_filter_of: items selected/filtered from the parent without re-translation. modeled_on: new items written or generated in the family's style (no item-level derivation). aggregation_of: combines several parents (list them in note). none: an original benchmark, root of its family. unknown: derivation unevidenced.",
+          "enum": ["translation_of", "script_conversion_of", "subset_or_filter_of", "modeled_on", "aggregation_of", "none", "unknown"]
+        },
+        "parent_id": {
+          "description": "Identifier of the immediate parent dataset (same convention as dataset.id), or null when kind is 'none', or when kind is 'modeled_on'/'aggregation_of'/'unknown' with no single identifiable parent.",
+          "oneOf": [{ "type": "string", "minLength": 1 }, { "type": "null" }]
+        },
+        "parent_url": { "type": "string", "minLength": 8 },
+        "parent_revision": { "type": "string", "minLength": 4 }
+      }
+    },
+    "translation_type": {
+      "type": "string",
+      "description": "How the target-language item text of THIS dataset came to be, at this derivation step. machine: automated translation (NMT or LLM). human: translated by humans. hybrid_machine_post_edited: machine translation whose OUTPUT TEXT was then edited by humans (distinct from verification, which checks without necessarily editing all items). script_conversion: deterministic transliteration/script conversion. lm_generated: items generated in the target language by a model (not translation of parent items). native_original: items natively authored in the target language(s) by people. mixed: methods differ within this record's scope and cannot be split further on the evidence. unknown: no evidence of method.",
+      "enum": ["machine", "human", "hybrid_machine_post_edited", "script_conversion", "lm_generated", "native_original", "mixed", "unknown"]
+    },
+    "engine_or_translator": {
+      "type": "string",
+      "description": "Named engine, model, tool, or translating party for this step (e.g. 'gpt-3.5-turbo', 'Google Translate API', 'OpenCC', 'European Commission DG Translation', 'professional translators (unnamed vendor)'). 'unknown' when unevidenced; 'not_applicable' only for native_original records.",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "human_verification": {
+      "type": "string",
+      "description": "Whether the final target-language items were checked by humans (this step). full: all items stated as human-reviewed/QA'd (includes human translation with an explicit QA/verification step). partial: a stated subset or sample was reviewed. per_item_flags: the dataset itself ships a per-item field marking which items were human-checked (per_item_provenance required). none: the creators' own account of the full process affirms no human check (an affirmative reading of a complete method description; silence is NOT none). not_applicable: only for native_original records. unknown: no evidence either way.",
+      "enum": ["full", "partial", "per_item_flags", "none", "not_applicable", "unknown"]
+    },
+    "license": {
+      "type": "string",
+      "description": "Declared license of THIS dataset, verbatim from hub metadata or card (e.g. 'mit', 'cc-by-4.0', 'llama3.1'). Recorded as declared; benchprov does not normalize or interpret licenses. 'unknown' when nothing is declared.",
+      "minLength": 2,
+      "maxLength": 120
+    },
+    "per_item_provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["field"],
+      "properties": {
+        "field": { "type": "string", "description": "Name of the per-item column carrying provenance/verification flags (e.g. 'is_annotated', 'translation_method').", "minLength": 1 },
+        "description": { "type": "string", "maxLength": 500 }
+      }
+    },
+    "claims": {
+      "type": "object",
+      "description": "Evidence binding for the six core claim dimensions. Every core field's value must be justified here.",
+      "additionalProperties": false,
+      "required": ["translation_type", "engine_or_translator", "human_verification", "license", "derived_from", "source_language"],
+      "properties": {
+        "translation_type": { "$ref": "#/$defs/claim" },
+        "engine_or_translator": { "$ref": "#/$defs/claim" },
+        "human_verification": { "$ref": "#/$defs/claim" },
+        "license": { "$ref": "#/$defs/claim" },
+        "derived_from": { "$ref": "#/$defs/claim" },
+        "source_language": { "$ref": "#/$defs/claim" }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/evidenceItem" }
+    },
+    "completeness": {
+      "type": "number",
+      "description": "known_core_claims / applicable_core_claims, rounded to 4 decimals. known = claim status in {verified, name_only, conflicting}; applicable = 6 minus claims with status not_applicable. Deterministically recomputed by the validator; a stored value that disagrees is an error.",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "provenance_state": {
+      "type": "string",
+      "description": "conflicting: any core claim has status 'conflicting' (takes precedence). complete: completeness == 1.0. minimal: completeness == 0.0. partial: otherwise.",
+      "enum": ["complete", "partial", "minimal", "conflicting"]
+    },
+    "notes": { "type": "string", "maxLength": 2000 },
+    "curated": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["date", "by", "method"],
+      "properties": {
+        "date": { "$ref": "#/$defs/isoDate" },
+        "by": { "type": "string", "minLength": 1, "maxLength": 120 },
+        "method": {
+          "type": "string",
+          "description": "manual: a person read the evidence and filled the record. assisted: an AI system read the evidence and filled the record under human direction (disclosed).",
+          "enum": ["manual", "assisted"]
+        }
+      }
+    }
+  },
+  "$defs": {
+    "languageTag": {
+      "type": "string",
+      "description": "BCP-47-style tag: lowercase 2-3 letter language subtag, optional titlecase 4-letter script subtag, optional region (2 uppercase letters or 3 digits). Examples: bn, kk, kk-Cyrl, zh-Hant, pt-BR, es-419.",
+      "pattern": "^[a-z]{2,3}(-[A-Z][a-z]{3})?(-([A-Z]{2}|[0-9]{3}))?$"
+    },
+    "isoDate": {
+      "type": "string",
+      "pattern": "^20[0-9]{2}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+    },
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "evidence"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "description": "verified: directly supported by at least one substantive evidence item (dataset_card, hub_metadata, paper, repo_code, dataset_content, external_page). name_only: supported only by dataset naming (weak; e.g. 'nllb' in the dataset id). unknown: no evidence found (field value must be 'unknown'). not_applicable: the dimension does not apply to this record (field value must be 'not_applicable'). conflicting: cited evidence items disagree; all positions preserved in 'conflicts'.",
+          "enum": ["verified", "name_only", "unknown", "not_applicable", "conflicting"]
+        },
+        "evidence": {
+          "type": "array",
+          "description": "Evidence ids supporting the field's primary value. May be empty only for status unknown / not_applicable (an 'unknown' claim MAY cite evidence of absence with a note).",
+          "items": { "type": "string", "pattern": "^e[0-9]+$" },
+          "uniqueItems": true
+        },
+        "conflicts": {
+          "type": "array",
+          "description": "Alternative values attested by other evidence. Required non-empty iff status is 'conflicting'.",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["value", "evidence"],
+            "properties": {
+              "value": { "type": "string", "minLength": 1, "maxLength": 200 },
+              "evidence": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^e[0-9]+$" }, "uniqueItems": true },
+              "note": { "type": "string", "maxLength": 500 }
+            }
+          }
+        },
+        "note": { "type": "string", "maxLength": 800 }
+      }
+    },
+    "evidenceItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "type", "url", "retrieved"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^e[0-9]+$" },
+        "type": {
+          "type": "string",
+          "description": "dataset_card: prose of the dataset's README/card. hub_metadata: structured hub metadata (YAML front matter, API tags). paper: published paper or preprint. repo_code: source code or data files of a repository. dataset_content: fields inside the dataset items themselves. external_page: an announcement/blog/documentation page. name_only: the dataset's own identifier/naming.",
+          "enum": ["dataset_card", "hub_metadata", "paper", "repo_code", "dataset_content", "external_page", "name_only"]
+        },
+        "url": { "type": "string", "minLength": 8, "description": "Prefer revision-pinned URLs (e.g. .../raw/<sha>/README.md) so the evidence is immutable." },
+        "retrieved": { "$ref": "#/$defs/isoDate" },
+        "quote": { "type": "string", "maxLength": 300, "description": "Short verbatim excerpt carrying the fact. Keep minimal." },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$", "description": "SHA-256 of the retrieved document bytes, when captured." },
+        "hub_revision": { "type": "string", "minLength": 4, "description": "Hub git revision the evidence was read at." },
+        "note": { "type": "string", "maxLength": 500 }
+      }
+    }
+  }
+}

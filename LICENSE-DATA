@@ -1,0 +1,11 @@
+The benchprov registry data (sources/records/, registry/provenance.jsonl,
+registry/families.json, evidence/snapshots/) is licensed under the Creative
+Commons Attribution 4.0 International License (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/
+
+Attribution: "benchprov — Benchmark Translation Provenance registry".
+
+Note: registry records contain short verbatim quotations from third-party
+dataset cards and papers, reproduced under quotation right for the purpose of
+evidencing factual claims; those quotations remain under their original
+authors' terms.
