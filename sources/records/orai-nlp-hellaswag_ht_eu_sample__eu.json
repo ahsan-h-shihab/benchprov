@@ -18,7 +18,7 @@
   "parent_url": "https://huggingface.co/datasets/Rowan/hellaswag"
  },
  "translation_type": "human",
- "engine_or_translator": "Orai NLP Teknologiak (manual translation)",
+ "engine_or_translator": "manual translation (translating party not named in the card)",
  "human_verification": "unknown",
  "license": "cc-by-nc-sa-4.0",
  "claims": {

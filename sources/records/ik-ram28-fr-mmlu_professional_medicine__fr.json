@@ -24,18 +24,20 @@
  "claims": {
   "translation_type": {
    "status": "unknown",
-   "evidence": [],
-   "note": "YAML-only card; 'question_translated'/'options_translated' features prove a translation exists, method unstated"
+   "evidence": [
+    "e1"
+   ],
+   "note": "YAML-only card; 'question_translated'/'options_translated' features (see cited evidence) prove a translation exists, but no method is stated"
   },
   "engine_or_translator": {
    "status": "unknown",
    "evidence": [],
-   "note": "not stated"
+   "note": "not stated in the YAML-only card at the pinned revision"
   },
   "human_verification": {
    "status": "unknown",
    "evidence": [],
-   "note": "no statement"
+   "note": "no statement in the YAML-only card at the pinned revision"
   },
   "license": {
    "status": "unknown",
@@ -43,15 +45,15 @@
    "note": "no license declared in hub metadata at the pinned revision"
   },
   "derived_from": {
-   "status": "verified",
+   "status": "name_only",
    "evidence": [
-    "e1"
+    "e2"
    ]
   },
   "source_language": {
    "status": "unknown",
    "evidence": [],
-   "note": "not stated in the YAML-only card"
+   "note": "not stated in the YAML-only card at the pinned revision"
   }
  },
  "evidence": [
@@ -63,6 +65,13 @@
    "sha256": "8e6bd1f099416d21217882ded4c32d1e17b1b17c4181a7dabc5742b576f4510d",
    "hub_revision": "aa4449ad7e65e90bec13f91620bd7553cc947988",
    "quote": "- name: question_translated dtype: string - name: options_translated struct:"
+  },
+  {
+   "id": "e2",
+   "type": "name_only",
+   "url": "https://huggingface.co/datasets/ik-ram28/fr-mmlu_professional_medicine",
+   "retrieved": "2026-08-24",
+   "note": "the specific parent (cais/mmlu, professional_medicine subject) is asserted only by the dataset id 'fr-mmlu_professional_medicine'; the card's translated-field structure corroborates a translation without naming the source"
   }
  ],
  "completeness": 0.1667,
@@ -71,5 +80,6 @@
   "date": "2026-08-24",
   "by": "benchprov v0 seed (A. H. Shihab)",
   "method": "assisted"
- }
+ },
+ "notes": "Derivation status downgraded to name_only in the 2026-08-24 corrective pass (chained-inference rule)."
 }

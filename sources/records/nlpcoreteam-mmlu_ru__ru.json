@@ -19,7 +19,7 @@
  },
  "translation_type": "machine",
  "engine_or_translator": "Yandex.Translate API",
- "human_verification": "none",
+ "human_verification": "partial",
  "license": "unknown",
  "claims": {
   "translation_type": {
@@ -39,7 +39,7 @@
    "evidence": [
     "e2"
    ],
-   "note": "creators acknowledge mistakes and state no fixes were applied; no systematic verification described"
+   "note": "an informal human observation of mistakes is attested; its scope is unstated, no systematic verification is described, and no fixes were applied (reclassified from 'none' 2026-08-24 — see docs/PRE_RELEASE_AUDIT.md M1)"
   },
   "license": {
    "status": "unknown",

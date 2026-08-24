@@ -11,7 +11,7 @@
  "target_languages": [
   "zh-Hant"
  ],
- "source_language": "zh",
+ "source_language": "zh-Hans",
  "derived_from": {
   "kind": "script_conversion_of",
   "parent_id": "meta-math/GSM8K_zh",

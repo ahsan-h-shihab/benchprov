@@ -16,26 +16,27 @@
   "kind": "none",
   "parent_id": null
  },
- "translation_type": "mixed",
+ "translation_type": "unknown",
  "engine_or_translator": "unknown",
  "human_verification": "unknown",
  "license": "cc-by-4.0",
  "claims": {
   "translation_type": {
-   "status": "verified",
+   "status": "unknown",
    "evidence": [
     "e1"
-   ]
+   ],
+   "note": "the card describes a uniform hybrid process ('expert-curated topics with LLM-assisted web mining') that does not map cleanly onto the v0.1 creation vocabulary; recorded as unknown with the card's own description attached rather than forcing a category (changed from 'mixed' during the 2026-08-24 corrective pass)"
   },
   "engine_or_translator": {
    "status": "unknown",
    "evidence": [],
-   "note": "the assisting LLM(s) are not named in the card"
+   "note": "the assisting LLM(s) are not named in the card at the pinned revision"
   },
   "human_verification": {
    "status": "unknown",
    "evidence": [],
-   "note": "no verification statement in the card"
+   "note": "no verification statement in the card at the pinned revision"
   },
   "license": {
    "status": "verified",
@@ -63,7 +64,7 @@
    "sha256": "edc28acc83cffcc4919923b265026ddc414a709e84582e5d9c0ad461bbefcbb8",
    "hub_revision": "bac9e9f5d743514f3c20791a6780af15e7e6d059",
    "quote": "By combining expert-curated topics with LLM-assisted web mining, we create a diverse dataset spanning 17 culturally salient domains",
-   "note": "KazBench-KK: 7,111 Kazakh cultural-knowledge MC questions; creation combines expert curation with LLM-assisted mining of Kazakh web content"
+   "note": "KazBench-KK: 7,111 Kazakh cultural-knowledge MC questions"
   },
   {
    "id": "e2",
@@ -74,7 +75,7 @@
    "quote": "license: cc-by-4.0"
   }
  ],
- "completeness": 0.6,
+ "completeness": 0.4,
  "provenance_state": "partial",
  "curated": {
   "date": "2026-08-24",

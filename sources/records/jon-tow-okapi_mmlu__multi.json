@@ -47,7 +47,7 @@
   "parent_url": "https://huggingface.co/datasets/cais/mmlu"
  },
  "translation_type": "machine",
- "engine_or_translator": "ChatGPT (gpt-3.5 class, per Okapi/mlmm project docs)",
+ "engine_or_translator": "ChatGPT (per the Okapi/mlmm project README)",
  "human_verification": "unknown",
  "license": "cc-by-nc-4.0",
  "claims": {

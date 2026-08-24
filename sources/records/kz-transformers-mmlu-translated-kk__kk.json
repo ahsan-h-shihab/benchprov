@@ -81,5 +81,5 @@
   "by": "benchprov v0 seed (A. H. Shihab)",
   "method": "assisted"
  },
- "notes": "Second independent Kazakh MMLU translation (alongside ISSAI's); method undocumented."
+ "notes": "One of two Kazakh MMLU translations in this registry (see issai/MMLU_Kazakh), published by a different organization; its card names no translation method or engine at the pinned revision."
 }

@@ -14,8 +14,8 @@
  "source_language": "en",
  "derived_from": {
   "kind": "translation_of",
-  "parent_id": "facebook/xnli",
-  "parent_url": "https://huggingface.co/datasets/facebook/xnli"
+  "parent_id": "nyu-mll/multi_nli",
+  "parent_url": "https://huggingface.co/datasets/nyu-mll/multi_nli"
  },
  "translation_type": "machine",
  "engine_or_translator": "BanglaNMT English-to-Bangla model (Hasan et al., 2020; aclanthology 2020.emnlp-main.207)",
@@ -83,5 +83,6 @@
   "date": "2026-08-24",
   "by": "benchprov v0 seed (A. H. Shihab)",
   "method": "assisted"
- }
+ },
+ "notes": "Items are translated from MultiNLI following the XNLI curation procedure (the card's own statement); the parent is therefore MultiNLI, not XNLI's items. Family kept as XNLI for the procedure lineage. (Parent corrected 2026-08-24 — see docs/PRE_RELEASE_AUDIT.md B2.)"
 }

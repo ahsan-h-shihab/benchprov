@@ -1,5 +1,4 @@
 WARN  alibayram-turkish_mmlu__tr/e3: HTTP 401 (gated or restricted URL) https://huggingface.co/datasets/alibayram/turkish_mmlu/raw/30c94d45e29424a074dc754910fb44019284cc91/README.md
 WARN  openlanguagedata-flores_plus__mul/e1: HTTP 401 (gated or restricted URL) https://huggingface.co/datasets/openlanguagedata/flores_plus/raw/5fec6c13f9e5a4db2f745d4ec0d7c9721ddc4f06/README.md
-WARN  tiger-lab-mmlu-pro__en/e1: quote not found (unpinned source may have drifted) https://arxiv.org/abs/2406.01574
 
-checked 207 evidence items across 104 records: 0 error(s), 3 warning(s)
+checked 206 evidence items across 104 records: 0 error(s), 2 warning(s)

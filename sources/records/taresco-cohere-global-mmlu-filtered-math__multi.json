@@ -25,66 +25,54 @@
   "parent_url": "https://huggingface.co/datasets/CohereLabs/Global-MMLU"
  },
  "translation_type": "mixed",
- "engine_or_translator": "Google Translate API (machine-translated portion, per parent)",
- "human_verification": "per_item_flags",
+ "engine_or_translator": "unknown",
+ "human_verification": "unknown",
  "license": "apache-2.0",
  "claims": {
   "translation_type": {
-   "status": "verified",
+   "status": "name_only",
    "evidence": [
     "e1"
    ]
   },
   "engine_or_translator": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no engine stated in this dataset's own sources; if the items derive from Global-MMLU as the name and column structure indicate, the machine-translated portion used Google Translate API per the parent's paper — see record coherelabs-global-mmlu__multi (recorded as unknown pending a direct statement; corrected 2026-08-24, see docs/PRE_RELEASE_AUDIT.md B1/M4)"
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no verification statement in this dataset's own sources; the inherited is_annotated column marks the parent's cultural-bias-study annotations, not translation verification"
+  },
+  "license": {
    "status": "verified",
    "evidence": [
     "e2"
    ]
   },
-  "human_verification": {
-   "status": "verified",
-   "evidence": [
-    "e1"
-   ]
-  },
-  "license": {
-   "status": "verified",
-   "evidence": [
-    "e3"
-   ]
-  },
   "derived_from": {
-   "status": "verified",
+   "status": "name_only",
    "evidence": [
     "e1"
    ]
   },
   "source_language": {
    "status": "not_applicable",
-   "evidence": []
+   "evidence": [],
+   "note": "not stated in this dataset's own sources; en if the Global-MMLU derivation holds"
   }
  },
  "evidence": [
   {
    "id": "e1",
-   "type": "dataset_card",
-   "url": "https://huggingface.co/datasets/taresco/COHERE-GLOBAL-MMLU-FILTERED-MATH/raw/fee6202e087810c7b9932222a15f7a01195ec512/README.md",
+   "type": "name_only",
+   "url": "https://huggingface.co/datasets/taresco/COHERE-GLOBAL-MMLU-FILTERED-MATH",
    "retrieved": "2026-08-24",
-   "sha256": "b092a49bc14bf6ca6e4d8acda632610139b81be88321ec95a99d18a7a98f7c6c",
-   "hub_revision": "fee6202e087810c7b9932222a15f7a01195ec512",
-   "quote": "- name: cultural_sensitivity_label dtype: string - name: is_annotated dtype: bool",
-   "note": "the YAML schema preserves Global-MMLU's per-item fields, evidencing the subset relationship; creation method is the parent's (MT + professional + crowd post-edits)"
+   "note": "the Global-MMLU derivation is asserted by the dataset id ('COHERE-GLOBAL-MMLU-…') and corroborated by the card's YAML preserving Global-MMLU's per-item fields (see e2); the 'mixed' creation value applies to the items via that asserted derivation"
   },
   {
    "id": "e2",
-   "type": "external_page",
-   "url": "https://arxiv.org/html/2412.03304",
-   "retrieved": "2026-08-24",
-   "quote": "We first translated the English MMLU dataset into 41 languages using the Google Translate API.",
-   "note": "parent dataset's paper; this subset inherits those items"
-  },
-  {
-   "id": "e3",
    "type": "hub_metadata",
    "url": "https://huggingface.co/api/datasets/taresco/COHERE-GLOBAL-MMLU-FILTERED-MATH",
    "retrieved": "2026-08-24",
@@ -92,16 +80,12 @@
    "quote": "license: apache-2.0"
   }
  ],
- "completeness": 1.0,
- "provenance_state": "complete",
+ "completeness": 0.6,
+ "provenance_state": "partial",
  "curated": {
   "date": "2026-08-24",
   "by": "benchprov v0 seed (A. H. Shihab)",
   "method": "assisted"
  },
- "per_item_provenance": {
-  "field": "is_annotated",
-  "description": "inherited Global-MMLU per-item human-edit flag"
- },
- "notes": "Math-subject, African-language-focused filter of Global-MMLU."
+ "notes": "Math-subject, African-language-focused filter of (per its name) Global-MMLU. Derivation and creation-method statuses rest on the dataset's naming plus preserved column structure — labeled name_only accordingly."
 }

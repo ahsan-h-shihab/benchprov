@@ -39,7 +39,7 @@
   "parent_url": "https://huggingface.co/datasets/CohereLabs/Global-MMLU"
  },
  "translation_type": "mixed",
- "engine_or_translator": "human translators / post-editors (Cohere Labs Community + professional annotators)",
+ "engine_or_translator": "human translators / post-editors (parties described in the card only as professional annotators and Cohere Labs Community contributors)",
  "human_verification": "full",
  "license": "apache-2.0",
  "claims": {

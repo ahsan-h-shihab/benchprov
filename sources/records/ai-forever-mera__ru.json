@@ -63,7 +63,7 @@
    "sha256": "a83687c90b19cbf07eeb55ab0f2dfd91498d5b36e32cd14aa4f8a2fe9d22618a",
    "hub_revision": "1af9c02a469b6e614e7afed73f7d27f71de7caf5",
    "quote": "is an analog of the English COPA dataset that was constructed as a translation of the English COPA dataset from SuperGLUE",
-   "note": "the MERA suite aggregates 20+ Russian tasks; most are natively constructed, at least one (PARus) is documented as a translation — hence 'mixed' at suite level"
+   "note": "the MERA suite aggregates 20+ Russian tasks; the card documents at least one translated task (PARus) and synthetic/generated tasks — hence 'mixed' at suite level; per-task creation varies and is described per task in the card"
   },
   {
    "id": "e2",

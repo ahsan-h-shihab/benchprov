@@ -11,9 +11,9 @@
  "target_languages": [
   "bn"
  ],
- "source_language": "en",
+ "source_language": "not_applicable",
  "derived_from": {
-  "kind": "translation_of",
+  "kind": "aggregation_of",
   "parent_id": "rajpurkar/squad_v2",
   "parent_url": "https://huggingface.co/datasets/rajpurkar/squad_v2"
  },
@@ -52,10 +52,9 @@
    ]
   },
   "source_language": {
-   "status": "verified",
-   "evidence": [
-    "e1"
-   ]
+   "status": "not_applicable",
+   "evidence": [],
+   "note": "no single source language: machine-translated SQuAD 2.0 items (from English) are combined with natively written TyDiQA-bn items"
   }
  },
  "evidence": [
@@ -78,11 +77,12 @@
    "quote": "license: [\"cc-by-nc-sa-4.0\"]"
   }
  ],
- "completeness": 0.8333,
+ "completeness": 0.8,
  "provenance_state": "partial",
  "curated": {
   "date": "2026-08-24",
   "by": "benchprov v0 seed (A. H. Shihab)",
   "method": "assisted"
- }
+ },
+ "notes": "Recorded as aggregation_of: combines the machine-translated SQuAD 2.0 portion with curated TyDiQA-bn items per the card. (Kind corrected from translation_of 2026-08-24 — see docs/PRE_RELEASE_AUDIT.md M8.)"
 }

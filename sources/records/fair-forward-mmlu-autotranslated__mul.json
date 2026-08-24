@@ -54,7 +54,7 @@
   "source_language": {
    "status": "unknown",
    "evidence": [],
-   "note": "source language not stated; per-language configs named by language code"
+   "note": "source language not stated in the YAML-only card at the pinned revision; per-language configs named by language code"
   }
  },
  "evidence": [

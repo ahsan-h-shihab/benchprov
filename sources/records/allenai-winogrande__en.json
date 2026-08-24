@@ -54,11 +54,11 @@
  "evidence": [
   {
    "id": "e1",
-   "type": "hub_metadata",
-   "url": "https://huggingface.co/api/datasets/allenai/winogrande",
+   "type": "paper",
+   "url": "https://arxiv.org/abs/1907.10641",
    "retrieved": "2026-08-24",
-   "hub_revision": "01e74176c63542e6b0bcb004dcdea22d94fb67b5",
-   "note": "language: en (hub metadata); crowdsourced Winograd-schema-style problems; card carries no creation prose at pinned revision; identity from hub metadata and the WinoGrande paper (Sakaguchi et al., 2020)"
+   "quote": "we introduce WinoGrande, a large-scale dataset of 44k problems, inspired by the original WSC design [...] The key steps of the dataset construction consist of (1) a carefully designed crowdsourcing procedure",
+   "note": "natively authored English problems via crowdsourcing (Sakaguchi et al., 2020); the dataset card carries no creation prose at the pinned revision"
   }
  ],
  "completeness": 0.6667,

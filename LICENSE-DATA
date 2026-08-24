@@ -9,3 +9,9 @@ Note: registry records contain short verbatim quotations from third-party
 dataset cards and papers, reproduced under quotation right for the purpose of
 evidencing factual claims; those quotations remain under their original
 authors' terms.
+
+Some datasets DESCRIBED by registry records carry restrictive licenses
+(e.g. NC or ND variants). Registry records redistribute only factual
+metadata about those datasets plus short quotations - not the datasets'
+contents - and the records' CC BY 4.0 licensing does not modify, and is not
+constrained by, the licenses of the datasets they describe.

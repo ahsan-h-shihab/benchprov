@@ -69,7 +69,8 @@
    "url": "https://huggingface.co/api/datasets/alibayram/turkish_mmlu",
    "retrieved": "2026-08-24",
    "hub_revision": "30c94d45e29424a074dc754910fb44019284cc91",
-   "note": "pretty_name: 'Turkish MMLU: Yapay Zeka ve Akademik Uygulamalar İçin En Kapsamlı ve Özgün Türkçe Veri Seti'; 'Özgün Türkçe Veri Seti' = original/authentic Turkish dataset (exam-derived questions, per card's Zenodo record)"
+   "note": "the repo's pretty_name (verbatim in hub metadata); 'Özgün Türkçe Veri Seti' = original/authentic Turkish dataset (exam-derived questions, per the card's Zenodo record)",
+   "quote": "Turkish MMLU: Yapay Zeka ve Akademik Uygulamalar İçin En Kapsamlı ve Özgün Türkçe Veri Seti"
   },
   {
    "id": "e2",

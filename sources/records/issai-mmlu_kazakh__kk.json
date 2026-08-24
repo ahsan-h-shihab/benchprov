@@ -31,7 +31,7 @@
   "engine_or_translator": {
    "status": "unknown",
    "evidence": [],
-   "note": "no engine or translation service named in the card at the pinned revision"
+   "note": "no engine or translation service is named in the dataset card at the pinned revision (sources consulted: the card)"
   },
   "human_verification": {
    "status": "unknown",
@@ -83,5 +83,5 @@
   "by": "benchprov v0 seed (A. H. Shihab)",
   "method": "assisted"
  },
- "notes": "Published by ISSAI (Nazarbayev University), the KazLLM program's benchmark translations. The card states machine translation but names no engine — the translation method's actor is undocumented."
+ "notes": "Published by the ISSAI organization (Nazarbayev University) on the Hub. The dataset card states machine translation but names no engine or translating party at the pinned revision; no public method statement was located in the sources consulted for this record. This bounds what the record can say — it does not imply the method is undocumented elsewhere."
 }

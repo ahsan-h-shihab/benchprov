@@ -81,19 +81,19 @@ class RecordBuilder:
             if s.get("card_note"):
                 item["note"] = s["card_note"]
             return self._add(key, item)
-        if key == "card2":  # a second quote from the same card
+        if key in ("card2", "card3"):  # further quotes from the same card
             if not snap:
-                raise ValueError("card2 needs a snapshot")
+                raise ValueError(f"{key} needs a snapshot")
             item = {
                 "type": "dataset_card",
                 "url": snap["readme"]["pinned_url"],
                 "retrieved": retrieved,
                 "sha256": snap["readme"]["sha256"],
                 "hub_revision": snap["revision"],
-                "quote": s["card2_quote"],
+                "quote": s[f"{key}_quote"],
             }
-            if s.get("card2_note"):
-                item["note"] = s["card2_note"]
+            if s.get(f"{key}_note"):
+                item["note"] = s[f"{key}_note"]
             return self._add(key, item)
         if key == "meta":
             if not snap:
@@ -111,7 +111,9 @@ class RecordBuilder:
         if key == "meta_tags":
             # meta_tags evidence summarizes structured hub metadata; the
             # summary is descriptive, NOT verbatim, so it lives in `note`
-            # (the quote field is reserved for verbatim excerpts).
+            # (the quote field is reserved for verbatim excerpts). When a
+            # verbatim metadata string is being cited (e.g. a pretty_name),
+            # pass meta_tags_verbatim and it is stored as a quote.
             if not snap:
                 raise ValueError("meta_tags needs a snapshot")
             desc = s.get("meta_tags_quote", "")
@@ -124,6 +126,8 @@ class RecordBuilder:
                 "hub_revision": snap["revision"],
                 "note": joined[:500],
             }
+            if s.get("meta_tags_verbatim"):
+                item["quote"] = s["meta_tags_verbatim"]
             return self._add(key, item)
         if key == "paper":
             item = {

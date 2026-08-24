@@ -92,3 +92,14 @@ record independently checkable regardless of who filled it.
 **DD14. CLI named `benchprov`, package `benchprov`, no third-party CLI
 framework.** argparse + stdlib keeps install surface minimal (single runtime
 dependency: `jsonschema`). Machine output via `--json` on every subcommand.
+
+**DD15 (added in the 2026-08-24 corrective pass). Known naming/vocabulary
+debts, deferred to a future schema version rather than broken now:**
+(a) `translation_type` also hosts non-translation creation values
+(`native_original`, `lm_generated`, `script_conversion`); the accurate name
+is `creation_method`. (b) `mixed` conflates per-language, per-split,
+per-item, and multi-method variation; a variation-axis field or split-scoped
+records would disambiguate. (c) The chained-claims rule (a dependent claim
+never carries a stronger status than its weakest premise) is documented in
+schema.md and applied in the registry, but remains a curation convention the
+validator cannot fully enforce mechanically.

@@ -31,7 +31,7 @@
   "parent_url": "https://huggingface.co/datasets/cais/mmlu"
  },
  "translation_type": "human",
- "engine_or_translator": "professional human translators (unnamed vendor)",
+ "engine_or_translator": "professional human translators (not further identified)",
  "human_verification": "unknown",
  "license": "mit",
  "claims": {

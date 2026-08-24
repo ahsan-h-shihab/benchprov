@@ -17,27 +17,27 @@
   "parent_id": "facebook/belebele",
   "parent_url": "https://huggingface.co/datasets/facebook/belebele"
  },
- "translation_type": "human",
- "engine_or_translator": "Language Service Provider (professional, unnamed; per parent)",
+ "translation_type": "unknown",
+ "engine_or_translator": "unknown",
  "human_verification": "unknown",
  "license": "cc-by-sa-4.0",
  "claims": {
   "translation_type": {
-   "status": "verified",
+   "status": "unknown",
    "evidence": [
     "e1"
-   ]
+   ],
+   "note": "this dataset's own sources state nothing about item creation; IF the items derive from facebook/belebele as the name asserts, they are professionally human-translated (see record facebook-belebele__mul, cited as context) — recorded as unknown because the derivation itself rests only on the name (chained-inference rule, corrected 2026-08-24, see docs/PRE_RELEASE_AUDIT.md M4)"
   },
   "engine_or_translator": {
-   "status": "verified",
-   "evidence": [
-    "e1"
-   ]
+   "status": "unknown",
+   "evidence": [],
+   "note": "not stated in this dataset's own sources; per the parent's paper, Belebele items were translated by a professional Language Service Provider — applicable only if the name-asserted derivation holds"
   },
   "human_verification": {
    "status": "unknown",
    "evidence": [],
-   "note": "parent had QA loops; whether filtering preserved anything verification-relevant is unstated"
+   "note": "no statement in this dataset's own sources"
   },
   "license": {
    "status": "verified",
@@ -63,7 +63,7 @@
    "url": "https://huggingface.co/datasets/facebook/belebele/raw/7899cdfa4e1e0d733fd77c848e2c273cb1d32be2/README.md",
    "retrieved": "2026-08-24",
    "quote": "Belebele is a multiple-choice machine reading comprehension (MRC) dataset spanning 122 language variants.",
-   "note": "parent card; Belebele's items are professionally translated (see facebook-belebele__mul record). Applies to the items this dataset's name asserts it derives from"
+   "note": "parent dataset's card, cited as context for the conditional in the creation-method note"
   },
   {
    "id": "e2",
@@ -81,12 +81,12 @@
    "note": "dataset id 'belebele-fi-filtered-sft'; its own card carries no prose about derivation"
   }
  ],
- "completeness": 0.8,
+ "completeness": 0.4,
  "provenance_state": "partial",
  "curated": {
   "date": "2026-08-24",
   "by": "benchprov v0 seed (A. H. Shihab)",
   "method": "assisted"
  },
- "notes": "Derivation rests on the dataset's name (claim status name_only); translation facts inherited from the parent under that assumption — see kind claim status."
+ "notes": "A minimal-provenance derivative row: everything beyond the name-asserted Belebele derivation and the hub license tag is unknown from this dataset's own sources."
 }

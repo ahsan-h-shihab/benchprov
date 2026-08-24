@@ -25,17 +25,17 @@
   "translation_type": {
    "status": "unknown",
    "evidence": [],
-   "note": "the card is YAML-only; feature names (question_en/choices_en alongside Russian fields) show a translation-pair structure but no method"
+   "note": "the card is YAML-only; feature names (question_en/choices_en alongside Russian fields) show a translation-pair structure but state no method"
   },
   "engine_or_translator": {
    "status": "unknown",
    "evidence": [],
-   "note": "not stated"
+   "note": "not stated in the YAML-only card at the pinned revision"
   },
   "human_verification": {
    "status": "unknown",
    "evidence": [],
-   "note": "no statement"
+   "note": "no statement in the YAML-only card at the pinned revision"
   },
   "license": {
    "status": "verified",
@@ -44,7 +44,7 @@
    ]
   },
   "derived_from": {
-   "status": "verified",
+   "status": "name_only",
    "evidence": [
     "e2"
    ]
@@ -52,7 +52,7 @@
   "source_language": {
    "status": "verified",
    "evidence": [
-    "e2"
+    "e3"
    ]
   }
  },
@@ -67,13 +67,20 @@
   },
   {
    "id": "e2",
+   "type": "name_only",
+   "url": "https://huggingface.co/datasets/mizinovmv/ru_cais_mmlu",
+   "retrieved": "2026-08-24",
+   "note": "the specific parent (cais/mmlu) is asserted only by the dataset id 'ru_cais_mmlu'; the card's YAML features (see e2) corroborate a translation-pair structure without naming the source dataset"
+  },
+  {
+   "id": "e3",
    "type": "dataset_card",
    "url": "https://huggingface.co/datasets/mizinovmv/ru_cais_mmlu/raw/4dc92508a76d9725f5ae3b0a773dd044695d5619/README.md",
    "retrieved": "2026-08-24",
    "sha256": "95203808c1457f90185f1276ec12bb4363db3c53c187c5978742adda5efd155d",
    "hub_revision": "4dc92508a76d9725f5ae3b0a773dd044695d5619",
    "quote": "features: - name: question_en dtype: string - name: subject dtype: string - name: choices_en sequence: string",
-   "note": "YAML features evidence a ru/en parallel structure; dataset id references cais/mmlu"
+   "note": "YAML features evidence a ru/en parallel structure (cited by the source_language claim)"
   }
  ],
  "completeness": 0.5,
@@ -82,5 +89,6 @@
   "date": "2026-08-24",
   "by": "benchprov v0 seed (A. H. Shihab)",
   "method": "assisted"
- }
+ },
+ "notes": "Derivation status downgraded to name_only in the 2026-08-24 corrective pass (chained-inference rule): the parent identity rests on the dataset name."
 }

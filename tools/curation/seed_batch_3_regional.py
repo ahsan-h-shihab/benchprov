@@ -6,9 +6,12 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 from make_records import write_records  # noqa: E402
 
-ISSAI_NOTE = ("Published by ISSAI (Nazarbayev University), the KazLLM program's benchmark "
-              "translations. The card states machine translation but names no engine — "
-              "the translation method's actor is undocumented.")
+ISSAI_NOTE = ("Published by the ISSAI organization (Nazarbayev University) on the Hub. "
+              "The dataset card states machine translation but names no engine or "
+              "translating party at the pinned revision; no public method statement "
+              "was located in the sources consulted for this record. This bounds what "
+              "the record can say — it does not imply the method is undocumented "
+              "elsewhere.")
 
 def issai(ds, family, parent, langs, quote, license_id, extra_notes=""):
     return dict(
@@ -17,7 +20,7 @@ def issai(ds, family, parent, langs, quote, license_id, extra_notes=""):
         parent_url=f"https://huggingface.co/datasets/{parent}",
         tt="machine", tt_ev=["card"], card_quote=quote,
         engine="unknown",
-        engine_note="no engine or translation service named in the card at the pinned revision",
+        engine_note="no engine or translation service is named in the dataset card at the pinned revision (sources consulted: the card)",
         verif="unknown", verif_note="no statement about human review in the card",
         kind_ev=["card"], license=license_id, license_ev=["meta"],
         notes=(ISSAI_NOTE + (" " + extra_notes if extra_notes else "")).strip(),
@@ -44,7 +47,7 @@ SPECS = [
          tt="machine", tt_ev=["card"],
          card_quote="MMLU_Redux_2.0_Kazakh is a machine-translated Kazakh version of the original MMLU-Redux 2.0 benchmark.",
          engine="unknown",
-         engine_note="no engine or translation service named in the card",
+         engine_note="no engine or translation service is named in the dataset card at the pinned revision (sources consulted: the card)",
          verif="unknown", verif_note="no statement about human review in the card",
          kind_ev=["card"], license="cc-by-4.0", license_ev=["meta"],
          notes=ISSAI_NOTE + " Parent is MMLU-Redux 2.0 (the re-annotated MMLU subset), not raw MMLU."),
@@ -61,7 +64,7 @@ SPECS = [
          kind_ev=["card"],
          card_quote="title = {MMLU on kazakh language: Translated MMLU Benchmark},",
          license="apache-2.0", license_ev=["meta"],
-         notes="Second independent Kazakh MMLU translation (alongside ISSAI's); method undocumented."),
+         notes="One of two Kazakh MMLU translations in this registry (see issai/MMLU_Kazakh), published by a different organization; its card names no translation method or engine at the pinned revision."),
     dict(ds="kz-transformers/gsm8k-kk-translated", family="GSM8K", langs=["kk"],
          kind="translation_of", parent="openai/gsm8k", src="unknown",
          src_note="translation implied by the card's citation title; source language not explicitly stated",
@@ -85,12 +88,13 @@ SPECS = [
          notes="Native Kazakh exam benchmark (UNT). An 'english' subject subset (English-language school questions) exists inside the dataset; this record's language scope covers the Kazakh-language items that dominate the collection."),
     dict(ds="kz-transformers/kk-socio-cultural-bench-mc", family="Other-native", langs=["kk"],
          kind="none", parent=None,
-         tt="mixed", tt_ev=["card"],
+         tt="unknown", tt_ev=["card"],
          card_quote="By combining expert-curated topics with LLM-assisted web mining, we create a diverse dataset spanning 17 culturally salient domains",
-         card_note="KazBench-KK: 7,111 Kazakh cultural-knowledge MC questions; creation combines expert curation with LLM-assisted mining of Kazakh web content",
+         card_note="KazBench-KK: 7,111 Kazakh cultural-knowledge MC questions",
+         tt_note="the card describes a uniform hybrid process ('expert-curated topics with LLM-assisted web mining') that does not map cleanly onto the v0.1 creation vocabulary; recorded as unknown with the card's own description attached rather than forcing a category (changed from 'mixed' during the 2026-08-24 corrective pass)",
          engine="unknown",
-         engine_note="the assisting LLM(s) are not named in the card",
-         verif="unknown", verif_note="no verification statement in the card",
+         engine_note="the assisting LLM(s) are not named in the card at the pinned revision",
+         verif="unknown", verif_note="no verification statement in the card at the pinned revision",
          kind_ev=["card"], license="cc-by-4.0", license_ev=["meta"],
          notes="Published at ACL 2025 Field Matters (aclanthology.org/2025.fieldmatters-1.4)."),
 
@@ -131,7 +135,7 @@ SPECS = [
          kind="aggregation_of", parent=None,
          tt="mixed", tt_ev=["card"],
          card_quote="is an analog of the English COPA dataset that was constructed as a translation of the English COPA dataset from SuperGLUE",
-         card_note="the MERA suite aggregates 20+ Russian tasks; most are natively constructed, at least one (PARus) is documented as a translation — hence 'mixed' at suite level",
+         card_note="the MERA suite aggregates 20+ Russian tasks; the card documents at least one translated task (PARus) and synthetic/generated tasks — hence 'mixed' at suite level; per-task creation varies and is described per task in the card",
          engine="unknown",
          engine_note="per-task creation varies; no single engine",
          verif="unknown",
@@ -239,23 +243,26 @@ SPECS = [
          kind_ev=["card"], license="mit", license_ev=["meta"],
          notes="Generated (not translated) Bangla BoolQ-style data; passages sourced per card."),
     dict(ds="csebuetnlp/xnli_bn", family="XNLI", langs=["bn"],
-         kind="translation_of", parent="facebook/xnli", src="en", src_ev=["card"],
-         parent_url="https://huggingface.co/datasets/facebook/xnli",
+         kind="translation_of", parent="nyu-mll/multi_nli", src="en", src_ev=["card"],
+         parent_url="https://huggingface.co/datasets/nyu-mll/multi_nli",
          tt="machine", tt_ev=["card"],
          card_quote="The dataset curation procedure was the same as the XNLI dataset: we translated the MultiNLI training data using the English to Bangla translation mod[el]",
          engine="BanglaNMT English-to-Bangla model (Hasan et al., 2020; aclanthology 2020.emnlp-main.207)", engine_ev=["card"],
          verif="unknown",
          verif_note="split-level validation details live in the BanglaBERT paper; not stated in the card lines captured",
-         kind_ev=["card"], license="cc-by-nc-sa-4.0", license_ev=["meta"]),
+         kind_ev=["card"], license="cc-by-nc-sa-4.0", license_ev=["meta"],
+         notes="Items are translated from MultiNLI following the XNLI curation procedure (the card's own statement); the parent is therefore MultiNLI, not XNLI's items. Family kept as XNLI for the procedure lineage. (Parent corrected 2026-08-24 — see docs/PRE_RELEASE_AUDIT.md B2.)"),
     dict(ds="csebuetnlp/squad_bn", family="SQuAD", langs=["bn"],
-         kind="translation_of", parent="rajpurkar/squad_v2", src="en", src_ev=["card"],
+         kind="aggregation_of", parent="rajpurkar/squad_v2",
+         src_note="no single source language: machine-translated SQuAD 2.0 items (from English) are combined with natively written TyDiQA-bn items",
          parent_url="https://huggingface.co/datasets/rajpurkar/squad_v2",
          tt="mixed", tt_ev=["card"],
          card_quote="This is a Question Answering (QA) dataset for Bengali, curated from the SQuAD 2.0, TyDI-QA datasets and using the state-of-the-art English to Bengali translation model",
          card_note="'For the training set, we translated the complete SQuAD 2.0 dataset using the English to Bangla translation model' — machine-translated SQuAD plus curated TyDiQA-bn (natively written) items",
          engine="BanglaNMT English-to-Bangla model (translated portion)", engine_ev=["card"],
          verif="unknown", verif_note="no statement in captured card lines",
-         kind_ev=["card"], license="cc-by-nc-sa-4.0", license_ev=["meta"]),
+         kind_ev=["card"], license="cc-by-nc-sa-4.0", license_ev=["meta"],
+         notes="Recorded as aggregation_of: combines the machine-translated SQuAD 2.0 portion with curated TyDiQA-bn items per the card. (Kind corrected from translation_of 2026-08-24 — see docs/PRE_RELEASE_AUDIT.md M8.)"),
     dict(ds="KillerShoaib/DeepSeek-r1-Distill-Bangla-MMLU-Reasoning-Data", family="MMLU", langs=["bn"],
          kind="subset_or_filter_of", parent="hishab/bangla-mmlu",
          parent_url="https://huggingface.co/datasets/hishab/bangla-mmlu",

@@ -59,7 +59,7 @@
  },
  "translation_type": "mixed",
  "engine_or_translator": "Google Translate API (machine-translated portion)",
- "human_verification": "per_item_flags",
+ "human_verification": "partial",
  "license": "apache-2.0",
  "claims": {
   "translation_type": {
@@ -77,8 +77,10 @@
   "human_verification": {
    "status": "verified",
    "evidence": [
+    "e1",
     "e3"
-   ]
+   ],
+   "note": "professional translations and crowd-sourced post-edits are stated for part of the data; coverage varies by language and is not quantified per item in the card. The card's only per-item flag (is_annotated, see e3) marks cultural-bias-study annotations, not translation verification"
   },
   "license": {
    "status": "verified",
@@ -123,8 +125,8 @@
    "retrieved": "2026-08-24",
    "sha256": "80e44287371de876f7b1dbe613494649ace41082e9a7caff8deb96b9b26421d3",
    "hub_revision": "0e619dbeb34206cd48705a1a0ea7fb21cae09993",
-   "quote": "is_annotated dtype: bool",
-   "note": "per-item boolean marks samples that received human post-editing/verification"
+   "quote": "`is_annotated`: True/False flag to indicate if sample contains any annotations from our cultural bias study.",
+   "note": "the card's definition of the per-item flag: it marks cultural-bias-study annotations — NOT a translation-verification flag (an earlier version of this record misread it; corrected 2026-08-24, see docs/PRE_RELEASE_AUDIT.md B1)"
   },
   {
    "id": "e4",
@@ -142,9 +144,5 @@
   "by": "benchprov v0 seed (A. H. Shihab)",
   "method": "assisted"
  },
- "per_item_provenance": {
-  "field": "is_annotated",
-  "description": "True for items that were professionally translated / human post-edited; False for raw machine translations"
- },
- "notes": "42 languages including English originals; the 'en' subset (original MMLU items) is excluded from target_languages of this record. Per-language human-edit coverage varies — see is_annotated."
+ "notes": "42 languages including English originals; the 'en' subset (original MMLU items) is excluded from target_languages of this record. Human treatment (professional translation / post-editing) is attested but per-language coverage is not itemized in the card."
 }

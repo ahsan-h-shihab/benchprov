@@ -19,7 +19,7 @@
  },
  "translation_type": "mixed",
  "engine_or_translator": "Google Translate / GPT-3.5-Turbo / GPT-4o / human (per item)",
- "human_verification": "per_item_flags",
+ "human_verification": "unknown",
  "license": "gpl-3.0",
  "claims": {
   "translation_type": {
@@ -35,11 +35,11 @@
    ]
   },
   "human_verification": {
-   "status": "verified",
+   "status": "unknown",
    "evidence": [
     "e1"
    ],
-   "note": "the per-item translation_method column distinguishes the Human arm from machine arms"
+   "note": "the per-item translation_method column records HOW each item was translated (including a Human arm) — a method flag, not a human-verification flag; no verification process is stated (reclassified from per_item_flags 2026-08-24 — see docs/PRE_RELEASE_AUDIT.md M2)"
   },
   "license": {
    "status": "verified",
@@ -80,8 +80,8 @@
    "quote": "license: gpl-3.0"
   }
  ],
- "completeness": 1.0,
- "provenance_state": "complete",
+ "completeness": 0.8333,
+ "provenance_state": "partial",
  "curated": {
   "date": "2026-08-24",
   "by": "benchprov v0 seed (A. H. Shihab)",
@@ -89,7 +89,7 @@
  },
  "per_item_provenance": {
   "field": "translation_method",
-  "description": "per-item translation method: English (original) / Google Translate / GPT-3.5-Turbo / GPT-4o / Human"
+  "description": "per-item translation METHOD: English (original) / Google Translate / GPT-3.5-Turbo / GPT-4o / Human — records the translation arm, not verification status"
  },
  "notes": "ACL SRW 2025 study of MMLU translation variability (en→pt); the only per-item method column found outside Global-MMLU in the seed sweep."
 }

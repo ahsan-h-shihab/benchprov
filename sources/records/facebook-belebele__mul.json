@@ -11,9 +11,9 @@
  "target_languages": [
   "mul"
  ],
- "source_language": "en",
+ "source_language": "not_applicable",
  "derived_from": {
-  "kind": "translation_of",
+  "kind": "aggregation_of",
   "parent_id": "facebook/flores",
   "parent_url": "https://huggingface.co/datasets/facebook/flores"
  },
@@ -54,10 +54,9 @@
    ]
   },
   "source_language": {
-   "status": "verified",
-   "evidence": [
-    "e1"
-   ]
+   "status": "not_applicable",
+   "evidence": [],
+   "note": "no single source language is well-defined for the aggregate: passages are FLORES-200 sentences (already multi-way translated), while questions/answers were composed in English and then professionally translated"
   }
  },
  "evidence": [
@@ -85,5 +84,5 @@
   "by": "benchprov v0 seed (A. H. Shihab)",
   "method": "assisted"
  },
- "notes": "122 language variants; passages are FLORES-200 sentences (themselves professionally translated); target_languages recorded as 'mul' — see the dataset for the full variant list."
+ "notes": "122 language variants. Recorded as aggregation_of: passages are drawn from FLORES-200 while the multiple-choice questions/answers were composed in English and professionally translated alongside — no single parent's items were translated wholesale. target_languages recorded as 'mul' — see the dataset for the full variant list."
 }

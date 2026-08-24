@@ -113,8 +113,8 @@ small but the mission is strict on identity fields):
    consumer reading only the field could think the *test* split is partly MT
    (it is human-translated; the MT is the train split). The note carries it,
    but see §5.
-9. `docs/IMPLEMENTATION_REPORT.md` contains a local Windows path
-   ("E:\Ambitious Project #3\benchprov") and internal project framing
+9. `docs/IMPLEMENTATION_REPORT.md` contained a local Windows filesystem path
+   (now removed) and internal project framing
    ("Project-02 survivor") — decide before release whether the report ships
    publicly (rewrite the path/context) or stays internal (exclude from the
    public repo).
@@ -361,3 +361,50 @@ Post-publish hygiene:
       commit the report.
 - [ ] Watch for the first external issue/PR; respond with the same
       evidence-first standard the records use.
+
+---
+
+## 10. Resolution log (corrective pass, 2026-08-24)
+
+Scope note applied with the fixes: the project is framed globally
+(multilingual benchmark provenance across the NLP ecosystem); the
+kk/ru/bn/uz records are a regional/low-resource wedge and evidentiary
+showcase, not the project's subject. An elevated evidence standard now
+applies to ISSAI/KazLLM-related records because the project author has a
+direct collaboration relationship with that ecosystem: public-card-bounded
+wording only, no insider knowledge as evidence, "publicly unspecified"
+never rendered as "undocumented".
+
+| issue | resolution |
+|---|---|
+| **B1** | `coherelabs-global-mmlu__multi`: `human_verification` → `partial`, supported by the card's own "professional translations and crowd-sourced post-edits" statement; the `is_annotated` evidence item now quotes the card's actual definition ("True/False flag to indicate if sample contains any annotations from our cultural bias study") and the record states explicitly that it is a cultural-annotation flag, not a translation-verification flag, with a pointer to this audit. `per_item_provenance` removed (no translation-provenance flag exists). `taresco-…`: verification → `unknown`; the misdescribed per-item block removed; see also M4 below. Original claims preserved in git history; correction noted in-record. |
+| **B2** | `csebuetnlp-xnli_bn__bn`: parent → `nyu-mll/multi_nli` (matching its cited quote); note explains the XNLI-procedure lineage and the correction. |
+| **B3** | README and implementation report now say "the two independently published Kazakh MMLU translations, neither of which names a translation engine **in its dataset card**"; report figures marked as pre-audit with a pointer here. |
+| **M1** | `mesolitica-…` and `nlpcoreteam-mmlu_ru__ru`: `none` → `partial` (informal, unquantified human checking is attested by their own cards; issues left uncorrected), with reclassification notes. `none` retained only where affirmed (murodbek ×2, KillerShoaib) or where the card's account describes a complete automated pipeline (Patt). |
+| **M2** | `translated-mmlu-blind-review-…`: verification → `unknown`; `per_item_provenance` description now says METHOD flag explicitly. |
+| **M3** | `allenai-winogrande__en`: WinoGrande paper added as evidence with a verbatim crowdsourcing quote; claim no longer rests on empty hub metadata. |
+| **M4** | Chained-inference rule documented in `docs/schema.md` ("chained claims inherit the weakest premise's status") and applied: `finnish-nlp-…` creation/engine → `unknown` with the conditional spelled out; `taresco-…` creation → `name_only`, engine/verification/source → `unknown` with conditionals; `mizinovmv-…` and `ik-ram28-…` derivation → `name_only` (dataset-name support), with the YAML structure cited as corroboration where it directly supports a claim (`source_language` for mizinovmv). |
+| **M5** | ISSAI shared note rewritten: bounded to "the dataset card … at the pinned revision; no public method statement was located in the sources consulted for this record. This bounds what the record can say — it does not imply the method is undocumented elsewhere." Program-level attribution ("the KazLLM program's benchmark translations") removed — records now attribute only to the publishing Hub organization. kz-transformers note similarly bounded. |
+| **M6** | README: sample described accurately (96 MMLU-variant datasets with non-English tags or 'translated' naming; pattern-matching detection scope stated; native/synthetic contaminants acknowledged); "most" bounded to the sample; traceability sentence reworded (naming-only support labeled); example record quote corrected to match the registry; all four demand bullets now link their PRs/issues (including EuroEval merged PR #2071, verified during the audit). |
+| **M7** | `ec-dgt-ai-eu-mmlu__mul` license modeled as `conflicting` (hub tag `mit` vs card's CC BY 4.0 statement, both quoted) — consistent with alibayram. Registry now carries 2 conflict records. |
+| **M8** | `facebook-belebele__mul` and `csebuetnlp-squad_bn__bn` → `aggregation_of` with composition explained in notes; `source_language` correctly `not_applicable` with explanatory notes. |
+| **M9** | Engine strings de-invented: MMMLU "(not further identified)"; jon-tow "(per the Okapi/mlmm project README)"; orai "manual translation (translating party not named in the card)"; Global-MMLU-Lite parties as described in the card; MGSM "(per Shi et al., 2022)". |
+| Minors | Unknown-note bounding standardized across flagged records; DoggiAI source → `zh-Hans`; alibayram `pretty_name` restored as a verbatim hub-metadata quote; `evidence/README.md` added; docs: copy/subset `translation_type` rule, completeness ≠ evidence strength, MTEB mapping corrected (post-editing ≠ localization; unmappable values listed; direction stated), hub-metadata-as-declaration caveat, DD15 (naming/vocabulary debts), NC/ND note in LICENSE-DATA, `--registry` install note, seed-not-ecosystem statistics framing. |
+| Additional (found while applying) | `kz-transformers/kk-socio-cultural-bench-mc`: creation was recorded as `mixed`, but its card describes one uniform hybrid process ("expert-curated topics with LLM-assisted web mining"), not item-level variation; under the elevated standard for Kazakh records it is now `unknown` with the card's description attached to the claim. |
+
+**Intentionally left unresolved** (with justification): `translation_type`
+field name and `mixed` overload (schema-breaking; deferred to v0.2 via
+DD15); split-level provenance modeling (v0.2; XNLI documented as `mixed` +
+notes); Linux CI execution (no local Docker daemon; CI matrix will run on
+first push and must be green before any announcement); dead-until-created
+repository URLs in pyproject/schema `$id` (resolve at publish time by
+creating the repo under that exact name).
+
+**Post-fix registry state**: 104 records / 100 datasets / 81 languages.
+Creation: machine 46, native_original 22, unknown 14, mixed 9, human 9,
+lm_generated 3, script_conversion 1. Verification: unknown 69, n/a 22,
+partial 5, full 4, none 4 (per_item_flags: none remain). States: partial 76,
+complete 25, conflicting 2, minimal 1. Records with name_only claims: 9.
+Validation: schema+cross-field PASS (0 errors, 0 warnings); 49/49 tests;
+`build --check` clean; evidence re-verification result recorded in
+`evidence/verify_report_v01.txt` and `docs/CORRECTIVE_RELEASE_REPORT.md`.

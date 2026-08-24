@@ -18,6 +18,18 @@ language group) with uniform provenance.**
   script conversion of `meta-math/GSM8K_zh`; the fact that the parent was
   itself machine-translated from English lives in the parent's record, not
   duplicated here. Chains are walked through `derived_from.parent_id`.
+- **Exception — kinds that create no new text** (`subset_or_filter_of`, and
+  aggregations that only recombine existing items): `translation_type` then
+  describes how the item text was created *wherever that happened*, with
+  evidence cited accordingly (usually the parent's statements, or the
+  record's own card restating them). The claim's evidence and status must
+  reflect that chain — see the chained-claims rule below.
+- **Chained claims inherit the weakest premise's status.** If a fact about
+  the items is true only *via* a derivation that is itself supported by
+  naming alone, the dependent claim must not carry a stronger status than
+  `name_only` — or should be recorded as `unknown` with the conditional
+  spelled out in its note. A `verified` label always means the cited
+  evidence supports the claim about *this* dataset directly.
 
 ## Core claim dimensions
 
@@ -121,6 +133,11 @@ completeness = round(known / applicable, 4)
 Both fields are **stored** in the record and **recomputed** by the validator;
 a mismatch is a validation error, never silently repaired.
 
+**Completeness measures determinability, not evidence strength.** A
+dimension counts as known even when its support is `name_only` or
+`conflicting`; consumers who need strength should filter on claim `status`
+(the stats command reports how many records carry `name_only` claims).
+
 ## Evidence items
 
 Every record carries ≥1 evidence item: `{id, type, url, retrieved, quote?,
@@ -132,6 +149,10 @@ locate and check the claim, no more.
 
 Evidence types: `dataset_card`, `hub_metadata`, `paper`, `repo_code`,
 `dataset_content`, `external_page`, `name_only`.
+
+Note that `hub_metadata` (tags such as `source_datasets: original`) is a
+**declaration by the dataset depositor**, not independent confirmation; it
+counts as substantive evidence of what the depositor declares, no more.
 
 ## Identity and uniqueness
 
@@ -145,20 +166,25 @@ Evidence types: `dataset_card`, `hub_metadata`, `paper`, `repo_code`,
 ## Interop: mapping to MTEB `sample_creation`
 
 MTEB's task metadata already carries a translation-provenance vocabulary for
-embedding tasks. benchprov's orthogonal fields map onto it:
+embedding tasks. benchprov's orthogonal fields map onto it **lossily, in one
+direction** (benchprov to MTEB; the reverse is not defined):
 
 | benchprov (`translation_type` + `human_verification`) | MTEB `sample_creation` |
 |---|---|
 | `machine` + `unknown`/`none` | `machine-translated` |
 | `machine` + `full`/`partial`/`per_item_flags` | `machine-translated and verified` |
-| `hybrid_machine_post_edited` + any | `machine-translated and localized` (closest) |
+| `hybrid_machine_post_edited` + any | `machine-translated and verified` — **caveat**: MTEB has no post-editing value; its "…and localized" values mean cultural adaptation, *not* post-editing, and must not be used for this |
 | `human` + any | `human-translated` |
 | `lm_generated` + `full`/`partial` | `LM-generated and verified` |
+| `lm_generated` + `none`/`unknown` | **unmappable** (MTEB has no unverified LM-generated value) |
+| `script_conversion` | **unmappable** (no MTEB equivalent) |
 | `native_original` | `created` / `found` |
 | `mixed` | `multiple` |
+| `unknown` | **unmappable** (MTEB has no unknown value) |
 
-The mapping is provided for interoperability; benchprov records remain the
-richer form (engine names, evidence, per-item flags).
+Engine names, evidence bindings, claim statuses, and per-item flags have no
+MTEB counterpart and are lost in any mapping; benchprov records remain the
+richer form.
 
 ## What v0 deliberately does not model
 

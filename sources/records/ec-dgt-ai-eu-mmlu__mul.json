@@ -40,16 +40,24 @@
    "note": "professional translation stated; a separate verification step is not described at the pinned revision"
   },
   "license": {
-   "status": "verified",
+   "status": "conflicting",
    "evidence": [
     "e2"
    ],
-   "note": "hub tag 'mit'; the card additionally states the translations are made available under CC BY 4.0"
+   "conflicts": [
+    {
+     "value": "cc-by-4.0 (card: translations made available under CC BY 4.0)",
+     "evidence": [
+      "e3"
+     ],
+     "note": "the hub metadata tag declares mit while the card states the translations are released under CC BY 4.0; both positions preserved"
+    }
+   ]
   },
   "derived_from": {
    "status": "verified",
    "evidence": [
-    "e3"
+    "e4"
    ]
   },
   "source_language": {
@@ -85,11 +93,20 @@
    "retrieved": "2026-08-24",
    "sha256": "bf3f72d85045c5a5290edcadfc5cc4343e77069e9d626d909ef5c1808c24f9cb",
    "hub_revision": "270a5d91a20727e488d68d281d46249b25c5b678",
+   "quote": "The translations produced by the European Commission's Directorate-General for Translation and the EMT Network are hereby made available under the CC BY 4.0 licence"
+  },
+  {
+   "id": "e4",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/EC-DGT-AI/EU-MMLU/raw/270a5d91a20727e488d68d281d46249b25c5b678/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "bf3f72d85045c5a5290edcadfc5cc4343e77069e9d626d909ef5c1808c24f9cb",
+   "hub_revision": "270a5d91a20727e488d68d281d46249b25c5b678",
    "quote": "The EU-MMLU dataset is a first step, consisting in the translation of a subset of the MMLU dataset into all 24 EU official languages."
   }
  ],
  "completeness": 0.8333,
- "provenance_state": "partial",
+ "provenance_state": "conflicting",
  "curated": {
   "date": "2026-08-24",
   "by": "benchprov v0 seed (A. H. Shihab)",

@@ -30,12 +30,12 @@
   "engine_or_translator": {
    "status": "unknown",
    "evidence": [],
-   "note": "not stated"
+   "note": "not stated in the card at the pinned revision"
   },
   "human_verification": {
    "status": "unknown",
    "evidence": [],
-   "note": "no statement"
+   "note": "no statement in the card at the pinned revision"
   },
   "license": {
    "status": "verified",

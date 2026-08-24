@@ -2,8 +2,11 @@
 
 Build phase of the validated Project-02 survivor ("Benchmark Translation
 Provenance"). Stopping rule met; no external outreach, PRs, or submissions
-were made. Repository: `E:\Ambitious Project #3\benchprov` (local git, branch
-`main`, 5 commits; no remote configured).
+were made. Repository: this repository (local git, branch `main`; no remote
+configured). **Note:** this report describes the v0.1 build as completed and
+predates the adversarial pre-release audit; see `docs/PRE_RELEASE_AUDIT.md`
+(including its resolution section) for corrections applied afterwards —
+figures below reflect the pre-audit state.
 
 ## 1. What was built
 
@@ -76,7 +79,9 @@ By provenance state: partial 75 · complete 27 · conflicting 1 (a real
 hub-tag-vs-card license conflict, preserved) · minimal 1.
 Regional wedge: kk 10 records · ru 19 · bn 20 · uz 3 (plus ar 18, tr, fa,
 or, th, ja, ko, zh…; 81 languages total; Belebele/FLORES/EU-MMLU/MMLU-ProX
-recorded as `mul`). Completeness mean 0.78 / median 0.83; 6 records carry
+recorded as `mul`). The registry's two Kazakh MMLU translations both
+leave the translation engine unnamed in their dataset cards.
+Completeness mean 0.78 / median 0.83; 6 records carry
 name_only claims (visible, filterable); curation method `assisted` on all
 104 (disclosed per record).
 
@@ -104,7 +109,7 @@ recorded in the commit history.
 Documented user-facing in README; the load-bearing ones: seed-not-census
 coverage (~100 of thousands of datasets); `mul` records are opaque to
 per-language queries; one-step derivation records (chains need walking);
-human_verification is 64% unknown (an ecosystem fact the registry documents,
+human_verification is majority-unknown from consulted sources (a documentation gap this seed records,
 but it caps answers); split-level provenance is `mixed`+notes, not
 structured; language tags regex-checked not registry-checked; licenses
 verbatim only; 4 gated-dataset records cite auth-required URLs; facts are
@@ -121,11 +126,10 @@ as-of recorded dates with drift detectable but not auto-updated.
 - **Curation was single-curator and AI-assisted** (disclosed per record and
   in README); per-record quotes make third-party checking cheap, but no
   second curator has reviewed the seed.
-- **Two social-sensitivity rows**: records state factually that named
-  national programs' translations are undocumented (ISSAI ×5,
-  kz-transformers ×2). Wording follows the P01 restraint discipline
-  (observed absence, dated, no quality claims), but these rows deserve a
-  re-read before anything becomes public.
+- **Socially sensitive rows**: records about named national-program
+  datasets (ISSAI ×5, kz-transformers ×2) originally said their translation
+  method was "undocumented"; the pre-release audit re-bounded this wording
+  to card-level absence at pinned revisions (see PRE_RELEASE_AUDIT.md M5).
 - **A handful of judgment calls** are packed into notes rather than schema
   (e.g. MERA as one suite-level record; XNLI's split-mixed status; treating
   copies as carrying content-level translation facts). All are flagged in
