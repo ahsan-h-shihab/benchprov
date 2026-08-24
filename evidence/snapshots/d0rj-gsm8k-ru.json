@@ -1,0 +1,54 @@
+{
+ "dataset_id": "d0rj/gsm8k-ru",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:51:40.345012+00:00",
+ "revision": "5b475005f3eb4efe9fbdf1881de2ff28ad14d63b",
+ "hub_metadata": {
+  "tags": [
+   "annotations_creators:crowdsourced",
+   "language_creators:translated",
+   "multilinguality:monolingual",
+   "source_datasets:gsm8k",
+   "language:ru",
+   "license:mit",
+   "size_categories:1K<n<10K",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "arxiv:2110.14168",
+   "region:us",
+   "math-word-problems"
+  ],
+  "cardData_license": [
+   "mit"
+  ],
+  "cardData_language": [
+   "ru"
+  ],
+  "cardData_source_datasets": [
+   "gsm8k"
+  ],
+  "cardData_annotations_creators": [
+   "crowdsourced"
+  ],
+  "downloads": 168,
+  "lastModified": "2023-08-04T08:34:00.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/d0rj/gsm8k-ru/raw/5b475005f3eb4efe9fbdf1881de2ff28ad14d63b/README.md",
+  "sha256": "985b118a093e542b82ce991e3efdb8fea7402b0c2dd32ad31e1627799c670ff4",
+  "bytes": 1039,
+  "yaml_front_matter": "annotations_creators:\n- crowdsourced\nlanguage_creators:\n- translated\nlanguage:\n- ru\nlicense:\n- mit\nmultilinguality:\n- monolingual\nsize_categories:\n- 1K<n<10K\nsource_datasets:\n- gsm8k\ntask_categories:\n- text2text-generation\ntask_ids: []\npaperswithcode_id: gsm8k\npretty_name: Grade School Math 8K (ru)\ntags:\n- math-word-problems\nconfigs:\n- config_name: default\n  data_files:\n  - split: train\n    path: data/train-*\n  - split: test\n    path: data/test-*\ndataset_info:\n  features:\n  - name: question\n    dtype: string\n  - name: answer\n    dtype: string\n  splits:\n  - name: train\n    num_bytes: 6815618.0\n    num_examples: 7473\n  - name: test\n    num_bytes: 1234140.0\n    num_examples: 1319\n  download_size: 3883654\n  dataset_size: 8049758.0",
+  "provenance_candidate_lines": [
+   "Translated version of [gsm8k](https://huggingface.co/datasets/gsm8k) dataset into Russian."
+  ],
+  "reference_links": [
+   "https://github.com/openai/grade-school-math",
+   "https://arxiv.org/abs/2110.14168"
+  ]
+ }
+}

@@ -1,0 +1,82 @@
+{
+ "record_id": "truthfulqa-truthful_qa__en",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "truthfulqa/truthful_qa",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/truthfulqa/truthful_qa",
+  "revision": "741b8276f2d1982aa3d5b832d3ee81ed3b896490"
+ },
+ "root_benchmark": "TruthfulQA",
+ "target_languages": [
+  "en"
+ ],
+ "source_language": "not_applicable",
+ "derived_from": {
+  "kind": "none",
+  "parent_id": null
+ },
+ "translation_type": "native_original",
+ "engine_or_translator": "not_applicable",
+ "human_verification": "not_applicable",
+ "license": "apache-2.0",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "not_applicable",
+   "evidence": []
+  },
+  "human_verification": {
+   "status": "not_applicable",
+   "evidence": []
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "not_applicable",
+   "evidence": []
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/truthfulqa/truthful_qa/raw/741b8276f2d1982aa3d5b832d3ee81ed3b896490/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "9e06075e7a580802a227e31cc456b37bdf5a174637f22e142b7609d709dd5f95",
+   "hub_revision": "741b8276f2d1982aa3d5b832d3ee81ed3b896490",
+   "quote": "We constructed the questions using the following adversarial procedure, with GPT-3-175B (QA prompt) as the target model: 1. We wrote questions that some humans would answer falsely."
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/truthfulqa/truthful_qa",
+   "retrieved": "2026-08-24",
+   "hub_revision": "741b8276f2d1982aa3d5b832d3ee81ed3b896490",
+   "quote": "license: [\"apache-2.0\"]"
+  }
+ ],
+ "completeness": 1.0,
+ "provenance_state": "complete",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "Family root; questions written by the authors."
+}

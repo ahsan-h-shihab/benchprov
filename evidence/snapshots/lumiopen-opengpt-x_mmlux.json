@@ -1,0 +1,93 @@
+{
+ "dataset_id": "LumiOpen/opengpt-x_mmlux",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:50:07.687235+00:00",
+ "revision": "d4a99431a363e01cf9cba368b6ed0217cde7425e",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:multiple-choice",
+   "language_creators:expert-generated",
+   "multilinguality:multilingual",
+   "source_datasets:cais/mmlu",
+   "source_datasets:openGPT-X/mmlux",
+   "language:de",
+   "language:fr",
+   "language:es",
+   "language:it",
+   "language:pt",
+   "language:bg",
+   "language:cs",
+   "language:da",
+   "language:el",
+   "language:et",
+   "language:fi",
+   "language:hu",
+   "language:lt",
+   "language:lv",
+   "language:nl",
+   "language:pl",
+   "language:ro",
+   "language:sk",
+   "language:sl",
+   "language:sv",
+   "size_categories:100K<n<1M",
+   "format:json",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "arxiv:2009.03300",
+   "arxiv:2410.08928",
+   "region:us",
+   "chemistry",
+   "biology",
+   "legal",
+   "medical",
+   "synthetic"
+  ],
+  "cardData_license": null,
+  "cardData_language": [
+   "de",
+   "fr",
+   "es",
+   "it",
+   "pt",
+   "bg",
+   "cs",
+   "da",
+   "el",
+   "et",
+   "fi",
+   "hu",
+   "lt",
+   "lv",
+   "nl",
+   "pl",
+   "ro",
+   "sk",
+   "sl",
+   "sv"
+  ],
+  "cardData_source_datasets": [
+   "cais/mmlu",
+   "openGPT-X/mmlux"
+  ],
+  "cardData_annotations_creators": null,
+  "downloads": 3720,
+  "lastModified": "2025-02-18T16:06:21.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/LumiOpen/opengpt-x_mmlux/raw/d4a99431a363e01cf9cba368b6ed0217cde7425e/README.md",
+  "sha256": "7461b583544c23d0d61cb43b1cb1ce7b67d11560c5b5d66f6ed7403e397aea4f",
+  "bytes": 336074,
+  "yaml_front_matter": "task_categories:\n- multiple-choice\nlanguage:\n- de\n- fr\n- es\n- it\n- pt\n- bg\n- cs\n- da\n- el\n- et\n- fi\n- hu\n- lt\n- lv\n- nl\n- pl\n- ro\n- sk\n- sl\n- sv\nlanguage_creators:\n- expert-generated\nmultilinguality:\n- multilingual\nsource_datasets:\n- cais/mmlu\n- openGPT-X/mmlux\ntags:\n- chemistry\n- biology\n- legal\n- medical\n- synthetic\nsize_categories:\n- 100K<n<1M\nconfigs:\n  - config_name: abstract_algebra_BG\n    data_files:\n      - split: test\n        path: hendrycks_abstract_algebra_BG_test.jsonl\n      - split: validation\n        path: hendrycks_abstract_algebra_BG_validation.jsonl\n      - split: dev\n        path: hendrycks_abstract_algebra_BG_dev.jsonl\n  - config_name: abstract_algebra_CS\n    data_files:\n      - split: test\n        path: hendrycks_abstract_algebra_CS_test.jsonl\n      - split: validation\n        path: hendrycks_abstract_algebra_CS_validation.jsonl\n      - split: dev\n        path: hendrycks_abstract_algebra_CS_dev.jsonl\n  - config_name: abstract_algebra_DA\n    data_files:\n      - split: test\n        path: hendrycks_abstract_algebra_DA_test.jsonl\n      - split: validation\n        path: hendrycks_abstract_algebra_DA_validation.jsonl\n      - split: dev\n        path: hendrycks_abstract_algebra_DA_dev.jsonl\n  - config_name: abstract_algebra_DE\n    data_files:\n      - split: test\n        path: hendrycks_abstract_algebra_DE_test.jsonl\n      - split: validation\n        path: hendrycks_abstract_algebra_DE_validation.jsonl\n      - split: dev\n        path: hendrycks_abstract_algebra_DE_dev.jsonl\n  - config_name: abstract_algebra_EL\n    data_files:\n      - split: test\n        path: hendrycks_abstract_algebra_EL_test.jsonl\n      - split: validation\n        path: hendrycks_abstract_algebra_EL_validation.jsonl\n      - split: dev\n        path: hendrycks_abstract_algebra_EL_dev.jsonl\n  - config_name: abstract_algebra_ES\n    data_files:\n      - split: test\n        path: hendrycks_abstract_algebra_ES_test.jsonl\n      - split: validation\n        path: hendrycks_abstract_algebra_ES_validation.jsonl\n      - split: dev\n        path: hendrycks_abstract_algebra_ES_dev.jsonl\n  - config_name: abstract_algebra_ET\n    data_files:\n      - split: test\n        path: hendrycks_abstract_algebra_ET_test.jsonl\n      - split: validation\n        path: hendrycks_abstract_algebra_ET_validation.jsonl\n      - split: dev\n        path: hendrycks_abstract_algebra_ET_dev.jsonl\n  - config_name: abstract_algebra_FI\n    data_files:\n      - split: test\n        path: hendrycks_abstract_algebra_FI_test.jsonl\n      - split: validation\n        path: hendrycks_abstract_algebra_FI_validation.jsonl\n      - split: dev\n        path: hendrycks_abstract_algebra_FI_dev.jsonl\n  - config_name: abstract_algebra_FR\n    data_files:\n      - split: test\n        path: hendrycks_abstract_algebra_FR_test.jsonl\n      - split: validation\n        path: hendrycks_abstract_algebra_FR_validation.jsonl\n      - split: dev\n        path: hendrycks_abstract_algebra_FR_dev.jsonl\n  - config_name: abstract_algebra_HU\n    data_files:\n      - split: test\n        path: hendrycks_abstract_algebra_HU_test.jsonl\n      - split: validation\n        path: hendrycks_abstract_algebra_HU_validation.jsonl\n      - split: dev\n        path: hendrycks_abstract_algebra_HU_dev.jsonl\n  - config_name: abstract_algebra_IT\n    data_files:\n      - split: test\n        path: hendrycks_abstract_algebra_IT_test.jsonl\n      - split: validation\n        path: hendrycks_abstract_algebra_IT_validation.jsonl\n      - split: dev\n        path: hendrycks_abstract_algebra_IT_dev.jsonl\n  - config_name: abstract_algebra_LT\n    data_files:\n      - split: test\n        path: hendrycks_abstract_algebra_LT_test.jsonl\n      - split: validation\n        path: hendrycks_abstract_algebra_LT_validation.jsonl\n      - split: dev\n        path: hendrycks_abstract_algebra_LT_dev.jsonl\n  - config_name: abstract_algebra_LV\n    data_files:\n      - split: test\n        path: hendrycks_abstract_algebra_LV_test.jsonl\n      - split: validation\n        path: hendrycks_abstract",
+  "provenance_candidate_lines": [
+   "This is a copy of the translations from openGPT-X/mmlux, but the repo is"
+  ],
+  "reference_links": [
+   "https://arxiv.org/abs/2009.03300"
+  ]
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "dataset_id": "orai-nlp/HellaSwag_HT_eu_sample",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:50:43.366018+00:00",
+ "revision": "ad41157287d3c7c48977d613563a3fc629c7366b",
+ "hub_metadata": {
+  "tags": [
+   "language:eu",
+   "language:en",
+   "license:apache-2.0",
+   "size_categories:n<1K",
+   "format:json",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "region:us"
+  ],
+  "cardData_license": "apache-2.0",
+  "cardData_language": [
+   "eu",
+   "en"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 22,
+  "lastModified": "2024-09-05T16:20:20.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/orai-nlp/HellaSwag_HT_eu_sample/raw/ad41157287d3c7c48977d613563a3fc629c7366b/README.md",
+  "sha256": "6f85c31e1d9bbb3cf67c428c0cea2115ab91516682191bcf1bf9094dd10d607b",
+  "bytes": 1664,
+  "yaml_front_matter": "language:\n- eu\n- en\nconfigs:\n- config_name: eu\n  data_files:\n  - split: test\n    path: hellaswag_eu_250.json\n- config_name: en\n  data_files:\n  - split: test\n    path: hellaswag_en_250.json\nlicense: apache-2.0\nsize_categories:\n- n<1K",
+  "provenance_candidate_lines": [
+   "# HellaSwag Human Translated Sample for Basque",
+   "A subset of 250 samples manually translated to Basque from the [HellaSwag dataset](https://huggingface.co/datasets/Rowan/hellaswag) (Zellers et al., 2019).",
+   "### Annotations",
+   "#### Annotation process",
+   "@misc{Llama-eus,",
+   "title     = {Llama-eus-8B, a foundational sub-10 billion parameter LLM for Basque},",
+   "url       = {\\url{https://huggingface.co/datasets/orai-nlp/Llama-eus-8B}},"
+  ],
+  "reference_links": []
+ }
+}

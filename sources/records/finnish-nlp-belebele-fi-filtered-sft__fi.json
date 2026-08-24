@@ -1,0 +1,92 @@
+{
+ "record_id": "finnish-nlp-belebele-fi-filtered-sft__fi",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "Finnish-NLP/belebele-fi-filtered-sft",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/Finnish-NLP/belebele-fi-filtered-sft",
+  "revision": "36520e7565136e3e4c175807e54608d58f6a4428"
+ },
+ "root_benchmark": "Belebele",
+ "target_languages": [
+  "fi"
+ ],
+ "source_language": "not_applicable",
+ "derived_from": {
+  "kind": "subset_or_filter_of",
+  "parent_id": "facebook/belebele",
+  "parent_url": "https://huggingface.co/datasets/facebook/belebele"
+ },
+ "translation_type": "human",
+ "engine_or_translator": "Language Service Provider (professional, unnamed; per parent)",
+ "human_verification": "unknown",
+ "license": "cc-by-sa-4.0",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "parent had QA loops; whether filtering preserved anything verification-relevant is unstated"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "derived_from": {
+   "status": "name_only",
+   "evidence": [
+    "e3"
+   ]
+  },
+  "source_language": {
+   "status": "not_applicable",
+   "evidence": []
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "external_page",
+   "url": "https://huggingface.co/datasets/facebook/belebele/raw/7899cdfa4e4e63b06556ba9dceabb58bc3e17b10/README.md",
+   "retrieved": "2026-08-24",
+   "quote": "Belebele is a multiple-choice machine reading comprehension (MRC) dataset spanning 122 language variants.",
+   "note": "parent card; Belebele's items are professionally translated (see facebook-belebele__mul record). Applies to the items this dataset's name asserts it derives from"
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/Finnish-NLP/belebele-fi-filtered-sft",
+   "retrieved": "2026-08-24",
+   "hub_revision": "36520e7565136e3e4c175807e54608d58f6a4428",
+   "quote": "license: cc-by-sa-4.0"
+  },
+  {
+   "id": "e3",
+   "type": "name_only",
+   "url": "https://huggingface.co/datasets/Finnish-NLP/belebele-fi-filtered-sft",
+   "retrieved": "2026-08-24",
+   "note": "dataset id 'belebele-fi-filtered-sft'; its own card carries no prose about derivation"
+  }
+ ],
+ "completeness": 0.8,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "Derivation rests on the dataset's name (claim status name_only); translation facts inherited from the parent under that assumption — see kind claim status."
+}

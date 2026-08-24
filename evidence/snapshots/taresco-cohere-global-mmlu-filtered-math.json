@@ -1,0 +1,54 @@
+{
+ "dataset_id": "taresco/COHERE-GLOBAL-MMLU-FILTERED-MATH",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:50:11.222504+00:00",
+ "revision": "fee6202e087810c7b9932222a15f7a01195ec512",
+ "hub_metadata": {
+  "tags": [
+   "language:am",
+   "language:ar",
+   "language:en",
+   "language:ha",
+   "language:ig",
+   "language:sn",
+   "language:sw",
+   "language:so",
+   "language:te",
+   "license:apache-2.0",
+   "size_categories:1K<n<10K",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:polars",
+   "library:mlcroissant",
+   "region:us",
+   "Math"
+  ],
+  "cardData_license": "apache-2.0",
+  "cardData_language": [
+   "am",
+   "ar",
+   "en",
+   "ha",
+   "ig",
+   "sn",
+   "sw",
+   "so",
+   "te"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 75,
+  "lastModified": "2025-12-25T21:12:49.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/taresco/COHERE-GLOBAL-MMLU-FILTERED-MATH/raw/fee6202e087810c7b9932222a15f7a01195ec512/README.md",
+  "sha256": "b092a49bc14bf6ca6e4d8acda632610139b81be88321ec95a99d18a7a98f7c6c",
+  "bytes": 10616,
+  "yaml_front_matter": "license: apache-2.0\nconfigs:\n- config_name: am\n  data_files:\n  - split: dev\n    path: am/dev-*\n  - split: test\n    path: am/test-*\n- config_name: ar\n  data_files:\n  - split: dev\n    path: ar/dev-*\n  - split: test\n    path: ar/test-*\n- config_name: en\n  data_files:\n  - split: dev\n    path: en/dev-*\n  - split: test\n    path: en/test-*\n- config_name: ha\n  data_files:\n  - split: dev\n    path: ha/dev-*\n  - split: test\n    path: ha/test-*\n- config_name: ig\n  data_files:\n  - split: dev\n    path: ig/dev-*\n  - split: test\n    path: ig/test-*\n- config_name: sn\n  data_files:\n  - split: dev\n    path: sn/dev-*\n  - split: test\n    path: sn/test-*\n- config_name: so\n  data_files:\n  - split: dev\n    path: so/dev-*\n  - split: test\n    path: so/test-*\n- config_name: sw\n  data_files:\n  - split: dev\n    path: sw/dev-*\n  - split: test\n    path: sw/test-*\n- config_name: te\n  data_files:\n  - split: dev\n    path: te/dev-*\n  - split: test\n    path: te/test-*\n- config_name: yo\n  data_files:\n  - split: dev\n    path: yo/dev-*\n  - split: test\n    path: yo/test-*\ndataset_info:\n- config_name: am\n  features:\n  - name: sample_id\n    dtype: string\n  - name: subject\n    dtype: string\n  - name: subject_category\n    dtype: string\n  - name: question\n    dtype: string\n  - name: option_a\n    dtype: string\n  - name: option_b\n    dtype: string\n  - name: option_c\n    dtype: string\n  - name: option_d\n    dtype: string\n  - name: answer\n    dtype: string\n  - name: required_knowledge\n    dtype: string\n  - name: time_sensitive\n    dtype: string\n  - name: reference\n    dtype: string\n  - name: culture\n    dtype: string\n  - name: region\n    dtype: string\n  - name: country\n    dtype: string\n  - name: cultural_sensitivity_label\n    dtype: string\n  - name: is_annotated\n    dtype: bool\n  splits:\n  - name: dev\n    num_bytes: 14702.105263157895\n    num_examples: 20\n  - name: test\n    num_bytes: 729665.6521862983\n    num_examples: 848\n  download_size: 149258\n  dataset_size: 744367.7574494561\n- config_name: ar\n  features:\n  - name: sample_id\n    dtype: string\n  - name: subject\n    dtype: string\n  - name: subject_category\n    dtype: string\n  - name: question\n    dtype: string\n  - name: option_a\n    dtype: string\n  - name: option_b\n    dtype: string\n  - name: option_c\n    dtype: string\n  - name: option_d\n    dtype: string\n  - name: answer\n    dtype: string\n  - name: required_knowledge\n    dtype: string\n  - name: time_sensitive\n    dtype: string\n  - name: reference\n    dtype: string\n  - name: culture\n    dtype: string\n  - name: region\n    dtype: string\n  - name: country\n    dtype: string\n  - name: cultural_sensitivity_label\n    dtype: string\n  - name: is_annotated\n    dtype: bool\n  splits:\n  - name: dev\n    num_bytes: 14199.508771929824\n    num_examples: 20\n  - name: test\n    num_bytes: 701854.1871528273\n    num_examples: 848\n  download_size: 145823\n  dataset_size: 716053.695924757\n- config_name: en\n  features:\n  - name: sample_id\n    dtype: string\n  - name: subject\n    dtype: string\n  - name: subject_category\n    dtype: string\n  - name: question\n    dtype: string\n  - name: option_a\n    dtype: string\n  - name: option_b\n    dtype: string\n  - name: option_c\n    dtype: string\n  - name: option_d\n    dtype: string\n  - name: answer\n    dtype: string\n  - name: required_knowledge\n    dtype: string\n  - name: time_sensitive\n    dtype: string\n  - name: reference\n    dtype: string\n  - name: culture\n    dtype: string\n  - name: region\n    dtype: string\n  - name: country\n    dtype: string\n  - name: cultural_sensitivity_label\n    dtype: string\n  - name: is_annotated\n    dtype: bool\n  splits:\n  - name: dev\n    num_bytes: 10271.157894736842\n    num_examples: 20\n  - name: test\n    num_bytes: 509731.94245833927\n    num_examples: 848\n  download_size: 120021\n  dataset_size: 520003.1003530761\n- config_name: ha\n  features:\n  - name: sample_id\n    dtype: string\n  - name: subject\n    dtype: string\n  - name: subject_category\n    dtype: string\n  - name: question\n    dtype: string\n  - name: option_a\n    dtype: string",
+  "provenance_candidate_lines": [],
+  "reference_links": []
+ }
+}

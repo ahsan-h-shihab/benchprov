@@ -1,0 +1,81 @@
+{
+ "record_id": "tau-commonsense_qa__en",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "tau/commonsense_qa",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/tau/commonsense_qa",
+  "revision": "94630fe30dad47192a8546eb75f094926d47e155"
+ },
+ "root_benchmark": "CommonsenseQA",
+ "target_languages": [
+  "en"
+ ],
+ "source_language": "not_applicable",
+ "derived_from": {
+  "kind": "none",
+  "parent_id": null
+ },
+ "translation_type": "native_original",
+ "engine_or_translator": "not_applicable",
+ "human_verification": "not_applicable",
+ "license": "mit",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "not_applicable",
+   "evidence": []
+  },
+  "human_verification": {
+   "status": "not_applicable",
+   "evidence": []
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "not_applicable",
+   "evidence": []
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/tau/commonsense_qa",
+   "retrieved": "2026-08-24",
+   "hub_revision": "94630fe30dad47192a8546eb75f094926d47e155",
+   "note": "hub metadata tags",
+   "quote": "source_datasets: original; annotations_creators: crowdsourced"
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/tau/commonsense_qa",
+   "retrieved": "2026-08-24",
+   "hub_revision": "94630fe30dad47192a8546eb75f094926d47e155",
+   "quote": "license: [\"mit\"]"
+  }
+ ],
+ "completeness": 1.0,
+ "provenance_state": "complete",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ }
+}

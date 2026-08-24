@@ -1,0 +1,78 @@
+{
+ "record_id": "behbudiy-alpaca-cleaned-uz__uz",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "behbudiy/alpaca-cleaned-uz",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/behbudiy/alpaca-cleaned-uz",
+  "revision": "5acc33098c74ef3581bf4e46ef2b16ea50bb5cf2"
+ },
+ "root_benchmark": "Alpaca",
+ "target_languages": [
+  "uz"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "yahma/alpaca-cleaned",
+  "parent_url": "https://huggingface.co/datasets/yahma/alpaca-cleaned"
+ },
+ "translation_type": "machine",
+ "engine_or_translator": "Google Translate API",
+ "human_verification": "unknown",
+ "license": "unknown",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no statement"
+  },
+  "license": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no license declared in hub metadata at the pinned revision"
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/behbudiy/alpaca-cleaned-uz/raw/5acc33098c74ef3581bf4e46ef2b16ea50bb5cf2/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "4cdd9dcb286ac31263f43e6b59cc5ec97f29ccea06ba0eaa03f4cbf7c7ea715b",
+   "hub_revision": "5acc33098c74ef3581bf4e46ef2b16ea50bb5cf2",
+   "quote": "This dataset is a translation of the yahma/alpaca-cleaned dataset into Uzbek, leveraging the Google Translate API."
+  }
+ ],
+ "completeness": 0.6667,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ }
+}

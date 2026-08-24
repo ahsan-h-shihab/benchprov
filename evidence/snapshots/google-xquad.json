@@ -1,0 +1,90 @@
+{
+ "dataset_id": "google/xquad",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:49:57.688569+00:00",
+ "revision": "51adfef1c1287aab1d2d91b5bead9bcfb9c68583",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "task_ids:extractive-qa",
+   "annotations_creators:expert-generated",
+   "language_creators:expert-generated",
+   "multilinguality:multilingual",
+   "source_datasets:extended|squad",
+   "language:ar",
+   "language:de",
+   "language:el",
+   "language:en",
+   "language:es",
+   "language:hi",
+   "language:ro",
+   "language:ru",
+   "language:th",
+   "language:tr",
+   "language:vi",
+   "language:zh",
+   "license:cc-by-sa-4.0",
+   "size_categories:10K<n<100K",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "arxiv:1910.11856",
+   "region:us"
+  ],
+  "cardData_license": [
+   "cc-by-sa-4.0"
+  ],
+  "cardData_language": [
+   "ar",
+   "de",
+   "el",
+   "en",
+   "es",
+   "hi",
+   "ro",
+   "ru",
+   "th",
+   "tr",
+   "vi",
+   "zh"
+  ],
+  "cardData_source_datasets": [
+   "extended|squad"
+  ],
+  "cardData_annotations_creators": [
+   "expert-generated"
+  ],
+  "downloads": 12303,
+  "lastModified": "2024-01-04T17:08:50.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/google/xquad/raw/51adfef1c1287aab1d2d91b5bead9bcfb9c68583/README.md",
+  "sha256": "9bb7215530f157e3761585cfbfe11161cda1951546dbfa5b65fd797972c85946",
+  "bytes": 15630,
+  "yaml_front_matter": "annotations_creators:\n- expert-generated\nlanguage_creators:\n- expert-generated\nlanguage:\n- ar\n- de\n- el\n- en\n- es\n- hi\n- ro\n- ru\n- th\n- tr\n- vi\n- zh\nlicense:\n- cc-by-sa-4.0\nmultilinguality:\n- multilingual\nsize_categories:\n- unknown\nsource_datasets:\n- extended|squad\ntask_categories:\n- question-answering\ntask_ids:\n- extractive-qa\npaperswithcode_id: xquad\npretty_name: XQuAD\ndataset_info:\n- config_name: xquad.ar\n  features:\n  - name: id\n    dtype: string\n  - name: context\n    dtype: string\n  - name: question\n    dtype: string\n  - name: answers\n    sequence:\n    - name: text\n      dtype: string\n    - name: answer_start\n      dtype: int32\n  splits:\n  - name: validation\n    num_bytes: 1722775\n    num_examples: 1190\n  download_size: 263002\n  dataset_size: 1722775\n- config_name: xquad.de\n  features:\n  - name: id\n    dtype: string\n  - name: context\n    dtype: string\n  - name: question\n    dtype: string\n  - name: answers\n    sequence:\n    - name: text\n      dtype: string\n    - name: answer_start\n      dtype: int32\n  splits:\n  - name: validation\n    num_bytes: 1283277\n    num_examples: 1190\n  download_size: 241957\n  dataset_size: 1283277\n- config_name: xquad.el\n  features:\n  - name: id\n    dtype: string\n  - name: context\n    dtype: string\n  - name: question\n    dtype: string\n  - name: answers\n    sequence:\n    - name: text\n      dtype: string\n    - name: answer_start\n      dtype: int32\n  splits:\n  - name: validation\n    num_bytes: 2206666\n    num_examples: 1190\n  download_size: 324379\n  dataset_size: 2206666\n- config_name: xquad.en\n  features:\n  - name: id\n    dtype: string\n  - name: context\n    dtype: string\n  - name: question\n    dtype: string\n  - name: answers\n    sequence:\n    - name: text\n      dtype: string\n    - name: answer_start\n      dtype: int32\n  splits:\n  - name: validation\n    num_bytes: 1116099\n    num_examples: 1190\n  download_size: 212372\n  dataset_size: 1116099\n- config_name: xquad.es\n  features:\n  - name: id\n    dtype: string\n  - name: context\n    dtype: string\n  - name: question\n    dtype: string\n  - name: answers\n    sequence:\n    - name: text\n      dtype: string\n    - name: answer_start\n      dtype: int32\n  splits:\n  - name: validation\n    num_bytes: 1273475\n    num_examples: 1190\n  download_size: 236874\n  dataset_size: 1273475\n- config_name: xquad.hi\n  features:\n  - name: id\n    dtype: string\n  - name: context\n    dtype: string\n  - name: question\n    dtype: string\n  - name: answers\n    sequence:\n    - name: text\n      dtype: string\n    - name: answer_start\n      dtype: int32\n  splits:\n  - name: validation\n    num_bytes: 2682951\n    num_examples: 1190\n  download_size: 322083\n  dataset_size: 2682951\n- config_name: xquad.ro\n  features:\n  - name: id\n    dtype: string\n  - name: context\n    dtype: string\n  - name: question\n    dtype: string\n  - name: answers\n    sequence:\n    - name: text\n      dtype: string\n    - name: answer_start\n      dtype: int32\n  splits:\n  - name: validation\n    num_bytes: 1299426\n    num_examples: 1190\n  download_size: 244467\n  dataset_size: 1299426\n- config_name: xquad.ru\n  features:\n  - name: id\n    dtype: string\n  - name: context\n    dtype: string\n  - name: question\n    dtype: string\n  - name: answers\n    sequence:\n    - name: text\n      dtype: string\n    - name: answer_start\n      dtype: int32\n  splits:\n  - name: validation\n    num_bytes: 2136966\n    num_examples: 1190\n  download_size: 321728\n  dataset_size: 2136966\n- config_name: xquad.th\n  features:\n  - name: id\n    dtype: string\n  - name: context\n    dtype: string\n  - name: question\n    dtype: string\n  - name: answers\n    sequence:\n    - name: text\n      dtype: string\n    - name: answer_start\n      dtype: int32\n  splits:\n  - name: validation\n    num_bytes: 2854935\n    num_examples: 1190\n  download_size: 337307\n  dataset_size: 2854935\n- config_name: xquad.tr\n  features:\n  - name: id\n    dtype: string\n  - name: context\n    dtype: string\n  - name: question\n    dtype: string\n  - name: answers\n    sequence:\n    - name: text\n      dtype: string\n ",
+  "provenance_candidate_lines": [
+   "- [Annotations](#annotations)",
+   "- **Size of the generated dataset:** 18.97 MB",
+   "of SQuAD v1.1 (Rajpurkar et al., 2016) together with their professional translations into ten languages: Spanish, German,",
+   "- **Size of the generated dataset:** 1.72 MB",
+   "- **Size of the generated dataset:** 1.29 MB",
+   "- **Size of the generated dataset:** 2.21 MB",
+   "- **Size of the generated dataset:** 1.12 MB",
+   "- **Size of the generated dataset:** 1.28 MB",
+   "### Annotations",
+   "#### Annotation process",
+   "#### Who are the annotators?"
+  ],
+  "reference_links": [
+   "https://github.com/deepmind/xquad",
+   "https://github.com/huggingface/datasets/blob/master/CONTRIBUTING.md#how-to-contribute-to-the-dataset-cards",
+   "https://github.com/lewtun",
+   "https://github.com/patrickvonplaten",
+   "https://github.com/thomwolf"
+  ]
+ }
+}

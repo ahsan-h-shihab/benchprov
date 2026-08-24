@@ -1,0 +1,66 @@
+{
+ "dataset_id": "tau/commonsense_qa",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:50:04.126398+00:00",
+ "revision": "94630fe30dad47192a8546eb75f094926d47e155",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "task_ids:open-domain-qa",
+   "annotations_creators:crowdsourced",
+   "language_creators:crowdsourced",
+   "multilinguality:monolingual",
+   "source_datasets:original",
+   "language:en",
+   "license:mit",
+   "size_categories:10K<n<100K",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "arxiv:1811.00937",
+   "region:us"
+  ],
+  "cardData_license": [
+   "mit"
+  ],
+  "cardData_language": [
+   "en"
+  ],
+  "cardData_source_datasets": [
+   "original"
+  ],
+  "cardData_annotations_creators": [
+   "crowdsourced"
+  ],
+  "downloads": 90744,
+  "lastModified": "2024-01-04T07:44:16.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/tau/commonsense_qa/raw/94630fe30dad47192a8546eb75f094926d47e155/README.md",
+  "sha256": "172917e887dcc013fe0f0bd6aa8c810aea1e2be67d3bc7ff63e9b9d92075cc34",
+  "bytes": 7395,
+  "yaml_front_matter": "annotations_creators:\n- crowdsourced\nlanguage_creators:\n- crowdsourced\nlanguage:\n- en\nlicense:\n- mit\nmultilinguality:\n- monolingual\nsize_categories:\n- 1K<n<10K\nsource_datasets:\n- original\ntask_categories:\n- question-answering\ntask_ids:\n- open-domain-qa\npaperswithcode_id: commonsenseqa\npretty_name: CommonsenseQA\ndataset_info:\n  features:\n  - name: id\n    dtype: string\n  - name: question\n    dtype: string\n  - name: question_concept\n    dtype: string\n  - name: choices\n    sequence:\n    - name: label\n      dtype: string\n    - name: text\n      dtype: string\n  - name: answerKey\n    dtype: string\n  splits:\n  - name: train\n    num_bytes: 2207794\n    num_examples: 9741\n  - name: validation\n    num_bytes: 273848\n    num_examples: 1221\n  - name: test\n    num_bytes: 257842\n    num_examples: 1140\n  download_size: 1558570\n  dataset_size: 2739484\nconfigs:\n- config_name: default\n  data_files:\n  - split: train\n    path: data/train-*\n  - split: validation\n    path: data/validation-*\n  - split: test\n    path: data/test-*",
+  "provenance_candidate_lines": [
+   "- [Annotations](#annotations)",
+   "- **Size of the generated dataset:** 2.18 MB",
+   "### Annotations",
+   "#### Annotation process",
+   "#### Who are the annotators?"
+  ],
+  "reference_links": [
+   "https://github.com/jonathanherzig/commonsenseqa",
+   "https://arxiv.org/abs/1811.00937",
+   "https://github.com/huggingface/datasets/blob/master/CONTRIBUTING.md#how-to-contribute-to-the-dataset-cards",
+   "https://github.com/jonathanherzig/commonsenseqa/issues/5",
+   "https://aclanthology.org/N19-1421",
+   "https://github.com/thomwolf",
+   "https://github.com/lewtun",
+   "https://github.com/albertvillanova",
+   "https://github.com/patrickvonplaten"
+  ]
+ }
+}

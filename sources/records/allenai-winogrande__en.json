@@ -1,0 +1,72 @@
+{
+ "record_id": "allenai-winogrande__en",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "allenai/winogrande",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/allenai/winogrande",
+  "revision": "01e74176c63542e6b0bcb004dcdea22d94fb67b5"
+ },
+ "root_benchmark": "Winogrande",
+ "target_languages": [
+  "en"
+ ],
+ "source_language": "not_applicable",
+ "derived_from": {
+  "kind": "none",
+  "parent_id": null
+ },
+ "translation_type": "native_original",
+ "engine_or_translator": "not_applicable",
+ "human_verification": "not_applicable",
+ "license": "unknown",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "not_applicable",
+   "evidence": []
+  },
+  "human_verification": {
+   "status": "not_applicable",
+   "evidence": []
+  },
+  "license": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no license declared in hub metadata at the pinned revision"
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "not_applicable",
+   "evidence": []
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/allenai/winogrande",
+   "retrieved": "2026-08-24",
+   "hub_revision": "01e74176c63542e6b0bcb004dcdea22d94fb67b5",
+   "note": "card carries no creation prose at pinned revision; identity from hub metadata and the WinoGrande paper (Sakaguchi et al., 2020)",
+   "quote": "language: en (hub metadata); crowdsourced Winograd-schema-style problems"
+  }
+ ],
+ "completeness": 0.6667,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ }
+}

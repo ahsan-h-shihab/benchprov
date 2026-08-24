@@ -1,0 +1,117 @@
+{
+ "record_id": "alexandrainst-m_truthfulqa__multi",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "alexandrainst/m_truthfulqa",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/alexandrainst/m_truthfulqa",
+  "revision": "f0445d470f1925882b990f5f247fdcf288972f60"
+ },
+ "root_benchmark": "TruthfulQA",
+ "target_languages": [
+  "ar",
+  "bn",
+  "ca",
+  "da",
+  "de",
+  "es",
+  "eu",
+  "fr",
+  "gu",
+  "hi",
+  "hr",
+  "hu",
+  "hy",
+  "id",
+  "it",
+  "kn",
+  "ml",
+  "mr",
+  "ne",
+  "nl",
+  "pt",
+  "ro",
+  "ru",
+  "sk",
+  "sr",
+  "sv",
+  "ta",
+  "te",
+  "uk",
+  "vi",
+  "zh"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "truthfulqa/truthful_qa",
+  "parent_url": "https://huggingface.co/datasets/truthfulqa/truthful_qa"
+ },
+ "translation_type": "machine",
+ "engine_or_translator": "gpt-3.5-turbo (University of Oregon translations)",
+ "human_verification": "unknown",
+ "license": "cc-by-nc-4.0",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no human-review statement in the card"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/alexandrainst/m_truthfulqa/raw/f0445d470f1925882b990f5f247fdcf288972f60/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "ccaac3fe458bd10659ebd42664df81b0d6e72a5f05ada896aa74e98e31776f64",
+   "hub_revision": "f0445d470f1925882b990f5f247fdcf288972f60",
+   "quote": "This dataset is a machine translated version of the TruthfulQA dataset, translated using GPT-3.5-turbo."
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/alexandrainst/m_truthfulqa",
+   "retrieved": "2026-08-24",
+   "hub_revision": "f0445d470f1925882b990f5f247fdcf288972f60",
+   "quote": "license: cc-by-nc-4.0"
+  }
+ ],
+ "completeness": 0.8333,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ }
+}

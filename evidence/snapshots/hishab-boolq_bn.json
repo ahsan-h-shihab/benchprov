@@ -1,0 +1,46 @@
+{
+ "dataset_id": "hishab/boolq_bn",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:51:46.332772+00:00",
+ "revision": "f75affa42f06492a1e6b913e2f0d330b92d6fd5a",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "multilinguality:monolingual",
+   "language:bn",
+   "license:mit",
+   "size_categories:1K<n<10K",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "arxiv:2502.11187",
+   "region:us"
+  ],
+  "cardData_license": "mit",
+  "cardData_language": [
+   "bn"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 115,
+  "lastModified": "2025-06-20T17:50:50.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/hishab/boolq_bn/raw/f75affa42f06492a1e6b913e2f0d330b92d6fd5a/README.md",
+  "sha256": "a1c42c7a5b266397c8774381354dff98c7df819fb8bf6e3565dc65c90593a4d6",
+  "bytes": 6959,
+  "yaml_front_matter": "language:\n- bn\nlicense: mit\nmultilinguality:\n- monolingual\ntask_categories:\n- question-answering\ndataset_info:\n  features:\n  - name: passage\n    dtype: string\n  - name: question\n    dtype: string\n  - name: answer\n    dtype: string\n  - name: answer_bn\n    dtype: string\n  splits:\n  - name: train\n    num_bytes: 3953515\n    num_examples: 815\n  - name: validation\n    num_bytes: 1990945\n    num_examples: 432\n  - name: test\n    num_bytes: 3282763\n    num_examples: 729\n  download_size: 324932\n  dataset_size: 9227223\nconfigs:\n- config_name: default\n  data_files:\n  - split: train\n    path: data/train-*\n  - split: validation\n    path: data/validation-*\n  - split: test\n    path: data/test-*",
+  "provenance_candidate_lines": [
+   "BoolQ Bangla (BN) is a question-answering dataset for yes/no questions, generated using GPT-4. The dataset contains 15,942 examples, with each entry consisting of a triplet: (question, passage, answer). The questions are naturally occurring, generated from unprompted and unconstrained settings. Input passages were sourced from Bangla Wikipedia, Banglapedia, and News Articles, and GPT-4 was used to",
+   "The dataset was manually reviewed by a human annotator (random samples), revealing an error rate of 1.33%, which was subsequently corrected. While efforts were made to minimize errors, there may still be a small portion of errors remaining in the dataset."
+  ],
+  "reference_links": [
+   "https://github.com/hishab-nlp/TituLM",
+   "https://arxiv.org/abs/2502.11187},"
+  ]
+ }
+}

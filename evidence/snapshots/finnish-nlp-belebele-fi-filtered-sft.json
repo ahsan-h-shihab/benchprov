@@ -1,0 +1,40 @@
+{
+ "dataset_id": "Finnish-NLP/belebele-fi-filtered-sft",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:50:49.951672+00:00",
+ "revision": "36520e7565136e3e4c175807e54608d58f6a4428",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:text-generation",
+   "task_categories:question-answering",
+   "language:fi",
+   "license:cc-by-sa-4.0",
+   "size_categories:n<1K",
+   "format:parquet",
+   "modality:tabular",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "region:us"
+  ],
+  "cardData_license": "cc-by-sa-4.0",
+  "cardData_language": [
+   "fi"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 21,
+  "lastModified": "2024-02-13T21:32:14.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/Finnish-NLP/belebele-fi-filtered-sft/raw/36520e7565136e3e4c175807e54608d58f6a4428/README.md",
+  "sha256": "6d05179973adf45676fc1d80ee875f8386020bbc96fa1ccc54ca788ce1914b7c",
+  "bytes": 1030,
+  "yaml_front_matter": "dataset_info:\n  features:\n  - name: id\n    dtype: string\n  - name: source\n    dtype: 'null'\n  - name: text\n    dtype: 'null'\n  - name: chosen\n    dtype: 'null'\n  - name: rejected\n    dtype: 'null'\n  - name: prommpt\n    dtype: 'null'\n  - name: conversations\n    list:\n    - name: from\n      dtype: string\n    - name: value\n      dtype: string\n  - name: category\n    dtype: string\n  - name: conversations_len\n    dtype: int64\n  - name: person_1\n    dtype: string\n  - name: person_2\n    dtype: string\n  - name: instruction\n    dtype: string\n  - name: response\n    dtype: string\n  - name: sample_words\n    dtype: int64\n  splits:\n  - name: train\n    num_bytes: 414674\n    num_examples: 300\n  download_size: 269823\n  dataset_size: 414674\nconfigs:\n- config_name: default\n  data_files:\n  - split: train\n    path: data/train-*\nlicense: cc-by-sa-4.0\ntask_categories:\n- text-generation\n- question-answering\nlanguage:\n- fi",
+  "provenance_candidate_lines": [],
+  "reference_links": []
+ }
+}

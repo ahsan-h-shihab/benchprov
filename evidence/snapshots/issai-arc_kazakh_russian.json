@@ -1,0 +1,40 @@
+{
+ "dataset_id": "issai/ARC_Kazakh_Russian",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:51:24.756016+00:00",
+ "revision": "7e364060fd4c853ff84afab6e2c080be427a3d4b",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "language:kk",
+   "license:cc-by-sa-4.0",
+   "size_categories:1K<n<10K",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:polars",
+   "library:mlcroissant",
+   "region:us"
+  ],
+  "cardData_license": "cc-by-sa-4.0",
+  "cardData_language": [
+   "kk"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 491,
+  "lastModified": "2026-08-17T06:20:34.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/issai/ARC_Kazakh_Russian/raw/7e364060fd4c853ff84afab6e2c080be427a3d4b/README.md",
+  "sha256": "24fa3a5ae9b198f4e78d766566a15a21e08a47c8df7a8951200935f734cbaf80",
+  "bytes": 1848,
+  "yaml_front_matter": "dataset_info:\n- config_name: kazakh\n  features:\n  - name: id\n    dtype: string\n  - name: question\n    dtype: string\n  - name: choices\n    struct:\n    - name: text\n      list: string\n    - name: label\n      list: string\n  - name: answerKey\n    dtype: string\n  - name: source\n    dtype: string\n  splits:\n  - name: test\n    num_bytes: 1695580\n    num_examples: 3548\n  download_size: 711750\n  dataset_size: 1695580\n- config_name: russian\n  features:\n  - name: id\n    dtype: string\n  - name: question\n    dtype: string\n  - name: choices\n    dtype: string\n  - name: answerKey\n    dtype: int64\n  - name: source\n    dtype: string\n  splits:\n  - name: test\n    num_bytes: 1845728\n    num_examples: 3548\n  download_size: 790394\n  dataset_size: 1845728\nconfigs:\n- config_name: kazakh\n  data_files:\n  - split: test\n    path: kazakh/test-*\n- config_name: russian\n  data_files:\n  - split: test\n    path: russian/test-*\nlicense: cc-by-sa-4.0\ntask_categories:\n- question-answering\nlanguage:\n- kk",
+  "provenance_candidate_lines": [
+   "These are the machine-translated Kazakh and Russian versions of the [ARC (AI2 Reasoning Challenge)](https://huggingface.co/datasets/allenai/ai2_arc) dataset (test set)."
+  ],
+  "reference_links": []
+ }
+}

@@ -1,0 +1,83 @@
+{
+ "record_id": "novusresearch-gsm8k-translated-tr__tr",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "NovusResearch/gsm8k-Translated-TR",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/NovusResearch/gsm8k-Translated-TR",
+  "revision": "7c5a4d00d3d5aa0da19971b5f8d9c254397d49f8"
+ },
+ "root_benchmark": "GSM8K",
+ "target_languages": [
+  "tr"
+ ],
+ "source_language": "unknown",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "openai/gsm8k",
+  "parent_url": "https://huggingface.co/datasets/openai/gsm8k"
+ },
+ "translation_type": "unknown",
+ "engine_or_translator": "unknown",
+ "human_verification": "unknown",
+ "license": "mit",
+ "claims": {
+  "translation_type": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "the card contains only 'license: mit'; the id 'gsm8k-Translated-TR' is the only provenance signal"
+  },
+  "engine_or_translator": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "not stated"
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no statement"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "derived_from": {
+   "status": "name_only",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "source_language": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "nothing but the dataset name asserts anything; source language unstated"
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/NovusResearch/gsm8k-Translated-TR",
+   "retrieved": "2026-08-24",
+   "hub_revision": "7c5a4d00d3d5aa0da19971b5f8d9c254397d49f8",
+   "quote": "license: mit"
+  },
+  {
+   "id": "e2",
+   "type": "name_only",
+   "url": "https://huggingface.co/datasets/NovusResearch/gsm8k-Translated-TR",
+   "retrieved": "2026-08-24",
+   "note": "dataset id: NovusResearch/gsm8k-Translated-TR (name is the only derivation evidence)"
+  }
+ ],
+ "completeness": 0.3333,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "Target language tr taken from the dataset id; a minimal-provenance showcase row."
+}

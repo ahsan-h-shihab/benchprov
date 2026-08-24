@@ -1,0 +1,60 @@
+{
+ "dataset_id": "neurotechnology/lt_mmlu",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:51:10.847080+00:00",
+ "revision": "a427302b58fb39998922440e3a9a3683b1c2099d",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "task_ids:multiple-choice-qa",
+   "annotations_creators:no-annotation",
+   "language_creators:expert-generated",
+   "multilinguality:monolingual",
+   "source_datasets:original",
+   "language:lt",
+   "license:mit",
+   "size_categories:10K<n<100K",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "arxiv:2009.03300",
+   "arxiv:2408.12963",
+   "region:us"
+  ],
+  "cardData_license": [
+   "mit"
+  ],
+  "cardData_language": [
+   "lt"
+  ],
+  "cardData_source_datasets": [
+   "original"
+  ],
+  "cardData_annotations_creators": [
+   "no-annotation"
+  ],
+  "downloads": 7,
+  "lastModified": "2024-08-26T06:22:27.000Z",
+  "gated": "auto"
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/neurotechnology/lt_mmlu/raw/a427302b58fb39998922440e3a9a3683b1c2099d/README.md",
+  "sha256": "a55f406b256daab3b40844a2c72749d8349b47ac06228c00fe6e4f83118ced0c",
+  "bytes": 47221,
+  "gated_note": "dataset is gated: the pinned URL requires an authenticated, condition-accepting session",
+  "yaml_front_matter": "annotations_creators:\n- no-annotation\nlanguage_creators:\n- expert-generated\nlanguage:\n- lt\nlicense:\n- mit\nmultilinguality:\n- monolingual\nsize_categories:\n- 10K<n<100K\nsource_datasets:\n- original\ntask_categories:\n- question-answering\ntask_ids:\n- multiple-choice-qa\npaperswithcode_id: mmlu\npretty_name: Measuring Massive Multitask Language Understanding\nlanguage_bcp47:\n- en-US\ndataset_info:\n- config_name: abstract_algebra\n  features:\n  - name: question\n    dtype: string\n  - name: subject\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype:\n      class_label:\n        names:\n          '0': A\n          '1': B\n          '2': C\n          '3': D\n  splits:\n  - name: test\n    num_bytes: 49618.6654322746\n    num_examples: 100\n  - name: validation\n    num_bytes: 5485.515349444808\n    num_examples: 16\n  - name: dev\n    num_bytes: 2199.1754385964914\n    num_examples: 5\n  download_size: 17143\n  dataset_size: 57303.3562203159\n- config_name: all\n  features:\n  - name: question\n    dtype: string\n  - name: subject\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype:\n      class_label:\n        names:\n          '0': A\n          '1': B\n          '2': C\n          '3': D\n  splits:\n  - name: test\n    num_bytes: 6967453\n    num_examples: 14042\n  - name: validation\n    num_bytes: 763484\n    num_examples: 1816\n  - name: dev\n    num_bytes: 125353\n    num_examples: 285\n  download_size: 51503402\n  dataset_size: 168856915\n- config_name: anatomy\n  features:\n  - name: question\n    dtype: string\n  - name: subject\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype:\n      class_label:\n        names:\n          '0': A\n          '1': B\n          '2': C\n          '3': D\n  splits:\n  - name: test\n    num_bytes: 66985.19833357072\n    num_examples: 135\n  - name: validation\n    num_bytes: 6981.5649902024825\n    num_examples: 19\n  - name: dev\n    num_bytes: 2199.1754385964914\n    num_examples: 5\n  download_size: 28864\n  dataset_size: 76165.9387623697\n- config_name: astronomy\n  features:\n  - name: question\n    dtype: string\n  - name: subject\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype:\n      class_label:\n        names:\n          '0': A\n          '1': B\n          '2': C\n          '3': D\n  splits:\n  - name: test\n    num_bytes: 75420.3714570574\n    num_examples: 152\n  - name: validation\n    num_bytes: 7978.931417374265\n    num_examples: 21\n  - name: dev\n    num_bytes: 2199.1754385964914\n    num_examples: 5\n  download_size: 39316\n  dataset_size: 85598.47831302814\n- config_name: business_ethics\n  features:\n  - name: question\n    dtype: string\n  - name: subject\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype:\n      class_label:\n        names:\n          '0': A\n          '1': B\n          '2': C\n          '3': D\n  splits:\n  - name: test\n    num_bytes: 49618.6654322746\n    num_examples: 100\n  - name: validation\n    num_bytes: 5485.515349444808\n    num_examples: 16\n  - name: dev\n    num_bytes: 2199.1754385964914\n    num_examples: 5\n  download_size: 31619\n  dataset_size: 57303.3562203159\n- config_name: clinical_knowledge\n  features:\n  - name: question\n    dtype: string\n  - name: subject\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype:\n      class_label:\n        names:\n          '0': A\n          '1': B\n          '2': C\n          '3': D\n  splits:\n  - name: test\n    num_bytes: 131489.4633955277\n    num_examples: 265\n  - name: validation\n    num_bytes: 14461.813193990856\n    num_examples: 34\n  - name: dev\n    num_bytes: 2199.1754385964914\n    num_examples: 5\n  download_size: 51655\n  dataset_size: 148150.45202811505\n- config_name: college_biology\n  features:\n  - name: question\n    dtype: string\n  - name: subject\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype:\n      class_label:\n        names:\n          '0': A\n          '1': B\n          '2': C\n         ",
+  "provenance_candidate_lines": [
+   "The MMLU benchmark has been translated into Lithuanian using GPT-4. This dataset is utilized as a benchmark and forms part of the evaluation protocol for Lithuanian language models, as outlined in the technical report *OPEN LLAMA2 MODEL FOR THE LITHUANIAN LANGUAGE* ([Nakvosas et al., 2024](https://arxiv.org/abs/2408.12963))",
+   "@misc{nakvosas2024openllama2modellithuanian,",
+   "title={Open Llama2 Model for the Lithuanian Language},"
+  ],
+  "reference_links": [
+   "https://arxiv.org/abs/2009.03300",
+   "https://arxiv.org/abs/2408.12963",
+   "https://arxiv.org/abs/2408.12963},"
+  ]
+ }
+}

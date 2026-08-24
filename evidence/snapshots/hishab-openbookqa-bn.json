@@ -1,0 +1,45 @@
+{
+ "dataset_id": "hishab/openbookqa-bn",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:51:45.099534+00:00",
+ "revision": "6c37536b1712cf2607f9f52e2f4d10d25a3de53c",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "multilinguality:monolingual",
+   "language:bn",
+   "license:unknown",
+   "size_categories:1K<n<10K",
+   "format:json",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "arxiv:2502.11187",
+   "region:us"
+  ],
+  "cardData_license": "unknown",
+  "cardData_language": [
+   "bn"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 192,
+  "lastModified": "2025-06-20T17:49:09.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/hishab/openbookqa-bn/raw/6c37536b1712cf2607f9f52e2f4d10d25a3de53c/README.md",
+  "sha256": "a8288235b191b6ffedc4d0bb24cfe7f6edc4cb37bf6276c3a27a5f719d85b6ea",
+  "bytes": 2655,
+  "yaml_front_matter": "language:\n- bn\nlicense: unknown\nmultilinguality:\n- monolingual\nsize_categories:\n- 1K<n<10K\ntask_categories:\n- question-answering\ndataset_info:\n- config_name: additional\n  features:\n  - name: id\n    dtype: string\n  - name: question_stem\n    dtype: string\n  - name: choices\n    sequence:\n    - name: text\n      dtype: string\n    - name: label\n      dtype: string",
+  "provenance_candidate_lines": [
+   "This is the Bangla-translated version of the [OpenBookQA](https://huggingface.co/datasets/allenai/openbookqa) dataset. The dataset was translated using a new method called Expressive Semantic Translation (EST), which combines Google Machine Translation with LLM-based rewriting modifications. This method enhances the semantic accuracy and expressiveness of the translated content. OpenBookQA focuses"
+  ],
+  "reference_links": [
+   "https://github.com/hishab-nlp/lm-evaluation-harness",
+   "https://arxiv.org/abs/2502.11187},"
+  ]
+ }
+}

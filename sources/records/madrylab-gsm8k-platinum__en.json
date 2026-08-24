@@ -1,0 +1,88 @@
+{
+ "record_id": "madrylab-gsm8k-platinum__en",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "madrylab/gsm8k-platinum",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/madrylab/gsm8k-platinum",
+  "revision": "e762492455a1cf7967de89f05b6bef72fc713b66"
+ },
+ "root_benchmark": "GSM8K",
+ "target_languages": [
+  "en"
+ ],
+ "source_language": "not_applicable",
+ "derived_from": {
+  "kind": "subset_or_filter_of",
+  "parent_id": "openai/gsm8k",
+  "parent_url": "https://huggingface.co/datasets/openai/gsm8k"
+ },
+ "translation_type": "native_original",
+ "engine_or_translator": "not_applicable",
+ "human_verification": "not_applicable",
+ "license": "mit",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "not_applicable",
+   "evidence": []
+  },
+  "human_verification": {
+   "status": "not_applicable",
+   "evidence": []
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "not_applicable",
+   "evidence": []
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/madrylab/gsm8k-platinum/raw/e762492455a1cf7967de89f05b6bef72fc713b66/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "2a630537c2fd0c6e62d44f0373fd68dad1a272e5ebe5fa8be63f2ba3e09d4d05",
+   "hub_revision": "e762492455a1cf7967de89f05b6bef72fc713b66",
+   "quote": "1. *consensus*: all LLMs agreed with the label, so the example was not manually reviewed. 2. *verified*: the original target was manually verified to be correct.",
+   "note": "revised GSM8K test set: items flagged by LLMs, then manually verified/re-labeled or rejected"
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/madrylab/gsm8k-platinum",
+   "retrieved": "2026-08-24",
+   "hub_revision": "e762492455a1cf7967de89f05b6bef72fc713b66",
+   "quote": "license: mit"
+  }
+ ],
+ "completeness": 1.0,
+ "provenance_state": "complete",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "per_item_provenance": {
+  "field": "cleaning_status",
+  "description": "per-item label-verification status (consensus / verified / re-labeled)"
+ },
+ "notes": "English label-revision row; 'The further annotations we provide are licensed under the CC BY-SA 4.0 license' per card — hub license tag records mit."
+}

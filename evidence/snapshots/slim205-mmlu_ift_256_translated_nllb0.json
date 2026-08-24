@@ -1,0 +1,33 @@
+{
+ "dataset_id": "Slim205/mmlu_ift_256_translated_nllb0",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:50:16.236454+00:00",
+ "revision": "bd3b637d7ab2358683d5a201dee53a52d5000e04",
+ "hub_metadata": {
+  "tags": [
+   "size_categories:10K<n<100K",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "region:us"
+  ],
+  "cardData_license": null,
+  "cardData_language": null,
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 17,
+  "lastModified": "2024-09-07T02:54:13.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/Slim205/mmlu_ift_256_translated_nllb0/raw/bd3b637d7ab2358683d5a201dee53a52d5000e04/README.md",
+  "sha256": "d7cc26c169b5d0336c8ca095f64df67dca18a15d13789563fc81ffa85bf94ba9",
+  "bytes": 697,
+  "yaml_front_matter": "dataset_info:\n  features:\n  - name: question\n    dtype: string\n  - name: subject\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype:\n      class_label:\n        names:\n          '0': A\n          '1': B\n          '2': C\n          '3': D\n  - name: ift_instruction\n    dtype: string\n  - name: ift_answer\n    dtype: string\n  - name: translated_instruction\n    dtype: string\n  - name: translated_answer\n    dtype: string\n  splits:\n  - name: auxiliary_train\n    num_bytes: 21188574\n    num_examples: 10000\n  download_size: 11852104\n  dataset_size: 21188574\nconfigs:\n- config_name: default\n  data_files:\n  - split: auxiliary_train\n    path: data/auxiliary_train-*",
+  "provenance_candidate_lines": [],
+  "reference_links": []
+ }
+}

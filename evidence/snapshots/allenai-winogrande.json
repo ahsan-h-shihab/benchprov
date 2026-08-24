@@ -1,0 +1,53 @@
+{
+ "dataset_id": "allenai/winogrande",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:49:52.554342+00:00",
+ "revision": "01e74176c63542e6b0bcb004dcdea22d94fb67b5",
+ "hub_metadata": {
+  "tags": [
+   "language:en",
+   "size_categories:10K<n<100K",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:polars",
+   "library:mlcroissant",
+   "region:us"
+  ],
+  "cardData_license": null,
+  "cardData_language": [
+   "en"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 238128,
+  "lastModified": "2025-07-11T17:33:56.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/allenai/winogrande/raw/01e74176c63542e6b0bcb004dcdea22d94fb67b5/README.md",
+  "sha256": "fd653689cc77706672b40cd040156ad57f4969656d25a14be645cffa8ef55176",
+  "bytes": 11171,
+  "yaml_front_matter": "language:\n- en\npaperswithcode_id: winogrande\npretty_name: WinoGrande\ndataset_info:\n- config_name: winogrande_debiased\n  features:\n  - name: sentence\n    dtype: string\n  - name: option1\n    dtype: string\n  - name: option2\n    dtype: string\n  - name: answer\n    dtype: string\n  splits:\n  - name: train\n    num_bytes: 1203404\n    num_examples: 9248\n  - name: test\n    num_bytes: 227633\n    num_examples: 1767\n  - name: validation\n    num_bytes: 164183\n    num_examples: 1267\n  download_size: 820340\n  dataset_size: 1595220\n- config_name: winogrande_l\n  features:\n  - name: sentence\n    dtype: string\n  - name: option1\n    dtype: string\n  - name: option2\n    dtype: string\n  - name: answer\n    dtype: string\n  splits:\n  - name: train\n    num_bytes: 1319544\n    num_examples: 10234\n  - name: test\n    num_bytes: 227633\n    num_examples: 1767\n  - name: validation\n    num_bytes: 164183\n    num_examples: 1267\n  download_size: 733064\n  dataset_size: 1711360\n- config_name: winogrande_m\n  features:\n  - name: sentence\n    dtype: string\n  - name: option1\n    dtype: string\n  - name: option2\n    dtype: string\n  - name: answer\n    dtype: string\n  splits:\n  - name: train\n    num_bytes: 328985\n    num_examples: 2558\n  - name: test\n    num_bytes: 227633\n    num_examples: 1767\n  - name: validation\n    num_bytes: 164183\n    num_examples: 1267\n  download_size: 337379\n  dataset_size: 720801\n- config_name: winogrande_s\n  features:\n  - name: sentence\n    dtype: string\n  - name: option1\n    dtype: string\n  - name: option2\n    dtype: string\n  - name: answer\n    dtype: string\n  splits:\n  - name: train\n    num_bytes: 82292\n    num_examples: 640\n  - name: test\n    num_bytes: 227633\n    num_examples: 1767\n  - name: validation\n    num_bytes: 164183\n    num_examples: 1267\n  download_size: 238397\n  dataset_size: 474108\n- config_name: winogrande_xl\n  features:\n  - name: sentence\n    dtype: string\n  - name: option1\n    dtype: string\n  - name: option2\n    dtype: string\n  - name: answer\n    dtype: string\n  splits:\n  - name: train\n    num_bytes: 5185752\n    num_examples: 40398\n  - name: test\n    num_bytes: 227633\n    num_examples: 1767\n  - name: validation\n    num_bytes: 164183\n    num_examples: 1267\n  download_size: 2262090\n  dataset_size: 5577568\n- config_name: winogrande_xs\n  features:\n  - name: sentence\n    dtype: string\n  - name: option1\n    dtype: string\n  - name: option2\n    dtype: string\n  - name: answer\n    dtype: string\n  splits:\n  - name: train\n    num_bytes: 20688\n    num_examples: 160\n  - name: test\n    num_bytes: 227633\n    num_examples: 1767\n  - name: validation\n    num_bytes: 164183\n    num_examples: 1267\n  download_size: 215301\n  dataset_size: 412504\nconfigs:\n- config_name: winogrande_debiased\n  data_files:\n  - split: train\n    path: winogrande_debiased/train-*\n  - split: test\n    path: winogrande_debiased/test-*\n  - split: validation\n    path: winogrande_debiased/validation-*\n- config_name: winogrande_l\n  data_files:\n  - split: train\n    path: winogrande_l/train-*\n  - split: test\n    path: winogrande_l/test-*\n  - split: validation\n    path: winogrande_l/validation-*\n- config_name: winogrande_m\n  data_files:\n  - split: train\n    path: winogrande_m/train-*\n  - split: test\n    path: winogrande_m/test-*\n  - split: validation\n    path: winogrande_m/validation-*\n- config_name: winogrande_s\n  data_files:\n  - split: train\n    path: winogrande_s/train-*\n  - split: test\n    path: winogrande_s/test-*\n  - split: validation\n    path: winogrande_s/validation-*\n- config_name: winogrande_xl\n  data_files:\n  - split: train\n    path: winogrande_xl/train-*\n  - split: test\n    path: winogrande_xl/test-*\n  - split: validation\n    path: winogrande_xl/validation-*\n- config_name: winogrande_xs\n  data_files:\n  - split: train\n    path: winogrande_xs/train-*\n  - split: test\n    path: winogrande_xs/test-*\n  - split: validation\n    path: winogrande_xs/validation-*",
+  "provenance_candidate_lines": [
+   "- [Annotations](#annotations)",
+   "- **Size of the generated dataset:** 10.50 MB",
+   "- **Size of the generated dataset:** 1.59 MB",
+   "- **Size of the generated dataset:** 1.71 MB",
+   "- **Size of the generated dataset:** 0.72 MB",
+   "- **Size of the generated dataset:** 0.47 MB",
+   "- **Size of the generated dataset:** 5.58 MB",
+   "### Annotations",
+   "#### Annotation process",
+   "#### Who are the annotators?"
+  ],
+  "reference_links": [
+   "https://github.com/huggingface/datasets/blob/master/CONTRIBUTING.md#how-to-contribute-to-the-dataset-cards",
+   "https://github.com/thomwolf",
+   "https://github.com/TevenLeScao",
+   "https://github.com/patrickvonplaten",
+   "https://github.com/lewtun"
+  ]
+ }
+}

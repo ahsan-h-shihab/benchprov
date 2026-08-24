@@ -1,0 +1,87 @@
+{
+ "record_id": "hishab-piqa-bn__bn",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "hishab/piqa-bn",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/hishab/piqa-bn",
+  "revision": "50700f511f827bc489954beed3491c76a606c45a"
+ },
+ "root_benchmark": "PIQA",
+ "target_languages": [
+  "bn"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "ybisk/piqa",
+  "parent_url": "https://huggingface.co/datasets/ybisk/piqa"
+ },
+ "translation_type": "machine",
+ "engine_or_translator": "Google Translate + LLM rewriting (EST; LLM unnamed)",
+ "human_verification": "unknown",
+ "license": "mit",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no human-review statement"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/hishab/piqa-bn/raw/50700f511f827bc489954beed3491c76a606c45a/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "7971436fa87765d81be1a17f49cc216d79b61a64fdf9c934cfd26504e17faccf",
+   "hub_revision": "50700f511f827bc489954beed3491c76a606c45a",
+   "quote": "The dataset was translated using a new method called Expressive Semantic Translation (EST), which combines Google Translation with LLM-based rewriting."
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/hishab/piqa-bn",
+   "retrieved": "2026-08-24",
+   "hub_revision": "50700f511f827bc489954beed3491c76a606c45a",
+   "quote": "license: mit"
+  }
+ ],
+ "completeness": 0.8333,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ }
+}

@@ -1,0 +1,56 @@
+{
+ "dataset_id": "Mathoctopus/GSM8KInstruct_Parallel",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:50:44.651153+00:00",
+ "revision": "dd8076b83bacd7c6ade2829317e8a500c6ffbec4",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "language:en",
+   "language:zh",
+   "language:es",
+   "language:fr",
+   "language:th",
+   "language:sw",
+   "language:ja",
+   "language:bn",
+   "language:de",
+   "language:ru",
+   "license:apache-2.0",
+   "size_categories:10K<n<100K",
+   "format:json",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "region:us"
+  ],
+  "cardData_license": "apache-2.0",
+  "cardData_language": [
+   "en",
+   "zh",
+   "es",
+   "fr",
+   "th",
+   "sw",
+   "ja",
+   "bn",
+   "de",
+   "ru"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 851,
+  "lastModified": "2023-10-15T14:48:41.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/Mathoctopus/GSM8KInstruct_Parallel/raw/dd8076b83bacd7c6ade2829317e8a500c6ffbec4/README.md",
+  "sha256": "784d8fd6517ad1999bb8c8218bac8ee402e4b706fbb0fc4314a4681205b5b82f",
+  "bytes": 155,
+  "yaml_front_matter": "license: apache-2.0\ntask_categories:\n- question-answering\nlanguage:\n- en\n- zh\n- es\n- fr\n- th\n- sw\n- ja\n- bn\n- de\n- ru\nsize_categories:\n- 10K<n<100K",
+  "provenance_candidate_lines": [],
+  "reference_links": []
+ }
+}

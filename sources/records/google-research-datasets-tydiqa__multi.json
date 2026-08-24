@@ -1,0 +1,91 @@
+{
+ "record_id": "google-research-datasets-tydiqa__multi",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "google-research-datasets/tydiqa",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/google-research-datasets/tydiqa",
+  "revision": "da78f23f9119363459acbaf46bf89426ff26c259"
+ },
+ "root_benchmark": "TyDiQA",
+ "target_languages": [
+  "ar",
+  "bn",
+  "fi",
+  "id",
+  "ja",
+  "ko",
+  "ru",
+  "sw",
+  "te",
+  "th"
+ ],
+ "source_language": "not_applicable",
+ "derived_from": {
+  "kind": "none",
+  "parent_id": null
+ },
+ "translation_type": "native_original",
+ "engine_or_translator": "not_applicable",
+ "human_verification": "not_applicable",
+ "license": "apache-2.0",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "not_applicable",
+   "evidence": []
+  },
+  "human_verification": {
+   "status": "not_applicable",
+   "evidence": []
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "not_applicable",
+   "evidence": []
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/google-research-datasets/tydiqa/raw/da78f23f9119363459acbaf46bf89426ff26c259/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "da9c2ab4588734310b6a527f5895d15b952c178949e5e298b07287bb40c266cc",
+   "hub_revision": "da78f23f9119363459acbaf46bf89426ff26c259",
+   "quote": "the data is collected directly in each language without the use of translation (unlike MLQA and XQuAD)."
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/google-research-datasets/tydiqa",
+   "retrieved": "2026-08-24",
+   "hub_revision": "da78f23f9119363459acbaf46bf89426ff26c259",
+   "quote": "license: [\"apache-2.0\"]"
+  }
+ ],
+ "completeness": 1.0,
+ "provenance_state": "complete",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "Native multilingual contrast row: 11 typologically diverse languages, questions written natively."
+}

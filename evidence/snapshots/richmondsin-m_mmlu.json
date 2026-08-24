@@ -1,0 +1,62 @@
+{
+ "dataset_id": "richmondsin/m_mmlu",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:52:04.153232+00:00",
+ "revision": "4a0d3bc50a67142269573760718ea88477269255",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "task_ids:multiple-choice-qa",
+   "language:ca",
+   "language:en",
+   "language:es",
+   "language:hi",
+   "language:id",
+   "language:it",
+   "language:ml",
+   "language:mr",
+   "language:ru",
+   "language:zh",
+   "license:cc-by-nc-4.0",
+   "size_categories:100K<n<1M",
+   "format:json",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "region:us"
+  ],
+  "cardData_license": "cc-by-nc-4.0",
+  "cardData_language": [
+   "ca",
+   "en",
+   "es",
+   "hi",
+   "id",
+   "it",
+   "ml",
+   "mr",
+   "ru",
+   "zh"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 576,
+  "lastModified": "2024-12-01T12:57:25.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/richmondsin/m_mmlu/raw/4a0d3bc50a67142269573760718ea88477269255/README.md",
+  "sha256": "a166afc4fc1540c177accb4aa9f8f6ab09df1a74de11809e4f2946c85471cd7e",
+  "bytes": 2496,
+  "yaml_front_matter": "configs:\n- config_name: ca\n  data_files:\n  - split: train\n    path: data/ca/train.jsonl\n  - split: val\n    path: data/ca/val.jsonl\n  - split: test\n    path: data/ca/test.jsonl\n- config_name: en\n  data_files:\n  - split: train\n    path: data/en/train.jsonl\n  - split: val\n    path: data/en/val.jsonl\n  - split: test\n    path: data/en/test.jsonl\n- config_name: es\n  data_files:\n  - split: train\n    path: data/es/train.jsonl\n  - split: val\n    path: data/es/val.jsonl\n  - split: test\n    path: data/es/test.jsonl\n- config_name: hi\n  data_files:\n  - split: train\n    path: data/hi/train.jsonl\n  - split: val\n    path: data/hi/val.jsonl\n  - split: test\n    path: data/hi/test.jsonl\n- config_name: id\n  data_files:\n  - split: train\n    path: data/id/train.jsonl\n  - split: val\n    path: data/id/val.jsonl\n  - split: test\n    path: data/id/test.jsonl\n- config_name: it\n  data_files:\n  - split: train\n    path: data/it/train.jsonl\n  - split: val\n    path: data/it/val.jsonl\n  - split: test\n    path: data/it/test.jsonl\n- config_name: ml\n  data_files:\n  - split: train\n    path: data/ml/train.jsonl\n  - split: val\n    path: data/ml/val.jsonl\n  - split: test\n    path: data/ml/test.jsonl\n- config_name: mr\n  data_files:\n  - split: train\n    path: data/mr/train.jsonl\n  - split: val\n    path: data/mr/val.jsonl\n  - split: test\n    path: data/mr/test.jsonl\n- config_name: ru\n  data_files:\n  - split: train\n    path: data/ru/train.jsonl\n  - split: val\n    path: data/ru/val.jsonl\n  - split: test\n    path: data/ru/test.jsonl\n- config_name: zh\n  data_files:\n  - split: train\n    path: data/zh/train.jsonl\n  - split: val\n    path: data/zh/val.jsonl\n  - split: test\n    path: data/zh/test.jsonl\nlicense: cc-by-nc-4.0\ntask_categories:\n- question-answering\ntask_ids:\n- multiple-choice-qa\nsize_categories:\n- 10K<n<100K\nlanguage:\n- ca\n- en\n- es\n- hi\n- id\n- it\n- ml\n- mr\n- ru\n- zh",
+  "provenance_candidate_lines": [
+   "This dataset is a machine translated version of the [MMLU dataset](https://huggingface.co/datasets/cais/mmlu).",
+   "The languages was translated using GPT-3.5-turbo by the University of Oregon, and this part of the dataset was originally uploaded to [this Github repository](https://github.com/nlp-uoregon/mlmm-evaluation)."
+  ],
+  "reference_links": [
+   "https://github.com/nlp-uoregon/mlmm-evaluation"
+  ]
+ }
+}

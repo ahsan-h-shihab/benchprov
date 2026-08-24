@@ -1,0 +1,37 @@
+{
+ "dataset_id": "issai/KazLLM_Benchmark_Dataset",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:51:26.476113+00:00",
+ "revision": "f1b93317d6b2f48f8b60d49a14cb54dc9e6e007f",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "license:cc-by-nc-4.0",
+   "region:us"
+  ],
+  "cardData_license": "cc-by-nc-4.0",
+  "cardData_language": null,
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 73,
+  "lastModified": "2024-12-09T09:52:43.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/issai/KazLLM_Benchmark_Dataset/raw/f1b93317d6b2f48f8b60d49a14cb54dc9e6e007f/README.md",
+  "sha256": "3278e4ccc3568f9d4199dee52cf052e575bb72f43ec2998b597aba7adbfd6e13",
+  "bytes": 843,
+  "yaml_front_matter": "license: cc-by-nc-4.0\ntask_categories:\n- question-answering\npretty_name: Benchmark_datasets",
+  "provenance_candidate_lines": [
+   "- [issai/LLama-3.1-KazLLM-1.0-70B](https://huggingface.co/issai/LLama-3.1-KazLLM-1.0-70B)",
+   "- [issai/LLama-3.1-KazLLM-1.0-70B-GGUF4](https://huggingface.co/issai/LLama-3.1-KazLLM-1.0-70B-GGUF4)",
+   "- [issai/LLama-3.1-KazLLM-1.0-70B-AWQ4](https://huggingface.co/issai/LLama-3.1-KazLLM-1.0-70B-AWQ4)",
+   "- [issai/LLama-3.1-KazLLM-1.0-8B](https://huggingface.co/issai/LLama-3.1-KazLLM-1.0-8B)",
+   "- [issai/LLama-3.1-KazLLM-1.0-8B-GGUF4](https://huggingface.co/issai/LLama-3.1-KazLLM-1.0-8B-GGUF4)",
+   "- [issai/LLama-3.1-KazLLM-1.0-8B-AWQ4](https://huggingface.co/issai/LLama-3.1-KazLLM-1.0-8B-AWQ4)"
+  ],
+  "reference_links": [
+   "https://github.com/IS2AI/KazLLM_Benchmark"
+  ]
+ }
+}

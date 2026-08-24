@@ -1,0 +1,89 @@
+{
+ "record_id": "facebook-belebele__mul",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "facebook/belebele",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/facebook/belebele",
+  "revision": "7899cdfa4e1e0d733fd77c848e2c273cb1d32be2"
+ },
+ "root_benchmark": "Belebele",
+ "target_languages": [
+  "mul"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "facebook/flores",
+  "parent_url": "https://huggingface.co/datasets/facebook/flores"
+ },
+ "translation_type": "human",
+ "engine_or_translator": "Language Service Provider (professional, unnamed)",
+ "human_verification": "full",
+ "license": "cc-by-sa-4.0",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "human_verification": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ],
+   "note": "iterative QA loops with the LSP described in the paper"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "paper",
+   "url": "https://arxiv.org/html/2308.16884",
+   "retrieved": "2026-08-24",
+   "quote": "We opted to create multiple-choice questions and answers in English and then translate",
+   "note": "'We implement an iterative procedure with the Language Service Provider (LSP)'; 'extensive quality-assurance loops implemented by the NLLB team and the LSP'"
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/facebook/belebele",
+   "retrieved": "2026-08-24",
+   "hub_revision": "7899cdfa4e1e0d733fd77c848e2c273cb1d32be2",
+   "quote": "license: cc-by-sa-4.0"
+  }
+ ],
+ "completeness": 1.0,
+ "provenance_state": "complete",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "122 language variants; passages are FLORES-200 sentences (themselves professionally translated); target_languages recorded as 'mul' — see the dataset for the full variant list."
+}

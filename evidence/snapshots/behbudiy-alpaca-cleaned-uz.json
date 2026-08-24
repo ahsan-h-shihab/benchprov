@@ -1,0 +1,35 @@
+{
+ "dataset_id": "behbudiy/alpaca-cleaned-uz",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:51:54.398914+00:00",
+ "revision": "5acc33098c74ef3581bf4e46ef2b16ea50bb5cf2",
+ "hub_metadata": {
+  "tags": [
+   "size_categories:10K<n<100K",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "region:us"
+  ],
+  "cardData_license": null,
+  "cardData_language": null,
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 70,
+  "lastModified": "2024-09-17T08:58:44.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/behbudiy/alpaca-cleaned-uz/raw/5acc33098c74ef3581bf4e46ef2b16ea50bb5cf2/README.md",
+  "sha256": "4cdd9dcb286ac31263f43e6b59cc5ec97f29ccea06ba0eaa03f4cbf7c7ea715b",
+  "bytes": 844,
+  "yaml_front_matter": "dataset_info:\n  features:\n  - name: instruction\n    dtype: string\n  - name: input\n    dtype: string\n  - name: output\n    dtype: string\n  splits:\n  - name: train\n    num_bytes: 44358425\n    num_examples: 51760\n  download_size: 25083635\n  dataset_size: 44358425\nconfigs:\n- config_name: default\n  data_files:\n  - split: train\n    path: data/train-*",
+  "provenance_candidate_lines": [
+   "This dataset is a translation of the yahma/alpaca-cleaned dataset into Uzbek, leveraging the Google Translate API. The original dataset is a cleaned version of the Stanford Alpaca dataset, which contains instruction-following data for fine-tuning large language models."
+  ],
+  "reference_links": []
+ }
+}

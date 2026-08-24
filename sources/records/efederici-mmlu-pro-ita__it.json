@@ -1,0 +1,87 @@
+{
+ "record_id": "efederici-mmlu-pro-ita__it",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "efederici/MMLU-Pro-ita",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/efederici/MMLU-Pro-ita",
+  "revision": "09f349b9f3de49fc5851ae2cb37f2bc77a5911fb"
+ },
+ "root_benchmark": "MMLU-Pro",
+ "target_languages": [
+  "it"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "TIGER-Lab/MMLU-Pro",
+  "parent_url": "https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro"
+ },
+ "translation_type": "machine",
+ "engine_or_translator": "Claude Opus (draft-and-refine)",
+ "human_verification": "unknown",
+ "license": "mit",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "draft-and-refine is a model-side technique; no human review stated"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/efederici/MMLU-Pro-ita/raw/09f349b9f3de49fc5851ae2cb37f2bc77a5911fb/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "23547b72d92a480ee07aaba556bc200a0515f52bc83e8438b87e63d755f650e5",
+   "hub_revision": "09f349b9f3de49fc5851ae2cb37f2bc77a5911fb",
+   "quote": "The dataset was translated using Claude Opus using a *draft and refine* technique. Only the refined translation was kept."
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/efederici/MMLU-Pro-ita",
+   "retrieved": "2026-08-24",
+   "hub_revision": "09f349b9f3de49fc5851ae2cb37f2bc77a5911fb",
+   "quote": "license: mit"
+  }
+ ],
+ "completeness": 0.8333,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ }
+}

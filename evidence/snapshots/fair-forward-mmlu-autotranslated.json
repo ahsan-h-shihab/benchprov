@@ -1,0 +1,33 @@
+{
+ "dataset_id": "fair-forward/mmlu-autotranslated",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:50:20.004980+00:00",
+ "revision": "6c8ca717cf60c6d644874b1dc242b80bed66ed2e",
+ "hub_metadata": {
+  "tags": [
+   "size_categories:10K<n<100K",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "region:us"
+  ],
+  "cardData_license": null,
+  "cardData_language": null,
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 325,
+  "lastModified": "2025-10-26T20:23:05.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/fair-forward/mmlu-autotranslated/raw/6c8ca717cf60c6d644874b1dc242b80bed66ed2e/README.md",
+  "sha256": "ec4f82ddb6716dc25c777e68f4d50eac144f6afc58099fce3f6676c4ec1bdc81",
+  "bytes": 55668,
+  "yaml_front_matter": "dataset_info:\n- config_name: ab\n  features:\n  - name: subject\n    dtype: string\n  - name: question\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype: string\n  splits:\n  - name: dev\n    num_bytes: 13363\n    num_examples: 25\n  - name: test\n    num_bytes: 47126\n    num_examples: 100\n  download_size: 31773\n  dataset_size: 60489\n- config_name: ace\n  features:\n  - name: subject\n    dtype: string\n  - name: question\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype: string\n  splits:\n  - name: dev\n    num_bytes: 8704\n    num_examples: 25\n  - name: test\n    num_bytes: 30985\n    num_examples: 100\n  download_size: 26698\n  dataset_size: 39689\n- config_name: ach\n  features:\n  - name: subject\n    dtype: string\n  - name: question\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype: string\n  splits:\n  - name: dev\n    num_bytes: 7415\n    num_examples: 25\n  - name: test\n    num_bytes: 27208\n    num_examples: 100\n  download_size: 22528\n  dataset_size: 34623\n- config_name: af\n  features:\n  - name: subject\n    dtype: string\n  - name: question\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype: string\n  splits:\n  - name: dev\n    num_bytes: 8783\n    num_examples: 25\n  - name: test\n    num_bytes: 30037\n    num_examples: 100\n  download_size: 26363\n  dataset_size: 38820\n- config_name: as\n  features:\n  - name: subject\n    dtype: string\n  - name: question\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype: string\n  splits:\n  - name: dev\n    num_bytes: 18319\n    num_examples: 25\n  - name: test\n    num_bytes: 29432\n    num_examples: 50\n  download_size: 24422\n  dataset_size: 47751\n- config_name: awa\n  features:\n  - name: subject\n    dtype: string\n  - name: question\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype: string\n  splits:\n  - name: dev\n    num_bytes: 17159\n    num_examples: 25\n  - name: test\n    num_bytes: 28706\n    num_examples: 50\n  download_size: 23050\n  dataset_size: 45865\n- config_name: ay\n  features:\n  - name: subject\n    dtype: string\n  - name: question\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype: string\n  splits:\n  - name: dev\n    num_bytes: 9592\n    num_examples: 25\n  - name: test\n    num_bytes: 36768\n    num_examples: 100\n  download_size: 28542\n  dataset_size: 46360\n- config_name: az\n  features:\n  - name: subject\n    dtype: string\n  - name: question\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype: string\n  splits:\n  - name: dev\n    num_bytes: 8887\n    num_examples: 25\n  - name: test\n    num_bytes: 32976\n    num_examples: 100\n  download_size: 46447\n  dataset_size: 41863\n- config_name: ba\n  features:\n  - name: subject\n    dtype: string\n  - name: question\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype: string\n  splits:\n  - name: dev\n    num_bytes: 13144\n    num_examples: 25\n  - name: test\n    num_bytes: 47716\n    num_examples: 100\n  download_size: 32889\n  dataset_size: 60860\n- config_name: ban\n  features:\n  - name: subject\n    dtype: string\n  - name: question\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype: string\n  splits:\n  - name: dev\n    num_bytes: 8962\n    num_examples: 25\n  - name: test\n    num_bytes: 31879\n    num_examples: 100\n  download_size: 26204\n  dataset_size: 40841\n- config_name: bbc\n  features:\n  - name: subject\n    dtype: string\n  - name: question\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype: string\n  splits:\n  - name: dev\n    num_bytes: 8402\n    num_examples: 25\n  - name: test\n    num_bytes: 29416\n    num_examples: 100\n  download_size: 25181\n  dataset_size: 37818\n- config_name: be\n  features:\n  - name: subject\n    dtype: string\n  - name: question\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype: string\n  split",
+  "provenance_candidate_lines": [],
+  "reference_links": []
+ }
+}

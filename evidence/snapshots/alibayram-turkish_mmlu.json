@@ -1,0 +1,45 @@
+{
+ "dataset_id": "alibayram/turkish_mmlu",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:50:32.421367+00:00",
+ "revision": "30c94d45e29424a074dc754910fb44019284cc91",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:text-generation",
+   "task_categories:text-classification",
+   "task_categories:table-question-answering",
+   "language:tr",
+   "license:cc-by-nc-nd-4.0",
+   "size_categories:100K<n<1M",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "region:us"
+  ],
+  "cardData_license": "cc-by-nc-nd-4.0",
+  "cardData_language": [
+   "tr"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 186,
+  "lastModified": "2025-07-16T04:01:07.000Z",
+  "gated": "auto"
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/alibayram/turkish_mmlu/raw/30c94d45e29424a074dc754910fb44019284cc91/README.md",
+  "sha256": "5a055219ff9cfd7b9e0a9cc05c92d826403c218e5fe04b70cb4ba1df186647dd",
+  "bytes": 4552,
+  "gated_note": "dataset is gated: the pinned URL requires an authenticated, condition-accepting session",
+  "yaml_front_matter": "language:\n- tr\nlicense: cc-by-nc-nd-4.0\nsize_categories:\n- 100K<n<1M\ntask_categories:\n- text-generation\n- text-classification\n- table-question-answering\npretty_name: 'Turkish MMLU: Yapay Zeka ve Akademik Uygulamalar İçin En Kapsamlı ve\n  Özgün Türkçe Veri Seti'\ndataset_info:\n  features:\n  - name: bolum\n    dtype: string\n  - name: konu\n    dtype: string\n  - name: soru\n    dtype: string\n  - name: cevap\n    dtype: int64\n  - name: aciklama\n    dtype: string\n  - name: secenekler\n    sequence: string\n  splits:\n  - name: train\n    num_bytes: 93309652\n    num_examples: 232136\n  - name: test\n    num_bytes: 15167770\n    num_examples: 40966\n  - name: mmlu\n    num_bytes: 2287953\n    num_examples: 6200\n  download_size: 52355512\n  dataset_size: 110765375\nconfigs:\n- config_name: default\n  data_files:\n  - split: train\n    path: data/train-*\n  - split: test\n    path: data/test-*\n  - split: mmlu\n    path: data/mmlu-*",
+  "provenance_candidate_lines": [
+   "**Önemli Not:** Bu veri setini kullananların, özellikle [Zenodo](https://zenodo.org/records/13378019) üzerinden alıntı yapmaları büyük önem taşımaktadır. Zenodo üzerinden yapılan alıntılar, veri setimizin bilimsel olarak daha geniş bir çevrede tanınmasını ve indekslenmesini sağlayacaktır. Lütfen aşağıdaki Zenodo DOI numarasını kullanarak veri setine atıfta bulunun:",
+   "- Dil modellerinin eğitimi ve ince ayarı",
+   "Bu veri seti, Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) lisansı altında lisanslanmıştır. Veriyi ticari amaçlar dışında kullanabilir, paylaşabilir ve uyarlayabilirsiniz, ancak uygun atıf yapmanız, ticari amaçla kullanmamanız ve değişiklik yapıldığını belirtmeniz gerekmektedir."
+  ],
+  "reference_links": []
+ }
+}

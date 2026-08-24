@@ -1,0 +1,74 @@
+{
+ "record_id": "rowan-hellaswag__en",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "Rowan/hellaswag",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/Rowan/hellaswag",
+  "revision": "218ec52e09a7e7462a5400043bb9a69a41d06b76"
+ },
+ "root_benchmark": "HellaSwag",
+ "target_languages": [
+  "en"
+ ],
+ "source_language": "not_applicable",
+ "derived_from": {
+  "kind": "none",
+  "parent_id": null
+ },
+ "translation_type": "native_original",
+ "engine_or_translator": "not_applicable",
+ "human_verification": "not_applicable",
+ "license": "unknown",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "not_applicable",
+   "evidence": []
+  },
+  "human_verification": {
+   "status": "not_applicable",
+   "evidence": []
+  },
+  "license": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no license declared in hub metadata or card at the pinned revision"
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "not_applicable",
+   "evidence": []
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/Rowan/hellaswag/raw/218ec52e09a7e7462a5400043bb9a69a41d06b76/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "cfe6e26e7e936a447a12f7eee50f2bffb0355c3b97459496d8c7296f65c5b353",
+   "hub_revision": "218ec52e09a7e7462a5400043bb9a69a41d06b76",
+   "quote": "HellaSwag: Can a Machine Really Finish Your Sentence? is a new dataset for commonsense NLI.",
+   "note": "original English dataset (Zellers et al., 2019); contexts from ActivityNet/WikiHow with adversarially filtered machine-written negatives"
+  }
+ ],
+ "completeness": 0.6667,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "Family root. The license dimension is 'unknown' because the HF repo declares none."
+}

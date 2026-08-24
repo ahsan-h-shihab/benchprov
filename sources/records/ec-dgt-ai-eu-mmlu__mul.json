@@ -1,0 +1,99 @@
+{
+ "record_id": "ec-dgt-ai-eu-mmlu__mul",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "EC-DGT-AI/EU-MMLU",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/EC-DGT-AI/EU-MMLU",
+  "revision": "270a5d91a20727e488d68d281d46249b25c5b678"
+ },
+ "root_benchmark": "MMLU",
+ "target_languages": [
+  "mul"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "cais/mmlu",
+  "parent_url": "https://huggingface.co/datasets/cais/mmlu"
+ },
+ "translation_type": "human",
+ "engine_or_translator": "European Commission DG Translation + EMT Network translators",
+ "human_verification": "unknown",
+ "license": "mit",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "professional translation stated; a separate verification step is not described at the pinned revision"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ],
+   "note": "hub tag 'mit'; the card additionally states the translations are made available under CC BY 4.0"
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e3"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/EC-DGT-AI/EU-MMLU/raw/270a5d91a20727e488d68d281d46249b25c5b678/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "bf3f72d85045c5a5290edcadfc5cc4343e77069e9d626d909ef5c1808c24f9cb",
+   "hub_revision": "270a5d91a20727e488d68d281d46249b25c5b678",
+   "quote": "The translation has been performed by experienced professional tra[nslators]",
+   "note": "translators: European Commission Directorate-General for Translation and the EMT (European Master's in Translation) network"
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/EC-DGT-AI/EU-MMLU",
+   "retrieved": "2026-08-24",
+   "hub_revision": "270a5d91a20727e488d68d281d46249b25c5b678",
+   "quote": "license: mit"
+  },
+  {
+   "id": "e3",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/EC-DGT-AI/EU-MMLU/raw/270a5d91a20727e488d68d281d46249b25c5b678/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "bf3f72d85045c5a5290edcadfc5cc4343e77069e9d626d909ef5c1808c24f9cb",
+   "hub_revision": "270a5d91a20727e488d68d281d46249b25c5b678",
+   "quote": "The EU-MMLU dataset is a first step, consisting in the translation of a subset of the MMLU dataset into all 24 EU official languages."
+  }
+ ],
+ "completeness": 0.8333,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "Coverage is partial and growing: 'Some contents is only partially translated in the languages listed above. The remaining EU official languages will be added soon.'"
+}

@@ -1,0 +1,87 @@
+{
+ "dataset_id": "google-research-datasets/tydiqa",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:49:51.432943+00:00",
+ "revision": "da78f23f9119363459acbaf46bf89426ff26c259",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "task_ids:extractive-qa",
+   "annotations_creators:crowdsourced",
+   "language_creators:crowdsourced",
+   "multilinguality:multilingual",
+   "source_datasets:extended|wikipedia",
+   "language:ar",
+   "language:bn",
+   "language:en",
+   "language:fi",
+   "language:id",
+   "language:ja",
+   "language:ko",
+   "language:ru",
+   "language:sw",
+   "language:te",
+   "language:th",
+   "license:apache-2.0",
+   "size_categories:100K<n<1M",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:dask",
+   "library:mlcroissant",
+   "library:polars",
+   "region:us"
+  ],
+  "cardData_license": [
+   "apache-2.0"
+  ],
+  "cardData_language": [
+   "ar",
+   "bn",
+   "en",
+   "fi",
+   "id",
+   "ja",
+   "ko",
+   "ru",
+   "sw",
+   "te",
+   "th"
+  ],
+  "cardData_source_datasets": [
+   "extended|wikipedia"
+  ],
+  "cardData_annotations_creators": [
+   "crowdsourced"
+  ],
+  "downloads": 14984,
+  "lastModified": "2024-08-08T05:57:11.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/google-research-datasets/tydiqa/raw/da78f23f9119363459acbaf46bf89426ff26c259/README.md",
+  "sha256": "da9c2ab4588734310b6a527f5895d15b952c178949e5e298b07287bb40c266cc",
+  "bytes": 11085,
+  "yaml_front_matter": "annotations_creators:\n- crowdsourced\nlanguage_creators:\n- crowdsourced\nlanguage:\n- ar\n- bn\n- en\n- fi\n- id\n- ja\n- ko\n- ru\n- sw\n- te\n- th\nlicense:\n- apache-2.0\nmultilinguality:\n- multilingual\nsize_categories:\n- unknown\nsource_datasets:\n- extended|wikipedia\ntask_categories:\n- question-answering\ntask_ids:\n- extractive-qa\npaperswithcode_id: tydi-qa\npretty_name: TyDi QA\ndataset_info:\n- config_name: primary_task\n  features:\n  - name: passage_answer_candidates\n    sequence:\n    - name: plaintext_start_byte\n      dtype: int32\n    - name: plaintext_end_byte\n      dtype: int32\n  - name: question_text\n    dtype: string\n  - name: document_title\n    dtype: string\n  - name: language\n    dtype: string\n  - name: annotations\n    sequence:\n    - name: passage_answer_candidate_index\n      dtype: int32\n    - name: minimal_answers_start_byte\n      dtype: int32\n    - name: minimal_answers_end_byte\n      dtype: int32\n    - name: yes_no_answer\n      dtype: string\n  - name: document_plaintext\n    dtype: string\n  - name: document_url\n    dtype: string\n  splits:\n  - name: train\n    num_bytes: 5550573801\n    num_examples: 166916\n  - name: validation\n    num_bytes: 484380347\n    num_examples: 18670\n  download_size: 2912112378\n  dataset_size: 6034954148\n- config_name: secondary_task\n  features:\n  - name: id\n    dtype: string\n  - name: title\n    dtype: string\n  - name: context\n    dtype: string\n  - name: question\n    dtype: string\n  - name: answers\n    sequence:\n    - name: text\n      dtype: string\n    - name: answer_start\n      dtype: int32\n  splits:\n  - name: train\n    num_bytes: 52948467\n    num_examples: 49881\n  - name: validation\n    num_bytes: 5006433\n    num_examples: 5077\n  download_size: 29402238\n  dataset_size: 57954900\nconfigs:\n- config_name: primary_task\n  data_files:\n  - split: train\n    path: primary_task/train-*\n  - split: validation\n    path: primary_task/validation-*\n- config_name: secondary_task\n  data_files:\n  - split: train\n    path: secondary_task/train-*\n  - split: validation\n    path: secondary_task/validation-*",
+  "provenance_candidate_lines": [
+   "- [Annotations](#annotations)",
+   "- **Size of the generated dataset:** 6.10 GB",
+   "the use of translation (unlike MLQA and XQuAD).",
+   "- **Size of the generated dataset:** 6.04 GB",
+   "\"annotations\": {",
+   "- **Size of the generated dataset:** 58.03 MB",
+   "- `annotations`: a dictionary feature containing:",
+   "### Annotations",
+   "#### Annotation process",
+   "#### Who are the annotators?"
+  ],
+  "reference_links": [
+   "https://github.com/google-research-datasets/tydiqa",
+   "https://github.com/huggingface/datasets/blob/master/CONTRIBUTING.md#how-to-contribute-to-the-dataset-cards",
+   "https://github.com/thomwolf",
+   "https://github.com/albertvillanova",
+   "https://github.com/lewtun",
+   "https://github.com/patrickvonplaten"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "dataset_id": "FreedomIntelligence/MMLU_Indonesian",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:50:54.600935+00:00",
+ "revision": "c2773166b459b33e75440f3fb3237f0d6d1886a7",
+ "hub_metadata": {
+  "tags": [
+   "language:id",
+   "license:mit",
+   "region:us"
+  ],
+  "cardData_license": "mit",
+  "cardData_language": [
+   "id"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 140,
+  "lastModified": "2023-08-06T08:05:42.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/FreedomIntelligence/MMLU_Indonesian/raw/c2773166b459b33e75440f3fb3237f0d6d1886a7/README.md",
+  "sha256": "37777bffa06d9ec9bc261ed7a4327e4f009027bc2e2f5a88cf6e28cdd6aeaab3",
+  "bytes": 226,
+  "yaml_front_matter": "license: mit\nlanguage:\n- id",
+  "provenance_candidate_lines": [
+   "Indonesian version of MMLU dataset tranlasted by gpt-3.5-turbo."
+  ],
+  "reference_links": [
+   "https://github.com/FreedomIntelligence/MultilingualSIFT"
+  ]
+ }
+}

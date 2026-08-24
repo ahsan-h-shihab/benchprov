@@ -1,0 +1,85 @@
+{
+ "record_id": "kz-transformers-kk-socio-cultural-bench-mc__kk",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "kz-transformers/kk-socio-cultural-bench-mc",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/kz-transformers/kk-socio-cultural-bench-mc",
+  "revision": "bac9e9f5d743514f3c20791a6780af15e7e6d059"
+ },
+ "root_benchmark": "Other-native",
+ "target_languages": [
+  "kk"
+ ],
+ "source_language": "not_applicable",
+ "derived_from": {
+  "kind": "none",
+  "parent_id": null
+ },
+ "translation_type": "mixed",
+ "engine_or_translator": "unknown",
+ "human_verification": "unknown",
+ "license": "cc-by-4.0",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "the assisting LLM(s) are not named in the card"
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no verification statement in the card"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "not_applicable",
+   "evidence": []
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/kz-transformers/kk-socio-cultural-bench-mc/raw/bac9e9f5d743514f3c20791a6780af15e7e6d059/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "edc28acc83cffcc4919923b265026ddc414a709e84582e5d9c0ad461bbefcbb8",
+   "hub_revision": "bac9e9f5d743514f3c20791a6780af15e7e6d059",
+   "quote": "By combining expert-curated topics with LLM-assisted web mining, we create a diverse dataset spanning 17 culturally salient domains",
+   "note": "KazBench-KK: 7,111 Kazakh cultural-knowledge MC questions; creation combines expert curation with LLM-assisted mining of Kazakh web content"
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/kz-transformers/kk-socio-cultural-bench-mc",
+   "retrieved": "2026-08-24",
+   "hub_revision": "bac9e9f5d743514f3c20791a6780af15e7e6d059",
+   "quote": "license: cc-by-4.0"
+  }
+ ],
+ "completeness": 0.6,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "Published at ACL 2025 Field Matters (aclanthology.org/2025.fieldmatters-1.4)."
+}

@@ -1,0 +1,41 @@
+{
+ "dataset_id": "kz-transformers/mmlu-translated-kk",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:51:28.254687+00:00",
+ "revision": "97790ac915228374799d57bf3c9b1e11fbd9e007",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:multiple-choice",
+   "language:kk",
+   "license:apache-2.0",
+   "size_categories:10K<n<100K",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "region:us"
+  ],
+  "cardData_license": "apache-2.0",
+  "cardData_language": [
+   "kk"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 56,
+  "lastModified": "2025-01-24T22:09:13.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/kz-transformers/mmlu-translated-kk/raw/97790ac915228374799d57bf3c9b1e11fbd9e007/README.md",
+  "sha256": "bbbe4a1960eaeaa3533cfa63f1ec354ca1b52604c29cf161f209f17dd7df5dc6",
+  "bytes": 1171,
+  "yaml_front_matter": "language:\n- kk\nlicense: apache-2.0\ntask_categories:\n- multiple-choice\npretty_name: mmlu-kk-translated\ndataset_info:\n  features:\n  - name: Title\n    dtype: string\n  - name: Question\n    dtype: string\n  - name: Correct Answer\n    dtype: string\n  - name: Option A\n    dtype: string\n  - name: Option B\n    dtype: string\n  - name: Option C\n    dtype: string\n  - name: Option D\n    dtype: string\n  splits:\n  - name: test\n    num_bytes: 11608956\n    num_examples: 14038\n  - name: validation\n    num_bytes: 1272956\n    num_examples: 1531\n  - name: dev\n    num_bytes: 207772\n    num_examples: 285\n  download_size: 5797079\n  dataset_size: 13089684\nconfigs:\n- config_name: default\n  data_files:\n  - split: test\n    path: data/test-*\n  - split: validation\n    path: data/validation-*\n  - split: dev\n    path: data/dev-*",
+  "provenance_candidate_lines": [
+   "title = {MMLU on kazakh language: Translated MMLU Benchmark},",
+   "url = {https://huggingface.co/datasets/mmlu-translated-kk},"
+  ],
+  "reference_links": []
+ }
+}

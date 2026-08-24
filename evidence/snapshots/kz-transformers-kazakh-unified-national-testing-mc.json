@@ -1,0 +1,34 @@
+{
+ "dataset_id": "kz-transformers/kazakh-unified-national-testing-mc",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:51:31.092942+00:00",
+ "revision": "017d1f7d1c3d88159660cdd8964c8f9751a0ce3d",
+ "hub_metadata": {
+  "tags": [
+   "license:apache-2.0",
+   "size_categories:10K<n<100K",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "region:us"
+  ],
+  "cardData_license": "apache-2.0",
+  "cardData_language": null,
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 126,
+  "lastModified": "2025-01-24T22:11:14.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/kz-transformers/kazakh-unified-national-testing-mc/raw/017d1f7d1c3d88159660cdd8964c8f9751a0ce3d/README.md",
+  "sha256": "72f1c2238fca6286df22481d5d2fe35725c5f0076ce2f528b64275a52b6ac250",
+  "bytes": 1789,
+  "yaml_front_matter": "license: apache-2.0\ndataset_info:\n  features:\n  - name: subject\n    dtype: string\n  - name: question\n    dtype: string\n  - name: correct_answer\n    dtype: string\n  - name: A\n    dtype: string\n  - name: B\n    dtype: string\n  - name: C\n    dtype: string\n  - name: D\n    dtype: string\n  - name: E\n    dtype: string\n  - name: F\n    dtype: string\n  - name: G\n    dtype: string\n  - name: H\n    dtype: string\n  splits:\n  - name: kazakh_and_literature\n    num_bytes: 1546915\n    num_examples: 4688\n  - name: geography\n    num_bytes: 459995\n    num_examples: 1718\n  - name: world_history\n    num_bytes: 414274\n    num_examples: 1228\n  - name: history_of_kazakhstan\n    num_bytes: 1129815\n    num_examples: 3260\n  - name: english\n    num_bytes: 526146\n    num_examples: 2197\n  - name: biology\n    num_bytes: 417941\n    num_examples: 1536\n  - name: human_society_rights\n    num_bytes: 81269\n    num_examples: 223\n  download_size: 2197684\n  dataset_size: 4576355\nconfigs:\n- config_name: default\n  data_files:\n  - split: kazakh_and_literature\n    path: data/kazakh_and_literature-*\n  - split: geography\n    path: data/geography-*\n  - split: world_history\n    path: data/world_history-*\n  - split: history_of_kazakhstan\n    path: data/history_of_kazakhstan-*\n  - split: english\n    path: data/english-*\n  - split: biology\n    path: data/biology-*\n  - split: human_society_rights\n    path: data/human_society_rights-*",
+  "provenance_candidate_lines": [],
+  "reference_links": []
+ }
+}

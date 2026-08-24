@@ -1,0 +1,42 @@
+{
+ "dataset_id": "issai/MMLU-Pro_Kazakh_Russian",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:51:19.615627+00:00",
+ "revision": "abdda2d66756f954919425cc2948bf6ecec0cd4c",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "language:kk",
+   "license:mit",
+   "size_categories:10K<n<100K",
+   "format:parquet",
+   "modality:tabular",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:polars",
+   "library:mlcroissant",
+   "region:us"
+  ],
+  "cardData_license": "mit",
+  "cardData_language": [
+   "kk"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 488,
+  "lastModified": "2026-08-17T06:19:39.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/issai/MMLU-Pro_Kazakh_Russian/raw/abdda2d66756f954919425cc2948bf6ecec0cd4c/README.md",
+  "sha256": "9974d9b7653f756ca24425a33b7de9144d624279a7e81f2e1de41bc129b397aa",
+  "bytes": 1994,
+  "yaml_front_matter": "dataset_info:\n- config_name: kazakh\n  features:\n  - name: question_id\n    dtype: string\n  - name: question\n    dtype: string\n  - name: options\n    list: string\n  - name: answer_index\n    dtype: int32\n  - name: category\n    dtype: string\n  - name: src\n    dtype: string\n  splits:\n  - name: test\n    num_bytes: 13729535\n    num_examples: 12032\n  download_size: 5474637\n  dataset_size: 13729535\n- config_name: russian\n  features:\n  - name: question_id\n    dtype: int64\n  - name: question\n    dtype: string\n  - name: options\n    list: string\n  - name: answer_index\n    dtype: int64\n  - name: category\n    dtype: string\n  - name: src\n    dtype: string\n  splits:\n  - name: test\n    num_bytes: 14552889\n    num_examples: 12032\n  download_size: 5912337\n  dataset_size: 14552889\nconfigs:\n- config_name: kazakh\n  data_files:\n  - split: test\n    path: kazakh/test-*\n- config_name: russian\n  data_files:\n  - split: test\n    path: russian/test-*\ntask_categories:\n- question-answering\nlanguage:\n- kk\nsize_categories:\n- 10K<n<100K\nlicense: mit",
+  "provenance_candidate_lines": [
+   "These are the machine-translated Kazakh and Russian versions of the [MMLU-Pro (Massive Multitask Language Understanding Pro)](https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro) dataset (test set).",
+   "These datasets are used to test the world knowledge and problem-solving capabilities of large language models across a vast range of subjects in the Kazakh and Russian languages. As an enhanced version of the original MMLU, it serves as a more rigorous benchmark for evaluating how well models understand complex academic and professional topics when prompted in Kazakh, featuring more options per qu"
+  ],
+  "reference_links": []
+ }
+}

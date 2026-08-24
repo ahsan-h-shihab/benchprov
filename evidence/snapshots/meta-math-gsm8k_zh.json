@@ -1,0 +1,49 @@
+{
+ "dataset_id": "meta-math/GSM8K_zh",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:50:41.026404+00:00",
+ "revision": "4a5009abc37cbb2d3fd1a745f80e5ea1405ba9aa",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "language:en",
+   "language:zh",
+   "license:mit",
+   "size_categories:1K<n<10K",
+   "format:json",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "arxiv:2309.12284",
+   "region:us",
+   "math",
+   "math-qa",
+   "chinese-math-qa"
+  ],
+  "cardData_license": "mit",
+  "cardData_language": [
+   "en",
+   "zh"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 439,
+  "lastModified": "2023-12-04T04:02:01.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/meta-math/GSM8K_zh/raw/4a5009abc37cbb2d3fd1a745f80e5ea1405ba9aa/README.md",
+  "sha256": "05b9c79e671ff000ec0631b41bc4389fbcd379fe344ffa4d6f163b126f42dd18",
+  "bytes": 1186,
+  "yaml_front_matter": "license: mit\ntask_categories:\n- question-answering\nlanguage:\n- en\n- zh\ntags:\n- math\n- math-qa\n- chinese-math-qa\nsize_categories:\n- n<1K",
+  "provenance_candidate_lines": [
+   "`GSM8K_zh` is a dataset for mathematical reasoning in Chinese, question-answer pairs are translated from GSM8K (https://github.com/openai/grade-school-math/tree/master) by `GPT-3.5-Turbo` with few-shot prompting.",
+   "for testing samples, only the translated questions are provided (`question_zh`)."
+  ],
+  "reference_links": [
+   "https://github.com/openai/grade-school-math/tree/master"
+  ]
+ }
+}

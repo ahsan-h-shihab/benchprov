@@ -1,0 +1,96 @@
+{
+ "record_id": "richmondsin-m_mmlu__multi",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "richmondsin/m_mmlu",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/richmondsin/m_mmlu",
+  "revision": "4a0d3bc50a67142269573760718ea88477269255"
+ },
+ "root_benchmark": "MMLU",
+ "target_languages": [
+  "ca",
+  "es",
+  "hi",
+  "id",
+  "it",
+  "ml",
+  "mr",
+  "ru",
+  "zh"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "cais/mmlu",
+  "parent_url": "https://huggingface.co/datasets/cais/mmlu"
+ },
+ "translation_type": "machine",
+ "engine_or_translator": "gpt-3.5-turbo (University of Oregon translations)",
+ "human_verification": "unknown",
+ "license": "cc-by-nc-4.0",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no human-review statement in the card"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/richmondsin/m_mmlu/raw/4a0d3bc50a67142269573760718ea88477269255/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "a166afc4fc1540c177accb4aa9f8f6ab09df1a74de11809e4f2946c85471cd7e",
+   "hub_revision": "4a0d3bc50a67142269573760718ea88477269255",
+   "quote": "The languages was translated using GPT-3.5-turbo by the University of Oregon, and this part of the dataset was originally uploaded to [the mlmm-evaluation] Github repository."
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/richmondsin/m_mmlu",
+   "retrieved": "2026-08-24",
+   "hub_revision": "4a0d3bc50a67142269573760718ea88477269255",
+   "quote": "license: cc-by-nc-4.0"
+  }
+ ],
+ "completeness": 0.8333,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "Partial re-host of the Okapi/mlmm translations."
+}

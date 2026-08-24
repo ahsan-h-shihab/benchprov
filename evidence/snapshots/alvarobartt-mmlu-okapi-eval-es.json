@@ -1,0 +1,54 @@
+{
+ "dataset_id": "alvarobartt/mmlu-okapi-eval-es",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:50:26.454043+00:00",
+ "revision": "9460670cf3562b522f5206545f7fcdb67627c883",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:multiple-choice",
+   "task_categories:question-answering",
+   "task_ids:multiple-choice-qa",
+   "task_ids:open-domain-qa",
+   "language:es",
+   "license:cc-by-nc-4.0",
+   "size_categories:10K<n<100K",
+   "format:parquet",
+   "modality:tabular",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "arxiv:2009.03300",
+   "arxiv:2307.16039",
+   "region:us",
+   "chatgpt-translated"
+  ],
+  "cardData_license": "cc-by-nc-4.0",
+  "cardData_language": [
+   "es"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 335,
+  "lastModified": "2024-02-29T17:57:41.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/alvarobartt/mmlu-okapi-eval-es/raw/9460670cf3562b522f5206545f7fcdb67627c883/README.md",
+  "sha256": "86ae46b1b7e686e65dca868837f33c610c121c1a6da29ac024242476a2aab659",
+  "bytes": 42512,
+  "yaml_front_matter": "language:\n- es\nlicense: cc-by-nc-4.0\nsize_categories:\n- 10K<n<100K\ntask_categories:\n- multiple-choice\n- question-answering\ntask_ids:\n- multiple-choice-qa\n- open-domain-qa\ntags:\n- chatgpt-translated\ndataset_info:\n- config_name: abstract_algebra\n  features:\n  - name: en_question\n    dtype: string\n  - name: es_question\n    dtype: string\n  - name: en_choices\n    sequence: string\n  - name: es_choices\n    sequence: string\n  - name: en_answer\n    dtype: int64\n  - name: es_answer\n    dtype: int64\n  splits:\n  - name: dev\n    num_bytes: 1760\n    num_examples: 5\n  - name: validation\n    num_bytes: 4246\n    num_examples: 11\n  - name: test\n    num_bytes: 40783\n    num_examples: 100\n  download_size: 31838\n  dataset_size: 46789\n- config_name: anatomy\n  features:\n  - name: en_question\n    dtype: string\n  - name: es_question\n    dtype: string\n  - name: en_choices\n    sequence: string\n  - name: es_choices\n    sequence: string\n  - name: en_answer\n    dtype: int64\n  - name: es_answer\n    dtype: int64\n  splits:\n  - name: dev\n    num_bytes: 2024\n    num_examples: 5\n  - name: validation\n    num_bytes: 6533\n    num_examples: 14\n  - name: test\n    num_bytes: 68781\n    num_examples: 134\n  download_size: 55543\n  dataset_size: 77338\n- config_name: astronomy\n  features:\n  - name: en_question\n    dtype: string\n  - name: es_question\n    dtype: string\n  - name: en_choices\n    sequence: string\n  - name: es_choices\n    sequence: string\n  - name: en_answer\n    dtype: int64\n  - name: es_answer\n    dtype: int64\n  splits:\n  - name: dev\n    num_bytes: 4476\n    num_examples: 5\n  - name: validation\n    num_bytes: 10713\n    num_examples: 16\n  - name: test\n    num_bytes: 100179\n    num_examples: 152\n  download_size: 78498\n  dataset_size: 115368\n- config_name: business_ethics\n  features:\n  - name: en_question\n    dtype: string\n  - name: es_question\n    dtype: string\n  - name: en_choices\n    sequence: string\n  - name: es_choices\n    sequence: string\n  - name: en_answer\n    dtype: int64\n  - name: es_answer\n    dtype: int64\n  splits:\n  - name: dev\n    num_bytes: 4608\n    num_examples: 5\n  - name: validation\n    num_bytes: 6415\n    num_examples: 11\n  - name: test\n    num_bytes: 69628\n    num_examples: 98\n  download_size: 62408\n  dataset_size: 80651\n- config_name: clinical_knowledge\n  features:\n  - name: en_question\n    dtype: string\n  - name: es_question\n    dtype: string\n  - name: en_choices\n    sequence: string\n  - name: es_choices\n    sequence: string\n  - name: en_answer\n    dtype: int64\n  - name: es_answer\n    dtype: int64\n  splits:\n  - name: dev\n    num_bytes: 2594\n    num_examples: 5\n  - name: validation\n    num_bytes: 14438\n    num_examples: 29\n  - name: test\n    num_bytes: 135086\n    num_examples: 263\n  download_size: 103601\n  dataset_size: 152118\n- config_name: college_biology\n  features:\n  - name: en_question\n    dtype: string\n  - name: es_question\n    dtype: string\n  - name: en_choices\n    sequence: string\n  - name: es_choices\n    sequence: string\n  - name: en_answer\n    dtype: int64\n  - name: es_answer\n    dtype: int64\n  splits:\n  - name: dev\n    num_bytes: 3177\n    num_examples: 5\n  - name: validation\n    num_bytes: 10330\n    num_examples: 16\n  - name: test\n    num_bytes: 103413\n    num_examples: 143\n  download_size: 87080\n  dataset_size: 116920\n- config_name: college_chemistry\n  features:\n  - name: en_question\n    dtype: string\n  - name: es_question\n    dtype: string\n  - name: en_choices\n    sequence: string\n  - name: es_choices\n    sequence: string\n  - name: en_answer\n    dtype: int64\n  - name: es_answer\n    dtype: int64\n  splits:\n  - name: dev\n    num_bytes: 2779\n    num_examples: 5\n  - name: validation\n    num_bytes: 4874\n    num_examples: 8\n  - name: test\n    num_bytes: 52123\n    num_examples: 100\n  download_size: 51328\n  dataset_size: 59776\n- config_name: college_computer_science\n  features:\n  - name: en_question\n    dtype: string\n  - name: es_question\n    dtype: string\n  - name: en_choices\n    sequence: string\n  - name: es_choices\n    sequence: string\n  ",
+  "provenance_candidate_lines": [
+   "# MMLU translated to Spanish",
+   "This dataset was generated by the Natural Language Processing Group of the University of Oregon, where they used the",
+   "original MMLU dataset in English and translated it into different languages using ChatGPT.",
+   "This dataset only contains the Spanish translation, but the following languages are also covered within the original",
+   "this translation via ChatGPT (licensed as CC BY NC 4.0, allowing only non-commercial use)."
+  ],
+  "reference_links": [
+   "https://arxiv.org/abs/2009.03300",
+   "https://arxiv.org/abs/2307.16039"
+  ]
+ }
+}

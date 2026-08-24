@@ -1,0 +1,97 @@
+{
+ "record_id": "hishab-boolq_bn__bn",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "hishab/boolq_bn",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/hishab/boolq_bn",
+  "revision": "f75affa42f06492a1e6b913e2f0d330b92d6fd5a"
+ },
+ "root_benchmark": "BoolQ",
+ "target_languages": [
+  "bn"
+ ],
+ "source_language": "not_applicable",
+ "derived_from": {
+  "kind": "modeled_on",
+  "parent_id": "google/boolq",
+  "parent_url": "https://huggingface.co/datasets/google/boolq"
+ },
+ "translation_type": "lm_generated",
+ "engine_or_translator": "GPT-4",
+ "human_verification": "partial",
+ "license": "mit",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "human_verification": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ],
+   "note": "random-sample human review with corrections — a stated sample, not full coverage"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e3"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "not_applicable",
+   "evidence": []
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/hishab/boolq_bn/raw/f75affa42f06492a1e6b913e2f0d330b92d6fd5a/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "a1c42c7a5b266397c8774381354dff98c7df819fb8bf6e3565dc65c90593a4d6",
+   "hub_revision": "f75affa42f06492a1e6b913e2f0d330b92d6fd5a",
+   "quote": "BoolQ Bangla (BN) is a question-answering dataset for yes/no questions, generated using GPT-4."
+  },
+  {
+   "id": "e2",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/hishab/boolq_bn/raw/f75affa42f06492a1e6b913e2f0d330b92d6fd5a/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "a1c42c7a5b266397c8774381354dff98c7df819fb8bf6e3565dc65c90593a4d6",
+   "hub_revision": "f75affa42f06492a1e6b913e2f0d330b92d6fd5a",
+   "quote": "The dataset was manually reviewed by a human annotator (random samples), revealing an error rate of 1.33%, which was subsequently corrected."
+  },
+  {
+   "id": "e3",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/hishab/boolq_bn",
+   "retrieved": "2026-08-24",
+   "hub_revision": "f75affa42f06492a1e6b913e2f0d330b92d6fd5a",
+   "quote": "license: mit"
+  }
+ ],
+ "completeness": 1.0,
+ "provenance_state": "complete",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "Generated (not translated) Bangla BoolQ-style data; passages sourced per card."
+}

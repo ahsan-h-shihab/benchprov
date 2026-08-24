@@ -1,0 +1,106 @@
+{
+ "record_id": "google-xquad__multi",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "google/xquad",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/google/xquad",
+  "revision": "51adfef1c1287aab1d2d91b5bead9bcfb9c68583"
+ },
+ "root_benchmark": "SQuAD",
+ "target_languages": [
+  "ar",
+  "de",
+  "el",
+  "es",
+  "hi",
+  "ro",
+  "ru",
+  "th",
+  "tr",
+  "vi",
+  "zh"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "rajpurkar/squad",
+  "parent_url": "https://huggingface.co/datasets/rajpurkar/squad"
+ },
+ "translation_type": "human",
+ "engine_or_translator": "professional translators (unnamed)",
+ "human_verification": "unknown",
+ "license": "cc-by-sa-4.0",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1",
+    "e2"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e1",
+    "e2"
+   ]
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "professional translation stated; no separate verification step described"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e3"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/google/xquad/raw/51adfef1c1287aab1d2d91b5bead9bcfb9c68583/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "9bb7215530f157e3761585cfbfe11161cda1951546dbfa5b65fd797972c85946",
+   "hub_revision": "51adfef1c1287aab1d2d91b5bead9bcfb9c68583",
+   "quote": "of SQuAD v1.1 (Rajpurkar et al., 2016) together with their professional translations into ten languages"
+  },
+  {
+   "id": "e2",
+   "type": "paper",
+   "url": "https://arxiv.org/abs/1910.11856",
+   "retrieved": "2026-08-24",
+   "quote": "1190 question-answer pairs from SQuAD v1.1 translated into ten languages by professional translators"
+  },
+  {
+   "id": "e3",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/google/xquad",
+   "retrieved": "2026-08-24",
+   "hub_revision": "51adfef1c1287aab1d2d91b5bead9bcfb9c68583",
+   "quote": "license: [\"cc-by-sa-4.0\"]"
+  }
+ ],
+ "completeness": 0.8333,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ }
+}

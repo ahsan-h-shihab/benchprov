@@ -1,0 +1,44 @@
+{
+ "dataset_id": "MBZUAI/KazMMLU",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:51:34.594266+00:00",
+ "revision": "567b9e3fea223afc7d7ea98f7255c4c5b140f91a",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "language:kk",
+   "language:ru",
+   "license:cc-by-nc-4.0",
+   "size_categories:10K<n<100K",
+   "format:csv",
+   "modality:tabular",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "region:us",
+   "MMLU",
+   "exams",
+   "multilingual"
+  ],
+  "cardData_license": "cc-by-nc-4.0",
+  "cardData_language": [
+   "kk",
+   "ru"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 375,
+  "lastModified": "2025-02-08T14:57:52.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/MBZUAI/KazMMLU/raw/567b9e3fea223afc7d7ea98f7255c4c5b140f91a/README.md",
+  "sha256": "fbe965b39f0e471855e233cfceec756a022530a51cc000631a418f2d9c53a18c",
+  "bytes": 10617,
+  "yaml_front_matter": "\nlicense: cc-by-nc-4.0\ntask_categories:\n  - question-answering\nlanguage:\n  - kk\n  - ru\ntags:\n  - MMLU\n  - exams\n  - multilingual\nsize_categories:\n  - 10K<n<100K\ndataset_info: null\nconfigs:\n  - config_name: Accounting and Auditing (Professional & University in rus)\n    data_files:\n      - split: test\n        path: Accounting and Auditing (Professional & University in rus)/test.csv\n      - split: dev\n        path: Accounting and Auditing (Professional & University in rus)/dev.csv\n  - config_name: Biology (High School in kaz)\n    data_files:\n      - split: test\n        path: Biology (High School in kaz)/test.csv\n      - split: dev\n        path: Biology (High School in kaz)/dev.csv\n  - config_name: Biology (High School in rus)\n    data_files:\n      - split: test\n        path: Biology (High School in rus)/test.csv\n      - split: dev\n        path: Biology (High School in rus)/dev.csv\n  - config_name: Biology (Professional & University in rus)\n    data_files:\n      - split: test\n        path: Biology (Professional & University in rus)/test.csv\n      - split: dev\n        path: Biology (Professional & University in rus)/dev.csv\n  - config_name: Chemistry (High School in kaz)\n    data_files:\n      - split: test\n        path: Chemistry (High School in kaz)/test.csv\n      - split: dev\n        path: Chemistry (High School in kaz)/dev.csv\n  - config_name: Chemistry (High School in rus)\n    data_files:\n      - split: test\n        path: Chemistry (High School in rus)/test.csv\n      - split: dev\n        path: Chemistry (High School in rus)/dev.csv\n  - config_name: Culture and Art (Professional & University in rus)\n    data_files:\n      - split: test\n        path: Culture and Art (Professional & University in rus)/test.csv\n      - split: dev\n        path: Culture and Art (Professional & University in rus)/dev.csv\n  - config_name: Economics and Entrepreneurship (Professional in rus)\n    data_files:\n      - split: test\n        path: Economics and Entrepreneurship (Professional in rus)/test.csv\n      - split: dev\n        path: Economics and Entrepreneurship (Professional in rus)/dev.csv\n  - config_name: Education and Training (Professional & University in rus)\n    data_files:\n      - split: test\n        path: Education and Training (Professional & University in rus)/test.csv\n      - split: dev\n        path: Education and Training (Professional & University in rus)/dev.csv\n  - config_name: Finance (Professional & University in rus)\n    data_files:\n      - split: test\n        path: Finance (Professional & University in rus)/test.csv\n      - split: dev\n        path: Finance (Professional & University in rus)/dev.csv\n  - config_name: General Education Disciplines (Professional & University in rus)\n    data_files:\n      - split: test\n        path: >-\n          General Education Disciplines (Professional & University in\n          rus)/test.csv\n      - split: dev\n        path: >-\n          General Education Disciplines (Professional & University in\n          rus)/dev.csv\n  - config_name: Geography (High School in kaz)\n    data_files:\n      - split: test\n        path: Geography (High School in kaz)/test.csv\n      - split: dev\n        path: Geography (High School in kaz)/dev.csv\n  - config_name: Geography (High School in rus)\n    data_files:\n      - split: test\n        path: Geography (High School in rus)/test.csv\n      - split: dev\n        path: Geography (High School in rus)/dev.csv\n  - config_name: Informatics (High School in kaz)\n    data_files:\n      - split: test\n        path: Informatics (High School in kaz)/test.csv\n      - split: dev\n        path: Informatics (High School in kaz)/dev.csv\n  - config_name: Informatics (High School in rus)\n    data_files:\n      - split: test\n        path: Informatics (High School in rus)/test.csv\n      - split: dev\n        path: Informatics (High School in rus)/dev.csv\n  - config_name: Jurisprudence (Professional & University in rus)\n    data_files:\n      - split: test\n        path: Jurisprudence (Professional & Univ",
+  "provenance_candidate_lines": [],
+  "reference_links": []
+ }
+}

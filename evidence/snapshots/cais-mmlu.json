@@ -1,0 +1,69 @@
+{
+ "dataset_id": "cais/mmlu",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:49:29.046030+00:00",
+ "revision": "c30699e8356da336a370243923dbaf21066bb9fe",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "task_ids:multiple-choice-qa",
+   "annotations_creators:no-annotation",
+   "language_creators:expert-generated",
+   "multilinguality:monolingual",
+   "source_datasets:original",
+   "language:en",
+   "license:mit",
+   "size_categories:100K<n<1M",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:polars",
+   "library:mlcroissant",
+   "arxiv:2009.03300",
+   "arxiv:2005.00700",
+   "arxiv:2005.14165",
+   "arxiv:2008.02275",
+   "region:us"
+  ],
+  "cardData_license": [
+   "mit"
+  ],
+  "cardData_language": [
+   "en"
+  ],
+  "cardData_source_datasets": [
+   "original"
+  ],
+  "cardData_annotations_creators": [
+   "no-annotation"
+  ],
+  "downloads": 519071,
+  "lastModified": "2024-03-08T20:36:26.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/cais/mmlu/raw/c30699e8356da336a370243923dbaf21066bb9fe/README.md",
+  "sha256": "665eef35ecd8a89037c1e4f1e1a0d7fd4c154edc04c81cea5634ace2d3e96953",
+  "bytes": 53221,
+  "yaml_front_matter": "annotations_creators:\n- no-annotation\nlanguage_creators:\n- expert-generated\nlanguage:\n- en\nlicense:\n- mit\nmultilinguality:\n- monolingual\nsize_categories:\n- 10K<n<100K\nsource_datasets:\n- original\ntask_categories:\n- question-answering\ntask_ids:\n- multiple-choice-qa\npaperswithcode_id: mmlu\npretty_name: Measuring Massive Multitask Language Understanding\nlanguage_bcp47:\n- en-US\ndataset_info:\n- config_name: abstract_algebra\n  features:\n  - name: question\n    dtype: string\n  - name: subject\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype:\n      class_label:\n        names:\n          '0': A\n          '1': B\n          '2': C\n          '3': D\n  splits:\n  - name: test\n    num_bytes: 49618.6654322746\n    num_examples: 100\n  - name: validation\n    num_bytes: 5485.515349444808\n    num_examples: 11\n  - name: dev\n    num_bytes: 2199.1754385964914\n    num_examples: 5\n  download_size: 17143\n  dataset_size: 57303.3562203159\n- config_name: all\n  features:\n  - name: question\n    dtype: string\n  - name: subject\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype:\n      class_label:\n        names:\n          '0': A\n          '1': B\n          '2': C\n          '3': D\n  splits:\n  - name: test\n    num_bytes: 6967453\n    num_examples: 14042\n  - name: validation\n    num_bytes: 763484\n    num_examples: 1531\n  - name: dev\n    num_bytes: 125353\n    num_examples: 285\n  - name: auxiliary_train\n    num_bytes: 161000625\n    num_examples: 99842\n  download_size: 51503402\n  dataset_size: 168856915\n- config_name: anatomy\n  features:\n  - name: question\n    dtype: string\n  - name: subject\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype:\n      class_label:\n        names:\n          '0': A\n          '1': B\n          '2': C\n          '3': D\n  splits:\n  - name: test\n    num_bytes: 66985.19833357072\n    num_examples: 135\n  - name: validation\n    num_bytes: 6981.5649902024825\n    num_examples: 14\n  - name: dev\n    num_bytes: 2199.1754385964914\n    num_examples: 5\n  download_size: 28864\n  dataset_size: 76165.9387623697\n- config_name: astronomy\n  features:\n  - name: question\n    dtype: string\n  - name: subject\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype:\n      class_label:\n        names:\n          '0': A\n          '1': B\n          '2': C\n          '3': D\n  splits:\n  - name: test\n    num_bytes: 75420.3714570574\n    num_examples: 152\n  - name: validation\n    num_bytes: 7978.931417374265\n    num_examples: 16\n  - name: dev\n    num_bytes: 2199.1754385964914\n    num_examples: 5\n  download_size: 39316\n  dataset_size: 85598.47831302814\n- config_name: auxiliary_train\n  features:\n  - name: train\n    struct:\n    - name: answer\n      dtype: int64\n    - name: choices\n      sequence: string\n    - name: question\n      dtype: string\n    - name: subject\n      dtype: string\n  splits:\n  - name: train\n    num_bytes: 161000625\n    num_examples: 99842\n  download_size: 47518592\n  dataset_size: 161000625\n- config_name: business_ethics\n  features:\n  - name: question\n    dtype: string\n  - name: subject\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype:\n      class_label:\n        names:\n          '0': A\n          '1': B\n          '2': C\n          '3': D\n  splits:\n  - name: test\n    num_bytes: 49618.6654322746\n    num_examples: 100\n  - name: validation\n    num_bytes: 5485.515349444808\n    num_examples: 11\n  - name: dev\n    num_bytes: 2199.1754385964914\n    num_examples: 5\n  download_size: 31619\n  dataset_size: 57303.3562203159\n- config_name: clinical_knowledge\n  features:\n  - name: question\n    dtype: string\n  - name: subject\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype:\n      class_label:\n        names:\n          '0': A\n          '1': B\n          '2': C\n          '3': D\n  splits:\n  - name: test\n    num_bytes: 131489.4633955277\n    num_examples: 265\n  - name: validation\n    num_bytes: 14461.81",
+  "provenance_candidate_lines": [
+   "- [Annotations](#annotations)",
+   "A complete list of tasks: ['abstract_algebra', 'anatomy', 'astronomy', 'business_ethics', 'clinical_knowledge', 'college_biology', 'college_chemistry', 'college_computer_science', 'college_mathematics', 'college_medicine', 'college_physics', 'computer_security', 'conceptual_physics', 'econometrics', 'electrical_engineering', 'elementary_mathematics', 'formal_logic', 'global_facts', 'high_school_bi",
+   "| [GPT-3](https://arxiv.org/abs/2005.14165) (few-shot) | Brown et al., 2020 | 40.8 | 50.4 | 36.7 | 48.8 | 43.9",
+   "### Annotations",
+   "#### Annotation process",
+   "#### Who are the annotators?"
+  ],
+  "reference_links": [
+   "https://github.com/hendrycks/test",
+   "https://arxiv.org/abs/2009.03300",
+   "https://arxiv.org/pdf/2009.03300",
+   "https://arxiv.org/abs/2005.00700",
+   "https://arxiv.org/abs/2005.14165",
+   "https://github.com/hendrycks/test/blob/master/LICENSE",
+   "https://arxiv.org/abs/2008.02275",
+   "https://github.com/andyzoujm"
+  ]
+ }
+}

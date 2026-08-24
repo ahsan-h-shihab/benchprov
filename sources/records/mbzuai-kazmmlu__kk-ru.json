@@ -1,0 +1,92 @@
+{
+ "record_id": "mbzuai-kazmmlu__kk-ru",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "MBZUAI/KazMMLU",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/MBZUAI/KazMMLU",
+  "revision": "567b9e3fea223afc7d7ea98f7255c4c5b140f91a"
+ },
+ "root_benchmark": "MMLU",
+ "target_languages": [
+  "kk",
+  "ru"
+ ],
+ "source_language": "not_applicable",
+ "derived_from": {
+  "kind": "modeled_on",
+  "parent_id": "cais/mmlu",
+  "parent_url": "https://huggingface.co/datasets/cais/mmlu"
+ },
+ "translation_type": "native_original",
+ "engine_or_translator": "not_applicable",
+ "human_verification": "not_applicable",
+ "license": "cc-by-nc-4.0",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1",
+    "e2"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "not_applicable",
+   "evidence": []
+  },
+  "human_verification": {
+   "status": "not_applicable",
+   "evidence": []
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e3"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "not_applicable",
+   "evidence": []
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "paper",
+   "url": "https://arxiv.org/abs/2502.12829",
+   "retrieved": "2026-08-24",
+   "quote": "we introduce KazMMLU, the first MMLU-style dataset specifically designed for Kazakh language. KazMMLU comprises 23,000 questions that cover various educational levels, including STEM, humanities, and social sciences, sourced from auth[entic educational materials]"
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/MBZUAI/KazMMLU",
+   "retrieved": "2026-08-24",
+   "hub_revision": "567b9e3fea223afc7d7ea98f7255c4c5b140f91a",
+   "note": "hub metadata tags",
+   "quote": "tags: MMLU, exams, multilingual; configs e.g. 'Biology (High School in kaz)', 'Accounting and Auditing (Professional & University in rus)'"
+  },
+  {
+   "id": "e3",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/MBZUAI/KazMMLU",
+   "retrieved": "2026-08-24",
+   "hub_revision": "567b9e3fea223afc7d7ea98f7255c4c5b140f91a",
+   "quote": "license: cc-by-nc-4.0"
+  }
+ ],
+ "completeness": 1.0,
+ "provenance_state": "complete",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "Native Kazakh + Russian exam questions (not translations); the shared native benchmark of the Kazakh ecosystem."
+}

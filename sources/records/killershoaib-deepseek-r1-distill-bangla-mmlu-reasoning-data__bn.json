@@ -1,0 +1,89 @@
+{
+ "record_id": "killershoaib-deepseek-r1-distill-bangla-mmlu-reasoning-data__bn",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "KillerShoaib/DeepSeek-r1-Distill-Bangla-MMLU-Reasoning-Data",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/KillerShoaib/DeepSeek-r1-Distill-Bangla-MMLU-Reasoning-Data",
+  "revision": "2ad95d318d707d8f3098eb013e381846ff853e93"
+ },
+ "root_benchmark": "MMLU",
+ "target_languages": [
+  "bn"
+ ],
+ "source_language": "not_applicable",
+ "derived_from": {
+  "kind": "subset_or_filter_of",
+  "parent_id": "hishab/bangla-mmlu",
+  "parent_url": "https://huggingface.co/datasets/hishab/bangla-mmlu"
+ },
+ "translation_type": "mixed",
+ "engine_or_translator": "DeepSeek R1 (reasoning generation) + Gemini Flash 2.0 (translation to Bangla)",
+ "human_verification": "none",
+ "license": "unknown",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "human_verification": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ],
+   "note": "creator's own account affirms an automated-only checking pipeline"
+  },
+  "license": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no license declared in hub metadata at the pinned revision"
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "not_applicable",
+   "evidence": []
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/KillerShoaib/DeepSeek-r1-Distill-Bangla-MMLU-Reasoning-Data/raw/2ad95d318d707d8f3098eb013e381846ff853e93/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "dcd79b78dc65513c3e26b086991fd4baaa0151d4cfbb625add5b1a16b41851a7",
+   "hub_revision": "2ad95d318d707d8f3098eb013e381846ff853e93",
+   "quote": "to make this dataset completely in Bangla I need to translate it. For this I've used again Gemini flash 2.0.",
+   "note": "native Bangla questions from hishab/bangla-mmlu + DeepSeek-R1-generated reasoning traces machine-translated to Bangla with Gemini Flash 2.0"
+  },
+  {
+   "id": "e2",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/KillerShoaib/DeepSeek-r1-Distill-Bangla-MMLU-Reasoning-Data/raw/2ad95d318d707d8f3098eb013e381846ff853e93/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "dcd79b78dc65513c3e26b086991fd4baaa0151d4cfbb625add5b1a16b41851a7",
+   "hub_revision": "2ad95d318d707d8f3098eb013e381846ff853e93",
+   "quote": "Instead of manually checking which answer was correct I use gemini flash 2.0 and automate the whole process."
+  }
+ ],
+ "completeness": 0.8,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "A benchmark-derived SFT dataset; included to demonstrate lineage tracking into training-data derivatives."
+}

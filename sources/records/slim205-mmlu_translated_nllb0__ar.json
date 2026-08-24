@@ -1,0 +1,85 @@
+{
+ "record_id": "slim205-mmlu_translated_nllb0__ar",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "Slim205/mmlu_translated_nllb0",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/Slim205/mmlu_translated_nllb0",
+  "revision": "ec15cccda99bd34215505ab0b3e81a5989d3ef32"
+ },
+ "root_benchmark": "MMLU",
+ "target_languages": [
+  "ar"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "cais/mmlu",
+  "parent_url": "https://huggingface.co/datasets/cais/mmlu"
+ },
+ "translation_type": "machine",
+ "engine_or_translator": "NLLB (per dataset name only)",
+ "human_verification": "unknown",
+ "license": "unknown",
+ "claims": {
+  "translation_type": {
+   "status": "name_only",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "name_only",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no statement; the card is YAML-only"
+  },
+  "license": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no license declared in hub metadata"
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "name_only",
+   "url": "https://huggingface.co/datasets/Slim205/mmlu_translated_nllb0",
+   "retrieved": "2026-08-24",
+   "note": "dataset id contains 'translated_nllb0'; NLLB is a machine-translation model family"
+  },
+  {
+   "id": "e2",
+   "type": "dataset_content",
+   "url": "https://datasets-server.huggingface.co/first-rows?dataset=Slim205%2Fmmlu_translated_nllb0&config=default&split=auxiliary_train",
+   "retrieved": "2026-08-24",
+   "quote": "\"question\": \"Davis decided to kill Adams. [...]\" / \"translated_question\": \"قرر ديفيس قتل آدامز. [...]\"",
+   "note": "first rows show English MMLU items with Arabic translations — target language ar established by content"
+  }
+ ],
+ "completeness": 0.6667,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "Engine attribution rests on the dataset name alone (claim status name_only)."
+}

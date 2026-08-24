@@ -1,0 +1,42 @@
+{
+ "dataset_id": "hishab/bangla-mmlu",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:51:42.227227+00:00",
+ "revision": "aec24ca889e0d0a9a526406db623912c8263d724",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "language:bn",
+   "size_categories:10K<n<100K",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "arxiv:2502.11187",
+   "region:us"
+  ],
+  "cardData_license": null,
+  "cardData_language": [
+   "bn"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 105,
+  "lastModified": "2025-06-20T17:51:10.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/hishab/bangla-mmlu/raw/aec24ca889e0d0a9a526406db623912c8263d724/README.md",
+  "sha256": "491d7c70b4a45f50a0dcf11d9b64fb682181cc285c1b4307e725548aa8b325ab",
+  "bytes": 2256,
+  "yaml_front_matter": "language:\n- bn\ntask_categories:\n- question-answering\ndataset_info:\n  features:\n  - name: id\n    dtype: string\n  - name: question\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype: string\n  splits:\n  - name: dev\n    num_bytes: 54059.0\n    num_examples: 175\n  - name: test\n    num_bytes: 4630621.0\n    num_examples: 14750\n  - name: validation\n    num_bytes: 21720222.0\n    num_examples: 72944\n  download_size: 14532578\n  dataset_size: 26404902.0\nconfigs:\n- config_name: default\n  data_files:\n  - split: dev\n    path: data/dev-*\n  - split: test\n    path: data/test-*\n  - split: validation\n    path: data/validation-*",
+  "provenance_candidate_lines": [],
+  "reference_links": [
+   "https://arxiv.org/abs/2502.11187",
+   "https://github.com/hishab-nlp/TituLM",
+   "https://arxiv.org/abs/2502.11187},"
+  ]
+ }
+}

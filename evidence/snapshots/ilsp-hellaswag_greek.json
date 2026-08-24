@@ -1,0 +1,47 @@
+{
+ "dataset_id": "ilsp/hellaswag_greek",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:50:48.186114+00:00",
+ "revision": "ac871418b051baaf0fe8fbd5d5f335d5fa8a1d66",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:multiple-choice",
+   "multilinguality:monolingual",
+   "language:el",
+   "license:cc-by-nc-sa-4.0",
+   "size_categories:10K<n<100K",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "region:us"
+  ],
+  "cardData_license": "cc-by-nc-sa-4.0",
+  "cardData_language": "el",
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 155,
+  "lastModified": "2024-04-09T12:49:07.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/ilsp/hellaswag_greek/raw/ac871418b051baaf0fe8fbd5d5f335d5fa8a1d66/README.md",
+  "sha256": "ef9a2ce888e3060eae28eca4df96095b9b80cb151d97d568210b64c8f6c75dd0",
+  "bytes": 5739,
+  "yaml_front_matter": "language: el\nlicense: cc-by-nc-sa-4.0\nmultilinguality: monolingual\nsize_categories: 10K<n<100K\ntask_categories:\n- multiple-choice\npretty_name: HellaSwag Greek\ndataset_info:\n  features:\n  - name: ind\n    dtype: int64\n  - name: activity_label\n    dtype: string\n  - name: ctx_a\n    dtype: string\n  - name: ctx_b\n    dtype: string\n  - name: ctx\n    dtype: string\n  - name: endings\n    sequence: string\n  - name: source_id\n    dtype: string\n  - name: split_type\n    dtype: string\n  - name: label\n    dtype: string\n  - name: activity_label_orig\n    dtype: string\n  - name: ctx_a_orig\n    dtype: string\n  - name: ctx_b_orig\n    dtype: string\n  - name: ctx_orig\n    dtype: string\n  - name: endings_orig\n    sequence: string\n  splits:\n  - name: train\n    num_bytes: 126728121\n    num_examples: 39825\n  - name: validation\n    num_bytes: 32982220\n    num_examples: 10024\n  - name: test\n    num_bytes: 31693769\n    num_examples: 9983\n  download_size: 94638082\n  dataset_size: 191404110\nconfigs:\n- config_name: default\n  data_files:\n  - split: train\n    path: data/train-*\n  - split: validation\n    path: data/validation-*\n  - split: test\n    path: data/test-*",
+  "provenance_candidate_lines": [
+   "The  HellaSwag Greek  dataset is a set of 59832 examples from the [HellaSwag dataset](https://huggingface.co/datasets/Rowan/hellaswag), machine-translated into Greek. The original dataset (HellaSwag: Can a Machine Really Finish Your Sentence?, ACL 2019) is a dataset for commonsense NLI.",
+   "<!-- This section describes the source data (e.g. news text and headlines, social media posts, translated sentences, ...). -->",
+   "<!--### Annotations [optional]-->",
+   "<!-- If the dataset contains annotations which are not part of the initial data collection, use this section to describe them. -->",
+   "<!--#### Annotation process-->",
+   "<!-- This section describes the annotation process such as annotation tools used in the process, the amount of data annotated, annotation guidelines provided to the annotators, interannotator statistics, annotation validation, etc. -->",
+   "<!--#### Who are the annotators?-->",
+   "<!-- This section describes the people or systems who created the annotations. -->",
+   "This dataset is the result of machine translation."
+  ],
+  "reference_links": []
+ }
+}

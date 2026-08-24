@@ -1,0 +1,97 @@
+{
+ "record_id": "alvarobartt-mmlu-okapi-eval-es__es",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "alvarobartt/mmlu-okapi-eval-es",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/alvarobartt/mmlu-okapi-eval-es",
+  "revision": "9460670cf3562b522f5206545f7fcdb67627c883"
+ },
+ "root_benchmark": "MMLU",
+ "target_languages": [
+  "es"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "cais/mmlu",
+  "parent_url": "https://huggingface.co/datasets/cais/mmlu"
+ },
+ "translation_type": "machine",
+ "engine_or_translator": "ChatGPT (University of Oregon / Okapi translations)",
+ "human_verification": "unknown",
+ "license": "cc-by-nc-4.0",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1",
+    "e2"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no human-review statement"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e3"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/alvarobartt/mmlu-okapi-eval-es/raw/9460670cf3562b522f5206545f7fcdb67627c883/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "86ae46b1b7e686e65dca868837f33c610c121c1a6da29ac024242476a2aab659",
+   "hub_revision": "9460670cf3562b522f5206545f7fcdb67627c883",
+   "quote": "they used the original MMLU dataset in English and translated it into different languages using ChatGPT. This dataset only contains the Spanish translation"
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/alvarobartt/mmlu-okapi-eval-es",
+   "retrieved": "2026-08-24",
+   "hub_revision": "9460670cf3562b522f5206545f7fcdb67627c883",
+   "note": "hub metadata tags",
+   "quote": "tags: chatgpt-translated"
+  },
+  {
+   "id": "e3",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/alvarobartt/mmlu-okapi-eval-es",
+   "retrieved": "2026-08-24",
+   "hub_revision": "9460670cf3562b522f5206545f7fcdb67627c883",
+   "quote": "license: cc-by-nc-4.0"
+  }
+ ],
+ "completeness": 0.8333,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ }
+}

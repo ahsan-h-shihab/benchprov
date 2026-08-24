@@ -1,0 +1,73 @@
+{
+ "dataset_id": "openai/MMMLU",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:49:42.175046+00:00",
+ "revision": "325a01dc3e173cac1578df94120499aaca2e2504",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "language:ar",
+   "language:bn",
+   "language:de",
+   "language:es",
+   "language:fr",
+   "language:hi",
+   "language:id",
+   "language:it",
+   "language:ja",
+   "language:ko",
+   "language:pt",
+   "language:sw",
+   "language:yo",
+   "language:zh",
+   "license:mit",
+   "size_categories:100K<n<1M",
+   "format:csv",
+   "modality:text",
+   "library:datasets",
+   "library:dask",
+   "library:mlcroissant",
+   "library:polars",
+   "arxiv:2009.03300",
+   "region:us"
+  ],
+  "cardData_license": "mit",
+  "cardData_language": [
+   "ar",
+   "bn",
+   "de",
+   "es",
+   "fr",
+   "hi",
+   "id",
+   "it",
+   "ja",
+   "ko",
+   "pt",
+   "sw",
+   "yo",
+   "zh"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 17514,
+  "lastModified": "2024-10-16T18:39:00.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/openai/MMMLU/raw/325a01dc3e173cac1578df94120499aaca2e2504/README.md",
+  "sha256": "6aa933306db7622f5cbbd9bffe5fcb65c3b4a39f6e75735fd33bc2181be189fc",
+  "bytes": 3007,
+  "yaml_front_matter": "task_categories:\n- question-answering\nconfigs:\n- config_name: default\n  data_files:\n  - split: test\n    path: test/*.csv\n- config_name: AR_XY\n  data_files:\n  - split: test\n    path: test/mmlu_AR-XY.csv\n- config_name: BN_BD\n  data_files:\n  - split: test\n    path: test/mmlu_BN-BD.csv\n- config_name: DE_DE\n  data_files:\n  - split: test\n    path: test/mmlu_DE-DE.csv\n- config_name: ES_LA\n  data_files:\n  - split: test\n    path: test/mmlu_ES-LA.csv\n- config_name: FR_FR\n  data_files:\n  - split: test\n    path: test/mmlu_FR-FR.csv\n- config_name: HI_IN\n  data_files:\n  - split: test\n    path: test/mmlu_HI-IN.csv\n- config_name: ID_ID\n  data_files:\n  - split: test\n    path: test/mmlu_ID-ID.csv\n- config_name: IT_IT\n  data_files:\n  - split: test\n    path: test/mmlu_IT-IT.csv\n- config_name: JA_JP\n  data_files:\n  - split: test\n    path: test/mmlu_JA-JP.csv\n- config_name: KO_KR\n  data_files:\n  - split: test\n    path: test/mmlu_KO-KR.csv\n- config_name: PT_BR\n  data_files:\n  - split: test\n    path: test/mmlu_PT-BR.csv\n- config_name: SW_KE\n  data_files:\n  - split: test\n    path: test/mmlu_SW-KE.csv\n- config_name: YO_NG\n  data_files:\n  - split: test\n    path: test/mmlu_YO-NG.csv\n- config_name: ZH_CN\n  data_files:\n  - split: test\n    path: test/mmlu_ZH-CN.csv\nlanguage:\n- ar\n- bn\n- de\n- es\n- fr\n- hi\n- id\n- it\n- ja\n- ko\n- pt\n- sw\n- yo\n- zh\nlicense: mit",
+  "provenance_candidate_lines": [
+   "The MMLU is a widely recognized benchmark of general knowledge attained by AI models. It covers a broad range of topics from 57 different categories, covering elementary-level knowledge up to advanced professional subjects like law, physics, history, and computer science.",
+   "We translated the MMLU’s test set into 14 languages using professional human translators. Relying on human translators for this evaluation increases confidence in the accuracy of the translations, especially for low-resource languages like Yoruba. We are publishing the professional human translations and the code we use to run the evaluations.",
+   "This effort reflects our commitment to improving the multilingual capabilities of AI models, ensuring they perform accurately across languages, particularly for underrepresented communities. By prioritizing high-quality translations, we aim to make AI technology more inclusive and effective for users worldwide.",
+   "MMMLU contains the MMLU test set translated into the following locales:"
+  ],
+  "reference_links": [
+   "https://arxiv.org/abs/2009.03300",
+   "https://github.com/openai/simple-evals"
+  ]
+ }
+}

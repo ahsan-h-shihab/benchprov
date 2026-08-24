@@ -1,0 +1,88 @@
+{
+ "record_id": "doggiai-gsm8k_zh_tw__zh-hant",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "DoggiAI/GSM8K_zh_tw",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/DoggiAI/GSM8K_zh_tw",
+  "revision": "b1aa98eae6b90dff6f6b6332212e43ae8d6afcc2"
+ },
+ "root_benchmark": "GSM8K",
+ "target_languages": [
+  "zh-Hant"
+ ],
+ "source_language": "zh",
+ "derived_from": {
+  "kind": "script_conversion_of",
+  "parent_id": "meta-math/GSM8K_zh",
+  "parent_url": "https://huggingface.co/datasets/meta-math/GSM8K_zh"
+ },
+ "translation_type": "script_conversion",
+ "engine_or_translator": "OpenCC",
+ "human_verification": "unknown",
+ "license": "mit",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "'the dataset includes modifications' beyond conversion per the card; no review statement"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/DoggiAI/GSM8K_zh_tw/raw/b1aa98eae6b90dff6f6b6332212e43ae8d6afcc2/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "ab24ec2366dbe6b5b8370bd54a0cbdee32417159b477b6922e198981b78f463d",
+   "hub_revision": "b1aa98eae6b90dff6f6b6332212e43ae8d6afcc2",
+   "quote": "It is derived from the GSM8K_zh dataset by translating question-answer pairs into Traditional Chinese using OpenCC."
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/DoggiAI/GSM8K_zh_tw",
+   "retrieved": "2026-08-24",
+   "hub_revision": "b1aa98eae6b90dff6f6b6332212e43ae8d6afcc2",
+   "quote": "license: mit"
+  }
+ ],
+ "completeness": 0.8333,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "Deterministic Simplified→Traditional conversion; the upstream Chinese text is itself machine-translated (see parent record)."
+}

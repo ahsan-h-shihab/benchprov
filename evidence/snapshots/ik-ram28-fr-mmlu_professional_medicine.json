@@ -1,0 +1,39 @@
+{
+ "dataset_id": "ik-ram28/fr-mmlu_professional_medicine",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:50:12.372212+00:00",
+ "revision": "aa4449ad7e65e90bec13f91620bd7553cc947988",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "language:fr",
+   "license:apache-2.0",
+   "size_categories:n<1K",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "region:us",
+   "medical"
+  ],
+  "cardData_license": "apache-2.0",
+  "cardData_language": [
+   "fr"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 12,
+  "lastModified": "2025-02-27T15:31:18.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/ik-ram28/fr-mmlu_professional_medicine/raw/aa4449ad7e65e90bec13f91620bd7553cc947988/README.md",
+  "sha256": "8e6bd1f099416d21217882ded4c32d1e17b1b17c4181a7dabc5742b576f4510d",
+  "bytes": 2675,
+  "yaml_front_matter": "dataset_info:\n  features:\n  - name: corpus_name\n    dtype: string\n  - name: task_type\n    dtype: string\n  - name: classes\n    sequence: string\n  - name: identifier\n    dtype: string\n  - name: question_translated\n    dtype: string\n  - name: options_translated\n    struct:\n    - name: A\n      dtype: string\n    - name: B\n      dtype: string\n    - name: C\n      dtype: string\n    - name: D\n      dtype: string\n  - name: correct_answer_letter\n    dtype: string\n  - name: correct_answer_text_translated\n    dtype: string\n  - name: fr_few_shot_samples[1]\n    list:\n    - name: classes\n      sequence: string\n    - name: corpus_name\n      dtype: string\n    - name: correct_answer_letter\n      dtype: string\n    - name: identifier\n      dtype: string\n    - name: task_type\n      dtype: string\n    - name: translated_in\n      dtype: string\n  - name: en_few_shot_samples[1]\n    list:\n    - name: classes\n      sequence: string\n    - name: corpus_name\n      dtype: string\n    - name: correct_answer_letter\n      dtype: string\n    - name: identifier\n      dtype: string\n    - name: in\n      dtype: string\n    - name: task_type\n      dtype: string\n  - name: fr_few_shot_samples[2]\n    list:\n    - name: classes\n      sequence: string\n    - name: corpus_name\n      dtype: string\n    - name: correct_answer_letter\n      dtype: string\n    - name: identifier\n      dtype: string\n    - name: task_type\n      dtype: string\n    - name: translated_in\n      dtype: string\n  - name: en_few_shot_samples[2]\n    list:\n    - name: classes\n      sequence: string\n    - name: corpus_name\n      dtype: string\n    - name: correct_answer_letter\n      dtype: string\n    - name: identifier\n      dtype: string\n    - name: in\n      dtype: string\n    - name: task_type\n      dtype: string\n  - name: fr_few_shot_samples[3]\n    list:\n    - name: classes\n      sequence: string\n    - name: corpus_name\n      dtype: string\n    - name: correct_answer_letter\n      dtype: string\n    - name: identifier\n      dtype: string\n    - name: task_type\n      dtype: string\n    - name: translated_in\n      dtype: string\n  - name: en_few_shot_samples[3]\n    list:\n    - name: classes\n      sequence: string\n    - name: corpus_name\n      dtype: string\n    - name: correct_answer_letter\n      dtype: string\n    - name: identifier\n      dtype: string\n    - name: in\n      dtype: string\n    - name: task_type\n      dtype: string\n  splits:\n  - name: train\n    num_bytes: 1817280\n    num_examples: 272\n  download_size: 1009717\n  dataset_size: 1817280\nconfigs:\n- config_name: default\n  data_files:\n  - split: train\n    path: data/train-*\nlicense: apache-2.0\ntask_categories:\n- question-answering\nlanguage:\n- fr\ntags:\n- medical",
+  "provenance_candidate_lines": [],
+  "reference_links": []
+ }
+}

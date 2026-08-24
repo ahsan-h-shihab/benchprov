@@ -1,0 +1,84 @@
+{
+ "record_id": "kz-transformers-gsm8k-kk-translated__kk",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "kz-transformers/gsm8k-kk-translated",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/kz-transformers/gsm8k-kk-translated",
+  "revision": "0826d590ff807efe2733051358f8faf77f4bab98"
+ },
+ "root_benchmark": "GSM8K",
+ "target_languages": [
+  "kk"
+ ],
+ "source_language": "unknown",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "openai/gsm8k",
+  "parent_url": "https://huggingface.co/datasets/openai/gsm8k"
+ },
+ "translation_type": "unknown",
+ "engine_or_translator": "unknown",
+ "human_verification": "unknown",
+ "license": "apache-2.0",
+ "claims": {
+  "translation_type": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "citation title 'Kazakh GSM8K: Translated Grade School Math 8K'; no method stated"
+  },
+  "engine_or_translator": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no engine or translating party named"
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no statement"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "source_language": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "translation implied by the card's citation title; source language not explicitly stated"
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/kz-transformers/gsm8k-kk-translated",
+   "retrieved": "2026-08-24",
+   "hub_revision": "0826d590ff807efe2733051358f8faf77f4bab98",
+   "quote": "license: apache-2.0"
+  },
+  {
+   "id": "e2",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/kz-transformers/gsm8k-kk-translated/raw/0826d590ff807efe2733051358f8faf77f4bab98/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "9e0ce0dc7a5817437cd03b9298368c2d525e8bef02bef788f3604d8c991719de",
+   "hub_revision": "0826d590ff807efe2733051358f8faf77f4bab98",
+   "quote": "title = {Kazakh GSM8K: Translated Grade School Math 8K},"
+  }
+ ],
+ "completeness": 0.3333,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ }
+}

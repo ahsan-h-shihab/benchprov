@@ -1,0 +1,40 @@
+{
+ "dataset_id": "mesolitica/translated-MMLU",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:51:03.475507+00:00",
+ "revision": "c54d12104bc98c876e613c8eb87837b0571890b3",
+ "hub_metadata": {
+  "tags": [
+   "language:ms",
+   "size_categories:10K<n<100K",
+   "format:json",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "region:us"
+  ],
+  "cardData_license": null,
+  "cardData_language": [
+   "ms"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 14,
+  "lastModified": "2024-03-18T04:44:43.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/mesolitica/translated-MMLU/raw/c54d12104bc98c876e613c8eb87837b0571890b3/README.md",
+  "sha256": "6b36e186903c9ab12b9eb9a4e372e3a49bc498ca51c467189db0f68358d2dc4e",
+  "bytes": 295,
+  "yaml_front_matter": "language:\n- ms",
+  "provenance_candidate_lines": [
+   "# Translated MMLU",
+   "Originally from https://huggingface.co/datasets/cais/mmlu, translated to Malay using Google Translate.",
+   "1. We found out some translated answers not really coherent with original English answers, so it is better to skip translated answers."
+  ],
+  "reference_links": []
+ }
+}

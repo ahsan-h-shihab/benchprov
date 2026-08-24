@@ -1,0 +1,75 @@
+{
+ "dataset_id": "Institute-Disease-Modeling/mmlu-winogrande-afr",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:51:12.878736+00:00",
+ "revision": "ffb0cc0f7e388e1bd0795b9566ade39a6a1f0fce",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "task_ids:multiple-choice-qa",
+   "language_creators:expert-generated",
+   "multilinguality:multilingual",
+   "language:af",
+   "language:am",
+   "language:bm",
+   "language:ig",
+   "language:nso",
+   "language:sn",
+   "language:st",
+   "language:tn",
+   "language:ts",
+   "language:xh",
+   "language:zu",
+   "license:mit",
+   "size_categories:10K<n<100K",
+   "format:csv",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "arxiv:2412.12417",
+   "arxiv:1907.10641",
+   "region:us",
+   "medical"
+  ],
+  "cardData_license": "mit",
+  "cardData_language": [
+   "af",
+   "am",
+   "bm",
+   "ig",
+   "nso",
+   "sn",
+   "st",
+   "tn",
+   "ts",
+   "xh",
+   "zu"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 308,
+  "lastModified": "2024-12-20T18:18:20.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/Institute-Disease-Modeling/mmlu-winogrande-afr/raw/ffb0cc0f7e388e1bd0795b9566ade39a6a1f0fce/README.md",
+  "sha256": "843e01b8381128ebd0606507b3b040b001fcf9a8abc195fee9976b188f90a26f",
+  "bytes": 20385,
+  "yaml_front_matter": "license: mit\nmultilinguality:\n- multilingual\nlanguage_creators:\n- expert-generated\nlanguage:\n- af\n- am\n- bm\n- ig\n- nso\n- sn\n- st\n- tn\n- ts\n- xh\n- zu\ntask_categories:\n- question-answering\ntask_ids:\n- multiple-choice-qa\ntags:\n- medical\npretty_name: MMLU & Winogrande Translated into 11 African Languages\nsize_categories:\n- 10K<n<100K\nconfigs:\n- config_name: mmlu_clinical_knowledge_af\n  data_files:\n  - split: dev\n    path: mmlu_clinical_knowledge/*dev*af*.csv\n  - split: test\n    path: mmlu_clinical_knowledge/*test*af*.csv\n  - split: val\n    path: mmlu_clinical_knowledge/*val*af*.csv\n- config_name: mmlu_college_medicine_af\n  data_files:\n  - split: dev\n    path: mmlu_college_medicine/*dev*af*.csv\n  - split: test\n    path: mmlu_college_medicine/*test*af*.csv\n  - split: val\n    path: mmlu_college_medicine/*val*af*.csv\n- config_name: mmlu_virology_af\n  data_files:\n  - split: dev\n    path: mmlu_virology/*dev*af*.csv\n  - split: test\n    path: mmlu_virology/*test*af*.csv\n  - split: val\n    path: mmlu_virology/*val*af*.csv\n- config_name: mmlu_clinical_knowledge_zu\n  data_files:\n  - split: dev\n    path: mmlu_clinical_knowledge/*dev*zu*.csv\n  - split: test\n    path: mmlu_clinical_knowledge/*test*zu*.csv\n  - split: val\n    path: mmlu_clinical_knowledge/*val*zu*.csv\n- config_name: mmlu_college_medicine_zu\n  data_files:\n  - split: dev\n    path: mmlu_college_medicine/*dev*zu*.csv\n  - split: test\n    path: mmlu_college_medicine/*test*zu*.csv\n  - split: val\n    path: mmlu_college_medicine/*val*zu*.csv\n- config_name: mmlu_virology_zu\n  data_files:\n  - split: dev\n    path: mmlu_virology/*dev*zu*.csv\n  - split: test\n    path: mmlu_virology/*test*zu*.csv\n  - split: val\n    path: mmlu_virology/*val*zu*.csv\n- config_name: mmlu_clinical_knowledge_xh\n  data_files:\n  - split: dev\n    path: mmlu_clinical_knowledge/*dev*xh*.csv\n  - split: test\n    path: mmlu_clinical_knowledge/*test*xh*.csv\n  - split: val\n    path: mmlu_clinical_knowledge/*val*xh*.csv\n- config_name: mmlu_college_medicine_xh\n  data_files:\n  - split: dev\n    path: mmlu_college_medicine/*dev*xh*.csv\n  - split: test\n    path: mmlu_college_medicine/*test*xh*.csv\n  - split: val\n    path: mmlu_college_medicine/*val*xh*.csv\n- config_name: mmlu_virology_xh\n  data_files:\n  - split: dev\n    path: mmlu_virology/*dev*xh*.csv\n  - split: test\n    path: mmlu_virology/*test*xh*.csv\n  - split: val\n    path: mmlu_virology/*val*xh*.csv\n- config_name: mmlu_clinical_knowledge_am\n  data_files:\n  - split: dev\n    path: mmlu_clinical_knowledge/*dev*am*.csv\n  - split: test\n    path: mmlu_clinical_knowledge/*test*am*.csv\n  - split: val\n    path: mmlu_clinical_knowledge/*val*am*.csv\n- config_name: mmlu_college_medicine_am\n  data_files:\n  - split: dev\n    path: mmlu_college_medicine/*dev*am*.csv\n  - split: test\n    path: mmlu_college_medicine/*test*am*.csv\n  - split: val\n    path: mmlu_college_medicine/*val*am*.csv\n- config_name: mmlu_virology_am\n  data_files:\n  - split: dev\n    path: mmlu_virology/*dev*am*.csv\n  - split: test\n    path: mmlu_virology/*test*am*.csv\n  - split: val\n    path: mmlu_virology/*val*am*.csv\n- config_name: mmlu_clinical_knowledge_bm\n  data_files:\n  - split: dev\n    path: mmlu_clinical_knowledge/*dev*bm*.csv\n  - split: test\n    path: mmlu_clinical_knowledge/*test*bm*.csv\n  - split: val\n    path: mmlu_clinical_knowledge/*val*bm*.csv\n- config_name: mmlu_college_medicine_bm\n  data_files:\n  - split: dev\n    path: mmlu_college_medicine/*dev*bm*.csv\n  - split: test\n    path: mmlu_college_medicine/*test*bm*.csv\n  - split: val\n    path: mmlu_college_medicine/*val*bm*.csv\n- config_name: mmlu_virology_bm\n  data_files:\n  - split: dev\n    path: mmlu_virology/*dev*bm*.csv\n  - split: test\n    path: mmlu_virology/*test*bm*.csv\n  - split: val\n    path: mmlu_virology/*val*bm*.csv\n- config_name: mmlu_clinical_knowledge_ig\n  data_files:\n  - split: dev\n    path: mmlu_clinical_knowledge/*dev*ig*.csv\n  - split: test\n    path: mmlu_clinical_knowledge/*test*ig*.csv\n  - split: val\n    path: mmlu_clinical_knowledge/*val*ig*",
+  "provenance_candidate_lines": [
+   "This HuggingFace Dataset contains the human-translated benchmarks we created from our paper, titled as above. Find the paper here: [https://arxiv.org/abs/2412.12417](https://arxiv.org/abs/2412.12417)",
+   "As used in our own experiments, we have prepared [fine-tunable versions of the datasets](https://github.com/InstituteforDiseaseModeling/Bridging-the-Gap-Low-Resource-African-Languages/tree/main/results/fine-tuning_datasets) (in [GPT format](https://platform.openai.com/docs/guides/fine-tuning#example-format)), which are present in the GitHub repository. These datasets can be used with OpenAI's Fine",
+   "Moreover, see [here](https://github.com/InstituteforDiseaseModeling/Bridging-the-Gap-Low-Resource-African-Languages/blob/main/scripts/fine-tuning_experiments/fine_tune_llama3_70b_instruct.ipynb) for an example Jupyter Notebook from our GitHub repository that allows the user to fine-tune a number of models by selecting the desired fine-tuning datasets. The notebook then fine-tunes [Unsloth's Llama "
+  ],
+  "reference_links": [
+   "https://arxiv.org/abs/2412.12417",
+   "https://github.com/InstituteforDiseaseModeling/Bridging-the-Gap-Low-Resource-African-Languages",
+   "https://github.com/InstituteforDiseaseModeling/Bridging-the-Gap-Low-Resource-African-Languages/tree/main/results/fine-tuning_datasets",
+   "https://github.com/InstituteforDiseaseModeling/Bridging-the-Gap-Low-Resource-African-Languages/blob/main/scripts/fine-tuning_experiments/fine_tune_llama3_70b_instruct.ipynb",
+   "https://github.com/hendrycks/test",
+   "https://github.com/allenai/winogrande"
+  ]
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "dataset_id": "mizinovmv/ru_cais_mmlu",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:50:29.793519+00:00",
+ "revision": "4dc92508a76d9725f5ae3b0a773dd044695d5619",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:text-generation",
+   "language:ru",
+   "license:apache-2.0",
+   "size_categories:10K<n<100K",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "region:us"
+  ],
+  "cardData_license": "apache-2.0",
+  "cardData_language": [
+   "ru"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 18,
+  "lastModified": "2025-03-28T19:51:39.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/mizinovmv/ru_cais_mmlu/raw/4dc92508a76d9725f5ae3b0a773dd044695d5619/README.md",
+  "sha256": "95203808c1457f90185f1276ec12bb4363db3c53c187c5978742adda5efd155d",
+  "bytes": 570,
+  "yaml_front_matter": "license: apache-2.0\ntask_categories:\n- text-generation\nlanguage:\n- ru\nconfigs:\n- config_name: default\n  data_files:\n  - split: train\n    path: data/train-*\ndataset_info:\n  features:\n  - name: question_en\n    dtype: string\n  - name: subject\n    dtype: string\n  - name: choices_en\n    sequence: string\n  - name: answer\n    dtype: int64\n  - name: question_ru\n    dtype: string\n  - name: choices_ru\n    sequence: string\n  splits:\n  - name: train\n    num_bytes: 437046232.79856175\n    num_examples: 97867\n  download_size: 118302034\n  dataset_size: 437046232.79856175",
+  "provenance_candidate_lines": [],
+  "reference_links": []
+ }
+}

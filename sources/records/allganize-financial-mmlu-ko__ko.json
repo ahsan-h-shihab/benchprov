@@ -1,0 +1,80 @@
+{
+ "record_id": "allganize-financial-mmlu-ko__ko",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "allganize/financial-mmlu-ko",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/allganize/financial-mmlu-ko",
+  "revision": "2b827871962e2f8dd3efb118d105f04c597f6f03"
+ },
+ "root_benchmark": "MMLU",
+ "target_languages": [
+  "ko"
+ ],
+ "source_language": "not_applicable",
+ "derived_from": {
+  "kind": "modeled_on",
+  "parent_id": "cais/mmlu",
+  "parent_url": "https://huggingface.co/datasets/cais/mmlu"
+ },
+ "translation_type": "mixed",
+ "engine_or_translator": "GPT-4 (generated portion)",
+ "human_verification": "full",
+ "license": "unknown",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "human_verification": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ],
+   "note": "both portions described as human-reviewed (검수)"
+  },
+  "license": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no license declared in hub metadata at the pinned revision"
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "not_applicable",
+   "evidence": []
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/allganize/financial-mmlu-ko/raw/2b827871962e2f8dd3efb118d105f04c597f6f03/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "f90b4d4471e630c49b31d868d3d9635031a533d808f8183fe0c14d8da659d672",
+   "hub_revision": "2b827871962e2f8dd3efb118d105f04c597f6f03",
+   "quote": "한국어 데이터를 생성하기 위해, 여러 금융 문제가 있는 공공 사이트의 문제들을 크롤링하여 수집, 검수(104건)하였습니다. 그리고 Wikipedia와 공공사이트들의 금융사전/보고서들을 기반으로 GPT-4로 문제를 생성하고 사람이 검수하였습니다.(315건)",
+   "note": "Korean: 104 items collected from public sites and reviewed; 315 items generated with GPT-4 from Wikipedia/financial references and human-reviewed"
+  }
+ ],
+ "completeness": 0.8,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "NOT a translation: natively collected + LM-generated Korean financial MC items in MMLU style."
+}

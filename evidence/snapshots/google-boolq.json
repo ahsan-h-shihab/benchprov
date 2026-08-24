@@ -1,0 +1,66 @@
+{
+ "dataset_id": "google/boolq",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:50:05.288763+00:00",
+ "revision": "35b264d03638db9f4ce671b711558bf7ff0f80d5",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:text-classification",
+   "task_ids:natural-language-inference",
+   "annotations_creators:crowdsourced",
+   "language_creators:found",
+   "multilinguality:monolingual",
+   "source_datasets:original",
+   "language:en",
+   "license:cc-by-sa-3.0",
+   "size_categories:10K<n<100K",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "arxiv:1905.10044",
+   "region:us"
+  ],
+  "cardData_license": [
+   "cc-by-sa-3.0"
+  ],
+  "cardData_language": [
+   "en"
+  ],
+  "cardData_source_datasets": [
+   "original"
+  ],
+  "cardData_annotations_creators": [
+   "crowdsourced"
+  ],
+  "downloads": 66457,
+  "lastModified": "2024-01-22T09:16:26.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/google/boolq/raw/35b264d03638db9f4ce671b711558bf7ff0f80d5/README.md",
+  "sha256": "07447668f46c7c1e62e24b650ea2a73f1ab34f2b3759b1587c7b7a81b4bf1cf4",
+  "bytes": 6570,
+  "yaml_front_matter": "annotations_creators:\n- crowdsourced\nlanguage_creators:\n- found\nlanguage:\n- en\nlicense:\n- cc-by-sa-3.0\nmultilinguality:\n- monolingual\nsize_categories:\n- 10K<n<100K\nsource_datasets:\n- original\ntask_categories:\n- text-classification\ntask_ids:\n- natural-language-inference\npaperswithcode_id: boolq\npretty_name: BoolQ\ndataset_info:\n  features:\n  - name: question\n    dtype: string\n  - name: answer\n    dtype: bool\n  - name: passage\n    dtype: string\n  splits:\n  - name: train\n    num_bytes: 5829584\n    num_examples: 9427\n  - name: validation\n    num_bytes: 1998182\n    num_examples: 3270\n  download_size: 4942776\n  dataset_size: 7827766\nconfigs:\n- config_name: default\n  data_files:\n  - split: train\n    path: data/train-*\n  - split: validation\n    path: data/validation-*",
+  "provenance_candidate_lines": [
+   "- [Annotations](#annotations)",
+   "- **Size of the generated dataset:** 7.83 MB",
+   "occurring ---they are generated in unprompted and unconstrained settings.",
+   "### Annotations",
+   "#### Annotation process",
+   "#### Who are the annotators?"
+  ],
+  "reference_links": [
+   "https://github.com/huggingface/datasets/blob/master/CONTRIBUTING.md#how-to-contribute-to-the-dataset-cards",
+   "https://github.com/google-research-datasets/boolean-questions",
+   "https://arxiv.org/abs/1905.10044",
+   "https://github.com/lewtun",
+   "https://github.com/lhoestq",
+   "https://github.com/thomwolf",
+   "https://github.com/patrickvonplaten",
+   "https://github.com/albertvillanova"
+  ]
+ }
+}

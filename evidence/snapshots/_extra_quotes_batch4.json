@@ -1,0 +1,20 @@
+{
+ "Slim205/mmlu_translated_nllb0": {
+  "question": "Davis decided to kill Adams. He set out for Adams's house. Before he got there he saw Brooks, who resembled Adams. Thinking that Brooks was Adams, Davis shot at",
+  "subject": "",
+  "choices": "['Adams only.', 'Brooks only.', 'Case only.', 'Adams and Brooks']",
+  "answer": "1",
+  "translated_question": "قرر ديفيس قتل آدامز. ذهب إلى منزل آدامز. قبل أن يصل إلى هناك رأى بروكس ، الذي يشبه آدامز. ظن أن بروكس هو آدامز ، أطلق ديفيس النار على بروكس. فاتت الرصاصة بروكس "
+ },
+ "Slim205/mmlu_ift_256_translated_nllb0": {
+  "question": "Rules in the reading room Hello, everyone. Welcome to the school reading room. We hope you have a good time here. Before you go into the reading room, there are",
+  "subject": "",
+  "choices": "['Ten hours.', 'Nine hours.', 'Seven hours.', 'Eight hours.']",
+  "answer": "1",
+  "ift_instruction": "\nRules in the reading room Hello, everyone. Welcome to the school reading room. We hope you have a good time here. Before you go into the reading room, there ar",
+  "ift_answer": "B) The reading room is open for nine hours every day, from 8:00 a.m. to 5:00 p.m., as stated in rule 1, allowing students to access the reading materials during",
+  "translated_instruction": "قواعد غرفة القراءة مرحبًا بكم جميعاً. مرحبًا بكم في غرفة القراءة بالمدرسة. نأمل أن تستمتعوا بوقتكم هنا. قبل أن تدخلوا غرفة القراءة، هناك بعض القواعد التي تحتاجو",
+  "translated_answer": "ب) غرفة القراءة مفتوحة لمدة تسع ساعات كل يوم، من الساعة 8:00 صباحاً إلى الساعة 5:00 مساءً، كما هو مذكور في القاعدة 1، مما يسمح للطلاب بالوصول إلى مواد القراءة خ"
+ },
+ "cmmlu_abstract": "As the capabilities of large language models (LLMs) continue to advance, evaluating their performance becomes increasingly crucial and challenging. This paper aims to bridge this gap by introducing CMMLU, a comprehensive Chinese benchmark that covers various subjects, including natural science, social sciences, engineering, and humanities. We conduct a thorough evaluation of 18 advanced multilingual- and Chinese-oriented LLMs, assessing their performance across different subjects and settings. The results reveal that most existing LLMs struggle to achieve an average accuracy of 50%, even when provided with in-context examples and chain-of-thought prompts, whereas the random baseline stands a"
+}

@@ -1,0 +1,48 @@
+{
+ "dataset_id": "DoggiAI/GSM8K_zh_tw",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:50:39.727254+00:00",
+ "revision": "b1aa98eae6b90dff6f6b6332212e43ae8d6afcc2",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "source_datasets:openai/gsm8k",
+   "language:zh",
+   "license:mit",
+   "size_categories:1K<n<10K",
+   "format:json",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "arxiv:2309.12284",
+   "region:us",
+   "math",
+   "math-qa",
+   "chinese-math-qa"
+  ],
+  "cardData_license": "mit",
+  "cardData_language": [
+   "zh"
+  ],
+  "cardData_source_datasets": [
+   "openai/gsm8k"
+  ],
+  "cardData_annotations_creators": null,
+  "downloads": 46,
+  "lastModified": "2025-01-30T02:41:05.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/DoggiAI/GSM8K_zh_tw/raw/b1aa98eae6b90dff6f6b6332212e43ae8d6afcc2/README.md",
+  "sha256": "ab24ec2366dbe6b5b8370bd54a0cbdee32417159b477b6922e198981b78f463d",
+  "bytes": 1986,
+  "yaml_front_matter": "license: mit\nlanguage:\n- zh\ntask_categories:\n  - question-answering\nsource_datasets:\n  - openai/gsm8k\ntags:\n  - math\n  - math-qa\n  - chinese-math-qa\nsize_categories:\n  - 1K<n<10K\ndataset_info:\n  - config_name: main\n    features:\n      - name: question\n        dtype: string\n      - name: answer\n        dtype: string\nconfigs:\n  - config_name: main\n    data_files:\n      - split: train\n        path: data/*_train.json\n      - split: test\n        path: data/*_test.json",
+  "provenance_candidate_lines": [
+   "`GSM8K_zh_tw` is a dataset for mathematical reasoning in Traditional Chinese. It is derived from the [GSM8K_zh](https://huggingface.co/datasets/meta-math/GSM8K_zh) dataset by translating question-answer pairs into Traditional Chinese using OpenCC. The dataset consists of **7473 training samples** and **1319 testing samples**.",
+   "In addition to translation, the dataset includes modifications to improve regional adaptation, such as replacing some China-specific terms with those more suitable for Traditional Chinese users. Simplified Chinese characters were converted to Traditional Chinese, and complex variant characters were appropriately handled. Some entries that did not meet quality standards were also dropped."
+  ],
+  "reference_links": []
+ }
+}

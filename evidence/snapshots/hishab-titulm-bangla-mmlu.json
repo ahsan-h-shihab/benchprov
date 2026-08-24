@@ -1,0 +1,40 @@
+{
+ "dataset_id": "hishab/titulm-bangla-mmlu",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:51:43.514858+00:00",
+ "revision": "f47523f6d5ffdc2201a1438ac2facdb0ca5e7af2",
+ "hub_metadata": {
+  "tags": [
+   "language:bn",
+   "size_categories:100K<n<1M",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "arxiv:2502.11187",
+   "region:us"
+  ],
+  "cardData_license": null,
+  "cardData_language": [
+   "bn"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 497,
+  "lastModified": "2025-06-08T03:25:25.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/hishab/titulm-bangla-mmlu/raw/f47523f6d5ffdc2201a1438ac2facdb0ca5e7af2/README.md",
+  "sha256": "93b50c21e8fcbc87c6ef2baf782c45d5993119f38f58cc0e5828eabd2e5f53a1",
+  "bytes": 35783,
+  "yaml_front_matter": "dataset_info:\n- config_name: Bengali_Grammar\n  features:\n  - name: id\n    dtype: string\n  - name: question\n    dtype: string\n  - name: options\n    sequence: string\n  - name: answer\n    dtype: string\n  splits:\n  - name: dev\n    num_bytes: 2503\n    num_examples: 10\n  - name: test\n    num_bytes: 278041\n    num_examples: 1000\n  - name: validation\n    num_bytes: 1573407\n    num_examples: 5660\n  download_size: 920051\n  dataset_size: 1853951\n- config_name: Bengali_Literature\n  features:\n  - name: id\n    dtype: string\n  - name: question\n    dtype: string\n  - name: options\n    sequence: string\n  - name: answer\n    dtype: string\n  splits:\n  - name: dev\n    num_bytes: 3008\n    num_examples: 10\n  - name: test\n    num_bytes: 339144\n    num_examples: 1000\n  - name: validation\n    num_bytes: 1253785\n    num_examples: 3761\n  download_size: 753439\n  dataset_size: 1595937\n- config_name: Biology_Botany\n  features:\n  - name: id\n    dtype: string\n  - name: question\n    dtype: string\n  - name: options\n    sequence: string\n  - name: answer\n    dtype: string\n  splits:\n  - name: dev\n    num_bytes: 4966\n    num_examples: 15\n  - name: test\n    num_bytes: 501431\n    num_examples: 1500\n  - name: validation\n    num_bytes: 1642326\n    num_examples: 5546\n  download_size: 1059788\n  dataset_size: 2148723\n- config_name: Biology_Zoology\n  features:\n  - name: id\n    dtype: string\n  - name: question\n    dtype: string\n  - name: options\n    sequence: string\n  - name: answer\n    dtype: string\n  splits:\n  - name: dev\n    num_bytes: 5492\n    num_examples: 15\n  - name: test\n    num_bytes: 501027\n    num_examples: 1500\n  - name: validation\n    num_bytes: 1836191\n    num_examples: 6041\n  download_size: 1136244\n  dataset_size: 2342710\n- config_name: Chemistry\n  features:\n  - name: id\n    dtype: string\n  - name: question\n    dtype: string\n  - name: options\n    sequence: string\n  - name: answer\n    dtype: string\n  splits:\n  - name: dev\n    num_bytes: 5286\n    num_examples: 20\n  - name: test\n    num_bytes: 597982\n    num_examples: 2000\n  - name: validation\n    num_bytes: 3554181\n    num_examples: 12790\n  download_size: 2204291\n  dataset_size: 4157449\n- config_name: Engineering_Admission\n  features:\n  - name: id\n    dtype: string\n  - name: question\n    dtype: string\n  - name: options\n    sequence: string\n  - name: answer\n    dtype: string\n  splits:\n  - name: dev\n    num_bytes: 4578\n    num_examples: 15\n  - name: test\n    num_bytes: 462807\n    num_examples: 1500\n  - name: validation\n    num_bytes: 204460\n    num_examples: 637\n  download_size: 360472\n  dataset_size: 671845\n- config_name: Engineering_Admission-Chemistry\n  features:\n  - name: id\n    dtype: string\n  - name: question\n    dtype: string\n  - name: options\n    sequence: string\n  - name: answer\n    dtype: string\n  splits:\n  - name: dev\n    num_bytes: 1471\n    num_examples: 5\n  - name: test\n    num_bytes: 143615\n    num_examples: 500\n  - name: validation\n    num_bytes: 77872\n    num_examples: 274\n  download_size: 129063\n  dataset_size: 222958\n- config_name: Engineering_Admission-Mathematics\n  features:\n  - name: id\n    dtype: string\n  - name: question\n    dtype: string\n  - name: options\n    sequence: string\n  - name: answer\n    dtype: string\n  splits:\n  - name: dev\n    num_bytes: 1241\n    num_examples: 5\n  - name: test\n    num_bytes: 140799\n    num_examples: 500\n  - name: validation\n    num_bytes: 22020\n    num_examples: 71\n  download_size: 97950\n  dataset_size: 164060\n- config_name: Engineering_Admission-Physics\n  features:\n  - name: id\n    dtype: string\n  - name: question\n    dtype: string\n  - name: options\n    sequence: string\n  - name: answer\n    dtype: string\n  splits:\n  - name: dev\n    num_bytes: 1866\n    num_examples: 5\n  - name: test\n    num_bytes: 178393\n    num_examples: 500\n  - name: validation\n    num_bytes: 104568\n    num_examples: 292\n  download_size: 155816\n  dataset_size: 284827\n- config_name: English\n  features:\n  - name: id\n    dtype: string\n  - name: question\n    dtype: string\n  - name: options\n    sequ",
+  "provenance_candidate_lines": [],
+  "reference_links": [
+   "https://arxiv.org/abs/2502.11187",
+   "https://arxiv.org/abs/2502.11187},"
+  ]
+ }
+}

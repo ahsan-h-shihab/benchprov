@@ -1,0 +1,52 @@
+{
+ "dataset_id": "MBZUAI/ArabicMMLU",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:51:35.891447+00:00",
+ "revision": "7aa530e2893ac420352b3f5c1a1310c010e9758b",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "language:ar",
+   "license:cc-by-nc-4.0",
+   "size_categories:10K<n<100K",
+   "format:csv",
+   "modality:tabular",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "region:us",
+   "MMLU",
+   "exams"
+  ],
+  "cardData_license": "cc-by-nc-4.0",
+  "cardData_language": [
+   "ar"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 6290,
+  "lastModified": "2024-09-17T13:54:43.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/MBZUAI/ArabicMMLU/raw/7aa530e2893ac420352b3f5c1a1310c010e9758b/README.md",
+  "sha256": "898f444b923bd933f1030c76238d0fe008a4667fb21e30a3f7d5cb79af86e939",
+  "bytes": 11597,
+  "yaml_front_matter": "license: cc-by-nc-4.0\ntask_categories:\n- question-answering\nlanguage:\n- ar\ntags:\n- MMLU\n- exams\nsize_categories:\n- 10K<n<100K\ndataset_info:\nconfigs:\n- config_name: All\n  data_files:\n     - split: test\n       path: All/test.csv\n     - split: dev\n       path: All/dev.csv\n- config_name: Islamic Studies\n  data_files:\n     - split: test\n       path: Islamic Studies/test.csv\n     - split: dev\n       path: Islamic Studies/dev.csv\n- config_name: Islamic Studies (Middle School)\n  data_files:\n     - split: test\n       path: Islamic Studies (Middle School)/test.csv\n     - split: dev\n       path: Islamic Studies (Middle School)/dev.csv\n- config_name: Islamic Studies (Primary School)\n  data_files:\n     - split: test\n       path: Islamic Studies (Primary School)/test.csv\n     - split: dev\n       path: Islamic Studies (Primary School)/dev.csv\n- config_name: Islamic Studies (High School)\n  data_files:\n     - split: test\n       path: Islamic Studies (High School)/test.csv\n     - split: dev\n       path: Islamic Studies (High School)/dev.csv\n- config_name: Driving Test\n  data_files:\n     - split: test\n       path: Driving Test/test.csv\n     - split: dev\n       path: Driving Test/dev.csv\n- config_name: Natural Science (Middle School)\n  data_files:\n     - split: test\n       path: Natural Science (Middle School)/test.csv\n     - split: dev\n       path: Natural Science (Middle School)/dev.csv\n- config_name: Natural Science (Primary School)\n  data_files:\n     - split: test\n       path: Natural Science (Primary School)/test.csv\n     - split: dev\n       path: Natural Science (Primary School)/dev.csv\n- config_name: History (Middle School)\n  data_files:\n     - split: test\n       path: History (Middle School)/test.csv\n     - split: dev\n       path: History (Middle School)/dev.csv\n- config_name: History (Primary School)\n  data_files:\n     - split: test\n       path: History (Primary School)/test.csv\n     - split: dev\n       path: History (Primary School)/dev.csv\n- config_name: History (High School)\n  data_files:\n     - split: test\n       path: History (High School)/test.csv\n     - split: dev\n       path: History (High School)/dev.csv\n- config_name: General Knowledge\n  data_files:\n     - split: test\n       path: General Knowledge/test.csv\n     - split: dev\n       path: General Knowledge/dev.csv\n- config_name: General Knowledge (Middle School)\n  data_files:\n     - split: test\n       path: General Knowledge (Middle School)/test.csv\n     - split: dev\n       path: General Knowledge (Middle School)/dev.csv\n- config_name: General Knowledge (Primary School)\n  data_files:\n     - split: test\n       path: General Knowledge (Primary School)/test.csv\n     - split: dev\n       path: General Knowledge (Primary School)/dev.csv\n- config_name: Law (Professional)\n  data_files:\n     - split: test\n       path: Law (Professional)/test.csv\n     - split: dev\n       path: Law (Professional)/dev.csv\n- config_name: Physics (High School)\n  data_files:\n     - split: test\n       path: Physics (High School)/test.csv\n     - split: dev\n       path: Physics (High School)/dev.csv\n- config_name: Social Science (Middle School)\n  data_files:\n     - split: test\n       path: Social Science (Middle School)/test.csv\n     - split: dev\n       path: Social Science (Middle School)/dev.csv\n- config_name: Social Science (Primary School)\n  data_files:\n     - split: test\n       path: Social Science (Primary School)/test.csv\n     - split: dev\n       path: Social Science (Primary School)/dev.csv\n- config_name: Management (University)\n  data_files:\n     - split: test\n       path: Management (University)/test.csv\n     - split: dev\n       path: Management (University)/dev.csv\n- config_name: Arabic Language (Middle School)\n  data_files:\n     - split: test\n       path: Arabic Language (Middle School)/test.csv\n     - split: dev\n       path: Arabic Language (Middle School)/dev.csv\n- config_name: Arabic Language (Primary School)\n  data_files:\n     - split: test\n       path: Arabic Language (Primary School)/test.csv\n  ",
+  "provenance_candidate_lines": [
+   "We present ArabicMMLU, the first multi-task language understanding benchmark for Arabic language, sourced from school exams across diverse educational levels in different countries spanning North Africa, the Levant, and the Gulf regions. Our data comprises 40 tasks and 14,575 multiple-choice questions in Modern Standard Arabic (MSA), and is carefully constructed by collaborating with native speake",
+   "The data construction process involved a total of 10 Arabic native speakers from different countries: 6 internal workers (1 Jordanian, 1 Egyptian, 1 Lebanese, 1 from UAE, and 2 from KSA) and 4 external workers (3 Jordanian and 1 Egyptian)."
+  ],
+  "reference_links": [
+   "https://github.com/fajri91/eval_picts/blob/master/ArabicMMLU-circle.png?raw=true",
+   "https://github.com/fajri91/eval_picts/blob/master/ArabicMMLU-country.png?raw=true",
+   "https://github.com/fajri91/eval_picts/blob/master/ArabicMMLU-ex2.png?raw=true",
+   "https://github.com/fajri91/eval_picts/blob/master/ArabicMMLU-prompt.png?raw=true",
+   "https://github.com/fajri91/eval_picts/blob/master/ArabicMMLU-result.png?raw=true",
+   "https://github.com/fajri91/eval_picts/blob/master/ArabicMMLU-fewshot.png?raw=true",
+   "https://aclanthology.org/2024.findings-acl.334/"
+  ]
+ }
+}

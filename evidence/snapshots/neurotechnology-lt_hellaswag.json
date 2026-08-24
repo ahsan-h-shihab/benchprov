@@ -1,0 +1,49 @@
+{
+ "dataset_id": "neurotechnology/lt_hellaswag",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:50:47.007359+00:00",
+ "revision": "8df31e835575d63056960dfcc8af5571abaf9c73",
+ "hub_metadata": {
+  "tags": [
+   "language:ro",
+   "license:cc-by-nc-4.0",
+   "size_categories:10K<n<100K",
+   "format:parquet",
+   "modality:tabular",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "arxiv:1905.07830",
+   "arxiv:2408.12963",
+   "region:us"
+  ],
+  "cardData_license": "cc-by-nc-4.0",
+  "cardData_language": [
+   "ro"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 8,
+  "lastModified": "2024-08-26T06:24:59.000Z",
+  "gated": "auto"
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/neurotechnology/lt_hellaswag/raw/8df31e835575d63056960dfcc8af5571abaf9c73/README.md",
+  "sha256": "29928c81892d8ca258767864c728dcc96a56acbe700009211ff809f738c9b35a",
+  "bytes": 1383,
+  "gated_note": "dataset is gated: the pinned URL requires an authenticated, condition-accepting session",
+  "yaml_front_matter": "license: cc-by-nc-4.0\nlanguage:\n- ro",
+  "provenance_candidate_lines": [
+   "This dataset has been translated into Lithuanian using GPT-4. This dataset is utilized as a benchmark and forms part of the evaluation protocol for Lithuanian language models, as outlined in the technical report *OPEN LLAMA2 MODEL FOR THE LITHUANIAN LANGUAGE* ([Nakvosas et al., 2024](https://arxiv.org/abs/2408.12963))",
+   "@misc{nakvosas2024openllama2modellithuanian,",
+   "title={Open Llama2 Model for the Lithuanian Language},"
+  ],
+  "reference_links": [
+   "https://arxiv.org/abs/1905.07830",
+   "https://arxiv.org/abs/2408.12963",
+   "https://arxiv.org/abs/2408.12963},"
+  ]
+ }
+}

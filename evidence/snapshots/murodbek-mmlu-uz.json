@@ -1,0 +1,40 @@
+{
+ "dataset_id": "murodbek/MMLU-uz",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:50:18.688924+00:00",
+ "revision": "e717aa1ef2fe7066276887b76fedc475ad7220e8",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "language:uz",
+   "license:apache-2.0",
+   "size_categories:10K<n<100K",
+   "region:us",
+   "uzbek",
+   "mmlu"
+  ],
+  "cardData_license": "apache-2.0",
+  "cardData_language": [
+   "uz"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 37,
+  "lastModified": "2025-04-24T14:08:59.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/murodbek/MMLU-uz/raw/e717aa1ef2fe7066276887b76fedc475ad7220e8/README.md",
+  "sha256": "4991fe325a5c2643bde12d449781b26abbdf78d413dfe182305c4b425999897a",
+  "bytes": 3588,
+  "yaml_front_matter": "dataset_info:\n  features:\n  - name: sample_id\n    dtype: string\n  - name: subject\n    dtype: string\n  - name: subject_category\n    dtype: string\n  - name: question\n    dtype: string\n  - name: option_a\n    dtype: string\n  - name: option_b\n    dtype: string\n  - name: option_c\n    dtype: string\n  - name: option_d\n    dtype: string\n  - name: answer\n    dtype: string\n  splits:\n  - name: dev\n    num_bytes: 142784\n    num_examples: 285\n  - name: test\n    num_bytes: 8073596\n    num_examples: 14042\n  download_size: 4266410\n  dataset_size: 8216380\nconfigs:\n- config_name: default\n  data_files:\n  - split: dev\n    path: data/dev-*\n  - split: test\n    path: data/test-*\nlicense: apache-2.0\ntask_categories:\n- question-answering\nlanguage:\n- uz\ntags:\n- uzbek\n- mmlu\nsize_categories:\n- 10K<n<100K\npretty_name: mmlu-u",
+  "provenance_candidate_lines": [
+   "This dataset was automatically translated in two stages:",
+   "*   Base translation using the `sayqalchi` model from ([Tilmoch platform](https://developer.tahrirchi.uz)).",
+   "**Important Note:** This is a machine-translated dataset and has **not** undergone human review or correction due to the associated costs and effort.",
+   "| [MMLU-uz](https://huggingface.co/datasets/murodbek/MMLU-uz) | Full MMLU dev and test sets' Uzbek translations|",
+   "- `question`: translated question from MMLU"
+  ],
+  "reference_links": []
+ }
+}

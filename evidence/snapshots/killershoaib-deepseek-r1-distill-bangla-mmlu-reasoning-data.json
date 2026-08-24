@@ -1,0 +1,54 @@
+{
+ "dataset_id": "KillerShoaib/DeepSeek-r1-Distill-Bangla-MMLU-Reasoning-Data",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:50:13.529098+00:00",
+ "revision": "2ad95d318d707d8f3098eb013e381846ff853e93",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "task_categories:text-generation",
+   "language:bn",
+   "size_categories:10K<n<100K",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "doi:10.57967/hf/5540",
+   "region:us"
+  ],
+  "cardData_license": null,
+  "cardData_language": [
+   "bn"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 55,
+  "lastModified": "2025-06-28T16:43:02.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/KillerShoaib/DeepSeek-r1-Distill-Bangla-MMLU-Reasoning-Data/raw/2ad95d318d707d8f3098eb013e381846ff853e93/README.md",
+  "sha256": "dcd79b78dc65513c3e26b086991fd4baaa0151d4cfbb625add5b1a16b41851a7",
+  "bytes": 4382,
+  "yaml_front_matter": "dataset_info:\n  features:\n  - name: id\n    dtype: string\n  - name: reasoning_translation\n    dtype: string\n  - name: ans_translation\n    dtype: string\n  - name: question\n    dtype: string\n  - name: options\n    sequence: string\n  - name: answer\n    dtype: string\n  - name: formated_question\n    dtype: string\n  splits:\n  - name: train\n    num_bytes: 112127377\n    num_examples: 17796\n  - name: test\n    num_bytes: 15571052\n    num_examples: 2565\n  download_size: 44900052\n  dataset_size: 127698429\nconfigs:\n- config_name: default\n  data_files:\n  - split: train\n    path: data/train-*\n  - split: test\n    path: data/test-*\ntask_categories:\n- question-answering\n- text-generation\n- text2text-generation\nlanguage:\n- bn\nsize_categories:\n- 10K<n<100K\ndatasets:\n- hishab/bangla-mmlu\npretty_name: Bangla-Disti",
+  "provenance_candidate_lines": [
+   "<div align=\"center\"><h1>DeepSeek R1 Bangla MMLU Distil Dataset</h1></div>",
+   "I've used `bangla-mmlu` dataset released by `hisab`. Kudos to them for creating and open sourcing the dataset. Without their dataset this synthetic reasoning dataset won't exist in the first place.",
+   "Since I'm using DeepSeek r1 and it's not free therefore I can't generate the synthetic data for the entire base dataset. Hence I've chosen a subset from the train (actually `validation` in the base dataset, I'm calling this set as `train` in my dataset) and test.",
+   "## Step 3 - Generate Response (Synthetic Data)",
+   "After selecting the subset from the original data I've prompted the deepseek r1 model with the `formated_question` in the dataset and got the response. I used `Hyperbolic` API.",
+   "After getting all the response from the deepseek r1 now it was time to seperate the right responses from all the response. Total percentage of correct answers from `DeepSeek r1` were around 86% (combining both train and test). Instead of manually checking which answer was correct I use gemini flash 2.0 and automate the whole process. I pass the generated response alongside the actual ans and id of",
+   "## Step 5 - Translation",
+   "Since `DeepSeek r1` used GRPO technique to teach the model it's thinking process therefore the reasoning from the model is always is in English / Chinese and it can't be changed using instruction. That's why to make this dataset completely in Bangla I need to translate it. For this I've used again Gemini flash 2.0. Since I was using free tier of their api therefore I've to pass 5 samples in a sing",
+   "## Step 6 - Translating The Incomplte Samples",
+   "Gemini 2.0 flash can output 8k tokens in a single api call, therefore in many cases it hit the token limit before able to translate all the 5 samples. In this case I've then seperately translate those samples as a single sample in the api call.",
+   "dataset = load_dataset(\"KillerShoaib/DeepSeek-r1-Distill-Bangla-MMLU-Reasoning-Data\")",
+   "- [**DeepSeek-r1-Bangla-Reasoning-Data**](https://github.com/KillerShoaib/DeepSeek-r1-Bangla-Reasoning-Data)"
+  ],
+  "reference_links": [
+   "https://github.com/KillerShoaib/DeepSeek-r1-Bangla-Reasoning-Data"
+  ]
+ }
+}

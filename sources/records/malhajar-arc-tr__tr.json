@@ -1,0 +1,86 @@
+{
+ "record_id": "malhajar-arc-tr__tr",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "malhajar/arc-tr",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/malhajar/arc-tr",
+  "revision": "7e699ee056fc61934e50e3ede8ef0c84ef60036e"
+ },
+ "root_benchmark": "ARC",
+ "target_languages": [
+  "tr"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "allenai/ai2_arc",
+  "parent_url": "https://huggingface.co/datasets/allenai/ai2_arc"
+ },
+ "translation_type": "unknown",
+ "engine_or_translator": "unknown",
+ "human_verification": "unknown",
+ "license": "mit",
+ "claims": {
+  "translation_type": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "the card states it is 'a translated version of arc' but no method (machine vs human); note: sibling dataset malhajar/mmlu_tr-v0.2 documents GPT-4, but no such statement exists here"
+  },
+  "engine_or_translator": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "not stated"
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no statement"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/malhajar/arc-tr",
+   "retrieved": "2026-08-24",
+   "hub_revision": "7e699ee056fc61934e50e3ede8ef0c84ef60036e",
+   "quote": "license: mit"
+  },
+  {
+   "id": "e2",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/malhajar/arc-tr/raw/7e699ee056fc61934e50e3ede8ef0c84ef60036e/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "42853b14273882089b0f6878ae633f26677918a946c4aecd36b15310bddbd558",
+   "hub_revision": "7e699ee056fc61934e50e3ede8ef0c84ef60036e",
+   "quote": "malhajar/arc-tr is a translated version of arc aimed specifically to be used in the OpenLLMTurkishLeaderboard"
+  }
+ ],
+ "completeness": 0.5,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "Card misuses 'annotations_creators: found' for a translated set — an example of hub-tag noise."
+}

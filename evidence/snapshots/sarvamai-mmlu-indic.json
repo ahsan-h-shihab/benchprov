@@ -1,0 +1,64 @@
+{
+ "dataset_id": "sarvamai/mmlu-indic",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:51:55.704302+00:00",
+ "revision": "cb8b47d03c971b20b7b43a051f6bf1d54ae801e8",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "language:bn",
+   "language:en",
+   "language:gu",
+   "language:hi",
+   "language:kn",
+   "language:ml",
+   "language:mr",
+   "language:or",
+   "language:pa",
+   "language:ta",
+   "language:te",
+   "license:mit",
+   "size_categories:100K<n<1M",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "region:us"
+  ],
+  "cardData_license": "mit",
+  "cardData_language": [
+   "bn",
+   "en",
+   "gu",
+   "hi",
+   "kn",
+   "ml",
+   "mr",
+   "or",
+   "pa",
+   "ta",
+   "te"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 873,
+  "lastModified": "2025-05-23T09:13:30.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/sarvamai/mmlu-indic/raw/cb8b47d03c971b20b7b43a051f6bf1d54ae801e8/README.md",
+  "sha256": "d20f032ae85ea3343c5eec6927f17c3162104c084becf8c614983828f63a0b51",
+  "bytes": 10672,
+  "yaml_front_matter": "language:\n- bn\n- en\n- gu\n- hi\n- kn\n- ml\n- mr\n- or\n- pa\n- ta\n- te\nlicense: mit\ntask_categories:\n- question-answering\npretty_name: Indic MMLU\ndataset_info:\n- config_name: bn\n  features:\n  - name: question\n    dtype: string\n  - name: answer\n    dtype: int64\n  - name: choices\n    sequence: string\n  splits:\n  - name: validation\n    num_bytes: 239800.54545454544\n    num_examples: 285\n  - name: test\n    num_bytes: 14283483.636363637\n    num_examples: 14042\n  download_size: 9981094\n  dataset_size: 14523284.181818182\n- config_name: bn_roman\n  features:\n  - name: answer\n    dtype: int64\n  - name: language\n    dtype: string\n  - name: question\n    dtype: string\n  - name: choices\n    sequence: string\n  splits:\n  - name: test\n    num_bytes: 5621536\n    num_examples: 13894\n  download_size: 3111687\n  dataset_size: 5621536\n- config_name: en\n  features:\n  - name: question\n    dtype: string\n  - name: answer\n    dtype: int64\n  - name: choices\n    sequence: string\n  splits:\n  - name: validation\n    num_bytes: 239800.54545454544\n    num_examples: 285\n  - name: test\n    num_bytes: 14283483.636363637\n    num_examples: 14042\n  download_size: 7046354\n  dataset_size: 14523284.181818182\n- config_name: gu\n  features:\n  - name: question\n    dtype: string\n  - name: answer\n    dtype: int64\n  - name: choices\n    sequence: string\n  splits:\n  - name: validation\n    num_bytes: 239800.54545454544\n    num_examples: 285\n  - name: test\n    num_bytes: 14283483.636363637\n    num_examples: 14042\n  download_size: 5048638\n  dataset_size: 14523284.181818182\n- config_name: gu_roman\n  features:\n  - name: answer\n    dtype: int64\n  - name: language\n    dtype: string\n  - name: question\n    dtype: string\n  - name: choices\n    sequence: string\n  splits:\n  - name: test\n    num_bytes: 5948327\n    num_examples: 14004\n  download_size: 3281363\n  dataset_size: 5948327\n- config_name: hi\n  features:\n  - name: question\n    dtype: string\n  - name: answer\n    dtype: int64\n  - name: choices\n    sequence: string\n  splits:\n  - name: validation\n    num_bytes: 239800.54545454544\n    num_examples: 285\n  - name: test\n    num_bytes: 14283483.636363637\n    num_examples: 14042\n  download_size: 5060941\n  dataset_size: 14523284.181818182\n- config_name: hi_roman\n  features:\n  - name: answer\n    dtype: int64\n  - name: language\n    dtype: string\n  - name: question\n    dtype: string\n  - name: choices\n    sequence: string\n  splits:\n  - name: test\n    num_bytes: 6192639\n    num_examples: 13913\n  download_size: 3308477\n  dataset_size: 6192639\n- config_name: kn\n  features:\n  - name: question\n    dtype: string\n  - name: answer\n    dtype: int64\n  - name: choices\n    sequence: string\n  splits:\n  - name: validation\n    num_bytes: 239800.54545454544\n    num_examples: 285\n  - name: test\n    num_bytes: 14283483.636363637\n    num_examples: 14042\n  download_size: 5391445\n  dataset_size: 14523284.181818182\n- config_name: kn_roman\n  features:\n  - name: answer\n    dtype: int64\n  - name: language\n    dtype: string\n  - name: question\n    dtype: string\n  - name: choices\n    sequence: string\n  splits:\n  - name: test\n    num_bytes: 6507374\n    num_examples: 14005\n  download_size: 3391672\n  dataset_size: 6507374\n- config_name: ml\n  features:\n  - name: question\n    dtype: string\n  - name: answer\n    dtype: int64\n  - name: choices\n    sequence: string\n  splits:\n  - name: validation\n    num_bytes: 239800.54545454544\n    num_examples: 285\n  - name: test\n    num_bytes: 14283483.636363637\n    num_examples: 14042\n  download_size: 5422573\n  dataset_size: 14523284.181818182\n- config_name: ml_roman\n  features:\n  - name: answer\n    dtype: int64\n  - name: language\n    dtype: string\n  - name: question\n    dtype: string\n  - name: choices\n    sequence: string\n  splits:\n  - name: test\n    num_bytes: 6666429\n    num_examples: 13991\n  download_size: 3527459\n  dataset_size: 6666429\n- config_name: mr\n  features:\n  - name: question\n    dtype: string\n  - name: answer\n    dtype: int64\n  - name: choices\n    sequence: string\n  splits:\n  - name: valida",
+  "provenance_candidate_lines": [
+   "A multilingual version of the [Massive Multitask Language Understanding (MMLU) benchmark](https://huggingface.co/datasets/cais/mmlu), translated from English into 10 Indian languages.",
+   "This version contains the translations of the development and test sets only.",
+   "The dataset includes translations in the following languages:",
+   "- Malayalam (ml)",
+   "- Technical terminology may be challenging to translate precisely"
+  ],
+  "reference_links": []
+ }
+}

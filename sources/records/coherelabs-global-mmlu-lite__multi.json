@@ -1,0 +1,118 @@
+{
+ "record_id": "coherelabs-global-mmlu-lite__multi",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "CohereLabs/Global-MMLU-Lite",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/CohereLabs/Global-MMLU-Lite",
+  "revision": "36c2fd756f19ccf13a9a96c8e53ccecc02192b8b"
+ },
+ "root_benchmark": "MMLU",
+ "target_languages": [
+  "ar",
+  "bn",
+  "cs",
+  "cy",
+  "es",
+  "fr",
+  "hi",
+  "hu",
+  "de",
+  "id",
+  "it",
+  "ja",
+  "ko",
+  "my",
+  "or",
+  "pt",
+  "yo",
+  "sk",
+  "sq",
+  "sw",
+  "tg",
+  "zh"
+ ],
+ "source_language": "not_applicable",
+ "derived_from": {
+  "kind": "subset_or_filter_of",
+  "parent_id": "CohereLabs/Global-MMLU",
+  "parent_url": "https://huggingface.co/datasets/CohereLabs/Global-MMLU"
+ },
+ "translation_type": "mixed",
+ "engine_or_translator": "human translators / post-editors (Cohere Labs Community + professional annotators)",
+ "human_verification": "full",
+ "license": "apache-2.0",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "human_verification": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ],
+   "note": "every sample either human-translated or human post-edited per the card"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e3"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "not_applicable",
+   "evidence": []
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/CohereLabs/Global-MMLU-Lite/raw/36c2fd756f19ccf13a9a96c8e53ccecc02192b8b/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "83c1eab7894c0c812e0ede8ba3a0f9199a242c2dfa7ebb9b42a18cc9989d3ec7",
+   "hub_revision": "36c2fd756f19ccf13a9a96c8e53ccecc02192b8b",
+   "quote": "All samples in Global MMLU lite are fully human translated or post edited."
+  },
+  {
+   "id": "e2",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/CohereLabs/Global-MMLU-Lite/raw/36c2fd756f19ccf13a9a96c8e53ccecc02192b8b/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "83c1eab7894c0c812e0ede8ba3a0f9199a242c2dfa7ebb9b42a18cc9989d3ec7",
+   "hub_revision": "36c2fd756f19ccf13a9a96c8e53ccecc02192b8b",
+   "quote": "Curated by: Professional annotators and contributors of Cohere Labs Community"
+  },
+  {
+   "id": "e3",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/CohereLabs/Global-MMLU-Lite",
+   "retrieved": "2026-08-24",
+   "hub_revision": "36c2fd756f19ccf13a9a96c8e53ccecc02192b8b",
+   "quote": "license: apache-2.0"
+  }
+ ],
+ "completeness": 1.0,
+ "provenance_state": "complete",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "Lite subset: 200 culturally-sensitive + 200 culturally-agnostic samples per language; items are a subset of Global-MMLU with only human-treated samples retained."
+}

@@ -1,0 +1,98 @@
+{
+ "record_id": "patt-hellaswag_th_cleanned__th",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "Patt/HellaSwag_TH_cleanned",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/Patt/HellaSwag_TH_cleanned",
+  "revision": "14597c4316f8863b919d107b6d0874640ee46c39"
+ },
+ "root_benchmark": "HellaSwag",
+ "target_languages": [
+  "th"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "Rowan/hellaswag",
+  "parent_url": "https://huggingface.co/datasets/Rowan/hellaswag"
+ },
+ "translation_type": "machine",
+ "engine_or_translator": "Google Translate (+MUSE-score auto-filtering)",
+ "human_verification": "none",
+ "license": "cc-by-sa-4.0",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "human_verification": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ],
+   "note": "the card describes a fully automated translate-score-filter pipeline; QC is automatic, not human"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e3"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/Patt/HellaSwag_TH_cleanned/raw/14597c4316f8863b919d107b6d0874640ee46c39/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "8e7e3ac6faddc0332ef9c6d1360022f3c4851b7145552fb691ae89376143c5c9",
+   "hub_revision": "14597c4316f8863b919d107b6d0874640ee46c39",
+   "quote": "This dataset is Thai translated version of hellaswag using google translate with Multilingual Universal Sentence Encoder to calculate score"
+  },
+  {
+   "id": "e2",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/Patt/HellaSwag_TH_cleanned/raw/14597c4316f8863b919d107b6d0874640ee46c39/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "8e7e3ac6faddc0332ef9c6d1360022f3c4851b7145552fb691ae89376143c5c9",
+   "hub_revision": "14597c4316f8863b919d107b6d0874640ee46c39",
+   "quote": "The score was penalized by the length of original text compare to translated text. The row that any score < 0.5 was dropped."
+  },
+  {
+   "id": "e3",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/Patt/HellaSwag_TH_cleanned",
+   "retrieved": "2026-08-24",
+   "hub_revision": "14597c4316f8863b919d107b6d0874640ee46c39",
+   "quote": "license: cc-by-sa-4.0"
+  }
+ ],
+ "completeness": 1.0,
+ "provenance_state": "complete",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ }
+}

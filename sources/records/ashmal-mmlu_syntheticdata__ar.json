@@ -1,0 +1,87 @@
+{
+ "record_id": "ashmal-mmlu_syntheticdata__ar",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "Ashmal/MMLU_SyntheticData",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/Ashmal/MMLU_SyntheticData",
+  "revision": "479e4e8aae1769291b1ded1154f8e661102490c9"
+ },
+ "root_benchmark": "MMLU",
+ "target_languages": [
+  "ar"
+ ],
+ "source_language": "not_applicable",
+ "derived_from": {
+  "kind": "modeled_on",
+  "parent_id": "MBZUAI/ArabicMMLU",
+  "parent_url": "https://huggingface.co/datasets/MBZUAI/ArabicMMLU"
+ },
+ "translation_type": "lm_generated",
+ "engine_or_translator": "GPT-4",
+ "human_verification": "unknown",
+ "license": "apache-2.0",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no human-review statement"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "not_applicable",
+   "evidence": []
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/Ashmal/MMLU_SyntheticData/raw/479e4e8aae1769291b1ded1154f8e661102490c9/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "4086c571a502780e23c0d03590b25760b2173298ee7b09196063790fc5faaf0e",
+   "hub_revision": "479e4e8aae1769291b1ded1154f8e661102490c9",
+   "quote": "MMLU_SyntheticData is generated using GPT-4. ... Please note that this is not the translated version of MMLU, it's an entirely independent dataset.",
+   "note": "'The subjects (above) are taken from the ArabicMMLU Dataset'"
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/Ashmal/MMLU_SyntheticData",
+   "retrieved": "2026-08-24",
+   "hub_revision": "479e4e8aae1769291b1ded1154f8e661102490c9",
+   "quote": "license: apache-2.0"
+  }
+ ],
+ "completeness": 0.8,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "Synthetic Arabic MMLU-style data; explicitly NOT a translation — the card says so itself."
+}

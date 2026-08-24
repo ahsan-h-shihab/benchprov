@@ -1,0 +1,87 @@
+{
+ "record_id": "hishab-commonsenseqa-bn__bn",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "hishab/commonsenseqa-bn",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/hishab/commonsenseqa-bn",
+  "revision": "70b346d5842dd7ae9176839cda3090024b0386e0"
+ },
+ "root_benchmark": "CommonsenseQA",
+ "target_languages": [
+  "bn"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "tau/commonsense_qa",
+  "parent_url": "https://huggingface.co/datasets/tau/commonsense_qa"
+ },
+ "translation_type": "machine",
+ "engine_or_translator": "Google Translate + LLM rewriting (EST; LLM unnamed)",
+ "human_verification": "unknown",
+ "license": "mit",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no human-review statement"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/hishab/commonsenseqa-bn/raw/70b346d5842dd7ae9176839cda3090024b0386e0/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "44cb660261caed720cb84707a07c7234ef596add9ce845154e762c88359c427b",
+   "hub_revision": "70b346d5842dd7ae9176839cda3090024b0386e0",
+   "quote": "The dataset was translated using a new method called **Expressive Semantic Translation (EST)**. This method combines both Google Machine Translation and LLM-based rewriting of the translation"
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/hishab/commonsenseqa-bn",
+   "retrieved": "2026-08-24",
+   "hub_revision": "70b346d5842dd7ae9176839cda3090024b0386e0",
+   "quote": "license: [\"mit\"]"
+  }
+ ],
+ "completeness": 0.8333,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ }
+}

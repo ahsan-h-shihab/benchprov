@@ -1,0 +1,67 @@
+{
+ "dataset_id": "csebuetnlp/squad_bn",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:51:51.718635+00:00",
+ "revision": "1dcbca66e65528e8d0bfb69eb32230d693a80630",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "task_ids:open-domain-qa",
+   "task_ids:extractive-qa",
+   "annotations_creators:machine-generated",
+   "language_creators:found",
+   "multilinguality:monolingual",
+   "source_datasets:extended",
+   "language:bn",
+   "license:cc-by-nc-sa-4.0",
+   "size_categories:100K<n<1M",
+   "arxiv:2101.00204",
+   "arxiv:2007.01852",
+   "arxiv:1606.05250",
+   "arxiv:2003.05002",
+   "region:us"
+  ],
+  "cardData_license": [
+   "cc-by-nc-sa-4.0"
+  ],
+  "cardData_language": [
+   "bn"
+  ],
+  "cardData_source_datasets": [
+   "extended"
+  ],
+  "cardData_annotations_creators": [
+   "machine-generated"
+  ],
+  "downloads": 209,
+  "lastModified": "2024-09-10T13:28:27.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/csebuetnlp/squad_bn/raw/1dcbca66e65528e8d0bfb69eb32230d693a80630/README.md",
+  "sha256": "392c95cb391e5788bc36031fd0733e6fe94edb9bb7167842ca81e4f692e83b4c",
+  "bytes": 9169,
+  "yaml_front_matter": "annotations_creators:\n- machine-generated\nlanguage_creators:\n- found\nmultilinguality:\n- monolingual\nsize_categories:\n- 100K<n<1M\nsource_datasets:\n- extended\ntask_categories:\n- question-answering\ntask_ids:\n- open-domain-qa\n- extractive-qa\nlanguage:\n- bn\nlicense:\n- cc-by-nc-sa-4.0",
+  "provenance_candidate_lines": [
+   "- [Annotations](#annotations)",
+   "- [Annotation process](#annotation-process)",
+   "- [Who are the annotators?](#who-are-the-annotators)",
+   "This is a Question Answering (QA) dataset for Bengali, curated from the [SQuAD 2.0](), [TyDI-QA]() datasets and using the state-of-the-art English to Bengali translation model introduced **[here](https://aclanthology.org/2020.emnlp-main.207/).**",
+   "For the training set, we translated the complete [SQuAD 2.0](https://aclanthology.org/N18-1101/) dataset using the English to Bangla translation model introduced [here](https://aclanthology.org/2020.emnlp-main.207/). Due to the possibility of incursions of error during automatic translation, we used the [Language-Agnostic BERT Sentence Embeddings (LaBSE)](https://arxiv.org/abs/2007.01852) of the t",
+   "### Annotations",
+   "#### Annotation process",
+   "#### Who are the annotators?"
+  ],
+  "reference_links": [
+   "https://github.com/csebuetnlp/banglabert",
+   "https://arxiv.org/abs/2101.00204",
+   "https://aclanthology.org/2020.emnlp-main.207/",
+   "https://aclanthology.org/N18-1101/",
+   "https://arxiv.org/abs/2007.01852",
+   "https://arxiv.org/abs/1606.05250",
+   "https://arxiv.org/abs/2003.05002",
+   "https://github.com/abhik1505040",
+   "https://github.com/Tahmid04"
+  ]
+ }
+}

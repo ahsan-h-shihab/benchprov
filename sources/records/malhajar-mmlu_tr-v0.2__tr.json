@@ -1,0 +1,88 @@
+{
+ "record_id": "malhajar-mmlu_tr-v0.2__tr",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "malhajar/mmlu_tr-v0.2",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/malhajar/mmlu_tr-v0.2",
+  "revision": "f845929ed35fdb971ddd2cb8769c0122486d4c8e"
+ },
+ "root_benchmark": "MMLU",
+ "target_languages": [
+  "tr"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "cais/mmlu",
+  "parent_url": "https://huggingface.co/datasets/cais/mmlu"
+ },
+ "translation_type": "machine",
+ "engine_or_translator": "GPT-4",
+ "human_verification": "unknown",
+ "license": "apache-2.0",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no human-review statement in the card"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/malhajar/mmlu_tr-v0.2/raw/f845929ed35fdb971ddd2cb8769c0122486d4c8e/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "17a0e25cd26dd3f1e8d2bf550b86c039b458b989b2b0dc6afb694a2a48d2e450",
+   "hub_revision": "f845929ed35fdb971ddd2cb8769c0122486d4c8e",
+   "quote": "The dataset was curated by Mohamad Alhajar, leveraging GPT-4 for translations to ensure high linguistic quality and fidelity."
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/malhajar/mmlu_tr-v0.2",
+   "retrieved": "2026-08-24",
+   "hub_revision": "f845929ed35fdb971ddd2cb8769c0122486d4c8e",
+   "quote": "license: apache-2.0"
+  }
+ ],
+ "completeness": 0.8333,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "Built for the OpenLLMTurkishLeaderboard v0.2."
+}

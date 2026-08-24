@@ -1,0 +1,88 @@
+{
+ "record_id": "csebuetnlp-squad_bn__bn",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "csebuetnlp/squad_bn",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/csebuetnlp/squad_bn",
+  "revision": "1dcbca66e65528e8d0bfb69eb32230d693a80630"
+ },
+ "root_benchmark": "SQuAD",
+ "target_languages": [
+  "bn"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "rajpurkar/squad_v2",
+  "parent_url": "https://huggingface.co/datasets/rajpurkar/squad_v2"
+ },
+ "translation_type": "mixed",
+ "engine_or_translator": "BanglaNMT English-to-Bangla model (translated portion)",
+ "human_verification": "unknown",
+ "license": "cc-by-nc-sa-4.0",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no statement in captured card lines"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/csebuetnlp/squad_bn/raw/1dcbca66e65528e8d0bfb69eb32230d693a80630/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "392c95cb391e5788bc36031fd0733e6fe94edb9bb7167842ca81e4f692e83b4c",
+   "hub_revision": "1dcbca66e65528e8d0bfb69eb32230d693a80630",
+   "quote": "This is a Question Answering (QA) dataset for Bengali, curated from the SQuAD 2.0, TyDI-QA datasets and using the state-of-the-art English to Bengali translation model",
+   "note": "'For the training set, we translated the complete SQuAD 2.0 dataset using the English to Bangla translation model' — machine-translated SQuAD plus curated TyDiQA-bn (natively written) items"
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/csebuetnlp/squad_bn",
+   "retrieved": "2026-08-24",
+   "hub_revision": "1dcbca66e65528e8d0bfb69eb32230d693a80630",
+   "quote": "license: [\"cc-by-nc-sa-4.0\"]"
+  }
+ ],
+ "completeness": 0.8333,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ }
+}

@@ -1,0 +1,66 @@
+{
+ "dataset_id": "openai/gsm8k",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:49:33.363009+00:00",
+ "revision": "740312add88f781978c0658806c59bc2815b9866",
+ "hub_metadata": {
+  "tags": [
+   "benchmark:official",
+   "benchmark:eval-yaml",
+   "task_categories:text-generation",
+   "annotations_creators:crowdsourced",
+   "language_creators:crowdsourced",
+   "multilinguality:monolingual",
+   "source_datasets:original",
+   "language:en",
+   "license:mit",
+   "size_categories:10K<n<100K",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:polars",
+   "library:mlcroissant",
+   "arxiv:2110.14168",
+   "region:us",
+   "math-word-problems"
+  ],
+  "cardData_license": [
+   "mit"
+  ],
+  "cardData_language": [
+   "en"
+  ],
+  "cardData_source_datasets": [
+   "original"
+  ],
+  "cardData_annotations_creators": [
+   "crowdsourced"
+  ],
+  "downloads": 1076823,
+  "lastModified": "2026-03-23T10:18:13.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/openai/gsm8k/raw/740312add88f781978c0658806c59bc2815b9866/README.md",
+  "sha256": "a17e882503578c9e324560630e31017617714ee025c87cf4fea6fd916895f3c1",
+  "bytes": 7935,
+  "yaml_front_matter": "annotations_creators:\n- crowdsourced\nlanguage_creators:\n- crowdsourced\nlanguage:\n- en\nlicense:\n- mit\nmultilinguality:\n- monolingual\nsize_categories:\n- 1K<n<10K\nsource_datasets:\n- original\ntask_categories:\n- text-generation\ntask_ids: []\npaperswithcode_id: gsm8k\npretty_name: Grade School Math 8K\ntags:\n- math-word-problems\ndataset_info:\n- config_name: main\n  features:\n  - name: question\n    dtype: string\n  - name: answer\n    dtype: string\n  splits:\n  - name: train\n    num_bytes: 3963202\n    num_examples: 7473\n  - name: test\n    num_bytes: 713732\n    num_examples: 1319\n  download_size: 2725633\n  dataset_size: 4676934\n- config_name: socratic\n  features:\n  - name: question\n    dtype: string\n  - name: answer\n    dtype: string\n  splits:\n  - name: train\n    num_bytes: 5198108\n    num_examples: 7473\n  - name: test\n    num_bytes: 936859\n    num_examples: 1319\n  download_size: 3164254\n  dataset_size: 6134967\nconfigs:\n- config_name: main\n  data_files:\n  - split: train\n    path: main/train-*\n  - split: test\n    path: main/test-*\n- config_name: socratic\n  data_files:\n  - split: train\n    path: socratic/train-*\n  - split: test\n    path: socratic/test-*",
+  "provenance_candidate_lines": [
+   "- [Annotations](#annotations)",
+   "For the `main` configuration, each instance contains a string for the grade-school level math question and a string for the corresponding answer with multiple steps of reasoning and calculator annotations (explained [here](https://github.com/openai/grade-school-math#calculation-annotations)).",
+   "For the `socratic` configuration, each instance contains a string for a grade-school level math question, a string for the corresponding answer with multiple steps of reasoning, calculator annotations (explained [here](https://github.com/openai/grade-school-math#calculation-annotations)), and *Socratic sub-questions*.",
+   "- answer: The full solution string to the `question`. It contains multiple steps of reasoning with calculator annotations and the final numeric solution.",
+   "### Annotations",
+   "#### Annotation process",
+   "#### Who are the annotators?",
+   "title={Training Verifiers to Solve Math Word Problems},"
+  ],
+  "reference_links": [
+   "https://github.com/openai/grade-school-math",
+   "https://arxiv.org/abs/2110.14168",
+   "https://github.com/openai/grade-school-math#calculation-annotations",
+   "https://github.com/jon-tow"
+  ]
+ }
+}

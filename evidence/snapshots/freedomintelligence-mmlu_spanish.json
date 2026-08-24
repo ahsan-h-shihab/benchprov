@@ -1,0 +1,34 @@
+{
+ "dataset_id": "FreedomIntelligence/MMLU_Spanish",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:50:57.853093+00:00",
+ "revision": "1a70c4272d49d942164d3ad62d90b9d4773e65bb",
+ "hub_metadata": {
+  "tags": [
+   "language:es",
+   "license:mit",
+   "region:us"
+  ],
+  "cardData_license": "mit",
+  "cardData_language": [
+   "es"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 176,
+  "lastModified": "2023-08-06T08:07:13.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/FreedomIntelligence/MMLU_Spanish/raw/1a70c4272d49d942164d3ad62d90b9d4773e65bb/README.md",
+  "sha256": "2e2979be64f617161992c722eb9542a4cec9415c43e1245f474382461fea7175",
+  "bytes": 223,
+  "yaml_front_matter": "license: mit\nlanguage:\n- es",
+  "provenance_candidate_lines": [
+   "Spanish version of MMLU dataset tranlasted by gpt-3.5-turbo."
+  ],
+  "reference_links": [
+   "https://github.com/FreedomIntelligence/MultilingualSIFT"
+  ]
+ }
+}

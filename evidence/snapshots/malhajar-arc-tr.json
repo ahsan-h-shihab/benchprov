@@ -1,0 +1,53 @@
+{
+ "dataset_id": "malhajar/arc-tr",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:50:35.857751+00:00",
+ "revision": "7e699ee056fc61934e50e3ede8ef0c84ef60036e",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "task_ids:open-domain-qa",
+   "task_ids:multiple-choice-qa",
+   "annotations_creators:found",
+   "language_creators:found",
+   "language:tr",
+   "license:mit",
+   "size_categories:1K<n<10K",
+   "format:json",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "arxiv:1803.05457",
+   "region:us"
+  ],
+  "cardData_license": "mit",
+  "cardData_language": [
+   "tr"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": [
+   "found"
+  ],
+  "downloads": 119,
+  "lastModified": "2024-03-06T08:01:24.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/malhajar/arc-tr/raw/7e699ee056fc61934e50e3ede8ef0c84ef60036e/README.md",
+  "sha256": "42853b14273882089b0f6878ae633f26677918a946c4aecd36b15310bddbd558",
+  "bytes": 5185,
+  "yaml_front_matter": "license: mit\ntask_categories:\n- question-answering\ntask_ids:\n  - open-domain-qa\n  - multiple-choice-qa\nlanguage:\n- tr\nsize_categories:\n- 10K<n<100K\npaperswithcode_id: arc\npretty_name: arc\nannotations_creators:\n  - found\nlanguage_creators:\n  - found\ndataset_info:\n  - config_name: ARC-Challenge\n    features:\n      - name: id\n        dtype: string\n      - name: question\n        dtype: string\n      - name: choices\n        sequence:\n          - name: text\n            dtype: string\n          - name: label\n            dtype: string\n      - name: answerKey\n        dtype: string\n    splits:\n      - name: train\n        num_bytes: 374640\n        num_examples: 1118\n      - name: test\n        num_bytes: 402938\n        num_examples: 1171\n      - name: validation\n        num_bytes: 103674\n        num_examples: 298\n  - config_name: ARC-Easy\n    features:\n      - name: id\n        dtype: string\n      - name: question\n        dtype: string\n      - name: choices\n        sequence:\n          - name: text\n            dtype: string\n          - name: label\n            dtype: string\n      - name: answerKey\n        dtype: string\n    splits:\n      - name: train\n        num_bytes: 663076\n        num_examples: 2250\n      - name: test\n        num_bytes: 702861\n        num_examples: 2375\n      - name: validation\n        num_bytes: 168076\n        num_examples: 569\nconfigs:\n  - config_name: ARC-Challenge\n    data_files:\n      - split: train\n        path: ARC-Challenge/train-*\n      - split: test\n        path: ARC-Challenge/test-*\n      - split: validation\n        path: ARC-Challenge/validation-*\n  - config_name: ARC-Easy\n    data_files:\n      - split: train\n        path: ARC-Easy/train-*\n      - split: test\n        path: ARC-Easy/test-*\n      - split: validation\n        path: ARC-Easy/validation-*",
+  "provenance_candidate_lines": [
+   "malhajar/arc-tr is a translated version of [`arc`]( https://huggingface.co/datasets/allenai/ai2_arc) aimed specifically to be used in the [`OpenLLMTurkishLeaderboard`](https://huggingface.co/spaces/malhajar/OpenLLMTurkishLeaderboard)",
+   "- **Size of the generated dataset:** 0.83 MB",
+   "- **Size of the generated dataset:** 1.45 MB",
+   "\"question\": \"Belirli bir organizma, derisinin altındaki kalın yağ tabakası sayesinde bir ortamda hayatta kalabilir. Yağ tabakası hangi durumda hayatta kalma avantajına sahip olabilir?\"",
+   "- **Translated from:** [arc]( https://huggingface.co/datasets/allenai/ai2_arc)"
+  ],
+  "reference_links": [
+   "https://arxiv.org/abs/1803.05457"
+  ]
+ }
+}

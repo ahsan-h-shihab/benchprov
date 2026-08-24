@@ -1,0 +1,82 @@
+{
+ "record_id": "cais-mmlu__en",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "cais/mmlu",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/cais/mmlu",
+  "revision": "c30699e8356da336a370243923dbaf21066bb9fe"
+ },
+ "root_benchmark": "MMLU",
+ "target_languages": [
+  "en"
+ ],
+ "source_language": "not_applicable",
+ "derived_from": {
+  "kind": "none",
+  "parent_id": null
+ },
+ "translation_type": "native_original",
+ "engine_or_translator": "not_applicable",
+ "human_verification": "not_applicable",
+ "license": "mit",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "not_applicable",
+   "evidence": []
+  },
+  "human_verification": {
+   "status": "not_applicable",
+   "evidence": []
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "not_applicable",
+   "evidence": []
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/cais/mmlu",
+   "retrieved": "2026-08-24",
+   "hub_revision": "c30699e8356da336a370243923dbaf21066bb9fe",
+   "note": "hub metadata declares the dataset original English",
+   "quote": "source_datasets: original; language: en; annotations_creators: no-annotation"
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/cais/mmlu",
+   "retrieved": "2026-08-24",
+   "hub_revision": "c30699e8356da336a370243923dbaf21066bb9fe",
+   "quote": "license: [\"mit\"]"
+  }
+ ],
+ "completeness": 1.0,
+ "provenance_state": "complete",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "Family root. Questions collected from freely available online sources by the authors (Hendrycks et al., 2021)."
+}

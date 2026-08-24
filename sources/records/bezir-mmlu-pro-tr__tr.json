@@ -1,0 +1,89 @@
+{
+ "record_id": "bezir-mmlu-pro-tr__tr",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "bezir/MMLU-pro-TR",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/bezir/MMLU-pro-TR",
+  "revision": "e9ca2d4d1bb18bb8307b7f3e0fb55830cba30dc2"
+ },
+ "root_benchmark": "MMLU-Pro",
+ "target_languages": [
+  "tr"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "TIGER-Lab/MMLU-Pro",
+  "parent_url": "https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro"
+ },
+ "translation_type": "machine",
+ "engine_or_translator": "Gemini-1.5-Pro",
+ "human_verification": "partial",
+ "license": "mit",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "human_verification": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ],
+   "note": "'human oversight' is stated but its scope/coverage is not quantified"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/bezir/MMLU-pro-TR/raw/e9ca2d4d1bb18bb8307b7f3e0fb55830cba30dc2/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "71a4497c64d81fc8e9655972b3d64c7c42b72b62ef566679409f22792d171abb",
+   "hub_revision": "e9ca2d4d1bb18bb8307b7f3e0fb55830cba30dc2",
+   "quote": "this dataset was translated with ```human oversight``` and the assistance of ```Gemini-1.5-pro```"
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/bezir/MMLU-pro-TR",
+   "retrieved": "2026-08-24",
+   "hub_revision": "e9ca2d4d1bb18bb8307b7f3e0fb55830cba30dc2",
+   "quote": "license: mit"
+  }
+ ],
+ "completeness": 1.0,
+ "provenance_state": "complete",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ }
+}

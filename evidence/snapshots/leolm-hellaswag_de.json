@@ -1,0 +1,33 @@
+{
+ "dataset_id": "LeoLM/HellaSwag_de",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:52:01.127883+00:00",
+ "revision": "0573671a6762ad0d4fe3052fb9c4da484707989f",
+ "hub_metadata": {
+  "tags": [
+   "size_categories:10K<n<100K",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "region:us"
+  ],
+  "cardData_license": null,
+  "cardData_language": null,
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 150,
+  "lastModified": "2023-08-29T13:31:56.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/LeoLM/HellaSwag_de/raw/0573671a6762ad0d4fe3052fb9c4da484707989f/README.md",
+  "sha256": "b906bdc3332248d6d5c398c4cf20e92f22fe904338d4eb42154e663d57cdf0e9",
+  "bytes": 921,
+  "yaml_front_matter": "configs:\n- config_name: default\n  data_files:\n  - split: train\n    path: data/train-*\n  - split: validation\n    path: data/validation-*\ndataset_info:\n  features:\n  - name: ind\n    dtype: int64\n  - name: activity_label\n    dtype: string\n  - name: ctx_a\n    dtype: string\n  - name: ctx_b\n    dtype: string\n  - name: ctx\n    dtype: string\n  - name: endings\n    sequence: string\n  - name: source_id\n    dtype: string\n  - name: split\n    dtype: string\n  - name: split_type\n    dtype: string\n  - name: label\n    dtype: string\n  - name: activity_label_de\n    dtype: string\n  - name: ctx_de\n    dtype: string\n  - name: endings_de\n    sequence: string\n  - name: translation_de\n    dtype: string\n  splits:\n  - name: train\n    num_bytes: 1592717\n    num_examples: 1000\n  - name: validation\n    num_bytes: 31417275\n    num_examples: 10042\n  download_size: 18521030\n  dataset_size: 33009992",
+  "provenance_candidate_lines": [],
+  "reference_links": []
+ }
+}

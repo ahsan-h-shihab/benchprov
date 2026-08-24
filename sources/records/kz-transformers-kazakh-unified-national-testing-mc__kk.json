@@ -1,0 +1,90 @@
+{
+ "record_id": "kz-transformers-kazakh-unified-national-testing-mc__kk",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "kz-transformers/kazakh-unified-national-testing-mc",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/kz-transformers/kazakh-unified-national-testing-mc",
+  "revision": "017d1f7d1c3d88159660cdd8964c8f9751a0ce3d"
+ },
+ "root_benchmark": "Other-native",
+ "target_languages": [
+  "kk"
+ ],
+ "source_language": "not_applicable",
+ "derived_from": {
+  "kind": "none",
+  "parent_id": null
+ },
+ "translation_type": "native_original",
+ "engine_or_translator": "not_applicable",
+ "human_verification": "not_applicable",
+ "license": "apache-2.0",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1",
+    "e2"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "not_applicable",
+   "evidence": []
+  },
+  "human_verification": {
+   "status": "not_applicable",
+   "evidence": []
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e3"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "not_applicable",
+   "evidence": []
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_content",
+   "url": "https://datasets-server.huggingface.co/first-rows?dataset=kz-transformers%2Fkazakh-unified-national-testing-mc&config=default&split=kazakh_and_literature",
+   "retrieved": "2026-08-24",
+   "note": "first rows show native Kazakh UNT exam questions (e.g. on the Er Töstik folk tale); subject splits: kazakh_and_literature, geography, world_history, history_of_kazakhstan, english, biology, ..."
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/kz-transformers/kazakh-unified-national-testing-mc",
+   "retrieved": "2026-08-24",
+   "hub_revision": "017d1f7d1c3d88159660cdd8964c8f9751a0ce3d",
+   "note": "subject structure of Kazakhstan's Unified National Testing (UNT) exam, from the card's YAML",
+   "quote": "splits: kazakh_and_literature (4688), geography (1718), world_history (1228), history_of_kazakhstan (3260), english (2197), biology (1536), ..."
+  },
+  {
+   "id": "e3",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/kz-transformers/kazakh-unified-national-testing-mc",
+   "retrieved": "2026-08-24",
+   "hub_revision": "017d1f7d1c3d88159660cdd8964c8f9751a0ce3d",
+   "quote": "license: apache-2.0"
+  }
+ ],
+ "completeness": 1.0,
+ "provenance_state": "complete",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "Native Kazakh exam benchmark (UNT). An 'english' subject subset (English-language school questions) exists inside the dataset; this record's language scope covers the Kazakh-language items that dominate the collection."
+}

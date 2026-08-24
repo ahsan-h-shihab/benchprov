@@ -1,0 +1,48 @@
+{
+ "dataset_id": "Translated-MMLU-Blind-Review/ACL-SRW-2025",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:50:17.448455+00:00",
+ "revision": "ae122f8ade264a3c38b8f37822cc6eac31df2e7a",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "task_categories:zero-shot-classification",
+   "task_categories:text-generation",
+   "language:en",
+   "language:pt",
+   "license:gpl-3.0",
+   "size_categories:100K<n<1M",
+   "format:parquet",
+   "modality:tabular",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "region:us",
+   "MMLU"
+  ],
+  "cardData_license": "gpl-3.0",
+  "cardData_language": [
+   "en",
+   "pt"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 48,
+  "lastModified": "2025-06-04T20:26:58.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/Translated-MMLU-Blind-Review/ACL-SRW-2025/raw/ae122f8ade264a3c38b8f37822cc6eac31df2e7a/README.md",
+  "sha256": "77b812b7ba2c12db1256845be82ccffb15648b93bf72fe2dca9678edf0b7df52",
+  "bytes": 1792,
+  "yaml_front_matter": "configs:\n  - config_name: Questions\n    data_files:\n      - split: data\n        path: acl_questions.parquet\n  - config_name: Recipes\n    data_files:\n      - split: data\n        path: acl_recipes.parquet\n  - config_name: Evaluation Results\n    data_files:\n      - split: data\n        path: acl_evals.parquet\ntags:\n  - MMLU\nlanguage:\n  - en\n  - pt\nlicense: gpl-3.0\ntask_categories:\n  - question-answering\n  - zero-shot-classification\n  - text-generation\npretty_name: Exploring LLM performance variability on MMLU translations (ACL-SRW 2025)\nsize_categories:\n  - 100K<n<1M",
+  "provenance_candidate_lines": [
+   "* **translation\\_method**",
+   "`English`, `Google Translate`, `GPT-3.5-Turbo`, `GPT-4o`, `Human`",
+   "* **generated\\_text**"
+  ],
+  "reference_links": []
+ }
+}

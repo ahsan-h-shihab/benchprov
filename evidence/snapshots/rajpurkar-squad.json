@@ -1,0 +1,66 @@
+{
+ "dataset_id": "rajpurkar/squad",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:49:56.565819+00:00",
+ "revision": "7b6d24c440a36b6815f21b70d25016731768db1f",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "task_ids:extractive-qa",
+   "annotations_creators:crowdsourced",
+   "language_creators:crowdsourced",
+   "language_creators:found",
+   "multilinguality:monolingual",
+   "source_datasets:extended|wikipedia",
+   "language:en",
+   "license:cc-by-sa-4.0",
+   "size_categories:10K<n<100K",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "arxiv:1606.05250",
+   "region:us"
+  ],
+  "cardData_license": "cc-by-sa-4.0",
+  "cardData_language": [
+   "en"
+  ],
+  "cardData_source_datasets": [
+   "extended|wikipedia"
+  ],
+  "cardData_annotations_creators": [
+   "crowdsourced"
+  ],
+  "downloads": 205892,
+  "lastModified": "2024-03-04T13:54:37.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/rajpurkar/squad/raw/7b6d24c440a36b6815f21b70d25016731768db1f/README.md",
+  "sha256": "fb89c5d06573a2c7b7fb671ad60f5c1f3be2ccd7a63162f41b9e613abca0f0b8",
+  "bytes": 7620,
+  "yaml_front_matter": "annotations_creators:\n- crowdsourced\nlanguage_creators:\n- crowdsourced\n- found\nlanguage:\n- en\nlicense: cc-by-sa-4.0\nmultilinguality:\n- monolingual\nsize_categories:\n- 10K<n<100K\nsource_datasets:\n- extended|wikipedia\ntask_categories:\n- question-answering\ntask_ids:\n- extractive-qa\npaperswithcode_id: squad\npretty_name: SQuAD\ndataset_info:\n  config_name: plain_text\n  features:\n  - name: id\n    dtype: string\n  - name: title\n    dtype: string\n  - name: context\n    dtype: string\n  - name: question\n    dtype: string\n  - name: answers\n    sequence:\n    - name: text\n      dtype: string\n    - name: answer_start\n      dtype: int32\n  splits:\n  - name: train\n    num_bytes: 79346108\n    num_examples: 87599\n  - name: validation\n    num_bytes: 10472984\n    num_examples: 10570\n  download_size: 16278203\n  dataset_size: 89819092\nconfigs:\n- config_name: plain_text\n  data_files:\n  - split: train\n    path: plain_text/train-*\n  - split: validation\n    path: plain_text/validation-*\n  default: true\ntrain-eval-index:\n- config: plain_text\n  task: question-answering\n  task_id: extractive_question_answering\n  splits:\n    train_split: train\n    eval_split: validation\n  col_mapping:\n    question: question\n    context: context\n    answers:\n      text: text\n      answer_start: answer_start\n  metrics:\n  - type: squad\n    name: SQuAD",
+  "provenance_candidate_lines": [
+   "- [Annotations](#annotations)",
+   "- [Annotation process](#annotation-process)",
+   "- [Who are the annotators?](#who-are-the-annotators)",
+   "Stanford Question Answering Dataset (SQuAD) is a reading comprehension dataset, consisting of questions posed by crowdworkers on a set of Wikipedia articles, where the answer to every question is a segment of text, or span, from the corresponding reading passage, or the question might be unanswerable.",
+   "- **Size of the generated dataset:** 89.92 MB",
+   "### Annotations",
+   "#### Annotation process",
+   "#### Who are the annotators?"
+  ],
+  "reference_links": [
+   "https://github.com/huggingface/datasets/blob/master/CONTRIBUTING.md#how-to-contribute-to-the-dataset-cards",
+   "https://arxiv.org/abs/1606.05250",
+   "https://aclanthology.org/D16-1264",
+   "https://github.com/lewtun",
+   "https://github.com/albertvillanova",
+   "https://github.com/patrickvonplaten",
+   "https://github.com/thomwolf"
+  ]
+ }
+}

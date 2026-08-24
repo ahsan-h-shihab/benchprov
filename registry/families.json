@@ -1,0 +1,108 @@
+{
+  "_comment": "Benchmark families recognized by the registry. root_benchmark in every record must be a key here. origin = the family's original dataset (the root record's dataset, where a record exists).",
+  "MMLU": {
+    "origin_dataset_id": "cais/mmlu",
+    "origin_url": "https://huggingface.co/datasets/cais/mmlu",
+    "description": "Massive Multitask Language Understanding (Hendrycks et al., 2021)."
+  },
+  "MMLU-Pro": {
+    "origin_dataset_id": "TIGER-Lab/MMLU-Pro",
+    "origin_url": "https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro",
+    "description": "Harder 10-option extension of MMLU (Wang et al., 2024)."
+  },
+  "GSM8K": {
+    "origin_dataset_id": "openai/gsm8k",
+    "origin_url": "https://huggingface.co/datasets/openai/gsm8k",
+    "description": "Grade-school math word problems (Cobbe et al., 2021)."
+  },
+  "ARC": {
+    "origin_dataset_id": "allenai/ai2_arc",
+    "origin_url": "https://huggingface.co/datasets/allenai/ai2_arc",
+    "description": "AI2 Reasoning Challenge science questions (Clark et al., 2018)."
+  },
+  "HellaSwag": {
+    "origin_dataset_id": "Rowan/hellaswag",
+    "origin_url": "https://huggingface.co/datasets/Rowan/hellaswag",
+    "description": "Commonsense sentence-completion (Zellers et al., 2019)."
+  },
+  "TruthfulQA": {
+    "origin_dataset_id": "truthfulqa/truthful_qa",
+    "origin_url": "https://huggingface.co/datasets/truthfulqa/truthful_qa",
+    "description": "Truthfulness QA (Lin et al., 2022)."
+  },
+  "Belebele": {
+    "origin_dataset_id": "facebook/belebele",
+    "origin_url": "https://huggingface.co/datasets/facebook/belebele",
+    "description": "Multilingual reading comprehension in 122 language variants (Bandarkar et al., 2023)."
+  },
+  "MGSM": {
+    "origin_dataset_id": "juletxara/mgsm",
+    "origin_url": "https://huggingface.co/datasets/juletxara/mgsm",
+    "description": "Multilingual GSM8K subset, human-translated into 10 languages (Shi et al., 2022)."
+  },
+  "FLORES": {
+    "origin_dataset_id": "openlanguagedata/flores_plus",
+    "origin_url": "https://huggingface.co/datasets/openlanguagedata/flores_plus",
+    "description": "FLORES/FLORES+ many-to-many translation evaluation sentences (NLLB team; OLDI)."
+  },
+  "TyDiQA": {
+    "origin_dataset_id": "google-research-datasets/tydiqa",
+    "origin_url": "https://huggingface.co/datasets/google-research-datasets/tydiqa",
+    "description": "Typologically diverse QA collected natively in 11 languages (Clark et al., 2020)."
+  },
+  "Winogrande": {
+    "origin_dataset_id": "allenai/winogrande",
+    "origin_url": "https://huggingface.co/datasets/allenai/winogrande",
+    "description": "Winograd-schema-style coreference (Sakaguchi et al., 2020)."
+  },
+  "SIB-200": {
+    "origin_dataset_id": "Davlan/sib200",
+    "origin_url": "https://huggingface.co/datasets/Davlan/sib200",
+    "description": "Topic classification over FLORES-200 sentences in 200+ languages (Adelani et al., 2024)."
+  },
+  "Alpaca": {
+    "origin_dataset_id": "tatsu-lab/alpaca",
+    "origin_url": "https://huggingface.co/datasets/tatsu-lab/alpaca",
+    "description": "Self-instruct-style instruction dataset (Taori et al., 2023); ancestor of several translated instruction-eval sets."
+  },
+  "MMLU-Redux": {
+    "origin_dataset_id": "edinburgh-dawg/mmlu-redux",
+    "origin_url": "https://huggingface.co/datasets/edinburgh-dawg/mmlu-redux",
+    "description": "Re-annotated MMLU subset with per-item error labels (Gema et al., 2024)."
+  },
+  "SQuAD": {
+    "origin_dataset_id": "rajpurkar/squad",
+    "origin_url": "https://huggingface.co/datasets/rajpurkar/squad",
+    "description": "Stanford Question Answering Dataset (Rajpurkar et al., 2016); root of XQuAD and other translated variants."
+  },
+  "OpenBookQA": {
+    "origin_dataset_id": "allenai/openbookqa",
+    "origin_url": "https://huggingface.co/datasets/allenai/openbookqa",
+    "description": "Open-book science QA (Mihaylov et al., 2018)."
+  },
+  "PIQA": {
+    "origin_dataset_id": "ybisk/piqa",
+    "origin_url": "https://huggingface.co/datasets/ybisk/piqa",
+    "description": "Physical commonsense QA (Bisk et al., 2020)."
+  },
+  "CommonsenseQA": {
+    "origin_dataset_id": "tau/commonsense_qa",
+    "origin_url": "https://huggingface.co/datasets/tau/commonsense_qa",
+    "description": "Commonsense QA over ConceptNet (Talmor et al., 2019)."
+  },
+  "BoolQ": {
+    "origin_dataset_id": "google/boolq",
+    "origin_url": "https://huggingface.co/datasets/google/boolq",
+    "description": "Yes/no reading-comprehension questions (Clark et al., 2019)."
+  },
+  "XNLI": {
+    "origin_dataset_id": "facebook/xnli",
+    "origin_url": "https://huggingface.co/datasets/facebook/xnli",
+    "description": "NLI dev/test professionally translated into 15 languages; MT train (Conneau et al., 2018)."
+  },
+  "Other-native": {
+    "origin_dataset_id": null,
+    "origin_url": null,
+    "description": "Native-original benchmarks that are not members of a translated family but serve as provenance contrast rows (e.g. KazMMLU, CMMLU, KMMLU, ArabicMMLU, TurkishMMLU)."
+  }
+}

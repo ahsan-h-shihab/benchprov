@@ -1,0 +1,47 @@
+{
+ "dataset_id": "OpenLLM-Ro/ro_hellaswag",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:50:45.814461+00:00",
+ "revision": "169c3ff8577e939c729dce124e7458aad807070e",
+ "hub_metadata": {
+  "tags": [
+   "language:ro",
+   "license:cc-by-nc-4.0",
+   "size_categories:1K<n<10K",
+   "format:json",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:polars",
+   "library:mlcroissant",
+   "arxiv:1905.07830",
+   "arxiv:2307.16039",
+   "arxiv:2406.18266",
+   "region:us"
+  ],
+  "cardData_license": "cc-by-nc-4.0",
+  "cardData_language": [
+   "ro"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 44,
+  "lastModified": "2026-06-04T20:07:33.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/OpenLLM-Ro/ro_hellaswag/raw/169c3ff8577e939c729dce124e7458aad807070e/README.md",
+  "sha256": "e6be7811fd3d18b47c5ff2f25e6325b1e88fdf0cb2980aaff7af8a2a8da40c59",
+  "bytes": 2514,
+  "yaml_front_matter": "license: cc-by-nc-4.0\nlanguage:\n- ro",
+  "provenance_candidate_lines": [
+   "Here we provide the Romanian translation of the Hellaswag from the paper *\"Okapi: Instruction-tuned Large Language Models in Multiple Languages with Reinforcement Learning from Human Feedback\"* ([Lai et al., 2023](https://arxiv.org/abs/2307.16039))."
+  ],
+  "reference_links": [
+   "https://arxiv.org/abs/1905.07830",
+   "https://arxiv.org/abs/2307.16039",
+   "https://arxiv.org/abs/2406.18266",
+   "https://aclanthology.org/2024.findings-emnlp.681/"
+  ]
+ }
+}

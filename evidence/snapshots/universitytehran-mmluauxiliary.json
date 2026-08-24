@@ -1,0 +1,39 @@
+{
+ "dataset_id": "universitytehran/MMLUAuxiliary",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:50:22.926738+00:00",
+ "revision": "63197e84213d7fc96551ced83a78c9d290c44281",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:multiple-choice",
+   "language:fa",
+   "size_categories:10K<n<100K",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "region:us"
+  ],
+  "cardData_license": null,
+  "cardData_language": [
+   "fa"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 22,
+  "lastModified": "2024-12-05T22:00:20.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/universitytehran/MMLUAuxiliary/raw/63197e84213d7fc96551ced83a78c9d290c44281/README.md",
+  "sha256": "57bd7b43f432973e9986bb15098c121d7028fbd6d0fbcb60958a02a268ff778f",
+  "bytes": 525,
+  "yaml_front_matter": "dataset_info:\n  features:\n  - name: instruction\n    dtype: string\n  - name: input\n    dtype: string\n  - name: output\n    dtype: string\n  splits:\n  - name: train\n    num_bytes: 275852684\n    num_examples: 99842\n  download_size: 62752122\n  dataset_size: 275852684\nconfigs:\n- config_name: default\n  data_files:\n  - split: train\n    path: data/train-*\ntask_categories:\n- multiple-choice\nlanguage:\n- fa",
+  "provenance_candidate_lines": [
+   "This is a Persian translation of `auxiliary_train` split of [MMLU](https://huggingface.co/datasets/cais/mmlu) dataset."
+  ],
+  "reference_links": []
+ }
+}

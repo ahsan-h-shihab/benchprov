@@ -1,0 +1,65 @@
+{
+ "dataset_id": "allenai/openbookqa",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:50:01.613076+00:00",
+ "revision": "388097ea7776314e93a529163e0fea805b8a6454",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "task_ids:open-domain-qa",
+   "annotations_creators:crowdsourced",
+   "annotations_creators:expert-generated",
+   "language_creators:expert-generated",
+   "multilinguality:monolingual",
+   "source_datasets:original",
+   "language:en",
+   "license:unknown",
+   "size_categories:10K<n<100K",
+   "format:parquet",
+   "modality:tabular",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "region:us"
+  ],
+  "cardData_license": [
+   "unknown"
+  ],
+  "cardData_language": [
+   "en"
+  ],
+  "cardData_source_datasets": [
+   "original"
+  ],
+  "cardData_annotations_creators": [
+   "crowdsourced",
+   "expert-generated"
+  ],
+  "downloads": 169873,
+  "lastModified": "2024-01-04T16:09:20.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/allenai/openbookqa/raw/388097ea7776314e93a529163e0fea805b8a6454/README.md",
+  "sha256": "a58e68a31e20e7cbac02f80f44f3282ffbb8a40aeb20488670e5ffa975687960",
+  "bytes": 9061,
+  "yaml_front_matter": "annotations_creators:\n- crowdsourced\n- expert-generated\nlanguage_creators:\n- expert-generated\nlanguage:\n- en\nlicense:\n- unknown\nmultilinguality:\n- monolingual\nsize_categories:\n- 1K<n<10K\nsource_datasets:\n- original\ntask_categories:\n- question-answering\ntask_ids:\n- open-domain-qa\npaperswithcode_id: openbookqa\npretty_name: OpenBookQA\ndataset_info:\n- config_name: additional\n  features:\n  - name: id\n    dtype: string\n  - name: question_stem\n    dtype: string\n  - name: choices\n    sequence:\n    - name: text\n      dtype: string\n    - name: label\n      dtype: string\n  - name: answerKey\n    dtype: string\n  - name: fact1\n    dtype: string\n  - name: humanScore\n    dtype: float32\n  - name: clarity\n    dtype: float32\n  - name: turkIdAnonymized\n    dtype: string\n  splits:\n  - name: train\n    num_bytes: 1288577\n    num_examples: 4957\n  - name: validation\n    num_bytes: 135916\n    num_examples: 500\n  - name: test\n    num_bytes: 130701\n    num_examples: 500\n  download_size: 783789\n  dataset_size: 1555194\n- config_name: main\n  features:\n  - name: id\n    dtype: string\n  - name: question_stem\n    dtype: string\n  - name: choices\n    sequence:\n    - name: text\n      dtype: string\n    - name: label\n      dtype: string\n  - name: answerKey\n    dtype: string\n  splits:\n  - name: train\n    num_bytes: 895386\n    num_examples: 4957\n  - name: validation\n    num_bytes: 95428\n    num_examples: 500\n  - name: test\n    num_bytes: 91759\n    num_examples: 500\n  download_size: 609613\n  dataset_size: 1082573\nconfigs:\n- config_name: additional\n  data_files:\n  - split: train\n    path: additional/train-*\n  - split: validation\n    path: additional/validation-*\n  - split: test\n    path: additional/test-*\n- config_name: main\n  data_files:\n  - split: train\n    path: main/train-*\n  - split: validation\n    path: main/validation-*\n  - split: test\n    path: main/test-*\n  default: true",
+  "provenance_candidate_lines": [
+   "- [Annotations](#annotations)",
+   "- **Size of the generated dataset:** 2.88 MB",
+   "- **Size of the generated dataset:** 1.45 MB",
+   "- `turkIdAnonymized` (`str`): Anonymized crowd-worker ID.",
+   "### Annotations",
+   "#### Annotation process",
+   "#### Who are the annotators?"
+  ],
+  "reference_links": [
+   "https://github.com/huggingface/datasets/blob/master/CONTRIBUTING.md#how-to-contribute-to-the-dataset-cards",
+   "https://github.com/thomwolf",
+   "https://github.com/patrickvonplaten",
+   "https://github.com/lewtun"
+  ]
+ }
+}

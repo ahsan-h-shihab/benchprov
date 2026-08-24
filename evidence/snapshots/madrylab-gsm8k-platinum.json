@@ -1,0 +1,53 @@
+{
+ "dataset_id": "madrylab/gsm8k-platinum",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:50:00.050321+00:00",
+ "revision": "e762492455a1cf7967de89f05b6bef72fc713b66",
+ "hub_metadata": {
+  "tags": [
+   "language:en",
+   "license:mit",
+   "size_categories:1K<n<10K",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "arxiv:2502.03461",
+   "arxiv:2110.14168",
+   "region:us",
+   "math-word-problems"
+  ],
+  "cardData_license": "mit",
+  "cardData_language": [
+   "en"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 7297,
+  "lastModified": "2025-03-11T14:48:29.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/madrylab/gsm8k-platinum/raw/e762492455a1cf7967de89f05b6bef72fc713b66/README.md",
+  "sha256": "2a630537c2fd0c6e62d44f0373fd68dad1a272e5ebe5fa8be63f2ba3e09d4d05",
+  "bytes": 6921,
+  "yaml_front_matter": "language:\n- en\nlicense: mit\ndataset_info:\n  config_name: main\n  features:\n  - name: question\n    dtype: string\n  - name: answer\n    dtype: string\n  - name: cleaning_status\n    dtype: string\n  splits:\n  - name: test\n    num_bytes: 663954\n    num_examples: 1209\n  download_size: 380973\n  dataset_size: 663954\nconfigs:\n- config_name: main\n  data_files:\n  - split: test\n    path: main/test-*\ntask_categories:\n- text2text-generation\ntags:\n- math-word-problems\nsize_categories:\n- 1K<n<10K",
+  "provenance_candidate_lines": [
+   "| GSM8K (Test) | # Flagged by Models | # Rejected | # Re-labeled | # Verified | GSM8K-Platinum",
+   "- **answer** (`str`): The full solution to the question. It contains multiple steps of reasoning with calculator annotations and the final numeric solution.",
+   "1. *consensus*: all LLMs agreed with the label, so the example was not manually reviewed.",
+   "2. *verified*: the original target was manually verified to be correct.",
+   "Please defer to the GSM8K dataset card for further details on their collection and annotation process.",
+   "The further annotations we provide are licensed under the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode) license.",
+   "title={Training Verifiers to Solve Math Word Problems},"
+  ],
+  "reference_links": [
+   "https://github.com/MadryLab/platinum-benchmarks/",
+   "https://arxiv.org/abs/2502.03461",
+   "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+   "https://arxiv.org/abs/2502.03461},"
+  ]
+ }
+}

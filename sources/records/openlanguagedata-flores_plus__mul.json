@@ -1,0 +1,88 @@
+{
+ "record_id": "openlanguagedata-flores_plus__mul",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "openlanguagedata/flores_plus",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/openlanguagedata/flores_plus",
+  "revision": "5fec6c13f9e5a4db2f745d4ec0d7c9721ddc4f06"
+ },
+ "root_benchmark": "FLORES",
+ "target_languages": [
+  "mul"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "facebook/flores",
+  "parent_url": "https://huggingface.co/datasets/facebook/flores"
+ },
+ "translation_type": "human",
+ "engine_or_translator": "unknown",
+ "human_verification": "unknown",
+ "license": "cc-by-sa-4.0",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "human translation program (FLORES-200 lineage, OLDI-maintained); translating parties not named in the card"
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "FLORES workflow includes review per external documentation; not stated in the card at the pinned revision"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/openlanguagedata/flores_plus/raw/5fec6c13f9e5a4db2f745d4ec0d7c9721ddc4f06/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "b0945b9b974f72b2e6533e24ae973f59c75b4ad2f177f6a8cc0d78f7e46e64aa",
+   "hub_revision": "5fec6c13f9e5a4db2f745d4ec0d7c9721ddc4f06",
+   "quote": "The data consists of translations primarily from English into over 200 language varieties.",
+   "note": "'FLORES+ is based on FLORES-200'; OLDI contribution guidelines require human translation"
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/openlanguagedata/flores_plus",
+   "retrieved": "2026-08-24",
+   "hub_revision": "5fec6c13f9e5a4db2f745d4ec0d7c9721ddc4f06",
+   "quote": "license: [\"cc-by-sa-4.0\"]"
+  }
+ ],
+ "completeness": 0.6667,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "Gated dataset: the pinned card URL requires an authenticated, condition-accepting session."
+}

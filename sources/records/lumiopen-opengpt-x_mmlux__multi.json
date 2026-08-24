@@ -1,0 +1,105 @@
+{
+ "record_id": "lumiopen-opengpt-x_mmlux__multi",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "LumiOpen/opengpt-x_mmlux",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/LumiOpen/opengpt-x_mmlux",
+  "revision": "d4a99431a363e01cf9cba368b6ed0217cde7425e"
+ },
+ "root_benchmark": "MMLU",
+ "target_languages": [
+  "de",
+  "fr",
+  "es",
+  "it",
+  "pt",
+  "bg",
+  "cs",
+  "da",
+  "el",
+  "et",
+  "fi",
+  "hu",
+  "lt",
+  "lv",
+  "nl",
+  "pl",
+  "ro",
+  "sk",
+  "sl",
+  "sv"
+ ],
+ "source_language": "not_applicable",
+ "derived_from": {
+  "kind": "subset_or_filter_of",
+  "parent_id": "openGPT-X/mmlux",
+  "parent_url": "https://huggingface.co/datasets/openGPT-X/mmlux"
+ },
+ "translation_type": "machine",
+ "engine_or_translator": "DeepL",
+ "human_verification": "unknown",
+ "license": "unknown",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1",
+    "e2"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no human-review statement found"
+  },
+  "license": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no license declared in hub metadata at the pinned revision"
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "not_applicable",
+   "evidence": []
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/LumiOpen/opengpt-x_mmlux/raw/d4a99431a363e01cf9cba368b6ed0217cde7425e/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "7461b583544c23d0d61cb43b1cb1ce7b67d11560c5b5d66f6ed7403e397aea4f",
+   "hub_revision": "d4a99431a363e01cf9cba368b6ed0217cde7425e",
+   "quote": "This is a copy of the translations from openGPT-X/mmlux, but the repo is [modified so it doesn't require trusting remote code]"
+  },
+  {
+   "id": "e2",
+   "type": "paper",
+   "url": "https://arxiv.org/html/2410.08928",
+   "retrieved": "2026-08-24",
+   "quote": "We chose DeepL as translation service due to its balance between translation accuracy and scalability.",
+   "note": "method of the parent's translations, documented in the openGPT-X evaluation paper"
+  }
+ ],
+ "completeness": 0.6,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "Re-host (loader-safe copy) of openGPT-X/mmlux; items unchanged per card."
+}

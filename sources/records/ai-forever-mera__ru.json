@@ -1,0 +1,85 @@
+{
+ "record_id": "ai-forever-mera__ru",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "ai-forever/MERA",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/ai-forever/MERA",
+  "revision": "1af9c02a469b6e614e7afed73f7d27f71de7caf5"
+ },
+ "root_benchmark": "Other-native",
+ "target_languages": [
+  "ru"
+ ],
+ "source_language": "not_applicable",
+ "derived_from": {
+  "kind": "aggregation_of",
+  "parent_id": null
+ },
+ "translation_type": "mixed",
+ "engine_or_translator": "unknown",
+ "human_verification": "unknown",
+ "license": "mit",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "per-task creation varies; no single engine"
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "some tasks document Yandex.Toloka validation ('All examples from the dataset have been validated on the Yandex.Toloka platform' — stated per-task, not suite-wide)"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "not_applicable",
+   "evidence": []
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/ai-forever/MERA/raw/1af9c02a469b6e614e7afed73f7d27f71de7caf5/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "a83687c90b19cbf07eeb55ab0f2dfd91498d5b36e32cd14aa4f8a2fe9d22618a",
+   "hub_revision": "1af9c02a469b6e614e7afed73f7d27f71de7caf5",
+   "quote": "is an analog of the English COPA dataset that was constructed as a translation of the English COPA dataset from SuperGLUE",
+   "note": "the MERA suite aggregates 20+ Russian tasks; most are natively constructed, at least one (PARus) is documented as a translation — hence 'mixed' at suite level"
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/ai-forever/MERA",
+   "retrieved": "2026-08-24",
+   "hub_revision": "1af9c02a469b6e614e7afed73f7d27f71de7caf5",
+   "quote": "license: mit"
+  }
+ ],
+ "completeness": 0.6,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "Suite-level record; per-task records (e.g. rummlu, parus) would be finer-grained future work."
+}

@@ -1,0 +1,95 @@
+{
+ "record_id": "translated-mmlu-blind-review-acl-srw-2025__pt",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "Translated-MMLU-Blind-Review/ACL-SRW-2025",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/Translated-MMLU-Blind-Review/ACL-SRW-2025",
+  "revision": "ae122f8ade264a3c38b8f37822cc6eac31df2e7a"
+ },
+ "root_benchmark": "MMLU",
+ "target_languages": [
+  "pt"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "cais/mmlu",
+  "parent_url": "https://huggingface.co/datasets/cais/mmlu"
+ },
+ "translation_type": "mixed",
+ "engine_or_translator": "Google Translate / GPT-3.5-Turbo / GPT-4o / human (per item)",
+ "human_verification": "per_item_flags",
+ "license": "gpl-3.0",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "human_verification": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ],
+   "note": "the per-item translation_method column distinguishes the Human arm from machine arms"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/Translated-MMLU-Blind-Review/ACL-SRW-2025/raw/ae122f8ade264a3c38b8f37822cc6eac31df2e7a/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "77b812b7ba2c12db1256845be82ccffb15648b93bf72fe2dca9678edf0b7df52",
+   "hub_revision": "ae122f8ade264a3c38b8f37822cc6eac31df2e7a",
+   "quote": "**translation_method** `English`, `Google Translate`, `GPT-3.5-Turbo`, `GPT-4o`, `Human`",
+   "note": "research artifact comparing translation methods; every item carries its method"
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/Translated-MMLU-Blind-Review/ACL-SRW-2025",
+   "retrieved": "2026-08-24",
+   "hub_revision": "ae122f8ade264a3c38b8f37822cc6eac31df2e7a",
+   "quote": "license: gpl-3.0"
+  }
+ ],
+ "completeness": 1.0,
+ "provenance_state": "complete",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "per_item_provenance": {
+  "field": "translation_method",
+  "description": "per-item translation method: English (original) / Google Translate / GPT-3.5-Turbo / GPT-4o / Human"
+ },
+ "notes": "ACL SRW 2025 study of MMLU translation variability (en→pt); the only per-item method column found outside Global-MMLU in the seed sweep."
+}

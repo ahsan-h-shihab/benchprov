@@ -1,0 +1,150 @@
+{
+ "record_id": "coherelabs-global-mmlu__multi",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "CohereLabs/Global-MMLU",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/CohereLabs/Global-MMLU",
+  "revision": "0e619dbeb34206cd48705a1a0ea7fb21cae09993"
+ },
+ "root_benchmark": "MMLU",
+ "target_languages": [
+  "ar",
+  "bn",
+  "es",
+  "fr",
+  "hi",
+  "ru",
+  "de",
+  "id",
+  "it",
+  "ja",
+  "ko",
+  "pt",
+  "zh",
+  "yo",
+  "nl",
+  "ro",
+  "uk",
+  "vi",
+  "tr",
+  "pl",
+  "fa",
+  "cs",
+  "he",
+  "el",
+  "ms",
+  "fil",
+  "te",
+  "si",
+  "ne",
+  "ky",
+  "sv",
+  "lt",
+  "sr",
+  "mg",
+  "so",
+  "ha",
+  "am",
+  "sn",
+  "ig",
+  "ny",
+  "sw"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "cais/mmlu",
+  "parent_url": "https://huggingface.co/datasets/cais/mmlu"
+ },
+ "translation_type": "mixed",
+ "engine_or_translator": "Google Translate API (machine-translated portion)",
+ "human_verification": "per_item_flags",
+ "license": "apache-2.0",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "human_verification": {
+   "status": "verified",
+   "evidence": [
+    "e3"
+   ]
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e4"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/CohereLabs/Global-MMLU/raw/0e619dbeb34206cd48705a1a0ea7fb21cae09993/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "80e44287371de876f7b1dbe613494649ace41082e9a7caff8deb96b9b26421d3",
+   "hub_revision": "0e619dbeb34206cd48705a1a0ea7fb21cae09993",
+   "quote": "This dataset combines machine translations for MMLU questions along with professional translations and crowd-sourced post-edits."
+  },
+  {
+   "id": "e2",
+   "type": "paper",
+   "url": "https://arxiv.org/html/2412.03304",
+   "retrieved": "2026-08-24",
+   "quote": "We first translated the English MMLU dataset into 41 languages using the Google Translate API."
+  },
+  {
+   "id": "e3",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/CohereLabs/Global-MMLU/raw/0e619dbeb34206cd48705a1a0ea7fb21cae09993/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "80e44287371de876f7b1dbe613494649ace41082e9a7caff8deb96b9b26421d3",
+   "hub_revision": "0e619dbeb34206cd48705a1a0ea7fb21cae09993",
+   "quote": "is_annotated dtype: bool",
+   "note": "per-item boolean marks samples that received human post-editing/verification"
+  },
+  {
+   "id": "e4",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/CohereLabs/Global-MMLU",
+   "retrieved": "2026-08-24",
+   "hub_revision": "0e619dbeb34206cd48705a1a0ea7fb21cae09993",
+   "quote": "license: apache-2.0"
+  }
+ ],
+ "completeness": 1.0,
+ "provenance_state": "complete",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "per_item_provenance": {
+  "field": "is_annotated",
+  "description": "True for items that were professionally translated / human post-edited; False for raw machine translations"
+ },
+ "notes": "42 languages including English originals; the 'en' subset (original MMLU items) is excluded from target_languages of this record. Per-language human-edit coverage varies — see is_annotated."
+}

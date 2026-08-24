@@ -1,0 +1,77 @@
+{
+ "record_id": "fair-forward-mmlu-autotranslated__mul",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "fair-forward/mmlu-autotranslated",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/fair-forward/mmlu-autotranslated",
+  "revision": "6c8ca717cf60c6d644874b1dc242b80bed66ed2e"
+ },
+ "root_benchmark": "MMLU",
+ "target_languages": [
+  "mul"
+ ],
+ "source_language": "unknown",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "cais/mmlu",
+  "parent_url": "https://huggingface.co/datasets/cais/mmlu"
+ },
+ "translation_type": "machine",
+ "engine_or_translator": "unknown",
+ "human_verification": "unknown",
+ "license": "unknown",
+ "claims": {
+  "translation_type": {
+   "status": "name_only",
+   "evidence": [
+    "e1"
+   ],
+   "note": "method class rests on the dataset's own name only"
+  },
+  "engine_or_translator": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no engine stated anywhere in the repo card"
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no statement"
+  },
+  "license": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no license declared in hub metadata"
+  },
+  "derived_from": {
+   "status": "name_only",
+   "evidence": [
+    "e1"
+   ],
+   "note": "MMLU identity from the dataset name and per-subject structure; no prose statement"
+  },
+  "source_language": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "source language not stated; per-language configs named by language code"
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "name_only",
+   "url": "https://huggingface.co/datasets/fair-forward/mmlu-autotranslated",
+   "retrieved": "2026-08-24",
+   "note": "dataset id contains 'autotranslated'; the card is YAML-only with no prose at the pinned revision"
+  }
+ ],
+ "completeness": 0.3333,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "Auto-translated MMLU used by the AI Language Proficiency Monitor (GIZ FAIR Forward); the repo itself documents nothing — a showcase 'name_only' row."
+}

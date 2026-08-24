@@ -1,0 +1,87 @@
+{
+ "record_id": "csebuetnlp-xnli_bn__bn",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "csebuetnlp/xnli_bn",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/csebuetnlp/xnli_bn",
+  "revision": "a18ecb62d7ffd4a6bff5756afb6e799bbb91dd3e"
+ },
+ "root_benchmark": "XNLI",
+ "target_languages": [
+  "bn"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "facebook/xnli",
+  "parent_url": "https://huggingface.co/datasets/facebook/xnli"
+ },
+ "translation_type": "machine",
+ "engine_or_translator": "BanglaNMT English-to-Bangla model (Hasan et al., 2020; aclanthology 2020.emnlp-main.207)",
+ "human_verification": "unknown",
+ "license": "cc-by-nc-sa-4.0",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "split-level validation details live in the BanglaBERT paper; not stated in the card lines captured"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/csebuetnlp/xnli_bn/raw/a18ecb62d7ffd4a6bff5756afb6e799bbb91dd3e/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "76f96d43da6cd698aa2e723d403425a7d41ecf91dd5c2978a56dc306d6913253",
+   "hub_revision": "a18ecb62d7ffd4a6bff5756afb6e799bbb91dd3e",
+   "quote": "The dataset curation procedure was the same as the XNLI dataset: we translated the MultiNLI training data using the English to Bangla translation mod[el]"
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/csebuetnlp/xnli_bn",
+   "retrieved": "2026-08-24",
+   "hub_revision": "a18ecb62d7ffd4a6bff5756afb6e799bbb91dd3e",
+   "quote": "license: [\"cc-by-nc-sa-4.0\"]"
+  }
+ ],
+ "completeness": 0.8333,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ }
+}

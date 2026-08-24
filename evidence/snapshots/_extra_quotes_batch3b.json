@@ -1,0 +1,9 @@
+{
+ "kazmmlu_paper": [
+  "document.documentElement.classList.add('js'); [2502.12829] KazMMLU: Evaluating Language Models on Kazakh, Russian, and Regional Knowledge of Kazakhstan Skip to main content Search Submit Donate Log in Search arXiv Press Enter to search &middot; Advanced search --> Computer Science > Computation and Langua",
+  "ence > Computation and Language arXiv:2502.12829 (cs) [Submitted on 18 Feb 2025 ( v1 ), last revised 21 Jul 2025 (this version, v2)] Title: KazMMLU: Evaluating Language Models on Kazakh, Russian, and Regional Knowledge of Kazakhstan Authors: Mukhammed Togmanov , Nurdaulet Mukhituly , Diana Turmakhan , Jonibek Mansurov , Maiya Goloburda , Akhmed Sakip , Zhuohan Xie , Yuxia Wang , Bekas",
+  "Wang , Bekassyl Syzdykov , Nurkhan Laiyk , Alham Fikri Aji , Ekaterina Kochmar , Preslav Nakov , Fajri Koto View a PDF of the paper titled KazMMLU: Evaluating Language Models on Kazakh, Russian, and Regional Knowledge of Kazakhstan, by Mukhammed Togmanov and 13 other authors View PDF HTML (experimental) Abstract: Despite having a population of twenty million, Kazakhstan&#39;s culture",
+  "Kazakh language has been limited, as seen in the scarcity of dedicated models and benchmark evaluations. To address this gap, we introduce KazMMLU, the first MMLU-style dataset specifically designed for Kazakh language. KazMMLU comprises 23,000 questions that cover various educational levels, including STEM, humanities, and social sciences, sourced from authentic educational material",
+  "d benchmark evaluations. To address this gap, we introduce KazMMLU, the first MMLU-style dataset specifically designed for Kazakh language. KazMMLU comprises 23,000 questions that cover various educational levels, including STEM, humanities, and social sciences, sourced from authentic educational materials and manually validated by native speakers and educators. The dataset includes 1"
+ ]
+}

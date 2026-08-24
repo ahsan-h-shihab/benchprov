@@ -1,0 +1,59 @@
+{
+ "dataset_id": "neurotechnology/lt_arc",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:50:37.189992+00:00",
+ "revision": "13384e04aa7162120cc1e778e767df1d40a85c80",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "task_ids:open-domain-qa",
+   "task_ids:multiple-choice-qa",
+   "annotations_creators:found",
+   "language_creators:found",
+   "multilinguality:monolingual",
+   "source_datasets:original",
+   "language:lt",
+   "license:cc-by-nc-4.0",
+   "size_categories:1K<n<10K",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "arxiv:2408.12963",
+   "region:us"
+  ],
+  "cardData_license": [
+   "cc-by-nc-4.0"
+  ],
+  "cardData_language": [
+   "lt"
+  ],
+  "cardData_source_datasets": [
+   "original"
+  ],
+  "cardData_annotations_creators": [
+   "found"
+  ],
+  "downloads": 11,
+  "lastModified": "2024-08-26T06:17:51.000Z",
+  "gated": "auto"
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/neurotechnology/lt_arc/raw/13384e04aa7162120cc1e778e767df1d40a85c80/README.md",
+  "sha256": "28dee945d5578e5a692b0ed21240935730f9842f057c9ee48b96cd65e3223b83",
+  "bytes": 2910,
+  "gated_note": "dataset is gated: the pinned URL requires an authenticated, condition-accepting session",
+  "yaml_front_matter": "annotations_creators:\n- found\nlanguage_creators:\n- found\nlanguage:\n- lt\nlicense:\n- cc-by-nc-4.0\nmultilinguality:\n- monolingual\nsize_categories:\n- 1K<n<10K\nsource_datasets:\n- original\ntask_categories:\n- question-answering\ntask_ids:\n- open-domain-qa\n- multiple-choice-qa\npretty_name: Ai2Arc\nlanguage_bcp47:\n- en-US\ndataset_info:\n- config_name: ARC-Challenge\n  features:\n  - name: id\n    dtype: string\n  - name: question\n    dtype: string\n  - name: choices\n    sequence:\n    - name: text\n      dtype: string\n    - name: label\n      dtype: string\n  - name: answerKey\n    dtype: string\n  splits:\n  - name: test\n    num_bytes: 375511\n    num_examples: 1172\n  - name: validation\n    num_bytes: 96660\n    num_examples: 299\n  download_size: 449460\n  dataset_size: 821931\n- config_name: ARC-Easy\n  features:\n  - name: id\n    dtype: string\n  - name: question\n    dtype: string\n  - name: choices\n    sequence:\n    - name: text\n      dtype: string\n    - name: label\n      dtype: string\n  - name: answerKey\n    dtype: string\n  splits:\n  - name: test\n    num_bytes: 657514\n    num_examples: 2376\n  - name: validation\n    num_bytes: 157394\n    num_examples: 570\n  download_size: 762935\n  dataset_size: 1433908\nconfigs:\n- config_name: ARC-Challenge\n  data_files:\n  - split: test\n    path: ARC-Challenge/test*\n  - split: validation\n    path: ARC-Challenge/validation*\n- config_name: ARC-Easy\n  data_files:\n  - split: test\n    path: ARC-Easy/test*\n  - split: validation\n    path: ARC-Easy/validation*",
+  "provenance_candidate_lines": [
+   "This dataset has been translated into Lithuanian using GPT-4. This dataset is utilized as a benchmark and forms part of the evaluation protocol for Lithuanian language models, as outlined in the technical report *OPEN LLAMA2 MODEL FOR THE LITHUANIAN LANGUAGE* ([Nakvosas et al., 2024](https://arxiv.org/abs/2408.12963))",
+   "@misc{nakvosas2024openllama2modellithuanian,",
+   "title={Open Llama2 Model for the Lithuanian Language},"
+  ],
+  "reference_links": [
+   "https://arxiv.org/abs/2408.12963",
+   "https://arxiv.org/abs/2408.12963},"
+  ]
+ }
+}

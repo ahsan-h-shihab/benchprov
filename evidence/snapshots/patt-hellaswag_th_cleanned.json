@@ -1,0 +1,46 @@
+{
+ "dataset_id": "Patt/HellaSwag_TH_cleanned",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:52:02.852361+00:00",
+ "revision": "14597c4316f8863b919d107b6d0874640ee46c39",
+ "hub_metadata": {
+  "tags": [
+   "language:th",
+   "language:en",
+   "license:cc-by-sa-4.0",
+   "size_categories:10K<n<100K",
+   "format:parquet",
+   "modality:tabular",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "arxiv:1907.04307",
+   "region:us"
+  ],
+  "cardData_license": "cc-by-sa-4.0",
+  "cardData_language": [
+   "th",
+   "en"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 92,
+  "lastModified": "2025-01-11T18:08:38.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/Patt/HellaSwag_TH_cleanned/raw/14597c4316f8863b919d107b6d0874640ee46c39/README.md",
+  "sha256": "8e7e3ac6faddc0332ef9c6d1360022f3c4851b7145552fb691ae89376143c5c9",
+  "bytes": 1907,
+  "yaml_front_matter": "language:\n- th\n- en\ndataset_info:\n  features:\n  - name: ind\n    dtype: int64\n  - name: activity_label\n    dtype: string\n  - name: activity_label_th\n    dtype: string\n  - name: ctx_a\n    dtype: string\n  - name: ctx_a_th\n    dtype: string\n  - name: ctx_b\n    dtype: string\n  - name: ctx_b_th\n    dtype: string\n  - name: ctx\n    dtype: string\n  - name: ctx_th\n    dtype: string\n  - name: endings\n    sequence: string\n  - name: endings_th\n    sequence: string\n  - name: source_id\n    dtype: string\n  - name: split\n    dtype: string\n  - name: split_type\n    dtype: string\n  - name: label\n    dtype: int64\n  - name: score_ctx_a\n    dtype: float64\n  - name: score_ctx\n    dtype: float64\n  - name: score_endings\n    dtype: float64\n  splits:\n  - name: train\n    num_bytes: 66295463\n    num_examples: 20027\n  - name: validation\n    num_bytes: 17133944\n    num_examples: 5034\n  - name: test\n    num_bytes: 16871175\n    num_examples: 5093\n  download_size: 44164434\n  dataset_size: 100300582\nconfigs:\n- config_name: default\n  data_files:\n  - split: train\n    path: data/train-*\n  - split: validation\n    path: data/validation-*\n  - split: test\n    path: data/test-*\nlicense: cc-by-sa-4.0",
+  "provenance_candidate_lines": [
+   "This dataset is Thai translated version of [hellaswag](https://huggingface.co/datasets/hellaswag) using google translate with [Multilingual Universal Sentence Encoder](https://arxiv.org/abs/1907.04307) to calculate score for Thai translation.",
+   "The score was penalized by the length of original text compare to translated text. The row that any score < 0.5 was dropped."
+  ],
+  "reference_links": [
+   "https://arxiv.org/abs/1907.04307"
+  ]
+ }
+}

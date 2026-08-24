@@ -1,0 +1,38 @@
+{
+ "dataset_id": "allganize/financial-mmlu-ko",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:51:04.977977+00:00",
+ "revision": "2b827871962e2f8dd3efb118d105f04c597f6f03",
+ "hub_metadata": {
+  "tags": [
+   "language:ko",
+   "size_categories:n<1K",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "region:us"
+  ],
+  "cardData_license": null,
+  "cardData_language": [
+   "ko"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 46,
+  "lastModified": "2024-04-02T04:50:38.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/allganize/financial-mmlu-ko/raw/2b827871962e2f8dd3efb118d105f04c597f6f03/README.md",
+  "sha256": "f90b4d4471e630c49b31d868d3d9635031a533d808f8183fe0c14d8da659d672",
+  "bytes": 3610,
+  "yaml_front_matter": "dataset_info:\n  features:\n  - name: conversation_id\n    dtype: string\n  - name: conversations\n    list:\n    - name: from\n      dtype: string\n    - name: value\n      dtype: string\n  splits:\n  - name: test\n    num_bytes: 217945\n    num_examples: 455\n  download_size: 105791\n  dataset_size: 217945\nconfigs:\n- config_name: default\n  data_files:\n  - split: test\n    path: data/test-*\nlanguage:\n- ko",
+  "provenance_candidate_lines": [
+   "- 한국어 데이터를 생성하기 위해, 여러 금융 문제가 있는 공공 사이트의 문제들을 크롤링하여 수집, 검수(104건)하였습니다. 그리고 Wikipedia와 공공사이트들의 금융사전/보고서들을 기반으로 GPT-4로 문제를 생성하고 사람이 검수하였습니다.(315건)"
+  ],
+  "reference_links": []
+ }
+}

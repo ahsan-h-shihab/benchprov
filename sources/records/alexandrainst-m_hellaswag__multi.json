@@ -1,0 +1,118 @@
+{
+ "record_id": "alexandrainst-m_hellaswag__multi",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "alexandrainst/m_hellaswag",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/alexandrainst/m_hellaswag",
+  "revision": "9d31dc982bd6285e081e3e3136332a38b9c1d7b7"
+ },
+ "root_benchmark": "HellaSwag",
+ "target_languages": [
+  "ar",
+  "bn",
+  "ca",
+  "da",
+  "de",
+  "es",
+  "eu",
+  "fr",
+  "gu",
+  "hi",
+  "hr",
+  "hu",
+  "hy",
+  "id",
+  "it",
+  "kn",
+  "ml",
+  "mr",
+  "ne",
+  "nl",
+  "pt",
+  "ro",
+  "ru",
+  "sk",
+  "sr",
+  "sv",
+  "ta",
+  "te",
+  "uk",
+  "vi",
+  "zh"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "Rowan/hellaswag",
+  "parent_url": "https://huggingface.co/datasets/Rowan/hellaswag"
+ },
+ "translation_type": "machine",
+ "engine_or_translator": "gpt-3.5-turbo (University of Oregon translations)",
+ "human_verification": "unknown",
+ "license": "cc-by-nc-4.0",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no human-review statement in the card"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/alexandrainst/m_hellaswag/raw/9d31dc982bd6285e081e3e3136332a38b9c1d7b7/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "c6175d9d077dc42f298a799393c641a98535a7d220c8d7a9790dff0179512a37",
+   "hub_revision": "9d31dc982bd6285e081e3e3136332a38b9c1d7b7",
+   "quote": "The rest of the languages was translated using GPT-3.5-turbo by the University of Oregon",
+   "note": "record covers all languages except is/nb, which have their own records"
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/alexandrainst/m_hellaswag",
+   "retrieved": "2026-08-24",
+   "hub_revision": "9d31dc982bd6285e081e3e3136332a38b9c1d7b7",
+   "quote": "license: cc-by-nc-4.0"
+  }
+ ],
+ "completeness": 0.8333,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ }
+}

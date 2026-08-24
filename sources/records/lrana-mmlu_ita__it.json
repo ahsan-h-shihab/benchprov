@@ -1,0 +1,73 @@
+{
+ "record_id": "lrana-mmlu_ita__it",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "lrana/MMLU_ita",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/lrana/MMLU_ita",
+  "revision": "f933fa363a4a137709233a6472b355bf669cdcf3"
+ },
+ "root_benchmark": "MMLU",
+ "target_languages": [
+  "it"
+ ],
+ "source_language": "unknown",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "cais/mmlu",
+  "parent_url": "https://huggingface.co/datasets/cais/mmlu"
+ },
+ "translation_type": "unknown",
+ "engine_or_translator": "unknown",
+ "human_verification": "unknown",
+ "license": "unknown",
+ "claims": {
+  "translation_type": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "the card is the default template with '[More Information Needed]' placeholders throughout"
+  },
+  "engine_or_translator": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "not stated"
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no statement"
+  },
+  "license": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no license declared in hub metadata at the pinned revision"
+  },
+  "derived_from": {
+   "status": "name_only",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "not stated; the card is an unfilled template"
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "name_only",
+   "url": "https://huggingface.co/datasets/lrana/MMLU_ita",
+   "retrieved": "2026-08-24",
+   "note": "dataset id 'MMLU_ita' with language tag it; no prose evidence"
+  }
+ ],
+ "completeness": 0.1667,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ }
+}

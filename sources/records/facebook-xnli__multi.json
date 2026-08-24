@@ -1,0 +1,101 @@
+{
+ "record_id": "facebook-xnli__multi",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "facebook/xnli",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/facebook/xnli",
+  "revision": "b8dd5d7af51114dbda02c0e3f6133f332186418e"
+ },
+ "root_benchmark": "XNLI",
+ "target_languages": [
+  "ar",
+  "bg",
+  "de",
+  "el",
+  "es",
+  "fr",
+  "hi",
+  "ru",
+  "sw",
+  "th",
+  "tr",
+  "ur",
+  "vi",
+  "zh"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "nyu-mll/multi_nli",
+  "parent_url": "https://huggingface.co/datasets/nyu-mll/multi_nli"
+ },
+ "translation_type": "mixed",
+ "engine_or_translator": "One Hour Translation platform (dev/test); MT for train split (engine unnamed)",
+ "human_verification": "unknown",
+ "license": "unknown",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1",
+    "e2"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no separate post-translation verification step described"
+  },
+  "license": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no license declared in hub metadata at the pinned revision"
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/facebook/xnli/raw/b8dd5d7af51114dbda02c0e3f6133f332186418e/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "e951158edde65027380c20e827c3c2ac7ca9903bff0ff65209806b9d71a0607a",
+   "hub_revision": "b8dd5d7af51114dbda02c0e3f6133f332186418e",
+   "quote": "XNLI is a subset of a few thousand examples from MNLI which has been translated"
+  },
+  {
+   "id": "e2",
+   "type": "paper",
+   "url": "https://arxiv.org/html/1809.05053",
+   "retrieved": "2026-08-24",
+   "quote": "we hire translators to translate the resulting sentences into 15 languages using the One Hour Translation platform",
+   "note": "dev/test: professional human translation; the distributed train split is machine-translated MultiNLI"
+  }
+ ],
+ "completeness": 0.6667,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "Split-dependent provenance: human-translated evaluation splits, machine-translated train split — recorded as one 'mixed' record because the hub dataset ships them together."
+}

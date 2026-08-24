@@ -1,0 +1,87 @@
+{
+ "record_id": "meta-math-gsm8k_zh__zh",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "meta-math/GSM8K_zh",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/meta-math/GSM8K_zh",
+  "revision": "4a5009abc37cbb2d3fd1a745f80e5ea1405ba9aa"
+ },
+ "root_benchmark": "GSM8K",
+ "target_languages": [
+  "zh"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "openai/gsm8k",
+  "parent_url": "https://huggingface.co/datasets/openai/gsm8k"
+ },
+ "translation_type": "machine",
+ "engine_or_translator": "GPT-3.5-Turbo (few-shot prompting)",
+ "human_verification": "unknown",
+ "license": "mit",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no human-review statement"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/meta-math/GSM8K_zh/raw/4a5009abc37cbb2d3fd1a745f80e5ea1405ba9aa/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "05b9c79e671ff000ec0631b41bc4389fbcd379fe344ffa4d6f163b126f42dd18",
+   "hub_revision": "4a5009abc37cbb2d3fd1a745f80e5ea1405ba9aa",
+   "quote": "question-answer pairs are translated from GSM8K by `GPT-3.5-Turbo` with few-shot prompting."
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/meta-math/GSM8K_zh",
+   "retrieved": "2026-08-24",
+   "hub_revision": "4a5009abc37cbb2d3fd1a745f80e5ea1405ba9aa",
+   "quote": "license: mit"
+  }
+ ],
+ "completeness": 0.8333,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ }
+}

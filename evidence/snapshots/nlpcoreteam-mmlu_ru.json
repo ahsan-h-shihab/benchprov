@@ -1,0 +1,50 @@
+{
+ "dataset_id": "NLPCoreTeam/mmlu_ru",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:50:53.019827+00:00",
+ "revision": "ff746aff2276802a8b0596b7aa381c6a49db978e",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "task_categories:multiple-choice",
+   "task_ids:multiple-choice-qa",
+   "language:ru",
+   "language:en",
+   "size_categories:10K<n<100K",
+   "modality:text",
+   "library:datasets",
+   "library:mlcroissant",
+   "arxiv:2009.03300",
+   "region:us"
+  ],
+  "cardData_license": null,
+  "cardData_language": [
+   "ru",
+   "en"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 1708,
+  "lastModified": "2023-06-28T19:21:48.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/NLPCoreTeam/mmlu_ru/raw/ff746aff2276802a8b0596b7aa381c6a49db978e/README.md",
+  "sha256": "1165fa7af6e06dd55bb39eb72300c2536d025c7ed4aab10d4b8073318fc9b04a",
+  "bytes": 36672,
+  "yaml_front_matter": "pretty_name: MMLU RU/EN\nlanguage:\n- ru\n- en\nsize_categories:\n- 10K<n<100K\ntask_categories:\n- question-answering\n- multiple-choice\ntask_ids:\n  - multiple-choice-qa\ndataset_info:\n- config_name: abstract_algebra\n  features:\n  - name: question_en\n    dtype: string\n  - name: choices_en\n    sequence: string\n  - name: answer\n    dtype:\n      class_label:\n        names:\n          '0': A\n          '1': B\n          '2': C\n          '3': D\n  - name: question_ru\n    dtype: string\n  - name: choices_ru\n    sequence: string\n  splits:\n  - name: dev\n    num_bytes: 2182\n    num_examples: 5\n  - name: val\n    num_bytes: 5220\n    num_examples: 11\n  - name: test\n    num_bytes: 50926\n    num_examples: 100\n  download_size: 5548198\n  dataset_size: 58328\n- config_name: anatomy\n  features:\n  - name: question_en\n    dtype: string\n  - name: choices_en\n    sequence: string\n  - name: answer\n    dtype:\n      class_label:\n        names:\n          '0': A\n          '1': B\n          '2': C\n          '3': D\n  - name: question_ru\n    dtype: string\n  - name: choices_ru\n    sequence: string\n  splits:\n  - name: dev\n    num_bytes: 2482\n    num_examples: 5\n  - name: val\n    num_bytes: 8448\n    num_examples: 14\n  - name: test\n    num_bytes: 91387\n    num_examples: 135\n  download_size: 5548198\n  dataset_size: 102317\n- config_name: astronomy\n  features:\n  - name: question_en\n    dtype: string\n  - name: choices_en\n    sequence: string\n  - name: answer\n    dtype:\n      class_label:\n        names:\n          '0': A\n          '1': B\n          '2': C\n          '3': D\n  - name: question_ru\n    dtype: string\n  - name: choices_ru\n    sequence: string\n  splits:\n  - name: dev\n    num_bytes: 6049\n    num_examples: 5\n  - name: val\n    num_bytes: 14187\n    num_examples: 16\n  - name: test\n    num_bytes: 130167\n    num_examples: 152\n  download_size: 5548198\n  dataset_size: 150403\n- config_name: business_ethics\n  features:\n  - name: question_en\n    dtype: string\n  - name: choices_en\n    sequence: string\n  - name: answer\n    dtype:\n      class_label:\n        names:\n          '0': A\n          '1': B\n          '2': C\n          '3': D\n  - name: question_ru\n    dtype: string\n  - name: choices_ru\n    sequence: string\n  splits:\n  - name: dev\n    num_bytes: 6197\n    num_examples: 5\n  - name: val\n    num_bytes: 8963\n    num_examples: 11\n  - name: test\n    num_bytes: 96566\n    num_examples: 100\n  download_size: 5548198\n  dataset_size: 111726\n- config_name: clinical_knowledge\n  features:\n  - name: question_en\n    dtype: string\n  - name: choices_en\n    sequence: string\n  - name: answer\n    dtype:\n      class_label:\n        names:\n          '0': A\n          '1': B\n          '2': C\n          '3': D\n  - name: question_ru\n    dtype: string\n  - name: choices_ru\n    sequence: string\n  splits:\n  - name: dev\n    num_bytes: 3236\n    num_examples: 5\n  - name: val\n    num_bytes: 18684\n    num_examples: 29\n  - name: test\n    num_bytes: 178043\n    num_examples: 265\n  download_size: 5548198\n  dataset_size: 199963\n- config_name: college_biology\n  features:\n  - name: question_en\n    dtype: string\n  - name: choices_en\n    sequence: string\n  - name: answer\n    dtype:\n      class_label:\n        names:\n          '0': A\n          '1': B\n          '2': C\n          '3': D\n  - name: question_ru\n    dtype: string\n  - name: choices_ru\n    sequence: string\n  splits:\n  - name: dev\n    num_bytes: 4232\n    num_examples: 5\n  - name: val\n    num_bytes: 13521\n    num_examples: 16\n  - name: test\n    num_bytes: 139322\n    num_examples: 144\n  download_size: 5548198\n  dataset_size: 157075\n- config_name: college_chemistry\n  features:\n  - name: question_en\n    dtype: string\n  - name: choices_en\n    sequence: string\n  - name: answer\n    dtype:\n      class_label:\n        names:\n          '0': A\n          '1': B\n          '2': C\n          '3': D\n  - name: question_ru\n    dtype: string\n  - name: choices_ru\n    sequence: string\n  splits:\n  - name: dev\n    num_bytes: 3533\n    num_examples: 5\n  - name: val\n    num_bytes: 6157\n    num_examples: 8",
+  "provenance_candidate_lines": [
+   "Note it doesn't include `auxiliary_train` split, which wasn't translated.",
+   "The translation was made via Yandex.Translate API.",
+   "There are some translation mistakes, especially observed with terms and formulas, no fixes were applied.",
+   "subjects = [\"abstract_algebra\", \"anatomy\", \"astronomy\", \"business_ethics\", \"clinical_knowledge\", \"college_biology\", \"college_chemistry\", \"college_computer_science\", \"college_mathematics\", \"college_medicine\", \"college_physics\", \"computer_security\", \"conceptual_physics\", \"econometrics\", \"electrical_engineering\", \"elementary_mathematics\", \"formal_logic\", \"global_facts\", \"high_school_biology\", \"high_s"
+  ],
+  "reference_links": [
+   "https://arxiv.org/abs/2009.03300v3.",
+   "https://github.com/NLP-Core-Team/mmlu_ru",
+   "https://github.com/hendrycks/test",
+   "https://github.com/openai/evals/blob/main/examples/mmlu.ipynb",
+   "https://github.com/EleutherAI/lm-evaluation-harness/blob/master/lm_eval/tasks/hendrycks_test.py"
+  ]
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "record_id": "issai-mmlu_redux_2.0_kazakh__kk",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "issai/MMLU_Redux_2.0_Kazakh",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/issai/MMLU_Redux_2.0_Kazakh",
+  "revision": "165da825ad71dbbec54ba8baa36c51e9a1ee2152"
+ },
+ "root_benchmark": "MMLU-Redux",
+ "target_languages": [
+  "kk"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "edinburgh-dawg/mmlu-redux-2.0",
+  "parent_url": "https://huggingface.co/datasets/edinburgh-dawg/mmlu-redux-2.0"
+ },
+ "translation_type": "machine",
+ "engine_or_translator": "unknown",
+ "human_verification": "unknown",
+ "license": "cc-by-4.0",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no engine or translation service named in the card"
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no statement about human review in the card"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/issai/MMLU_Redux_2.0_Kazakh/raw/165da825ad71dbbec54ba8baa36c51e9a1ee2152/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "61d835fcce6129ed85bc248f628590c22d0e94d9da782ba0834c6bae73338d70",
+   "hub_revision": "165da825ad71dbbec54ba8baa36c51e9a1ee2152",
+   "quote": "MMLU_Redux_2.0_Kazakh is a machine-translated Kazakh version of the original MMLU-Redux 2.0 benchmark."
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/issai/MMLU_Redux_2.0_Kazakh",
+   "retrieved": "2026-08-24",
+   "hub_revision": "165da825ad71dbbec54ba8baa36c51e9a1ee2152",
+   "quote": "license: cc-by-4.0"
+  }
+ ],
+ "completeness": 0.6667,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "Published by ISSAI (Nazarbayev University), the KazLLM program's benchmark translations. The card states machine translation but names no engine — the translation method's actor is undocumented. Parent is MMLU-Redux 2.0 (the re-annotated MMLU subset), not raw MMLU."
+}

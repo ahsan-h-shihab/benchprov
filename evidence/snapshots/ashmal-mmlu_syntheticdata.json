@@ -1,0 +1,39 @@
+{
+ "dataset_id": "Ashmal/MMLU_SyntheticData",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:50:21.653761+00:00",
+ "revision": "479e4e8aae1769291b1ded1154f8e661102490c9",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:text-classification",
+   "language:ar",
+   "license:apache-2.0",
+   "size_categories:1K<n<10K",
+   "region:us",
+   "pretraining",
+   "Arabic"
+  ],
+  "cardData_license": "apache-2.0",
+  "cardData_language": [
+   "ar"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 34,
+  "lastModified": "2024-05-22T09:38:36.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/Ashmal/MMLU_SyntheticData/raw/479e4e8aae1769291b1ded1154f8e661102490c9/README.md",
+  "sha256": "4086c571a502780e23c0d03590b25760b2173298ee7b09196063790fc5faaf0e",
+  "bytes": 4667,
+  "yaml_front_matter": "license: apache-2.0\ntask_categories:\n- text-classification\nlanguage:\n- ar\ntags:\n- pretraining\n- Arabic\nsize_categories:\n- 1K<n<10K",
+  "provenance_candidate_lines": [
+   "MMLU_SyntheticData is generated using GPT-4. The aim of generating this dataset was to generate a similar dataset to MMLU.",
+   "*Note*: Please note that this is not the translated version of MMLU, it's an entirely independent dataset.",
+   "2) For each Category under the subject, I generated a list of Sub-Topics using GPT-4. The list of sub-topics can be found in the *mmlu_topics.json* file.",
+   "3) For each Sub-Topic, I generated the data for them using the GPT-4 again."
+  ],
+  "reference_links": []
+ }
+}

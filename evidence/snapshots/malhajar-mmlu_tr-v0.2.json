@@ -1,0 +1,52 @@
+{
+ "dataset_id": "malhajar/mmlu_tr-v0.2",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:51:06.543691+00:00",
+ "revision": "f845929ed35fdb971ddd2cb8769c0122486d4c8e",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:text-classification",
+   "task_categories:multiple-choice",
+   "task_categories:question-answering",
+   "task_ids:multiple-choice-qa",
+   "task_ids:open-domain-qa",
+   "task_ids:closed-domain-qa",
+   "language:tr",
+   "license:apache-2.0",
+   "size_categories:10K<n<100K",
+   "format:json",
+   "modality:text",
+   "library:datasets",
+   "library:dask",
+   "library:mlcroissant",
+   "library:polars",
+   "region:us",
+   "multi-task",
+   "multitask",
+   "mmlu",
+   "hendrycks_test"
+  ],
+  "cardData_license": "apache-2.0",
+  "cardData_language": [
+   "tr"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 484,
+  "lastModified": "2024-04-25T18:03:49.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/malhajar/mmlu_tr-v0.2/raw/f845929ed35fdb971ddd2cb8769c0122486d4c8e/README.md",
+  "sha256": "17a0e25cd26dd3f1e8d2bf550b86c039b458b989b2b0dc6afb694a2a48d2e450",
+  "bytes": 39362,
+  "yaml_front_matter": "contributions:\n- contributor: Mohamad Alhajar\n  profile: https://www.linkedin.com/in/muhammet-alhajar/\n  roles:\n  - translator\n  - data curator\nconfigs:\n- config_name: abstract_algebra\n  data_files:\n  - path: abstract_algebra/dev-*\n    split: dev\n  - path: abstract_algebra/test-*\n    split: test\n  - path: abstract_algebra/validation-*\n    split: validation\n- config_name: anatomy\n  data_files:\n  - path: anatomy/dev-*\n    split: dev\n  - path: anatomy/test-*\n    split: test\n  - path: anatomy/validation-*\n    split: validation\n- config_name: astronomy\n  data_files:\n  - path: astronomy/dev-*\n    split: dev\n  - path: astronomy/test-*\n    split: test\n  - path: astronomy/validation-*\n    split: validation\n- config_name: business_ethics\n  data_files:\n  - path: business_ethics/dev-*\n    split: dev\n  - path: business_ethics/test-*\n    split: test\n  - path: business_ethics/validation-*\n    split: validation\n- config_name: clinical_knowledge\n  data_files:\n  - path: clinical_knowledge/dev-*\n    split: dev\n  - path: clinical_knowledge/test-*\n    split: test\n  - path: clinical_knowledge/validation-*\n    split: validation\n- config_name: college_biology\n  data_files:\n  - path: college_biology/dev-*\n    split: dev\n  - path: college_biology/test-*\n    split: test\n  - path: college_biology/validation-*\n    split: validation\n- config_name: college_chemistry\n  data_files:\n  - path: college_chemistry/dev-*\n    split: dev\n  - path: college_chemistry/test-*\n    split: test\n  - path: college_chemistry/validation-*\n    split: validation\n- config_name: college_computer_science\n  data_files:\n  - path: college_computer_science/dev-*\n    split: dev\n  - path: college_computer_science/test-*\n    split: test\n  - path: college_computer_science/validation-*\n    split: validation\n- config_name: college_mathematics\n  data_files:\n  - path: college_mathematics/dev-*\n    split: dev\n  - path: college_mathematics/test-*\n    split: test\n  - path: college_mathematics/validation-*\n    split: validation\n- config_name: college_medicine\n  data_files:\n  - path: college_medicine/dev-*\n    split: dev\n  - path: college_medicine/test-*\n    split: test\n  - path: college_medicine/validation-*\n    split: validation\n- config_name: college_physics\n  data_files:\n  - path: college_physics/dev-*\n    split: dev\n  - path: college_physics/test-*\n    split: test\n  - path: college_physics/validation-*\n    split: validation\n- config_name: computer_security\n  data_files:\n  - path: computer_security/dev-*\n    split: dev\n  - path: computer_security/test-*\n    split: test\n  - path: computer_security/validation-*\n    split: validation\n- config_name: conceptual_physics\n  data_files:\n  - path: conceptual_physics/dev-*\n    split: dev\n  - path: conceptual_physics/test-*\n    split: test\n  - path: conceptual_physics/validation-*\n    split: validation\n- config_name: econometrics\n  data_files:\n  - path: econometrics/dev-*\n    split: dev\n  - path: econometrics/test-*\n    split: test\n  - path: econometrics/validation-*\n    split: validation\n- config_name: electrical_engineering\n  data_files:\n  - path: electrical_engineering/dev-*\n    split: dev\n  - path: electrical_engineering/test-*\n    split: test\n  - path: electrical_engineering/validation-*\n    split: validation\n- config_name: elementary_mathematics\n  data_files:\n  - path: elementary_mathematics/dev-*\n    split: dev\n  - path: elementary_mathematics/test-*\n    split: test\n  - path: elementary_mathematics/validation-*\n    split: validation\n- config_name: formal_logic\n  data_files:\n  - path: formal_logic/dev-*\n    split: dev\n  - path: formal_logic/test-*\n    split: test\n  - path: formal_logic/validation-*\n    split: validation\n- config_name: global_facts\n  data_files:\n  - path: global_facts/dev-*\n    split: dev\n  - path: global_facts/test-*\n    split: test\n  - path: global_facts/validation-*\n    split: validation\n- config_name: high_school_biology\n  data_files:\n  - path: high_school_biology/dev-*\n    split: dev\n  - path: high_school_biology/test-*\n    split:",
+  "provenance_candidate_lines": [
+   "**malhajar/mmlu_tr-v0.2** is an enhanced version of the original **mmlu-tr** dataset, specifically developed for use in the **[OpenLLMTurkishLeaderboard v0.2](https://huggingface.co/spaces/malhajar/OpenLLMTurkishLeaderboard)**. This iteration of the dataset has been translated into Turkish using advanced language models like GPT-4, with English text provided for cross-checking to ensure accuracy a",
+   "A typical data instance comprises a question in Turkish, multiple choices, and an answer. English translations are provided for each instance to facilitate bilingual training and evaluation.",
+   "- `question_en`: the English translation of the question.",
+   "The dataset was curated by [`Mohamad Alhajar`](https://www.linkedin.com/in/muhammet-alhajar/) , leveraging GPT-4 for translations to ensure high linguistic quality and fidelity."
+  ],
+  "reference_links": []
+ }
+}

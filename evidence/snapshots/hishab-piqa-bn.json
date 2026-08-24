@@ -1,0 +1,46 @@
+{
+ "dataset_id": "hishab/piqa-bn",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:51:47.546540+00:00",
+ "revision": "50700f511f827bc489954beed3491c76a606c45a",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "task_ids:multiple-choice-qa",
+   "multilinguality:monolingual",
+   "language:bn",
+   "license:mit",
+   "size_categories:10K<n<100K",
+   "format:json",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "arxiv:2502.11187",
+   "region:us"
+  ],
+  "cardData_license": "mit",
+  "cardData_language": [
+   "bn"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 112,
+  "lastModified": "2025-06-20T17:47:21.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/hishab/piqa-bn/raw/50700f511f827bc489954beed3491c76a606c45a/README.md",
+  "sha256": "7971436fa87765d81be1a17f49cc216d79b61a64fdf9c934cfd26504e17faccf",
+  "bytes": 3569,
+  "yaml_front_matter": "language:\n- bn\nlicense: mit\nmultilinguality:\n- monolingual\nsize_categories:\n- 10K<n<100K\ntask_categories:\n- question-answering\ntask_ids:\n- multiple-choice-qa\ndataset_info:\n  features:\n  - name: goal\n    dtype: string\n  - name: sol1\n    dtype: string\n  - name: sol2\n    dtype: string\n  - name: label\n    dtype:\n      class_label:\n        names:\n          '0': '0'\n          '1': '1'",
+  "provenance_candidate_lines": [
+   "This is the translated version of the [PIQA](https://huggingface.co/datasets/ybisk/piqa) LLM evaluation dataset. The dataset was translated using a new method called Expressive Semantic Translation (EST), which combines Google Translation with LLM-based rewriting. PIQA introduces the task of physical commonsense reasoning and provides a corresponding benchmark for understanding physical interactio"
+  ],
+  "reference_links": [
+   "https://github.com/hishab-nlp/lm-evaluation-harness",
+   "https://arxiv.org/abs/2502.11187},"
+  ]
+ }
+}

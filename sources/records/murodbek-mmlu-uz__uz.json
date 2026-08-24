@@ -1,0 +1,99 @@
+{
+ "record_id": "murodbek-mmlu-uz__uz",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "murodbek/MMLU-uz",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/murodbek/MMLU-uz",
+  "revision": "e717aa1ef2fe7066276887b76fedc475ad7220e8"
+ },
+ "root_benchmark": "MMLU",
+ "target_languages": [
+  "uz"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "cais/mmlu",
+  "parent_url": "https://huggingface.co/datasets/cais/mmlu"
+ },
+ "translation_type": "machine",
+ "engine_or_translator": "sayqalchi model (Tilmoch platform), two-stage automatic",
+ "human_verification": "none",
+ "license": "apache-2.0",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "human_verification": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ],
+   "note": "explicit creator statement of no human review — the registry's clearest 'none'"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e3"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/murodbek/MMLU-uz/raw/e717aa1ef2fe7066276887b76fedc475ad7220e8/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "4991fe325a5c2643bde12d449781b26abbdf78d413dfe182305c4b425999897a",
+   "hub_revision": "e717aa1ef2fe7066276887b76fedc475ad7220e8",
+   "quote": "This dataset was automatically translated in two stages: Base translation using the `sayqalchi` model from (Tilmoch platform)."
+  },
+  {
+   "id": "e2",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/murodbek/MMLU-uz/raw/e717aa1ef2fe7066276887b76fedc475ad7220e8/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "4991fe325a5c2643bde12d449781b26abbdf78d413dfe182305c4b425999897a",
+   "hub_revision": "e717aa1ef2fe7066276887b76fedc475ad7220e8",
+   "quote": "**Important Note:** This is a machine-translated dataset and has **not** undergone human review or correction due to the associated costs and effort."
+  },
+  {
+   "id": "e3",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/murodbek/MMLU-uz",
+   "retrieved": "2026-08-24",
+   "hub_revision": "e717aa1ef2fe7066276887b76fedc475ad7220e8",
+   "quote": "license: apache-2.0"
+  }
+ ],
+ "completeness": 1.0,
+ "provenance_state": "complete",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "Full MMLU dev+test in Uzbek."
+}

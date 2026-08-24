@@ -1,0 +1,85 @@
+{
+ "record_id": "d0rj-gsm8k-ru__ru",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "d0rj/gsm8k-ru",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/d0rj/gsm8k-ru",
+  "revision": "5b475005f3eb4efe9fbdf1881de2ff28ad14d63b"
+ },
+ "root_benchmark": "GSM8K",
+ "target_languages": [
+  "ru"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "openai/gsm8k",
+  "parent_url": "https://huggingface.co/datasets/openai/gsm8k"
+ },
+ "translation_type": "unknown",
+ "engine_or_translator": "unknown",
+ "human_verification": "unknown",
+ "license": "mit",
+ "claims": {
+  "translation_type": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "card and YAML confirm translation ('Translated version of gsm8k dataset into Russian.'; 'language_creators: translated') but state no method"
+  },
+  "engine_or_translator": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no engine named"
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no statement"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/d0rj/gsm8k-ru",
+   "retrieved": "2026-08-24",
+   "hub_revision": "5b475005f3eb4efe9fbdf1881de2ff28ad14d63b",
+   "quote": "license: [\"mit\"]"
+  },
+  {
+   "id": "e2",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/d0rj/gsm8k-ru/raw/5b475005f3eb4efe9fbdf1881de2ff28ad14d63b/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "985b118a093e542b82ce991e3efdb8fea7402b0c2dd32ad31e1627799c670ff4",
+   "hub_revision": "5b475005f3eb4efe9fbdf1881de2ff28ad14d63b",
+   "quote": "Translated version of gsm8k dataset into Russian."
+  }
+ ],
+ "completeness": 0.5,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ }
+}

@@ -1,0 +1,62 @@
+{
+ "dataset_id": "tripathysagar/odia-truthfulqa-mc",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:50:42.167725+00:00",
+ "revision": "e7646d71057edb35b3eb094e3a84f80d23ff035c",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:multiple-choice",
+   "task_categories:question-answering",
+   "source_datasets:truthfulqa/truthful_qa",
+   "language:or",
+   "license:apache-2.0",
+   "size_categories:n<1K",
+   "format:parquet",
+   "format:optimized-parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:polars",
+   "library:mlcroissant",
+   "region:us",
+   "odia",
+   "indic",
+   "benchmark",
+   "translation"
+  ],
+  "cardData_license": "apache-2.0",
+  "cardData_language": [
+   "or"
+  ],
+  "cardData_source_datasets": [
+   "truthfulqa/truthful_qa"
+  ],
+  "cardData_annotations_creators": null,
+  "downloads": 37,
+  "lastModified": "2026-05-22T07:24:00.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/tripathysagar/odia-truthfulqa-mc/raw/e7646d71057edb35b3eb094e3a84f80d23ff035c/README.md",
+  "sha256": "bb46e357498113c8a506557e5c4519d607de8be63001481879cdfc9937cb27b4",
+  "bytes": 3345,
+  "yaml_front_matter": "language:\n- or\nlicense: apache-2.0\ntask_categories:\n- multiple-choice\n- question-answering\ntags:\n- odia\n- indic\n- benchmark\n- translation\nsize_categories:\n- n<1K\npretty_name: Odia TruthfulQA (multiple-choice)\nsource_datasets:\n- truthfulqa/truthful_qa\ndataset_info:\n  features:\n  - name: id\n    dtype: int64\n  - name: question\n    dtype: string\n  - name: answer\n    dtype: string\n  - name: odia_question\n    dtype: string\n  - name: odia_answer\n    dtype: string\n  - name: mc1_choices\n    list: string\n  - name: mc1_labels\n    list: int64\n  splits:\n  - name: validation\n    num_bytes: 600850\n    num_examples: 817\n  download_size: 409565\n  dataset_size: 600850\nconfigs:\n- config_name: default\n  data_files:\n  - split: validation\n    path: data/validation-*",
+  "provenance_candidate_lines": [
+   "Odia translation of the [TruthfulQA multiple-choice (MC1) split](https://huggingface.co/datasets/truthfulqa/truthful_qa). Questions and gold answers are translated; distractor choices in `mc1_choices` remain in English.",
+   "Part of [**OdiaBench**](https://github.com/tripathysagar/OdiaBench) — parallel English–Odia benchmark translations for",
+   "| `odia_question` | string | Odia translation of question |",
+   "| `odia_answer` | string | Odia translation of answer |",
+   "## Translation methodology",
+   "OdiaBench translations were produced via Cursor subagents (Composer 2.5-fast) using",
+   "the v3 translation prompt in [`cursor_translate/odia_trans`](https://github.com/tripathysagar/OdiaBench/tree/main/cursor_translate/odia_trans):",
+   "2. Translate `question` and `answer` into `odia_question` / `odia_answer`",
+   "Translation rules preserve numbers as digits, keep benchmark-specific structural",
+   "title={OdiaBench: English-Odia Benchmark Translations},"
+  ],
+  "reference_links": [
+   "https://github.com/tripathysagar/OdiaBench",
+   "https://github.com/tripathysagar/OdiaBench/tree/main/cursor_translate/odia_trans",
+   "https://github.com/tripathysagar/OdiaBench}}"
+  ]
+ }
+}

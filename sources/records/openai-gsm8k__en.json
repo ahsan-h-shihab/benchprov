@@ -1,0 +1,82 @@
+{
+ "record_id": "openai-gsm8k__en",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "openai/gsm8k",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/openai/gsm8k",
+  "revision": "740312add88f781978c0658806c59bc2815b9866"
+ },
+ "root_benchmark": "GSM8K",
+ "target_languages": [
+  "en"
+ ],
+ "source_language": "not_applicable",
+ "derived_from": {
+  "kind": "none",
+  "parent_id": null
+ },
+ "translation_type": "native_original",
+ "engine_or_translator": "not_applicable",
+ "human_verification": "not_applicable",
+ "license": "mit",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "not_applicable",
+   "evidence": []
+  },
+  "human_verification": {
+   "status": "not_applicable",
+   "evidence": []
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "not_applicable",
+   "evidence": []
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/openai/gsm8k",
+   "retrieved": "2026-08-24",
+   "hub_revision": "740312add88f781978c0658806c59bc2815b9866",
+   "note": "hub metadata tags",
+   "quote": "source_datasets: original; language: en; annotations_creators: crowdsourced"
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/openai/gsm8k",
+   "retrieved": "2026-08-24",
+   "hub_revision": "740312add88f781978c0658806c59bc2815b9866",
+   "quote": "license: [\"mit\"]"
+  }
+ ],
+ "completeness": 1.0,
+ "provenance_state": "complete",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "Family root; problems written by human problem writers (Cobbe et al., 2021)."
+}

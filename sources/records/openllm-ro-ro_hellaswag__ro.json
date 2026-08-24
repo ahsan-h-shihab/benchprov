@@ -1,0 +1,96 @@
+{
+ "record_id": "openllm-ro-ro_hellaswag__ro",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "OpenLLM-Ro/ro_hellaswag",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/OpenLLM-Ro/ro_hellaswag",
+  "revision": "169c3ff8577e939c729dce124e7458aad807070e"
+ },
+ "root_benchmark": "HellaSwag",
+ "target_languages": [
+  "ro"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "Rowan/hellaswag",
+  "parent_url": "https://huggingface.co/datasets/Rowan/hellaswag"
+ },
+ "translation_type": "machine",
+ "engine_or_translator": "ChatGPT (Okapi translations)",
+ "human_verification": "unknown",
+ "license": "cc-by-nc-4.0",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1",
+    "e2"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no human-review statement"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e3"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/OpenLLM-Ro/ro_hellaswag/raw/169c3ff8577e939c729dce124e7458aad807070e/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "e6be7811fd3d18b47c5ff2f25e6325b1e88fdf0cb2980aaff7af8a2a8da40c59",
+   "hub_revision": "169c3ff8577e939c729dce124e7458aad807070e",
+   "quote": "Here we provide the Romanian translation of the Hellaswag from the paper \"Okapi[...]\""
+  },
+  {
+   "id": "e2",
+   "type": "dataset_content",
+   "url": "https://github.com/nlp-uoregon/mlmm-evaluation/blob/main/README.md",
+   "retrieved": "2026-08-24",
+   "quote": "These datasets are translated from the original ARC, HellaSwag, and MMLU datasets in English using ChatGPT.",
+   "note": "the Okapi/mlmm project the card cites documents ChatGPT translation for its HellaSwag sets"
+  },
+  {
+   "id": "e3",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/OpenLLM-Ro/ro_hellaswag",
+   "retrieved": "2026-08-24",
+   "hub_revision": "169c3ff8577e939c729dce124e7458aad807070e",
+   "quote": "license: cc-by-nc-4.0"
+  }
+ ],
+ "completeness": 0.8333,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "record_id": "juletxara-mgsm__multi",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "juletxara/mgsm",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/juletxara/mgsm",
+  "revision": "b2f13d426afe3be8d69a7e739b36724db8b66bbc"
+ },
+ "root_benchmark": "MGSM",
+ "target_languages": [
+  "es",
+  "fr",
+  "de",
+  "ru",
+  "zh",
+  "ja",
+  "th",
+  "sw",
+  "bn"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "openai/gsm8k",
+  "parent_url": "https://huggingface.co/datasets/openai/gsm8k"
+ },
+ "translation_type": "human",
+ "engine_or_translator": "human annotators (Shi et al., 2022)",
+ "human_verification": "unknown",
+ "license": "cc-by-sa-4.0",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "human-translated by construction; no separate verification step described in the card"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/juletxara/mgsm/raw/b2f13d426afe3be8d69a7e739b36724db8b66bbc/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "e0da99240e541c2fda23066e8049d3a5f245cb056d56d1cad9b841330c4c8f01",
+   "hub_revision": "b2f13d426afe3be8d69a7e739b36724db8b66bbc",
+   "quote": "The same 250 problems from GSM8K are each translated via human annotators in 10 languages."
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/juletxara/mgsm",
+   "retrieved": "2026-08-24",
+   "hub_revision": "b2f13d426afe3be8d69a7e739b36724db8b66bbc",
+   "quote": "license: [\"cc-by-sa-4.0\"]"
+  }
+ ],
+ "completeness": 0.8333,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "MGSM is itself the family origin record for translated-GSM8K evaluation; exemplars also manually translated."
+}

@@ -1,0 +1,78 @@
+{
+ "record_id": "hishab-openbookqa-bn__bn",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "hishab/openbookqa-bn",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/hishab/openbookqa-bn",
+  "revision": "6c37536b1712cf2607f9f52e2f4d10d25a3de53c"
+ },
+ "root_benchmark": "OpenBookQA",
+ "target_languages": [
+  "bn"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "allenai/openbookqa",
+  "parent_url": "https://huggingface.co/datasets/allenai/openbookqa"
+ },
+ "translation_type": "machine",
+ "engine_or_translator": "Google Translate + LLM rewriting (EST; LLM unnamed)",
+ "human_verification": "unknown",
+ "license": "unknown",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no human-review statement (EST's rewriting stage is model-based)"
+  },
+  "license": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "hub metadata license tag is literally 'unknown'"
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/hishab/openbookqa-bn/raw/6c37536b1712cf2607f9f52e2f4d10d25a3de53c/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "a8288235b191b6ffedc4d0bb24cfe7f6edc4cb37bf6276c3a27a5f719d85b6ea",
+   "hub_revision": "6c37536b1712cf2607f9f52e2f4d10d25a3de53c",
+   "quote": "The dataset was translated using a new method called Expressive Semantic Translation (EST), which combines Google Machine Translation with LLM-based rewriting modifications."
+  }
+ ],
+ "completeness": 0.6667,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ }
+}

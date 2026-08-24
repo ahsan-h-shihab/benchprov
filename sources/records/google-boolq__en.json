@@ -1,0 +1,91 @@
+{
+ "record_id": "google-boolq__en",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "google/boolq",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/google/boolq",
+  "revision": "35b264d03638db9f4ce671b711558bf7ff0f80d5"
+ },
+ "root_benchmark": "BoolQ",
+ "target_languages": [
+  "en"
+ ],
+ "source_language": "not_applicable",
+ "derived_from": {
+  "kind": "none",
+  "parent_id": null
+ },
+ "translation_type": "native_original",
+ "engine_or_translator": "not_applicable",
+ "human_verification": "not_applicable",
+ "license": "cc-by-sa-3.0",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "not_applicable",
+   "evidence": []
+  },
+  "human_verification": {
+   "status": "not_applicable",
+   "evidence": []
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e3"
+   ]
+  },
+  "source_language": {
+   "status": "not_applicable",
+   "evidence": []
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/google/boolq/raw/35b264d03638db9f4ce671b711558bf7ff0f80d5/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "07447668f46c7c1e62e24b650ea2a73f1ab34f2b3759b1587c7b7a81b4bf1cf4",
+   "hub_revision": "35b264d03638db9f4ce671b711558bf7ff0f80d5",
+   "quote": "occurring ---they are generated in unprompted and unconstrained settings.",
+   "note": "questions are naturally occurring search queries (Clark et al., 2019)"
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/google/boolq",
+   "retrieved": "2026-08-24",
+   "hub_revision": "35b264d03638db9f4ce671b711558bf7ff0f80d5",
+   "quote": "license: [\"cc-by-sa-3.0\"]"
+  },
+  {
+   "id": "e3",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/google/boolq",
+   "retrieved": "2026-08-24",
+   "hub_revision": "35b264d03638db9f4ce671b711558bf7ff0f80d5",
+   "note": "hub metadata tags",
+   "quote": "source_datasets: original"
+  }
+ ],
+ "completeness": 1.0,
+ "provenance_state": "complete",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ }
+}

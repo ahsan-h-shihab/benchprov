@@ -1,0 +1,46 @@
+{
+ "dataset_id": "hishab/commonsenseqa-bn",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:51:48.854242+00:00",
+ "revision": "70b346d5842dd7ae9176839cda3090024b0386e0",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "multilinguality:monolingual",
+   "language:bn",
+   "license:mit",
+   "size_categories:10K<n<100K",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "region:us"
+  ],
+  "cardData_license": [
+   "mit"
+  ],
+  "cardData_language": [
+   "bn"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 107,
+  "lastModified": "2024-10-27T05:54:58.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/hishab/commonsenseqa-bn/raw/70b346d5842dd7ae9176839cda3090024b0386e0/README.md",
+  "sha256": "44cb660261caed720cb84707a07c7234ef596add9ce845154e762c88359c427b",
+  "bytes": 2675,
+  "yaml_front_matter": "language:\n- bn\nlicense:\n- mit\nmultilinguality:\n- monolingual\nsize_categories:\n- 1K<n<10K\ntask_categories:\n- question-answering\npretty_name: CommonsenseQA-BN\ndataset_info:\n  features:\n  - name: question_stem\n    dtype: string\n  - name: choices\n    struct:\n    - name: text\n      sequence: string\n    - name: label\n      sequence: string\n  - name: answerKey\n    dtype: string\n  splits:\n  - name: train\n    num_bytes: 3560823\n    num_examples: 9741\n  - name: validation\n    num_bytes: 439851\n    num_examples: 1221\n  download_size: 1339311\n  dataset_size: 4000674\nconfigs:\n- config_name: default\n  data_files:\n  - split: train\n    path: data/train-*\n  - split: validation\n    path: data/validation-*",
+  "provenance_candidate_lines": [
+   "This is the Bangla translated version of the [CommonsenseQA](https://huggingface.co/datasets/tau/commonsense_qa) dataset. The dataset was translated using a new method called **Expressive Semantic Translation (EST)**. This method combines both Google Machine Translation and LLM-based rewriting of the translation to enhance the expressiveness and semantic accuracy of the translated content.",
+   "### Annotations",
+   "#### Annotation process",
+   "#### Who are the annotators?"
+  ],
+  "reference_links": []
+ }
+}

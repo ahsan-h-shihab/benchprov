@@ -1,0 +1,44 @@
+{
+ "dataset_id": "li-lab/MMLU-ProX",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:49:47.653053+00:00",
+ "revision": "8e6106a6c6ce1c5027e66cc338143cf997b2aa09",
+ "hub_metadata": {
+  "tags": [
+   "license:mit",
+   "size_categories:100K<n<1M",
+   "format:parquet",
+   "modality:tabular",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "arxiv:2503.10497",
+   "region:us"
+  ],
+  "cardData_license": "mit",
+  "cardData_language": null,
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 3766,
+  "lastModified": "2025-08-26T06:02:39.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/li-lab/MMLU-ProX/raw/8e6106a6c6ce1c5027e66cc338143cf997b2aa09/README.md",
+  "sha256": "240fe7199ef50b91bbaa0329d5b0f6f25321f924c8fc2c379bca4c9d1573ae5b",
+  "bytes": 31534,
+  "yaml_front_matter": "license: mit\nconfigs:\n- config_name: af\n  data_files:\n  - split: validation\n    path: af/validation-*\n  - split: test\n    path: af/test-*\n- config_name: ar\n  data_files:\n  - split: validation\n    path: ar/validation-*\n  - split: test\n    path: ar/test-*\n- config_name: bn\n  data_files:\n  - split: validation\n    path: bn/validation-*\n  - split: test\n    path: bn/test-*\n- config_name: cs\n  data_files:\n  - split: validation\n    path: cs/validation-*\n  - split: test\n    path: cs/test-*\n- config_name: de\n  data_files:\n  - split: validation\n    path: de/validation-*\n  - split: test\n    path: de/test-*\n- config_name: en\n  data_files:\n  - split: validation\n    path: en/validation-*\n  - split: test\n    path: en/test-*\n- config_name: es\n  data_files:\n  - split: validation\n    path: es/validation-*\n  - split: test\n    path: es/test-*\n- config_name: fr\n  data_files:\n  - split: validation\n    path: fr/validation-*\n  - split: test\n    path: fr/test-*\n- config_name: hi\n  data_files:\n  - split: validation\n    path: hi/validation-*\n  - split: test\n    path: hi/test-*\n- config_name: hu\n  data_files:\n  - split: validation\n    path: hu/validation-*\n  - split: test\n    path: hu/test-*\n- config_name: id\n  data_files:\n  - split: validation\n    path: id/validation-*\n  - split: test\n    path: id/test-*\n- config_name: it\n  data_files:\n  - split: validation\n    path: it/validation-*\n  - split: test\n    path: it/test-*\n- config_name: ja\n  data_files:\n  - split: validation\n    path: ja/validation-*\n  - split: test\n    path: ja/test-*\n- config_name: ko\n  data_files:\n  - split: validation\n    path: ko/validation-*\n  - split: test\n    path: ko/test-*\n- config_name: mr\n  data_files:\n  - split: validation\n    path: mr/validation-*\n  - split: test\n    path: mr/test-*\n- config_name: ne\n  data_files:\n  - split: validation\n    path: ne/validation-*\n  - split: test\n    path: ne/test-*\n- config_name: pt\n  data_files:\n  - split: validation\n    path: pt/validation-*\n  - split: test\n    path: pt/test-*\n- config_name: ru\n  data_files:\n  - split: validation\n    path: ru/validation-*\n  - split: test\n    path: ru/test-*\n- config_name: sr\n  data_files:\n  - split: validation\n    path: sr/validation-*\n  - split: test\n    path: sr/test-*\n- config_name: sw\n  data_files:\n  - split: validation\n    path: sw/validation-*\n  - split: test\n    path: sw/test-*\n- config_name: te\n  data_files:\n  - split: validation\n    path: te/validation-*\n  - split: test\n    path: te/test-*\n- config_name: th\n  data_files:\n  - split: validation\n    path: th/validation-*\n  - split: test\n    path: th/test-*\n- config_name: uk\n  data_files:\n  - split: validation\n    path: uk/validation-*\n  - split: test\n    path: uk/test-*\n- config_name: ur\n  data_files:\n  - split: validation\n    path: ur/validation-*\n  - split: test\n    path: ur/test-*\n- config_name: vi\n  data_files:\n  - split: validation\n    path: vi/validation-*\n  - split: test\n    path: vi/test-*\n- config_name: wo\n  data_files:\n  - split: validation\n    path: wo/validation-*\n  - split: test\n    path: wo/test-*\n- config_name: yo\n  data_files:\n  - split: validation\n    path: yo/validation-*\n  - split: test\n    path: yo/test-*\n- config_name: zh\n  data_files:\n  - split: validation\n    path: zh/validation-*\n  - split: test\n    path: zh/test-*\n- config_name: zu\n  data_files:\n  - split: validation\n    path: zu/validation-*\n  - split: test\n    path: zu/test-*\ndataset_info:\n- config_name: af\n  features:\n  - name: question_id\n    dtype: int64\n  - name: question\n    dtype: string\n  - name: option_0\n    dtype: string\n  - name: option_1\n    dtype: string\n  - name: option_2\n    dtype: string\n  - name: option_3\n    dtype: string\n  - name: option_4\n    dtype: string\n  - name: option_5\n    dtype: string\n  - name: option_6\n    dtype: string\n  - name: option_7\n    dtype: string\n  - name: option_8\n    dtype: string\n  - name: option_9\n    dtype: string\n  - name: answer\n    dtype: string\n  - name: answer_index\n    dtype: int64\n  - name: cot_content\n    dtype: string\n  - name:",
+  "provenance_candidate_lines": [
+   "- Employing a rigorous semi-automatic translation process with expert validation",
+   "**Note:** Please install `vllm=0.7.3` to reproduce our results other than `Llama3.1-405B` which is evaluated by `vllm=0.6.6`."
+  ],
+  "reference_links": [
+   "https://github.com/weihao1115/MMLU-ProX",
+   "https://arxiv.org/abs/2503.10497",
+   "https://github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks/mmlu_prox",
+   "https://github.com/EleutherAI/lm-evaluation-harness"
+  ]
+ }
+}

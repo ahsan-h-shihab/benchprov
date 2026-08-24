@@ -1,0 +1,98 @@
+{
+ "record_id": "li-lab-mmlu-prox__mul",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "li-lab/MMLU-ProX",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/li-lab/MMLU-ProX",
+  "revision": "8e6106a6c6ce1c5027e66cc338143cf997b2aa09"
+ },
+ "root_benchmark": "MMLU-Pro",
+ "target_languages": [
+  "mul"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "TIGER-Lab/MMLU-Pro",
+  "parent_url": "https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro"
+ },
+ "translation_type": "machine",
+ "engine_or_translator": "multiple LLMs (not individually named in card/abstract)",
+ "human_verification": "full",
+ "license": "mit",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1",
+    "e2"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "human_verification": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ],
+   "note": "'followed by expert review' — claimed as a process step over the dataset; coverage not quantified"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e3"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/li-lab/MMLU-ProX/raw/8e6106a6c6ce1c5027e66cc338143cf997b2aa09/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "240fe7199ef50b91bbaa0329d5b0f6f25321f924c8fc2c379bca4c9d1573ae5b",
+   "hub_revision": "8e6106a6c6ce1c5027e66cc338143cf997b2aa09",
+   "quote": "Employing a rigorous semi-automatic translation process with expert validation"
+  },
+  {
+   "id": "e2",
+   "type": "paper",
+   "url": "https://arxiv.org/abs/2503.10497",
+   "retrieved": "2026-08-24",
+   "quote": "we employ a rigorous development process that involves multiple powerful LLMs for translation, followed by expert review to ensure accurate expression, consistent terminology, and cultural relevance"
+  },
+  {
+   "id": "e3",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/li-lab/MMLU-ProX",
+   "retrieved": "2026-08-24",
+   "hub_revision": "8e6106a6c6ce1c5027e66cc338143cf997b2aa09",
+   "quote": "license: mit"
+  }
+ ],
+ "completeness": 1.0,
+ "provenance_state": "complete",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "29 languages per project site; target_languages recorded as 'mul'."
+}

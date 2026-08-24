@@ -1,0 +1,50 @@
+{
+ "dataset_id": "bezir/MMLU-pro-TR",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:51:09.315414+00:00",
+ "revision": "e9ca2d4d1bb18bb8307b7f3e0fb55830cba30dc2",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "language:tr",
+   "license:mit",
+   "size_categories:10K<n<100K",
+   "format:parquet",
+   "modality:tabular",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "region:us",
+   "MMLU",
+   "Turkish Evaluation Dataset",
+   "Large Language Models"
+  ],
+  "cardData_license": "mit",
+  "cardData_language": [
+   "tr"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 50,
+  "lastModified": "2024-07-20T23:18:02.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/bezir/MMLU-pro-TR/raw/e9ca2d4d1bb18bb8307b7f3e0fb55830cba30dc2/README.md",
+  "sha256": "71a4497c64d81fc8e9655972b3d64c7c42b72b62ef566679409f22792d171abb",
+  "bytes": 4818,
+  "yaml_front_matter": "language:\n- tr\nlicense: mit\nsize_categories:\n- 10K<n<100K\ntask_categories:\n- question-answering\npretty_name: MMLU-Pro (Turkish)\ntags:\n- MMLU\n- Turkish Evaluation Dataset\n- Large Language Models\nconfigs:\n- config_name: default\n  data_files:\n  - split: test\n    path: data/test-*\n  - split: validation\n    path: data/validation-*\ndatasets:\n- TIGER-Lab/MMLU-Pro\ndataset_info:\n  features:\n  - name: question_id\n    dtype: int64\n  - name: question\n    dtype: string\n  - name: options\n    dtype: string\n  - name: answer\n    dtype: string\n  - name: answer_index\n    dtype: int64\n  - name: cot_content\n    dtype: string\n  - name: category\n    dtype: string\n  - name: src\n    dtype: string\n  splits:\n  - name: test\n    num_bytes: 9090042\n    num_examples: 11842\n  - name: validation\n    num_bytes: 62220\n    num_examples: 67\n  download_size: 4253764\n  dataset_size: 9152262",
+  "provenance_candidate_lines": [
+   "The MMLU-Pro dataset (```TIGER-Lab/MMLU-Pro```) is a robust and challenging massive multi-task understanding dataset designed to rigorously benchmark the capabilities of large language models (LLMs). This Turkish-translated version aims to provide a comprehensive evaluation for Turkish language models, addressing inherent challenges and complexities.",
+   "Containing 12,000 complex questions across various disciplines, this dataset was translated with ```human oversight``` and the assistance of ```Gemini-1.5-pro```. While efforts were made to ensure accuracy, community feedback on errors is encouraged to continually improve this resource.",
+   "- TheoremQA and SciBench, featuring high-quality, human-annotated questions.",
+   "| Metin/LLaMA-3-8B-Instruct-TR-DPO                          | 49.71               | 27.00          | 22.71      |",
+   "| ytu-ce-cosmos/Turkish-Llama-8b-Instruct-v0.1              | 51.75               | 23.90          | 27.85      |",
+   "| meta-llama/Meta-Llama-3-8B-Instruct                       | 49.29               | 20.93          | 28.36      |",
+   "| NousResearch/Meta-Llama-3-8B                              | 49.29               | 20.93          | 28.36      |"
+  ],
+  "reference_links": []
+ }
+}

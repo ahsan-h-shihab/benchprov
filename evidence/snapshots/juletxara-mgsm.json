@@ -1,0 +1,86 @@
+{
+ "dataset_id": "juletxara/mgsm",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:49:40.438517+00:00",
+ "revision": "b2f13d426afe3be8d69a7e739b36724db8b66bbc",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:text-generation",
+   "annotations_creators:found",
+   "language_creators:found",
+   "language_creators:expert-generated",
+   "multilinguality:multilingual",
+   "source_datasets:extended|gsm8k",
+   "language:en",
+   "language:es",
+   "language:fr",
+   "language:de",
+   "language:ru",
+   "language:zh",
+   "language:ja",
+   "language:th",
+   "language:sw",
+   "language:bn",
+   "license:cc-by-sa-4.0",
+   "size_categories:1K<n<10K",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:polars",
+   "library:mlcroissant",
+   "arxiv:2110.14168",
+   "arxiv:2210.03057",
+   "region:us",
+   "math-word-problems"
+  ],
+  "cardData_license": [
+   "cc-by-sa-4.0"
+  ],
+  "cardData_language": [
+   "en",
+   "es",
+   "fr",
+   "de",
+   "ru",
+   "zh",
+   "ja",
+   "th",
+   "sw",
+   "bn"
+  ],
+  "cardData_source_datasets": [
+   "extended|gsm8k"
+  ],
+  "cardData_annotations_creators": [
+   "found"
+  ],
+  "downloads": 26256,
+  "lastModified": "2026-05-04T14:05:17.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/juletxara/mgsm/raw/b2f13d426afe3be8d69a7e739b36724db8b66bbc/README.md",
+  "sha256": "e0da99240e541c2fda23066e8049d3a5f245cb056d56d1cad9b841330c4c8f01",
+  "bytes": 12978,
+  "yaml_front_matter": "annotations_creators:\n- found\nlanguage_creators:\n- found\n- expert-generated\nlanguage:\n- en\n- es\n- fr\n- de\n- ru\n- zh\n- ja\n- th\n- sw\n- bn\nlicense:\n- cc-by-sa-4.0\nmultilinguality:\n- multilingual\nsize_categories:\n- 1K<n<10K\nsource_datasets:\n- extended|gsm8k\ntask_categories:\n- text-generation\ntask_ids: []\npaperswithcode_id: multi-task-language-understanding-on-mgsm\npretty_name: Multilingual Grade School Math Benchmark (MGSM)\ntags:\n- math-word-problems\ndataset_info:\n- config_name: bn\n  features:\n  - name: question\n    dtype: string\n  - name: answer\n    dtype: string\n  - name: answer_number\n    dtype: int32\n  - name: equation_solution\n    dtype: string\n  splits:\n  - name: train\n    num_bytes: 6163\n    num_examples: 8\n  - name: test\n    num_bytes: 159663\n    num_examples: 250\n  download_size: 69601\n  dataset_size: 165826\n- config_name: de\n  features:\n  - name: question\n    dtype: string\n  - name: answer\n    dtype: string\n  - name: answer_number\n    dtype: int32\n  - name: equation_solution\n    dtype: string\n  splits:\n  - name: train\n    num_bytes: 3005\n    num_examples: 8\n  - name: test\n    num_bytes: 72619\n    num_examples: 250\n  download_size: 48625\n  dataset_size: 75624\n- config_name: en\n  features:\n  - name: question\n    dtype: string\n  - name: answer\n    dtype: string\n  - name: answer_number\n    dtype: int32\n  - name: equation_solution\n    dtype: string\n  splits:\n  - name: train\n    num_bytes: 2682\n    num_examples: 8\n  - name: test\n    num_bytes: 64278\n    num_examples: 250\n  download_size: 44045\n  dataset_size: 66960\n- config_name: es\n  features:\n  - name: question\n    dtype: string\n  - name: answer\n    dtype: string\n  - name: answer_number\n    dtype: int32\n  - name: equation_solution\n    dtype: string\n  splits:\n  - name: train\n    num_bytes: 2936\n    num_examples: 8\n  - name: test\n    num_bytes: 69875\n    num_examples: 250\n  download_size: 46765\n  dataset_size: 72811\n- config_name: fr\n  features:\n  - name: question\n    dtype: string\n  - name: answer\n    dtype: string\n  - name: answer_number\n    dtype: int32\n  - name: equation_solution\n    dtype: string\n  splits:\n  - name: train\n    num_bytes: 3111\n    num_examples: 8\n  - name: test\n    num_bytes: 72120\n    num_examples: 250\n  download_size: 48689\n  dataset_size: 75231\n- config_name: ja\n  features:\n  - name: question\n    dtype: string\n  - name: answer\n    dtype: string\n  - name: answer_number\n    dtype: int32\n  - name: equation_solution\n    dtype: string\n  splits:\n  - name: train\n    num_bytes: 4040\n    num_examples: 8\n  - name: test\n    num_bytes: 84022\n    num_examples: 250\n  download_size: 51798\n  dataset_size: 88062\n- config_name: ru\n  features:\n  - name: question\n    dtype: string\n  - name: answer\n    dtype: string\n  - name: answer_number\n    dtype: int32\n  - name: equation_solution\n    dtype: string\n  splits:\n  - name: train\n    num_bytes: 4495\n    num_examples: 8\n  - name: test\n    num_bytes: 113932\n    num_examples: 250\n  download_size: 63049\n  dataset_size: 118427\n- config_name: sw\n  features:\n  - name: question\n    dtype: string\n  - name: answer\n    dtype: string\n  - name: answer_number\n    dtype: int32\n  - name: equation_solution\n    dtype: string\n  splits:\n  - name: train\n    num_bytes: 2827\n    num_examples: 8\n  - name: test\n    num_bytes: 70435\n    num_examples: 250\n  download_size: 45503\n  dataset_size: 73262\n- config_name: te\n  features:\n  - name: question\n    dtype: string\n  - name: answer\n    dtype: string\n  - name: answer_number\n    dtype: int32\n  - name: equation_solution\n    dtype: string\n  splits:\n  - name: train\n    num_bytes: 7748\n    num_examples: 8\n  - name: test\n    num_bytes: 179526\n    num_examples: 250\n  download_size: 75534\n  dataset_size: 187274\n- config_name: th\n  features:\n  - name: question\n    dtype: string\n  - name: answer\n    dtype: string\n  - name: answer_number\n    dtype: int32\n  - name: equation_solution\n    dtype: string\n  splits:\n  - name: train\n    num_bytes: 7084\n    num_examples: 8\n  - name: test\n    num_bytes: 154900\n    num_example",
+  "provenance_candidate_lines": [
+   "- [Annotations](#annotations)",
+   "The same 250 problems from [GSM8K](https://arxiv.org/abs/2110.14168) are each translated via human annotators in 10 languages. The 10 languages are:",
+   "We also include few-shot exemplars that are also manually translated from each language in `exemplars.py`.",
+   "- answer: The full solution string to the `question`. It contains multiple steps of reasoning with calculator annotations and the final numeric solution.",
+   "- The train split includes 8 few-shot exemplars that are also manually translated from each language.",
+   "- The test split includes the same 250 problems from GSM8K translated via human annotators in 10 languages.",
+   "### Annotations",
+   "#### Annotation process",
+   "#### Who are the annotators?",
+   "title={Training Verifiers to Solve Math Word Problems},"
+  ],
+  "reference_links": [
+   "https://github.com/openai/grade-school-math",
+   "https://arxiv.org/abs/2110.14168",
+   "http://arxiv.org/abs/2210.03057",
+   "https://github.com/juletx"
+  ]
+ }
+}

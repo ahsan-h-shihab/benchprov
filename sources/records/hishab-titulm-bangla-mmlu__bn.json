@@ -1,0 +1,82 @@
+{
+ "record_id": "hishab-titulm-bangla-mmlu__bn",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "hishab/titulm-bangla-mmlu",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/hishab/titulm-bangla-mmlu",
+  "revision": "f47523f6d5ffdc2201a1438ac2facdb0ca5e7af2"
+ },
+ "root_benchmark": "MMLU",
+ "target_languages": [
+  "bn"
+ ],
+ "source_language": "not_applicable",
+ "derived_from": {
+  "kind": "unknown",
+  "parent_id": null
+ },
+ "translation_type": "unknown",
+ "engine_or_translator": "unknown",
+ "human_verification": "unknown",
+ "license": "unknown",
+ "claims": {
+  "translation_type": {
+   "status": "unknown",
+   "evidence": [
+    "e1"
+   ],
+   "note": "creation method not stated in the card (evidence documents the checked card)"
+  },
+  "engine_or_translator": {
+   "status": "unknown",
+   "evidence": [
+    "e1"
+   ],
+   "note": "not stated in the card"
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [
+    "e1"
+   ],
+   "note": "not stated in the card"
+  },
+  "license": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no license declared in hub metadata at the pinned revision"
+  },
+  "derived_from": {
+   "status": "unknown",
+   "evidence": [
+    "e1"
+   ],
+   "note": "relationship to hishab/bangla-mmlu or other sources not stated in the card"
+  },
+  "source_language": {
+   "status": "not_applicable",
+   "evidence": []
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/hishab/titulm-bangla-mmlu/raw/f47523f6d5ffdc2201a1438ac2facdb0ca5e7af2/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "93b50c21e8fcbc87c6ef2baf782c45d5993119f38f58cc0e5828eabd2e5f53a1",
+   "hub_revision": "f47523f6d5ffdc2201a1438ac2facdb0ca5e7af2",
+   "quote": "Read the paper for details: https://arxiv.org/abs/2502.11187",
+   "note": "the card's entire prose is this paper pointer plus a citation block; no creation statements"
+  }
+ ],
+ "completeness": 0.0,
+ "provenance_state": "minimal",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "Pointer-only card; the TituLLMs paper likely documents creation, but the dataset card itself evidences nothing — recorded as-is."
+}

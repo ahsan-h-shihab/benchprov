@@ -1,0 +1,74 @@
+{
+ "record_id": "hishab-bangla-mmlu__bn",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "hishab/bangla-mmlu",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/hishab/bangla-mmlu",
+  "revision": "aec24ca889e0d0a9a526406db623912c8263d724"
+ },
+ "root_benchmark": "MMLU",
+ "target_languages": [
+  "bn"
+ ],
+ "source_language": "not_applicable",
+ "derived_from": {
+  "kind": "modeled_on",
+  "parent_id": "cais/mmlu",
+  "parent_url": "https://huggingface.co/datasets/cais/mmlu"
+ },
+ "translation_type": "native_original",
+ "engine_or_translator": "not_applicable",
+ "human_verification": "not_applicable",
+ "license": "unknown",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "not_applicable",
+   "evidence": []
+  },
+  "human_verification": {
+   "status": "not_applicable",
+   "evidence": []
+  },
+  "license": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no license declared in hub metadata at the pinned revision"
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "not_applicable",
+   "evidence": []
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/hishab/bangla-mmlu/raw/aec24ca889e0d0a9a526406db623912c8263d724/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "491d7c70b4a45f50a0dcf11d9b64fb682181cc285c1b4307e725548aa8b325ab",
+   "hub_revision": "aec24ca889e0d0a9a526406db623912c8263d724",
+   "quote": "We curated multiple-choice questions from various open-source educational websites and textbooks, inspired by the original MMLU dataset (Hendrycks et al., 2020). The dataset includes multiple-choice questions from different Bangladeshi exams"
+  }
+ ],
+ "completeness": 0.6667,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "Native Bangla exam questions (116,503 items: university admission, higher secondary, job exams, medical/engineering admission)."
+}

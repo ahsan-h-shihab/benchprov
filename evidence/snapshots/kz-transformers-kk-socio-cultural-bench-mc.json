@@ -1,0 +1,40 @@
+{
+ "dataset_id": "kz-transformers/kk-socio-cultural-bench-mc",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:51:32.843300+00:00",
+ "revision": "bac9e9f5d743514f3c20791a6780af15e7e6d059",
+ "hub_metadata": {
+  "tags": [
+   "license:cc-by-4.0",
+   "size_categories:1K<n<10K",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "region:us",
+   "multiple-choice",
+   "kazakh",
+   "cultural-knowledge",
+   "evaluation"
+  ],
+  "cardData_license": "cc-by-4.0",
+  "cardData_language": null,
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 71,
+  "lastModified": "2025-10-22T08:38:59.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/kz-transformers/kk-socio-cultural-bench-mc/raw/bac9e9f5d743514f3c20791a6780af15e7e6d059/README.md",
+  "sha256": "edc28acc83cffcc4919923b265026ddc414a709e84582e5d9c0ad461bbefcbb8",
+  "bytes": 3373,
+  "yaml_front_matter": "license: cc-by-4.0\ntags:\n- multiple-choice\n- kazakh\n- cultural-knowledge\n- evaluation\nurl: https://aclanthology.org/2025.fieldmatters-1.4/\ndataset_info:\n  features:\n  - name: question\n    dtype: string\n  - name: answer\n    dtype: string\n  - name: tags\n    dtype: string\n  - name: rationale\n    dtype: string\n  - name: A\n    dtype: string\n  - name: B\n    dtype: string\n  - name: C\n    dtype: string\n  - name: D\n    dtype: string\n  - name: category\n    dtype: string\n  - name: subcategory\n    dtype: string\n  - name: keyword\n    dtype: string\n  - name: q_len\n    dtype: int64\n  splits:\n  - name: train\n    num_bytes: 5425707\n    num_examples: 7111\n  download_size: 2346438\n  dataset_size: 5425707\nconfigs:\n- config_name: default\n  data_files:\n  - split: train\n    path: data/train-*",
+  "provenance_candidate_lines": [],
+  "reference_links": [
+   "https://aclanthology.org/2025.fieldmatters-1.4/"
+  ]
+ }
+}

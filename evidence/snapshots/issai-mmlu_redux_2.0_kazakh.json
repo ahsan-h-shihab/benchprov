@@ -1,0 +1,43 @@
+{
+ "dataset_id": "issai/MMLU_Redux_2.0_Kazakh",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:51:21.061176+00:00",
+ "revision": "165da825ad71dbbec54ba8baa36c51e9a1ee2152",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "language:kk",
+   "license:cc-by-4.0",
+   "size_categories:1K<n<10K",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:polars",
+   "library:mlcroissant",
+   "region:us"
+  ],
+  "cardData_license": "cc-by-4.0",
+  "cardData_language": [
+   "kk"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 448,
+  "lastModified": "2026-08-17T06:23:25.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/issai/MMLU_Redux_2.0_Kazakh/raw/165da825ad71dbbec54ba8baa36c51e9a1ee2152/README.md",
+  "sha256": "61d835fcce6129ed85bc248f628590c22d0e94d9da782ba0834c6bae73338d70",
+  "bytes": 1964,
+  "yaml_front_matter": "license: cc-by-4.0\ntask_categories:\n- question-answering\nlanguage:\n- kk\nsize_categories:\n- 1K<n<10K\nconfigs:\n  - config_name: default\n    data_files:\n      - split: test\n        path: \"mmlu_kazakh_with_answers_kazakh.parquet\"",
+  "provenance_candidate_lines": [
+   "MMLU_Redux_2.0_Kazakh is a machine-translated Kazakh version of the original [MMLU-Redux 2.0](https://huggingface.co/datasets/edinburgh-dawg/mmlu-redux-2.0) benchmark. It is designed to evaluate large language models on multiple-choice reasoning tasks across diverse domains.",
+   "The dataset contains around 5,700 questions covering 57 subjects, including mathematics, natural sciences, social sciences, and humanities. Questions and answer options are translated into Kazakh, while subject labels and overall structure remain unchanged to enable direct comparison with the original English benchmark.",
+   "| `question_kk` | Question translated into Kazakh. |",
+   "| `choices_kk` | List of four answer options translated into Kazakh. |"
+  ],
+  "reference_links": []
+ }
+}

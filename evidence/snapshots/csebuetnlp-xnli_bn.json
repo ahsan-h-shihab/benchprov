@@ -1,0 +1,66 @@
+{
+ "dataset_id": "csebuetnlp/xnli_bn",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:51:50.170530+00:00",
+ "revision": "a18ecb62d7ffd4a6bff5756afb6e799bbb91dd3e",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:text-classification",
+   "task_ids:natural-language-inference",
+   "annotations_creators:machine-generated",
+   "language_creators:found",
+   "multilinguality:monolingual",
+   "source_datasets:extended",
+   "language:bn",
+   "license:cc-by-nc-sa-4.0",
+   "size_categories:100K<n<1M",
+   "modality:text",
+   "library:datasets",
+   "library:mlcroissant",
+   "arxiv:2101.00204",
+   "arxiv:2007.01852",
+   "region:us"
+  ],
+  "cardData_license": [
+   "cc-by-nc-sa-4.0"
+  ],
+  "cardData_language": [
+   "bn"
+  ],
+  "cardData_source_datasets": [
+   "extended"
+  ],
+  "cardData_annotations_creators": [
+   "machine-generated"
+  ],
+  "downloads": 266,
+  "lastModified": "2022-08-21T13:14:56.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/csebuetnlp/xnli_bn/raw/a18ecb62d7ffd4a6bff5756afb6e799bbb91dd3e/README.md",
+  "sha256": "76f96d43da6cd698aa2e723d403425a7d41ecf91dd5c2978a56dc306d6913253",
+  "bytes": 6560,
+  "yaml_front_matter": "annotations_creators:\n- machine-generated\nlanguage_creators:\n- found\nmultilinguality:\n- monolingual\nsize_categories:\n- 100K<n<1M\nsource_datasets:\n- extended\ntask_categories:\n- text-classification\ntask_ids:\n- natural-language-inference\nlanguage:\n- bn\nlicense:\n- cc-by-nc-sa-4.0",
+  "provenance_candidate_lines": [
+   "- [Annotations](#annotations)",
+   "- [Annotation process](#annotation-process)",
+   "- [Who are the annotators?](#who-are-the-annotators)",
+   "MNLI data used in XNLI and state-of-the-art English to Bengali translation model introduced **[here](https://aclanthology.org/2020.emnlp-main.207/).**",
+   "The dataset curation procedure was the same as the [XNLI](https://aclanthology.org/D18-1269/) dataset: we translated the [MultiNLI](https://aclanthology.org/N18-1101/) training data using the English to Bangla translation model introduced [here](https://aclanthology.org/2020.emnlp-main.207/). Due to the possibility of incursions of error during automatic translation, we used the [Language-Agnostic",
+   "### Annotations",
+   "#### Annotation process",
+   "#### Who are the annotators?"
+  ],
+  "reference_links": [
+   "https://github.com/csebuetnlp/banglabert",
+   "https://arxiv.org/abs/2101.00204",
+   "https://aclanthology.org/2020.emnlp-main.207/",
+   "https://aclanthology.org/D18-1269/",
+   "https://aclanthology.org/N18-1101/",
+   "https://arxiv.org/abs/2007.01852",
+   "https://github.com/abhik1505040",
+   "https://github.com/Tahmid04"
+  ]
+ }
+}

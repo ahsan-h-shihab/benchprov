@@ -1,0 +1,88 @@
+{
+ "record_id": "orai-nlp-hellaswag_ht_eu_sample__eu",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "orai-nlp/HellaSwag_HT_eu_sample",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/orai-nlp/HellaSwag_HT_eu_sample",
+  "revision": "ad41157287d3c7c48977d613563a3fc629c7366b"
+ },
+ "root_benchmark": "HellaSwag",
+ "target_languages": [
+  "eu"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "Rowan/hellaswag",
+  "parent_url": "https://huggingface.co/datasets/Rowan/hellaswag"
+ },
+ "translation_type": "human",
+ "engine_or_translator": "Orai NLP Teknologiak (manual translation)",
+ "human_verification": "unknown",
+ "license": "cc-by-nc-sa-4.0",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "human translation by construction; no separate QA step stated"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/orai-nlp/HellaSwag_HT_eu_sample/raw/ad41157287d3c7c48977d613563a3fc629c7366b/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "6f85c31e1d9bbb3cf67c428c0cea2115ab91516682191bcf1bf9094dd10d607b",
+   "hub_revision": "ad41157287d3c7c48977d613563a3fc629c7366b",
+   "quote": "A subset of 250 samples manually translated to Basque from the HellaSwag dataset (Zellers et al., 2019)."
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/orai-nlp/HellaSwag_HT_eu_sample",
+   "retrieved": "2026-08-24",
+   "hub_revision": "ad41157287d3c7c48977d613563a3fc629c7366b",
+   "quote": "license: apache-2.0"
+  }
+ ],
+ "completeness": 0.8333,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "250-sample human-translated Basque subset — a deliberate small HT contrast to the MT variants."
+}

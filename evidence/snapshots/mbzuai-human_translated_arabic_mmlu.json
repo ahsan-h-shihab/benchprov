@@ -1,0 +1,33 @@
+{
+ "dataset_id": "MBZUAI/human_translated_arabic_mmlu",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:51:37.512571+00:00",
+ "revision": "5ed7830fd678cfa6f2d7f0a1a13a4e1a1fa422ac",
+ "hub_metadata": {
+  "tags": [
+   "size_categories:10K<n<100K",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "region:us"
+  ],
+  "cardData_license": null,
+  "cardData_language": null,
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 1245,
+  "lastModified": "2024-09-17T14:00:36.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/MBZUAI/human_translated_arabic_mmlu/raw/5ed7830fd678cfa6f2d7f0a1a13a4e1a1fa422ac/README.md",
+  "sha256": "f0b0beaf7e04bee38500c662bb1954035d540da9a80286bae9724544e634a43c",
+  "bytes": 21080,
+  "yaml_front_matter": "dataset_info:\n- config_name: abstract_algebra\n  features:\n  - name: question\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype: int64\n  splits:\n  - name: test\n    num_bytes: 27022\n    num_examples: 100\n  download_size: 11649\n  dataset_size: 27022\n- config_name: anatomy\n  features:\n  - name: question\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype: int64\n  splits:\n  - name: test\n    num_bytes: 47912\n    num_examples: 135\n  download_size: 23371\n  dataset_size: 47912\n- config_name: astronomy\n  features:\n  - name: question\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype: int64\n  splits:\n  - name: test\n    num_bytes: 67861\n    num_examples: 152\n  download_size: 34163\n  dataset_size: 67861\n- config_name: business_ethics\n  features:\n  - name: question\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype: int64\n  splits:\n  - name: test\n    num_bytes: 49755\n    num_examples: 100\n  download_size: 24716\n  dataset_size: 49755\n- config_name: clinical_knowledge\n  features:\n  - name: question\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype: int64\n  splits:\n  - name: test\n    num_bytes: 92185\n    num_examples: 265\n  download_size: 48898\n  dataset_size: 92185\n- config_name: college_biology\n  features:\n  - name: question\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype: int64\n  splits:\n  - name: test\n    num_bytes: 75403\n    num_examples: 144\n  download_size: 39853\n  dataset_size: 75403\n- config_name: college_chemistry\n  features:\n  - name: question\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype: int64\n  splits:\n  - name: test\n    num_bytes: 34294\n    num_examples: 100\n  download_size: 20918\n  dataset_size: 34294\n- config_name: college_computer_science\n  features:\n  - name: question\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype: int64\n  splits:\n  - name: test\n    num_bytes: 62598\n    num_examples: 100\n  download_size: 32927\n  dataset_size: 62598\n- config_name: college_mathematics\n  features:\n  - name: question\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype: int64\n  splits:\n  - name: test\n    num_bytes: 34246\n    num_examples: 100\n  download_size: 19569\n  dataset_size: 34246\n- config_name: college_medicine\n  features:\n  - name: question\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype: int64\n  splits:\n  - name: test\n    num_bytes: 126787\n    num_examples: 173\n  download_size: 56544\n  dataset_size: 126787\n- config_name: college_physics\n  features:\n  - name: question\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype: int64\n  splits:\n  - name: test\n    num_bytes: 40836\n    num_examples: 102\n  download_size: 21638\n  dataset_size: 40836\n- config_name: computer_security\n  features:\n  - name: question\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype: int64\n  splits:\n  - name: test\n    num_bytes: 42925\n    num_examples: 100\n  download_size: 24468\n  dataset_size: 42925\n- config_name: conceptual_physics\n  features:\n  - name: question\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype: int64\n  splits:\n  - name: test\n    num_bytes: 58149\n    num_examples: 235\n  download_size: 29768\n  dataset_size: 58149\n- config_name: econometrics\n  features:\n  - name: question\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype: int64\n  splits:\n  - name: test\n    num_bytes: 65755\n    num_examples: 114\n  download_size: 29814\n  dataset_size: 65755\n- config_name: electrical_engineering\n  features:\n  - name: question\n    dtype: string\n  - name: choices\n    sequence: string\n  - name: answer\n    dtype: int64\n  splits:\n  - name: test\n    num_bytes: 35596\n    num_examples: 145\n  download_size: 20328\n ",
+  "provenance_candidate_lines": [],
+  "reference_links": []
+ }
+}

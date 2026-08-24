@@ -1,0 +1,42 @@
+{
+ "dataset_id": "issai/MMLU_Kazakh",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:51:18.155463+00:00",
+ "revision": "bcd3d3976dfbdde8c32b90b3df41f184c85c835d",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "language:kk",
+   "license:mit",
+   "size_categories:10K<n<100K",
+   "format:parquet",
+   "format:optimized-parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:polars",
+   "library:mlcroissant",
+   "region:us"
+  ],
+  "cardData_license": "mit",
+  "cardData_language": [
+   "kk"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 471,
+  "lastModified": "2026-08-17T06:19:11.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/issai/MMLU_Kazakh/raw/bcd3d3976dfbdde8c32b90b3df41f184c85c835d/README.md",
+  "sha256": "893046d9b46451d66782abc853faab207b052acc15f9eb9a0a4bedd2ddef2578",
+  "bytes": 1258,
+  "yaml_front_matter": "dataset_info:\n  features:\n  - name: question\n    dtype: string\n  - name: subject\n    dtype: string\n  - name: choices\n    list: string\n  - name: answer\n    dtype: int32\n  splits:\n  - name: test\n    num_bytes: 11556668\n    num_examples: 14042\n  download_size: 4693846\n  dataset_size: 11556668\nconfigs:\n- config_name: default\n  data_files:\n  - split: test\n    path: data/test-*\ntask_categories:\n- question-answering\nlanguage:\n- kk\nsize_categories:\n- 10K<n<100K\nlicense: mit",
+  "provenance_candidate_lines": [
+   "This is the machine-translated Kazakh version of the [MMLU (Massive Multitask Language Understanding)](https://huggingface.co/datasets/cais/mmlu) dataset (test split).",
+   "This dataset is used to test the world knowledge and problem-solving capabilities of large language models across a vast range of subjects in the Kazakh language. It serves as a benchmark for evaluating how well models understand complex academic and professional topics when prompted in Kazakh."
+  ],
+  "reference_links": []
+ }
+}

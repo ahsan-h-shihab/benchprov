@@ -1,0 +1,85 @@
+{
+ "record_id": "mbzuai-human_translated_arabic_mmlu__ar",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "MBZUAI/human_translated_arabic_mmlu",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/MBZUAI/human_translated_arabic_mmlu",
+  "revision": "5ed7830fd678cfa6f2d7f0a1a13a4e1a1fa422ac"
+ },
+ "root_benchmark": "MMLU",
+ "target_languages": [
+  "ar"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "cais/mmlu",
+  "parent_url": "https://huggingface.co/datasets/cais/mmlu"
+ },
+ "translation_type": "human",
+ "engine_or_translator": "unknown",
+ "human_verification": "unknown",
+ "license": "unknown",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1",
+    "e2"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "the translating team/vendor is not named in the card (which has no prose) or the cited PR"
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no statement"
+  },
+  "license": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no license declared in hub metadata at the pinned revision"
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "external_page",
+   "url": "https://github.com/huggingface/lighteval/pull/372",
+   "retrieved": "2026-08-24",
+   "quote": "`arabic_mmlu_ht`: Human-translated version from MBZUAI, providing a more accurate and high-quality translation of the original work by Hendrycks et al. (2021)",
+   "note": "merged lighteval PR that renamed Arabic MMLU tasks by translation provenance; the dataset's own card is YAML-only with no prose"
+  },
+  {
+   "id": "e2",
+   "type": "name_only",
+   "url": "https://huggingface.co/datasets/MBZUAI/human_translated_arabic_mmlu",
+   "retrieved": "2026-08-24",
+   "note": "dataset id itself: 'human_translated_arabic_mmlu'"
+  }
+ ],
+ "completeness": 0.5,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "A case where third-party consumer evidence (a harness PR) carries the provenance fact the dataset card omits."
+}

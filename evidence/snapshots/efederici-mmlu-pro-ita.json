@@ -1,0 +1,62 @@
+{
+ "dataset_id": "efederici/MMLU-Pro-ita",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:51:07.918197+00:00",
+ "revision": "09f349b9f3de49fc5851ae2cb37f2bc77a5911fb",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "language:it",
+   "license:mit",
+   "size_categories:10K<n<100K",
+   "format:parquet",
+   "modality:tabular",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "region:us",
+   "mmlu",
+   "evals"
+  ],
+  "cardData_license": "mit",
+  "cardData_language": [
+   "it"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 46,
+  "lastModified": "2024-05-17T14:21:48.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/efederici/MMLU-Pro-ita/raw/09f349b9f3de49fc5851ae2cb37f2bc77a5911fb/README.md",
+  "sha256": "23547b72d92a480ee07aaba556bc200a0515f52bc83e8438b87e63d755f650e5",
+  "bytes": 8010,
+  "yaml_front_matter": "language:\n- it\nlicense: mit\nsize_categories:\n- 10K<n<100K\ntask_categories:\n- question-answering\npretty_name: MMLU-Pro-ita\ndataset_info:\n  features:\n  - name: question_id\n    dtype: int64\n  - name: question\n    dtype: string\n  - name: options\n    sequence: string\n  - name: answer\n    dtype: string\n  - name: answer_index\n    dtype: int64\n  - name: cot_content\n    dtype: string\n  - name: category\n    dtype: string\n  - name: src\n    dtype: string\n  splits:\n  - name: test\n    num_bytes: 9761327\n    num_examples: 12187\n  - name: validation\n    num_bytes: 73374\n    num_examples: 70\n  download_size: 5237739\n  dataset_size: 9834701\nconfigs:\n- config_name: default\n  data_files:\n  - split: test\n    path: data/test-*\n  - split: validation\n    path: data/validation-*\ntags:\n- mmlu\n- evals",
+  "provenance_candidate_lines": [
+   "This is an Italian translation of [MMLU-Pro](https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro), a more **robust** and **challenging** massive multi-task understanding dataset tailored to more rigorously benchmark large language models' capabilities. This dataset contains 12K complex questions across various disciplines.",
+   "- Due to the increase of options, we found that the model performance becomes more robust. For example, Llama-2-7B performance variance on MMLU-Pro is within 1% with several different prompts. In contrast, the performance variance on original MMLU can be as huge as 4-5%.",
+   "- **Questions and Options:** Each question within the dataset typically has **ten** multiple-choice options, except for some that were reduced during the manual review process to remove unreasonable choices. This increase from the original **four** options per question is designed to enhance complexity and robustness, necessitating deeper reasoning to discern the correct answer among a larger pool",
+   "- **TheoremQA:** High-quality human-annotated questions requiring theorems to solve.",
+   "- **Initial Filtering:** The construction process began with a comprehensive review of the original MMLU dataset to identify and retain only those questions that meet a higher threshold of difficulty and relevance.",
+   "- **Option Augmentation:** To further enhance the dataset, we employed GPT-4 to augment the number of choices per question from **four** to **ten**. This process was not merely about adding more options but involved generating plausible distractors that require discriminative reasoning to navigate.",
+   "- **Expert Review:** Each question and its associated options underwent rigorous scrutiny by a panel of over ten experts. These experts ensured that the questions are not only challenging and comprehensive but also accurate and fair. This step was crucial to maintain the integrity and utility of the dataset as a benchmarking tool.",
+   "## 4. Dataset Translation",
+   "The dataset was translated using Claude Opus using a *draft and refine* technique. Only the refined translation was kept.",
+   "You are a professional translation system that accurately translates multiple-choice exercises from English to Italian. Follow these steps to ensure high-quality translations:",
+   "1. Provide an initial translation within <traduzione></traduzione> tags.",
+   "3. Write the final, polished translation within <traduzione-finale></traduzione-finale> tags.",
+   "1. Deliver top-notch, professional translations in Italian.",
+   "2. Ensure the translated text is fluent, grammatically perfect, and uses standard Italian without regional bias.",
+   "3. Accurately translate mathematical terms, notations, and equations, preserving their original meaning and structure.",
+   "4. Focus solely on translating content without providing explanations, adding extra information, or copying the source text verbatim.",
+   "<domanda>[write the translated question here]</domanda>",
+   "<opzione>[write the translated option here]</opzione>",
+   "[write your corrections here, analyzing the translation quality, errors, and providing suggestions regarding the exercise and given options]",
+   "From now on, only write in Italian and translate all incoming messages. Ensure the best translation possible."
+  ],
+  "reference_links": []
+ }
+}

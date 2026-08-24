@@ -1,0 +1,48 @@
+{
+ "dataset_id": "lrana/MMLU_ita",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:50:24.125303+00:00",
+ "revision": "f933fa363a4a137709233a6472b355bf669cdcf3",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:zero-shot-classification",
+   "task_categories:text-classification",
+   "task_categories:question-answering",
+   "task_categories:text-generation",
+   "language:it",
+   "size_categories:1K<n<10K",
+   "region:us",
+   "chemistry",
+   "biology",
+   "legal",
+   "finance",
+   "music",
+   "code",
+   "medical"
+  ],
+  "cardData_license": null,
+  "cardData_language": [
+   "it"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 120,
+  "lastModified": "2023-07-27T21:22:21.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/lrana/MMLU_ita/raw/f933fa363a4a137709233a6472b355bf669cdcf3/README.md",
+  "sha256": "3ccf82397d59e3627d178193bdcc559dda4be10c3b1e644e55cb97830ba8489c",
+  "bytes": 1792,
+  "yaml_front_matter": "task_categories:\n- zero-shot-classification\n- text-classification\n- question-answering\n- text-generation\nlanguage:\n- it\ntags:\n- chemistry\n- biology\n- legal\n- finance\n- music\n- code\n- medical\npretty_name: MMLU Italian Version\nsize_categories:\n- 1K<n<10K",
+  "provenance_candidate_lines": [
+   "This dataset card aims to be a base template for new datasets. It has been generated using [this raw template](https://github.com/huggingface/huggingface_hub/blob/main/src/huggingface_hub/templates/datasetcard_template.md?plain=1).",
+   "### Annotations",
+   "#### Annotation process",
+   "#### Who are the annotators?"
+  ],
+  "reference_links": [
+   "https://github.com/huggingface/huggingface_hub/blob/main/src/huggingface_hub/templates/datasetcard_template.md?plain=1"
+  ]
+ }
+}

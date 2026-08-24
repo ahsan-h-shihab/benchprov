@@ -1,0 +1,86 @@
+{
+ "record_id": "ilsp-hellaswag_greek__el",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "ilsp/hellaswag_greek",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/ilsp/hellaswag_greek",
+  "revision": "ac871418b051baaf0fe8fbd5d5f335d5fa8a1d66"
+ },
+ "root_benchmark": "HellaSwag",
+ "target_languages": [
+  "el"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "Rowan/hellaswag",
+  "parent_url": "https://huggingface.co/datasets/Rowan/hellaswag"
+ },
+ "translation_type": "machine",
+ "engine_or_translator": "unknown",
+ "human_verification": "unknown",
+ "license": "cc-by-nc-sa-4.0",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no engine named in the card"
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no statement"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/ilsp/hellaswag_greek/raw/ac871418b051baaf0fe8fbd5d5f335d5fa8a1d66/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "ef9a2ce888e3060eae28eca4df96095b9b80cb151d97d568210b64c8f6c75dd0",
+   "hub_revision": "ac871418b051baaf0fe8fbd5d5f335d5fa8a1d66",
+   "quote": "The HellaSwag Greek dataset is a set of 59832 examples from the HellaSwag dataset, machine-translated into Greek."
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/ilsp/hellaswag_greek",
+   "retrieved": "2026-08-24",
+   "hub_revision": "ac871418b051baaf0fe8fbd5d5f335d5fa8a1d66",
+   "quote": "license: cc-by-nc-sa-4.0"
+  }
+ ],
+ "completeness": 0.6667,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ }
+}

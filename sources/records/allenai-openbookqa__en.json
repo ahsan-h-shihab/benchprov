@@ -1,0 +1,72 @@
+{
+ "record_id": "allenai-openbookqa__en",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "allenai/openbookqa",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/allenai/openbookqa",
+  "revision": "388097ea7776314e93a529163e0fea805b8a6454"
+ },
+ "root_benchmark": "OpenBookQA",
+ "target_languages": [
+  "en"
+ ],
+ "source_language": "not_applicable",
+ "derived_from": {
+  "kind": "none",
+  "parent_id": null
+ },
+ "translation_type": "native_original",
+ "engine_or_translator": "not_applicable",
+ "human_verification": "not_applicable",
+ "license": "unknown",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "not_applicable",
+   "evidence": []
+  },
+  "human_verification": {
+   "status": "not_applicable",
+   "evidence": []
+  },
+  "license": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "hub metadata license tag is 'unknown'"
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "not_applicable",
+   "evidence": []
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/allenai/openbookqa",
+   "retrieved": "2026-08-24",
+   "hub_revision": "388097ea7776314e93a529163e0fea805b8a6454",
+   "note": "hub metadata tags",
+   "quote": "source_datasets: original; annotations_creators: crowdsourced, expert-generated"
+  }
+ ],
+ "completeness": 0.6667,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ }
+}

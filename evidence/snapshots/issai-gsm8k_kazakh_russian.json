@@ -1,0 +1,41 @@
+{
+ "dataset_id": "issai/GSM8k_Kazakh_Russian",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:51:23.233720+00:00",
+ "revision": "f234af07680e306fed63cb01fa6c47d678c185a4",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:text-generation",
+   "language:kk",
+   "license:mit",
+   "size_categories:1K<n<10K",
+   "format:parquet",
+   "format:optimized-parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:polars",
+   "library:mlcroissant",
+   "region:us"
+  ],
+  "cardData_license": "mit",
+  "cardData_language": [
+   "kk"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 165,
+  "lastModified": "2026-08-17T06:20:48.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/issai/GSM8k_Kazakh_Russian/raw/f234af07680e306fed63cb01fa6c47d678c185a4/README.md",
+  "sha256": "47286ba478460aba64b231e8ce9ab1b3b99629767ae83f88398918301fa2b460",
+  "bytes": 1629,
+  "yaml_front_matter": "dataset_info:\n- config_name: kazakh\n  features:\n  - name: question\n    dtype: string\n  - name: answer_text\n    dtype: string\n  splits:\n  - name: test\n    num_bytes: 1141656\n    num_examples: 1319\n  download_size: 521064\n  dataset_size: 1141656\n- config_name: russian\n  features:\n  - name: question\n    dtype: string\n  - name: answer_text\n    dtype: string\n  splits:\n  - name: test\n    num_bytes: 1210590\n    num_examples: 1319\n  download_size: 574904\n  dataset_size: 1210590\nconfigs:\n- config_name: kazakh\n  data_files:\n  - split: test\n    path: kazakh/test-*\n- config_name: russian\n  data_files:\n  - split: test\n    path: russian/test-*\nlicense: mit\ntask_categories:\n- text-generation\nlanguage:\n- kk\nsize_categories:\n- 1K<n<10K",
+  "provenance_candidate_lines": [
+   "These are the machine-translated Kazakh and Russian versions of the [GSM8K (Grade School Math 8K)](https://huggingface.co/datasets/openai/gsm8k) dataset (test set)."
+  ],
+  "reference_links": []
+ }
+}

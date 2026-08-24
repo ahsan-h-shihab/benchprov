@@ -1,0 +1,90 @@
+{
+ "record_id": "mesolitica-translated-mmlu__ms",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "mesolitica/translated-MMLU",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/mesolitica/translated-MMLU",
+  "revision": "c54d12104bc98c876e613c8eb87837b0571890b3"
+ },
+ "root_benchmark": "MMLU",
+ "target_languages": [
+  "ms"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "cais/mmlu",
+  "parent_url": "https://huggingface.co/datasets/cais/mmlu"
+ },
+ "translation_type": "machine",
+ "engine_or_translator": "Google Translate",
+ "human_verification": "none",
+ "license": "unknown",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "human_verification": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ],
+   "note": "the card's own account flags known issues left uncorrected; no review/QA step described"
+  },
+  "license": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no license declared in hub metadata at the pinned revision"
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/mesolitica/translated-MMLU/raw/c54d12104bc98c876e613c8eb87837b0571890b3/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "6b36e186903c9ab12b9eb9a4e372e3a49bc498ca51c467189db0f68358d2dc4e",
+   "hub_revision": "c54d12104bc98c876e613c8eb87837b0571890b3",
+   "quote": "Originally from https://huggingface.co/datasets/cais/mmlu, translated to Malay using Google Translate."
+  },
+  {
+   "id": "e2",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/mesolitica/translated-MMLU/raw/c54d12104bc98c876e613c8eb87837b0571890b3/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "6b36e186903c9ab12b9eb9a4e372e3a49bc498ca51c467189db0f68358d2dc4e",
+   "hub_revision": "c54d12104bc98c876e613c8eb87837b0571890b3",
+   "quote": "We found out some translated answers not really coherent with original English answers, so it is better to skip translated answers.",
+   "note": "creators acknowledge unfixed translation issues and recommend skipping translated answers — no correction pass applied"
+  }
+ ],
+ "completeness": 0.8333,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ }
+}

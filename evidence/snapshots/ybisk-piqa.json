@@ -1,0 +1,63 @@
+{
+ "dataset_id": "ybisk/piqa",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:50:02.868780+00:00",
+ "revision": "2e8ac2dffd59bac8c3c6714948f4c551a0848bb0",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:question-answering",
+   "task_ids:multiple-choice-qa",
+   "annotations_creators:crowdsourced",
+   "language_creators:crowdsourced",
+   "language_creators:found",
+   "multilinguality:monolingual",
+   "source_datasets:original",
+   "language:en",
+   "license:unknown",
+   "size_categories:10K<n<100K",
+   "arxiv:1911.11641",
+   "arxiv:1907.10641",
+   "arxiv:1904.09728",
+   "arxiv:1808.05326",
+   "region:us"
+  ],
+  "cardData_license": [
+   "unknown"
+  ],
+  "cardData_language": [
+   "en"
+  ],
+  "cardData_source_datasets": [
+   "original"
+  ],
+  "cardData_annotations_creators": [
+   "crowdsourced"
+  ],
+  "downloads": 75967,
+  "lastModified": "2024-01-18T11:13:02.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/ybisk/piqa/raw/2e8ac2dffd59bac8c3c6714948f4c551a0848bb0/README.md",
+  "sha256": "d5a6f84b724972fa2d3591d86196426c24d75da764fe4516d7e64147090ad5a0",
+  "bytes": 8413,
+  "yaml_front_matter": "annotations_creators:\n- crowdsourced\nlanguage_creators:\n- crowdsourced\n- found\nlanguage:\n- en\nlicense:\n- unknown\nmultilinguality:\n- monolingual\nsize_categories:\n- 10K<n<100K\nsource_datasets:\n- original\ntask_categories:\n- question-answering\ntask_ids:\n- multiple-choice-qa\npaperswithcode_id: piqa\npretty_name: 'Physical Interaction: Question Answering'\ndataset_info:\n  features:\n  - name: goal\n    dtype: string\n  - name: sol1\n    dtype: string\n  - name: sol2\n    dtype: string\n  - name: label\n    dtype:\n      class_label:\n        names:\n          '0': '0'\n          '1': '1'\n  config_name: plain_text\n  splits:\n  - name: train\n    num_bytes: 4104026\n    num_examples: 16113\n  - name: test\n    num_bytes: 761521\n    num_examples: 3084\n  - name: validation\n    num_bytes: 464321\n    num_examples: 1838\n  download_size: 2638625\n  dataset_size: 5329868",
+  "provenance_candidate_lines": [
+   "- [Annotations](#annotations)",
+   "The authors  provide a prompt to the annotators derived from instructables.com. The instructables website is a crowdsourced collection of instruc- tions for doing everything from cooking to car repair. In most cases, users provide images or videos detailing each step and a list of tools that will be required. Most goals are simultaneously rare and unsurprising. While an annotator is unlikely to ha",
+   "Annotators were asked to glance at the instructions of an instructable and pull out or have it inspire them to construct two component tasks. They would then articulate the goal (often centered on atypical materials) and how to achieve it. In addition, annotaters were asked to provide a permutation to their own solution which makes it invalid (the negative solution), often subtly.",
+   "### Annotations",
+   "#### Annotation process",
+   "Annotations are by construction obtained when crowdsourcers complete the prompt.",
+   "#### Who are the annotators?",
+   "Paid crowdsourcers"
+  ],
+  "reference_links": [
+   "https://arxiv.org/abs/1911.11641",
+   "https://arxiv.org/abs/1907.10641",
+   "https://arxiv.org/abs/1904.09728",
+   "https://arxiv.org/abs/1808.05326",
+   "https://github.com/VictorSanh"
+  ]
+ }
+}

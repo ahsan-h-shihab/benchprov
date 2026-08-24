@@ -1,0 +1,97 @@
+{
+ "record_id": "opengpt-x-mmlux__multi",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "openGPT-X/mmlux",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/openGPT-X/mmlux",
+  "revision": "7fb62cf05c1ce9ea550dbfd2ea6c145204344882"
+ },
+ "root_benchmark": "MMLU",
+ "target_languages": [
+  "de",
+  "fr",
+  "es",
+  "it",
+  "pt",
+  "bg",
+  "cs",
+  "da",
+  "el",
+  "et",
+  "fi",
+  "hu",
+  "lt",
+  "lv",
+  "nl",
+  "pl",
+  "ro",
+  "sk",
+  "sl",
+  "sv"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "cais/mmlu",
+  "parent_url": "https://huggingface.co/datasets/cais/mmlu"
+ },
+ "translation_type": "machine",
+ "engine_or_translator": "DeepL",
+ "human_verification": "unknown",
+ "license": "unknown",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no human-review statement found in card or paper section retrieved"
+  },
+  "license": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no license declared in hub metadata at the pinned revision; card tags contradict each other ('synthetic' tag vs 'language_creators: expert-generated')"
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "paper",
+   "url": "https://arxiv.org/html/2410.08928",
+   "retrieved": "2026-08-24",
+   "quote": "3.1 Translation Process We chose DeepL as translation service due to its balance between translation accuracy and scalability. We translated five well-known datasets, ARC [et al.]",
+   "note": "paper cited in the dataset card's citation block (Thellmann et al., 2024)"
+  }
+ ],
+ "completeness": 0.6667,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "EU-language MMLU translations (MMLUX) from the openGPT-X evaluation effort."
+}

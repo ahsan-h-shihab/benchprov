@@ -1,0 +1,37 @@
+{
+ "dataset_id": "kz-transformers/gsm8k-kk-translated",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:51:29.811566+00:00",
+ "revision": "0826d590ff807efe2733051358f8faf77f4bab98",
+ "hub_metadata": {
+  "tags": [
+   "license:apache-2.0",
+   "size_categories:1K<n<10K",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "region:us"
+  ],
+  "cardData_license": "apache-2.0",
+  "cardData_language": null,
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 17,
+  "lastModified": "2025-01-24T22:15:55.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/kz-transformers/gsm8k-kk-translated/raw/0826d590ff807efe2733051358f8faf77f4bab98/README.md",
+  "sha256": "9e0ce0dc7a5817437cd03b9298368c2d525e8bef02bef788f3604d8c991719de",
+  "bytes": 813,
+  "yaml_front_matter": "license: apache-2.0\ndataset_info:\n  features:\n  - name: question\n    dtype: string\n  - name: answer\n    dtype: string\n  - name: id\n    dtype: int64\n  splits:\n  - name: train\n    num_bytes: 8325912\n    num_examples: 7473\n  - name: test\n    num_bytes: 1510097\n    num_examples: 1319\n  download_size: 4212929\n  dataset_size: 9836009\nconfigs:\n- config_name: default\n  data_files:\n  - split: train\n    path: data/train-*\n  - split: test\n    path: data/test-*",
+  "provenance_candidate_lines": [
+   "title = {Kazakh GSM8K: Translated Grade School Math 8K},",
+   "url = {https://huggingface.co/datasets/gsm8k-kk-translated},"
+  ],
+  "reference_links": []
+ }
+}

@@ -1,0 +1,89 @@
+{
+ "record_id": "tripathysagar-odia-truthfulqa-mc__or",
+ "schema_version": "0.1.0",
+ "dataset": {
+  "id": "tripathysagar/odia-truthfulqa-mc",
+  "hub": "huggingface",
+  "url": "https://huggingface.co/datasets/tripathysagar/odia-truthfulqa-mc",
+  "revision": "e7646d71057edb35b3eb094e3a84f80d23ff035c"
+ },
+ "root_benchmark": "TruthfulQA",
+ "target_languages": [
+  "or"
+ ],
+ "source_language": "en",
+ "derived_from": {
+  "kind": "translation_of",
+  "parent_id": "truthfulqa/truthful_qa",
+  "parent_url": "https://huggingface.co/datasets/truthfulqa/truthful_qa"
+ },
+ "translation_type": "machine",
+ "engine_or_translator": "Cursor subagents (Composer 2.5-fast)",
+ "human_verification": "unknown",
+ "license": "apache-2.0",
+ "claims": {
+  "translation_type": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "engine_or_translator": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "human_verification": {
+   "status": "unknown",
+   "evidence": [],
+   "note": "no human-review statement in captured lines"
+  },
+  "license": {
+   "status": "verified",
+   "evidence": [
+    "e2"
+   ]
+  },
+  "derived_from": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  },
+  "source_language": {
+   "status": "verified",
+   "evidence": [
+    "e1"
+   ]
+  }
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "type": "dataset_card",
+   "url": "https://huggingface.co/datasets/tripathysagar/odia-truthfulqa-mc/raw/e7646d71057edb35b3eb094e3a84f80d23ff035c/README.md",
+   "retrieved": "2026-08-24",
+   "sha256": "bb46e357498113c8a506557e5c4519d607de8be63001481879cdfc9937cb27b4",
+   "hub_revision": "e7646d71057edb35b3eb094e3a84f80d23ff035c",
+   "quote": "OdiaBench translations were produced via Cursor subagents (Composer 2.5-fast) using",
+   "note": "'Questions and gold answers are translated; distractor choices in mc1_choices remain in English.'"
+  },
+  {
+   "id": "e2",
+   "type": "hub_metadata",
+   "url": "https://huggingface.co/api/datasets/tripathysagar/odia-truthfulqa-mc",
+   "retrieved": "2026-08-24",
+   "hub_revision": "e7646d71057edb35b3eb094e3a84f80d23ff035c",
+   "quote": "license: apache-2.0"
+  }
+ ],
+ "completeness": 0.8333,
+ "provenance_state": "partial",
+ "curated": {
+  "date": "2026-08-24",
+  "by": "benchprov v0 seed (A. H. Shihab)",
+  "method": "assisted"
+ },
+ "notes": "Partial translation scope: distractor options remain English — a provenance detail consumers would want."
+}

@@ -1,0 +1,53 @@
+{
+ "dataset_id": "Rowan/hellaswag",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:49:35.695770+00:00",
+ "revision": "218ec52e09a7e7462a5400043bb9a69a41d06b76",
+ "hub_metadata": {
+  "tags": [
+   "language:en",
+   "size_categories:10K<n<100K",
+   "format:parquet",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:polars",
+   "library:mlcroissant",
+   "arxiv:1905.07830",
+   "region:us"
+  ],
+  "cardData_license": null,
+  "cardData_language": [
+   "en"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 310617,
+  "lastModified": "2025-07-10T15:23:17.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/Rowan/hellaswag/raw/218ec52e09a7e7462a5400043bb9a69a41d06b76/README.md",
+  "sha256": "cfe6e26e7e936a447a12f7eee50f2bffb0355c3b97459496d8c7296f65c5b353",
+  "bytes": 7019,
+  "yaml_front_matter": "language:\n- en\npaperswithcode_id: hellaswag\npretty_name: HellaSwag\ndataset_info:\n  features:\n  - name: ind\n    dtype: int32\n  - name: activity_label\n    dtype: string\n  - name: ctx_a\n    dtype: string\n  - name: ctx_b\n    dtype: string\n  - name: ctx\n    dtype: string\n  - name: endings\n    sequence: string\n  - name: source_id\n    dtype: string\n  - name: split\n    dtype: string\n  - name: split_type\n    dtype: string\n  - name: label\n    dtype: string\n  splits:\n  - name: train\n    num_bytes: 43232624\n    num_examples: 39905\n  - name: test\n    num_bytes: 10791853\n    num_examples: 10003\n  - name: validation\n    num_bytes: 11175717\n    num_examples: 10042\n  download_size: 36793872\n  dataset_size: 65200194\nconfigs:\n- config_name: default\n  data_files:\n  - split: train\n    path: data/train-*\n  - split: test\n    path: data/test-*\n  - split: validation\n    path: data/validation-*",
+  "provenance_candidate_lines": [
+   "- [Annotations](#annotations)",
+   "- **Size of the generated dataset:** 65.32 MB",
+   "### Annotations",
+   "#### Annotation process",
+   "#### Who are the annotators?"
+  ],
+  "reference_links": [
+   "https://github.com/rowanz/hellaswag/",
+   "https://arxiv.org/abs/1905.07830",
+   "https://github.com/huggingface/datasets/blob/master/CONTRIBUTING.md#how-to-contribute-to-the-dataset-cards",
+   "https://github.com/rowanz/hellaswag/blob/master/LICENSE",
+   "https://github.com/albertvillanova",
+   "https://github.com/mariamabarham",
+   "https://github.com/thomwolf",
+   "https://github.com/patrickvonplaten",
+   "https://github.com/lewtun"
+  ]
+ }
+}

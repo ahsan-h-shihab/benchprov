@@ -1,0 +1,47 @@
+{
+ "dataset_id": "HAERAE-HUB/KMMLU",
+ "retrieved": "2026-08-24",
+ "retrieved_at": "2026-08-24T21:51:57.071916+00:00",
+ "revision": "d61b3f19e552c576bf5960dd24289763edc36a88",
+ "hub_metadata": {
+  "tags": [
+   "task_categories:multiple-choice",
+   "language:ko",
+   "license:cc-by-nd-4.0",
+   "size_categories:100K<n<1M",
+   "format:csv",
+   "modality:tabular",
+   "modality:text",
+   "library:datasets",
+   "library:pandas",
+   "library:mlcroissant",
+   "library:polars",
+   "arxiv:2402.11548",
+   "region:us",
+   "mmlu",
+   "haerae"
+  ],
+  "cardData_license": "cc-by-nd-4.0",
+  "cardData_language": [
+   "ko"
+  ],
+  "cardData_source_datasets": null,
+  "cardData_annotations_creators": null,
+  "downloads": 13732,
+  "lastModified": "2024-03-05T14:13:32.000Z",
+  "gated": false
+ },
+ "readme": {
+  "pinned_url": "https://huggingface.co/datasets/HAERAE-HUB/KMMLU/raw/d61b3f19e552c576bf5960dd24289763edc36a88/README.md",
+  "sha256": "b561eccc2880a3704c16d0069746c14cb786f0eca19178afb5df1989e0a126ec",
+  "bytes": 14156,
+  "yaml_front_matter": "configs:\n- config_name: Accounting\n  data_files:\n  - split: train\n    path: data/Accounting-train.csv\n  - split: dev\n    path: data/Accounting-dev.csv\n  - split: test\n    path: data/Accounting-test.csv\n- config_name: Agricultural-Sciences\n  data_files:\n  - split: train\n    path: data/Agricultural-Sciences-train.csv\n  - split: dev\n    path: data/Agricultural-Sciences-dev.csv\n  - split: test\n    path: data/Agricultural-Sciences-test.csv\n- config_name: Aviation-Engineering-and-Maintenance\n  data_files:\n  - split: train\n    path: data/Aviation-Engineering-and-Maintenance-train.csv\n  - split: dev\n    path: data/Aviation-Engineering-and-Maintenance-dev.csv\n  - split: test\n    path: data/Aviation-Engineering-and-Maintenance-test.csv\n- config_name: Biology\n  data_files:\n  - split: train\n    path: data/Biology-train.csv\n  - split: dev\n    path: data/Biology-dev.csv\n  - split: test\n    path: data/Biology-test.csv\n- config_name: Chemical-Engineering\n  data_files:\n  - split: train\n    path: data/Chemical-Engineering-train.csv\n  - split: dev\n    path: data/Chemical-Engineering-dev.csv\n  - split: test\n    path: data/Chemical-Engineering-test.csv\n- config_name: Chemistry\n  data_files:\n  - split: train\n    path: data/Chemistry-train.csv\n  - split: dev\n    path: data/Chemistry-dev.csv\n  - split: test\n    path: data/Chemistry-test.csv\n- config_name: Civil-Engineering\n  data_files:\n  - split: train\n    path: data/Civil-Engineering-train.csv\n  - split: dev\n    path: data/Civil-Engineering-dev.csv\n  - split: test\n    path: data/Civil-Engineering-test.csv\n- config_name: Computer-Science\n  data_files:\n  - split: train\n    path: data/Computer-Science-train.csv\n  - split: dev\n    path: data/Computer-Science-dev.csv\n  - split: test\n    path: data/Computer-Science-test.csv\n- config_name: Construction\n  data_files:\n  - split: train\n    path: data/Construction-train.csv\n  - split: dev\n    path: data/Construction-dev.csv\n  - split: test\n    path: data/Construction-test.csv\n- config_name: Criminal-Law\n  data_files:\n  - split: train\n    path: data/Criminal-Law-train.csv\n  - split: dev\n    path: data/Criminal-Law-dev.csv\n  - split: test\n    path: data/Criminal-Law-test.csv\n- config_name: Ecology\n  data_files:\n  - split: train\n    path: data/Ecology-train.csv\n  - split: dev\n    path: data/Ecology-dev.csv\n  - split: test\n    path: data/Ecology-test.csv\n- config_name: Economics\n  data_files:\n  - split: train\n    path: data/Economics-train.csv\n  - split: dev\n    path: data/Economics-dev.csv\n  - split: test\n    path: data/Economics-test.csv\n- config_name: Education\n  data_files:\n  - split: train\n    path: data/Education-train.csv\n  - split: dev\n    path: data/Education-dev.csv\n  - split: test\n    path: data/Education-test.csv\n- config_name: Electrical-Engineering\n  data_files:\n  - split: train\n    path: data/Electrical-Engineering-train.csv\n  - split: dev\n    path: data/Electrical-Engineering-dev.csv\n  - split: test\n    path: data/Electrical-Engineering-test.csv\n- config_name: Electronics-Engineering\n  data_files:\n  - split: train\n    path: data/Electronics-Engineering-train.csv\n  - split: dev\n    path: data/Electronics-Engineering-dev.csv\n  - split: test\n    path: data/Electronics-Engineering-test.csv\n- config_name: Energy-Management\n  data_files:\n  - split: train\n    path: data/Energy-Management-train.csv\n  - split: dev\n    path: data/Energy-Management-dev.csv\n  - split: test\n    path: data/Energy-Management-test.csv\n- config_name: Environmental-Science\n  data_files:\n  - split: train\n    path: data/Environmental-Science-train.csv\n  - split: dev\n    path: data/Environmental-Science-dev.csv\n  - split: test\n    path: data/Environmental-Science-test.csv\n- config_name: Fashion\n  data_files:\n  - split: train\n    path: data/Fashion-train.csv\n  - split: dev\n    path: data/Fashion-dev.csv\n  - split: test\n    path: data/Fashion-test.csv\n- config_name: Food-Processing\n  data_files:\n  - split: train\n    path: data/Food-Processing-train.csv\n  - split: dev\n    path: data/Food",
+  "provenance_candidate_lines": [
+   "Unlike previous Korean benchmarks that are translated from existing English benchmarks, KMMLU is collected from original Korean exams, capturing linguistic and cultural aspects of the Korean language.",
+   "Current LLMs tailored to Korean, such as Polyglot-Ko, perform far worse. Surprisingly, even the most capable proprietary LLMs, e.g., GPT-4 and HyperCLOVA X, achieve 59.95% and 53.40%, respectively."
+  ],
+  "reference_links": [
+   "https://arxiv.org/abs/2402.11548"
+  ]
+ }
+}
