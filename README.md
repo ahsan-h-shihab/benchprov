@@ -1,9 +1,9 @@
-# benchprov — Benchmark Translation Provenance
+# benchprov — Benchmark Provenance
 
-**A machine-readable, evidence-backed registry of how multilingual and
-translated NLP benchmarks were actually created** — machine-translated or
-human-translated, by which engine or team, checked by humans or not, under
-which license, derived from what.
+**Machine-readable provenance for multilingual and translated NLP
+benchmarks.** An evidence-backed registry of how these datasets were
+created — machine-translated or human-translated, by which engine or team,
+checked by humans or not, under which license, derived from what.
 
 ## The problem
 
@@ -137,8 +137,9 @@ quote minimally; pin revisions.
 
 What the evidence behind this project does and does not show:
 
-- **Provenance is missing at scale** — measured (65% of sampled translated
-  MMLU variants declare nothing; reproduced in this registry's own stats).
+- **Provenance is widely missing** — measured in our sample (65% of 96
+  sampled MMLU-variant datasets matched none of our engine/verification
+  patterns; the pattern is reproduced in this registry's own stats).
 - **Provenance is largely recoverable** — measured (a pre-registered
   40-dataset experiment recovered the creation method for ~74% of rows from
   cards and linked papers; engines for ~65%).

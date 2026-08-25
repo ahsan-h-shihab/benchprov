@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "benchprov"
 version = "0.1.0"
-description = "Benchmark Translation Provenance: a machine-readable, evidence-backed registry of how multilingual/translated NLP benchmarks were created (translation method, engine, human verification, license)."
+description = "Benchmark Provenance: machine-readable provenance for multilingual and translated NLP benchmarks (translation method, engine, human verification, lineage, license - every claim evidence-backed)."
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
