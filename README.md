@@ -3,7 +3,9 @@
 **Machine-readable provenance for multilingual and translated NLP
 benchmarks.** An evidence-backed registry of how these datasets were
 created — machine-translated or human-translated, by which engine or team,
-checked by humans or not, under which license, derived from what.
+checked by humans or not, under which license, derived from what. Built as
+benchmark metadata that LLM-evaluation workflows — harnesses, leaderboards,
+surveys — can consume programmatically.
 
 ## The problem
 
