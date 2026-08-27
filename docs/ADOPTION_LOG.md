@@ -32,3 +32,17 @@ Append dated entries below; never edit past entries.
 
 - 2026-08-25: baseline recorded at publication. No external signals yet
   (repository minutes old).
+
+- 2026-08-27: **T1 checkpoint (~72h)** — stars 0, forks 0, watchers 0,
+  issues/PRs 0 (all unchanged from T0). Owner-view traffic (14-day panel):
+  views 18 / **unique visitors 1** (all views map to the owner's own
+  publication-day and checkpoint sessions: Overview 14, /actions 1,
+  /branches 1, /releases/new 1, /releases/tag/v0.1.0 1; sole referrer
+  github.com); clones 27 / unique cloners 13 — consistent with 12 CI-runner
+  checkouts (3 workflow runs x 4 jobs) + the owner's one post-publication
+  verification clone. No package downloads (not on PyPI), no HF mirror, no
+  dependents, no external references found (GitHub repo/issue search + web
+  search: only unrelated namesakes, incl. TACC's "BenchPRO" HPC tool and a
+  pre-existing oxsat branch from 2026-07-25). Assessment: no observable
+  external discovery in this window. Full analysis:
+  `docs/ADOPTION_CHECKPOINT_1.md`.
